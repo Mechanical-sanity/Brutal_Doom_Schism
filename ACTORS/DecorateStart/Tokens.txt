@@ -3,6 +3,10 @@
 //properties true or false, or serving as counter for things such as how much ammo a zombieman has, and how
 //much time a grenade fuse has until exploding.
 
+Actor ScreenFX : Inventory
+{
+inventory.maxamount 1
+}
 
 Actor HasFreezerWeapon: Inventory
 {

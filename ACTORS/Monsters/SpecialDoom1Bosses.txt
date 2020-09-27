@@ -4,6 +4,8 @@ ACTOR CyberdemonBoss: TheCyberdemon 2546
     Obituary "%o was destroyed by the Cyberdemon."
 	Health 20000
     damagefactor "Crush", 20.0
+	PainChance "Freeze", 0
+	+NOICEDEATH
 	MaxStepHeight 64
 	MaxDropOffHeight 64
     Scale 2.4
@@ -220,6 +222,8 @@ ACTOR SuperMastermind: TheSpiderMastermind 2547
 	Mass 500000
 	Speed 40
 	+NOTARGET
+	PainChance "Freeze", 0
+	+NOICEDEATH
 	MaxStepHeight 64
 	MaxDropOffHeight 64
 	//$category "BD Bosses"

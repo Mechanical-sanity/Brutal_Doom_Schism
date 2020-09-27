@@ -30,6 +30,7 @@ ACTOR PainElemental1 Replaces PainElemental
 	damagefactor "Shrapnel", 3.0
 	damagefactor "ExplosiveImpact", 3.0
 	damagefactor "Fire", 0.1
+	PainChance "Freeze", 255
 	BurnHeight 0
 	Tag "Pain Elemental"
 	States

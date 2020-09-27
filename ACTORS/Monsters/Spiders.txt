@@ -1,4 +1,4 @@
-ACTOR Arachnotron1: Arachnotron replaces Arachnotron
+ACTOR Arachnotron1: Arachnotron 
 {
 	Monster
 	+FLOORCLIP
@@ -7,7 +7,7 @@ ACTOR Arachnotron1: Arachnotron replaces Arachnotron
 	Radius 36
     damagefactor "Crush", 10.0
 	PainChance "Stun", 255
-
+	PainChance "Freeze", 255
 	damagefactor "Avoid", 0.0
 	damagefactor "GibRemoving", 0.0 PainChance "HangingHook", 0
 	SeeSound "baby/sight"

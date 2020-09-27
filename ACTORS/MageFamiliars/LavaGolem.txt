@@ -1,0 +1,182 @@
+//Lavademon created by Ben2k9/Virtue
+
+actor LavaGolem
+{
+	SpawnID 3
+	Obituary "%o was charred by a lavademon."
+	Health 300
+	Radius 32
+	Height 74
+	Mass 1000
+	Speed 14
+	PainChance 100
+	SeeSound "lavdsit"
+	AttackSound "beast/attack"
+	PainSound "world/lavasizzle"
+	DeathSound "lavdsit"
+	ActiveSound "lavdsit"
+	DropItem "PhoenixRodAmmo" 84, 10
+	MeleeRange 64
+	DamageFactor "Ice", 2.0
+	DamageFactor "Fire", 0
+	PainChance "Fire", 0
+	Monster
+
+	+NOBLOOD
+	+NORADIUSDMG
+	+FRIENDLY
+	
+	States
+	{
+	Spawn:
+		LAVD H 0 Bright A_Jump(128, 1)
+		LAVD H 0 Bright A_CustomMissile("IceGuyWisp1", 70)
+		LAVD H 10 Bright A_Look
+		Loop
+
+	See:
+		LAVD A 0 Bright A_CustomMissile("firestep", 0, -5)
+		LAVD A 6 Bright A_Chase
+		LAVD B 0 Bright A_Jump(128, 1)
+		LAVD B 0 Bright A_CustomMissile("IceGuyWisp1", 70)
+		LAVD B 6 Bright A_Chase
+		LAVD C 0 Bright A_CustomMissile("firestep", 0, 7)
+		LAVD C 6 Bright A_Chase
+		LAVD D 0 Bright A_Jump(128, 1)
+		LAVD D 0 Bright A_CustomMissile("IceGuyWisp2", 70)
+		LAVD D 6 Bright A_Chase
+		Loop
+
+	Melee:
+		LAVD EF 5 Bright A_FaceTarget
+		LAVD G 0 Bright A_CustomMissile("PhoenixFX3", 49,  16, 0, CMF_AIMOFFSET)
+		LAVD G 2 Bright A_CustomMissile("PhoenixFX3", 49, -21, 0, CMF_AIMOFFSET)
+		LAVD G 0 Bright A_CustomMissile("PhoenixFX3", 49,  16, 0, CMF_AIMOFFSET)
+		LAVD G 2 Bright A_CustomMissile("PhoenixFX3", 49, -21, 0, CMF_AIMOFFSET)
+		LAVD G 0 Bright A_CustomMissile("PhoenixFX3", 49,  16, 0, CMF_AIMOFFSET)
+		LAVD G 2 Bright A_CustomMissile("PhoenixFX3", 49, -21, 0, CMF_AIMOFFSET)
+		LAVD G 0 Bright A_CustomMissile("PhoenixFX3", 49,  16, 0, CMF_AIMOFFSET)
+		LAVD G 2 Bright A_CustomMissile("PhoenixFX3", 49, -21, 0, CMF_AIMOFFSET)
+		LAVD G 0 Bright A_CustomMissile("PhoenixFX3", 49,  16, 0, CMF_AIMOFFSET)
+		LAVD G 2 Bright A_CustomMissile("PhoenixFX3", 49, -21, 0, CMF_AIMOFFSET)
+		Goto See
+
+	Missile:
+		LAVD E 0 Bright A_CustomMissile("firestep", 0, -5)
+		LAVD E 0 Bright A_CustomMissile("firestep", 0,  5)
+		LAVD EF 5 Bright A_FaceTarget
+		LAVD G 0 Bright A_CustomMissile("beastball2", 45, -21, 0, CMF_AIMOFFSET)
+		LAVD G 10 Bright A_CustomMissile("beastball2", 45, 16, 0, CMF_AIMOFFSET)
+		Goto See
+
+	Pain:
+		LAVD E 3 Bright
+		LAVD E 3 Bright A_Pain
+		Goto See
+
+	Death:
+		LAVD S 8 Bright A_Scream
+		LAVD T 8 Bright A_CustomMissile("Volcanoblast")
+		LAVD UVW 8 Bright
+		LAVD X 8 Bright A_NoBlocking
+		LAVD Y 60 Bright
+		LAVD Y -1
+		Stop
+
+	/* XDeath:
+		LAVD I 5 Bright A_PlaySound("lavdie")
+		LAVD K 5 Bright A_CustomMissile("Volcanoblast")
+		LAVD L 5 Bright A_NoBlocking
+		LAVD M 5 Bright A_Explode
+		LAVD NOPQ 5 Bright
+		LAVD R 5 Bright
+		Stop */
+
+	Ice:
+		LAVD J 5 A_FreezeDeath
+		LAVD J 1 A_FreezeDeathChunks
+		Wait
+	}
+}
+
+actor phoenixFX3
+{
+	Damage 1
+	DamageType "Fire"
+	Height 8
+	Obituary "$OB_MPPPHOENIXROD"
+	Projectile
+	Radius 6
+	RenderStyle "Add"
+	Speed 10
+	SeeSound "weapons/phoenixpowshoot"
+
+	States
+	{
+	Spawn:
+		FX09 ABABA 2 Bright
+		FX09 B 2 Bright A_ChangeVelocity(0, 0, 1.5) // Replicates A_FlameEnd
+		FX09 CDEF 2 Bright
+		Stop
+
+	Death:
+		FX09 G 3 Bright
+		FX09 H 3 Bright A_ChangeVelocity(0, 0, 1.8) //Replicates A_FloatPuff
+		FX09 I 4 Bright
+		FX09 JK 5 Bright
+		Stop
+	}
+}
+
+actor BeastBall2 : Volcanoblast
+{
+	SpawnID 120
+	Radius 9
+	Speed 15
+	Damage 4
+	SeeSound "beast/attack"
+	DeathSound "weapons/phoenixhit"
+	Projectile
+
+	States
+	{
+	Spawn:
+		VFBL A 0 Bright A_CustomMissile("wraithfx2", 0)
+		VFBL A 4 Bright A_SpawnItemEx("Puffy", Random2[BeastPuff]() * 0.015625, Random2[BeastPuff]() * 0.015625, Random2[BeastPuff]() * 0.015625,
+			0, 0, 0, 0, SXF_ABSOLUTEPOSITION, 64)
+		VFBL B 4 Bright A_SpawnItemEx("Puffy", Random2[BeastPuff]() * 0.015625, Random2[BeastPuff]() * 0.015625, Random2[BeastPuff]() * 0.015625,
+			0, 0, 0, 0, SXF_ABSOLUTEPOSITION, 64)
+		Loop
+	}
+}
+
+actor firestep
+{
+	Radius 1
+	Height 1
+	SeeSound "world/lavasizzle"
+
+	States
+	{
+	Spawn:
+		LVAS A 3 Bright
+		LVAS B 3 Bright A_CustomMissile("lavasmoke", 0)
+		LVAS CDEF 3 Bright
+		Stop
+	}
+}
+
+actor lavasmoke1
+{
+	Radius 1
+	Height 1
+	Renderstyle "Translucent"
+	Alpha 0.5
+
+	States
+	{
+	Spawn:
+		LVAS GHIJK 3 Bright
+		Stop
+	}
+}

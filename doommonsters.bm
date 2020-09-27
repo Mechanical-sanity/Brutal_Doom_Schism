@@ -6647,6 +6647,7 @@ BrightMap Sprite FRITS1
     Map "brightmaps/doom/Monsters/Afrit/BMFRITS1"
 	DisableFullBright
 }
+
 BrightMap Sprite FRITS2
 {
     Map "brightmaps/doom/Monsters/Afrit/BMFRITS2"

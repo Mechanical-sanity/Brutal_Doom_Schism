@@ -252,7 +252,21 @@ Damagetype "Extreme"
 	}
 }
 
-
+ACTOR BlackSunFlamesImpact: ExplosionFlames
+{
+Scale 7
+Speed 90
+-CLIENTSIDEONLY
++FORCERADIUSDMG
+Damagetype "Extreme"
+	States
+	{
+    Spawn:
+        EXPL AABBCDEF 1 BRIGHT A_Explode(64, 128)
+		EXPL FFGGHHII 1 BRIGHT A_FAdeout(0.2)
+        Stop
+	}
+}
 
 ACTOR NuclearFlamesBig: ExplosionFlames
 {
@@ -279,6 +293,17 @@ Scale 0.5
 	}
 }
 
+ACTOR BlackSunFlames: ExplosionFlames
+{
+Scale 4
+Speed 5
+	States
+	{
+    Spawn:
+        X003 ABCDEFGHIJKLMNOPQRSTUVWXYZ 2 BRIGHT
+        Stop
+	}
+}
 
 
 
@@ -785,6 +810,21 @@ ACTOR CoolandNewFlameTrailsLong2: FlameTrails
     Spawn:
 	    //TNT1 A 2
         FIR3 BCDEFGHIJKLMNOP 1 BRIGHT
+        Stop
+	}
+}
+
+
+ACTOR CoolandNewFlameTrailsLong3: FlameTrails
+{
+    Scale 0.7
+	Speed 1
+	Alpha 0.7
+	States
+	{
+    Spawn:
+	    //TNT1 A 2
+        FIR3 BCDEFGHIJKLMNOP 2 BRIGHT
         Stop
 	}
 }
@@ -1898,6 +1938,37 @@ ACTOR HighExplosiveFlames2: FlameTrails
 }
 
 
+ACTOR BlackSunFlames: FlameTrails
+{
+    Scale 2.1
+	Speed 4
+	Alpha 0.9
+	States
+	{
+    Spawn:
+		tnt1 A 0
+		TNT1 A 2
+        X003 AABBCDEFGHIJKLMNOP 1 BRIGHT
+		X003 QRSTUVWXYZ 1 BRIGHT
+        Stop
+	}
+}
+
+ACTOR BlackSunFlamesSmall: FlameTrails
+{
+    Scale 1
+	Speed 5
+	Alpha 0.8
+	States
+	{
+    Spawn:
+		tnt1 A 0
+		TNT1 A 2
+        X003 AABBCDEFGHIJKLMNOP 1 BRIGHT
+		X003 QRSTUVWXYZ 1 BRIGHT
+        Stop
+	}
+}
 
 
 

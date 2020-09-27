@@ -143,19 +143,19 @@ ACTOR FlameSerpent
 		SERP A 0 A_Weave(0, 1, 0, random(1,5))
 		SERP A 1 BRIGHT A_Chase 
 		TNT1 A 0 A_SpawnItemEx("CoolAndNewFlameTrailsLong2", random(-3,3), random(-3,3), random(-3,3), (0.1)*random(-3,3),(0.1)*random(-3,3),(0.1)*random(-3,3),0)
-		TNT1 A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
+		TNT1 A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
 		SERP A 0 A_SpawnItemEx("SpikedbodyN",-5,0,5,0,0,0,0,0,0)
 		SERP A 0 A_Weave(0, 1, 0, random(1,5))
-		TNT1 A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
+		TNT1 A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
 		SERP A 1 BRIGHT A_Chase
-		TNT1 A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
+		TNT1 A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
 		SERP A 0 A_Weave(0, 1, 0, random(1,5))
 		SERP A 1 BRIGHT A_Chase
-		TNT1 A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
+		TNT1 A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
 		SERP A 0 A_SpawnItemEx("SpikedbodyF",-5,0,5,0,0,0,0,0,0)
 		SERP A 0 A_Weave(0, 1, 0, random(1,5))
 		SERP A 1 BRIGHT A_Chase
-		TNT1 A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
+		TNT1 A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
 		SERP A 0 A_Weave(0, 1, 0, random(1,5))
 		SERP A 1 BRIGHT A_Chase
 		TNT1 A 0 A_SpawnItemEx("CoolAndNewFlameTrailsLong2", random(-3,3), random(-3,3), random(-3,3), (0.1)*random(-3,3),(0.1)*random(-3,3),(0.1)*random(-3,3),0)
@@ -214,14 +214,14 @@ actor FireSerpentHead1
 		TNT1 A 0 A_CheckFloor ("Death")
         loop
     Death:
-	TNT1 A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-    TNT1 A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-	TNT1 A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-    TNT1 A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))	
-	TNT1 A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-    TNT1 A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-	TNT1 A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-    TNT1 A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
+	TNT1 A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
+    TNT1 A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
+	TNT1 A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
+    TNT1 A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))	
+	TNT1 A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
+    TNT1 A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
+	TNT1 A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
+    TNT1 A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
     Stop
     }
 }
@@ -243,18 +243,18 @@ actor FireSerpentHead2
         FSAD B 0 ThrustThingZ (0,random(15,30), 0, 1)
         goto See 
     See:
-        FSAD B 1 BRIGHT A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
+        FSAD B 1 BRIGHT A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
 		TNT1 A 0 A_CheckFloor ("Death")
         loop
     Death:
-	TNT1 A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-    TNT1 A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-	TNT1 A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-    TNT1 A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))	
-	TNT1 A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-    TNT1 A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-	TNT1 A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-    TNT1 A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
+	TNT1 A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
+    TNT1 A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
+	TNT1 A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
+    TNT1 A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))	
+	TNT1 A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
+    TNT1 A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
+	TNT1 A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
+    TNT1 A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
     Stop
     }
 }
@@ -276,18 +276,18 @@ actor FireSerpentHead3
         FSAD C 0 ThrustThingZ (0,random(15,30), 0, 1)
         goto See 
     See:
-        FSAD C 1 BRIGHT A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
+        FSAD C 1 BRIGHT A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
 		TNT1 A 0 A_CheckFloor ("Death")
         loop
     Death:
-	TNT1 A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-    TNT1 A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-	TNT1 A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-    TNT1 A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))	
-	TNT1 A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-    TNT1 A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-	TNT1 A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-    TNT1 A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
+	TNT1 A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
+    TNT1 A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
+	TNT1 A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
+    TNT1 A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))	
+	TNT1 A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
+    TNT1 A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
+	TNT1 A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
+    TNT1 A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
     Stop
     }
 }
@@ -309,18 +309,18 @@ actor FireSerpentHead4
         FSAD D 0 ThrustThingZ (0,random(15,30), 0, 1)
         goto See 
     See:
-        FSAD D 1 BRIGHT A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
+        FSAD D 1 BRIGHT A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
 		TNT1 A 0 A_CheckFloor ("Death")
         loop
     Death:
-	TNT1 A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-    TNT1 A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-	TNT1 A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-    TNT1 A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))	
-	TNT1 A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-    TNT1 A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-	TNT1 A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-    TNT1 A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
+	TNT1 A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
+    TNT1 A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
+	TNT1 A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
+    TNT1 A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))	
+	TNT1 A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
+    TNT1 A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
+	TNT1 A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
+    TNT1 A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
 	Stop
     }
 }
@@ -334,7 +334,7 @@ Actor BareBodyI1A
   States
   {
   Spawn:
-    BBOD A 1 BRIGHT A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
+    BBOD A 1 BRIGHT A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
     Goto Death
   Death:
 	BBOD A 1
@@ -350,7 +350,7 @@ Actor BareBodyI2A
   States
   {
   Spawn:
-    BBOD A 1 BRIGHT A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
+    BBOD A 1 BRIGHT A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
     Goto Death
   Death:
 	BBOD A 1
@@ -366,7 +366,7 @@ Actor BareBodyI3A
   States
   {
   Spawn:
-    BBOD A 1 BRIGHT A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
+    BBOD A 1 BRIGHT A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
     Goto Death
   Death:
 	BBOD A 1
@@ -383,7 +383,7 @@ Actor BareBodyI1B
   States
   {
   Spawn:
-    BBOD AAAA 5 BRIGHT A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
+    BBOD AAAA 5 BRIGHT A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
 	BBOD A 5 BRIGHT
     Goto Death
   Death:
@@ -400,7 +400,7 @@ Actor BareBodyI2B
   States
   {
   Spawn:
-    BBOD AAAA 5 BRIGHT A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
+    BBOD AAAA 5 BRIGHT A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
 	BBOD A 4 BRIGHT
     Goto Death
   Death:
@@ -417,7 +417,7 @@ Actor BareBodyI3B
   States
   {
   Spawn:
-    BBOD AAAA 5 BRIGHT A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
+    BBOD AAAA 5 BRIGHT A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
 	BBOD A 3 BRIGHT
     Goto Death
   Death:
@@ -436,18 +436,12 @@ Actor BareBody
   States
   {
   Spawn:
-    BBOD AAAA 5 BRIGHT A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-	BBOD A 5 BRIGHT
+	BBOD A 0 A_CustomMissile ("SmallFireTrail324", 12, 0, random (0, 360), 2, random (0, 160))
+    BBOD AAAA 5 BRIGHT A_CustomMissile ("SmallFireTrail324", 12, 0, random (0, 360), 2, random (0, 160))
+	BBOD A 5 BRIGHT //A_CustomMissile ("SmallFireTrail324", 12, 0, random (0, 360), 2, random (0, 160))
     Goto Death
   Death:
-	SBOD A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-    SBOD A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-	SBOD A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-    SBOD A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))	
-	SBOD A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-    SBOD A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-	SBOD A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-    SBOD A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
+	SBOD A 1
 	Stop
 
   }
@@ -462,7 +456,7 @@ Actor SpikedBodyI1A
   States
   {
   Spawn:
-    SBOD A 1 BRIGHT A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
+    SBOD A 1 BRIGHT A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
 	Goto Death
   Death:
 	SBOD A 1
@@ -478,7 +472,7 @@ Actor SpikedBodyI2A
   States
   {
   Spawn:
-    SBOD A 1 BRIGHT A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
+    SBOD A 1 BRIGHT A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
 	Goto Death
   Death:
 	SBOD A 1
@@ -494,7 +488,7 @@ Actor SpikedBodyI3A
   States
   {
   Spawn:
-    SBOD A 1 BRIGHT A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
+    SBOD A 1 BRIGHT A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
 	Goto Death
   Death:
 	SBOD A 1
@@ -510,7 +504,7 @@ Actor SpikedBodyI4A
   States
   {
   Spawn:
-    SBOD A 1 BRIGHT A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
+    SBOD A 1 BRIGHT A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
 	Goto Death
   Death:
 	SBOD A 1
@@ -526,7 +520,7 @@ Actor SpikedBodyI5A
   States
   {
   Spawn:
-    SBOD A 1 BRIGHT A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
+    SBOD A 1 BRIGHT A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
 	Goto Death
   Death:
 	SBOD A 1
@@ -544,7 +538,7 @@ Actor SpikedBodyI1B
   States
   {
   Spawn:
-    SBOD AAAA 5 BRIGHT A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
+    SBOD AAAA 5 BRIGHT A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
 	SBOD A 5 BRIGHT
 	Goto Death
   Death:
@@ -561,7 +555,7 @@ Actor SpikedBodyI2B
   States
   {
   Spawn:
-    SBOD AAAA 5 BRIGHT A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
+    SBOD AAAA 5 BRIGHT A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
 	SBOD A 4 BRIGHT
 	Goto Death
   Death:
@@ -595,7 +589,7 @@ Actor SpikedBodyI4B
   States
   {
   Spawn:
-    SBOD AAAA 5 BRIGHT A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
+    SBOD AAAA 5 BRIGHT A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
 	SBOD A 2 BRIGHT
 	Goto Death
   Death:
@@ -634,14 +628,14 @@ Actor SpikedBodyN
 	SBOD A 5 BRIGHT
 	Goto Death
   Death:
-	SBOD A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-    SBOD A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-	SBOD A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-    SBOD A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))	
-	SBOD A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-    SBOD A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-	SBOD A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-    SBOD A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
+	SBOD A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
+    SBOD A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
+	SBOD A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
+    SBOD A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))	
+	SBOD A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
+    SBOD A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
+	SBOD A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
+    SBOD A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
 	Stop
   }
 }
@@ -654,20 +648,20 @@ Actor SpikedBodyF
   States
   {
   Spawn:
-    SBOD A 7 BRIGHT  A_SpawnItemEx("SoulTrails", random(-3,3), random(-3,3), random(-3,3), (0.1)*random(-3,3),(0.1)*random(-3,3),(0.1)*random(-3,3),0)
-	SBOD A 7 BRIGHT  A_SpawnItemEx("SoulTrails", random(-3,3), random(-3,3), random(-3,3), (0.1)*random(-3,3),(0.1)*random(-3,3),(0.1)*random(-3,3),0)
-	SBOD A 7 BRIGHT  A_SpawnItemEx("SoulTrails", random(-3,3), random(-3,3), random(-3,3), (0.1)*random(-3,3),(0.1)*random(-3,3),(0.1)*random(-3,3),0)
-	SBOD A 3 BRIGHT  A_SpawnItemEx("SoulTrails", random(-3,3), random(-3,3), random(-3,3), (0.1)*random(-3,3),(0.1)*random(-3,3),(0.1)*random(-3,3),0)
+    SBOD A 7 BRIGHT  A_SpawnItemEx("SmallFireTrail324", random(-3,3), random(-3,3), random(-3,3), (0.1)*random(-3,3),(0.1)*random(-3,3),(0.1)*random(-3,3),0)
+	SBOD A 7 BRIGHT  A_SpawnItemEx("SmallFireTrail324", random(-3,3), random(-3,3), random(-3,3), (0.1)*random(-3,3),(0.1)*random(-3,3),(0.1)*random(-3,3),0)
+	SBOD A 7 BRIGHT  A_SpawnItemEx("SmallFireTrail324", random(-3,3), random(-3,3), random(-3,3), (0.1)*random(-3,3),(0.1)*random(-3,3),(0.1)*random(-3,3),0)
+	SBOD A 3 BRIGHT  A_SpawnItemEx("SmallFireTrail324", random(-3,3), random(-3,3), random(-3,3), (0.1)*random(-3,3),(0.1)*random(-3,3),(0.1)*random(-3,3),0)
 	Goto Death
   Death:
-	SBOD A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-    SBOD A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-	SBOD A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-    SBOD A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))	
-	SBOD A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-    SBOD A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-	SBOD A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-    SBOD A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
+	SBOD A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
+    SBOD A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
+	SBOD A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
+    SBOD A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))	
+	SBOD A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
+    SBOD A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
+	SBOD A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
+    SBOD A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
 	Stop
 	
 	}
@@ -689,18 +683,18 @@ actor Firedrip
   states
   {
   Spawn:
-    FDRI AABBCCDD 4 Bright A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
+    FDRI AABBCCDD 4 Bright A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
 	TNT1 A 0 A_CheckFloor ("Death")
 	loop
   Death:
-	SBOD A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-    SBOD A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-	SBOD A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-    SBOD A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))	
-	SBOD A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-    SBOD A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-	SBOD A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-    SBOD A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
+	SBOD A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
+    SBOD A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
+	SBOD A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
+    SBOD A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))	
+	SBOD A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
+    SBOD A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
+	SBOD A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
+    SBOD A 0 A_CustomMissile ("SmallFireTrail324", 24, 0, random (0, 360), 2, random (0, 160))
     Stop
   }
 }

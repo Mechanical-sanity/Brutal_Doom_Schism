@@ -1730,27 +1730,29 @@ TNT1 A 0 A_UnSetInvulnerable
 
 
 
-Actor DeadImp: CurbstompedMarine Replaces DeadDoomImp
+Actor DeadImp Replaces DeadDoomImp
 {
-    Radius 12
-    Height 12
+	
+	Radius 12
+    Height 25
     +SHOOTABLE
     +NOTELEPORT
     +MOVEWITHSECTOR
     +CORPSE
 	-SOLID
 	+FLOORCLIP
-	+THRUACTORS
+	//+THRUACTORS
 	+SHOOTABLE
 	damagefactor "Crush", 50.0
-    Mass 1000
+    Mass 500
     Health 100
     damagefactor "Blood", 0.0
     damagefactor "Trample", 0.0
-    damagefactor "Melee", 10.0
-    damagefactor "Fatality", 10.0
-	damagefactor "Kick", 10.0
+    damagefactor "Melee", 20.0
+    damagefactor "Fatality", 20.0
+	damagefactor "Kick", 20.0
 	damagefactor "ExplosiveImpact", 10.0
+	
 States
     {
     Spawn:
@@ -1774,7 +1776,18 @@ States
 		EXPL AAA 0 A_CustomMissile ("ExplosionSmoke", 32, 0, random (0, 360), 2, random (0, 360))
         TNT1 A 0
         Stop
-   }}
+    Death.Fatality:
+    Death.Melee:
+    Death.Kick:
+	Death.ExplosiveImpact:
+         TNT1 A 0
+         TNT1 A 0
+         TNT1 A 0 ThrustThingZ(0,15,0,1)
+         TNT1 A 0 A_FaceTarget
+         ID11 ABC 6
+         TNT1 A 1 A_SpawnItem ("DeadImp", 5)
+         Stop}}
+
 
 Actor DeadImp_NoArm: DeadImp
 {Health 200 States{Spawn:
@@ -1785,6 +1798,17 @@ Actor DeadImp_NoArm: DeadImp
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 0 A_SpawnItem("ImpHeadExplode", 0, 10)
 			TNT1 A 0 A_SpawnItem("DeadImp_NoArmNoHead")
+			Stop
+		Death.Fatality:
+		Death.Melee:
+		Death.Kick:
+		Death.ExplosiveImpact:
+			TNT1 A 0
+			TNT1 A 0
+			TNT1 A 0 ThrustThingZ(0,15,0,1)
+			TNT1 A 0 A_FaceTarget
+			IZD2 B 7
+			TNT1 A 1 A_SpawnItem ("BrutalizedImpStop", 5)
 			Stop
 		 }}
 
@@ -1808,13 +1832,23 @@ Actor DeadImp_NoLeg: DeadImp
 {Health 200 States{Spawn:
         TR09 E -1
         Stop
-      Death:
+     Death:
 		TNT1 A 0 A_CustomMissile ("XDeathImpLeg", 5, 0, random (0, 360), 2, random (0, 160))
 		TNT1 A 0 A_SpawnItem ("RipImp", 5)
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 0 A_SpawnItem("MeatDeathSmall", 0, 10)
 		Stop
-		}}
+	 Death.Fatality:
+     Death.Melee:
+     Death.Kick:
+	 Death.ExplosiveImpact:
+        TNT1 A 0
+        TNT1 A 0
+        TNT1 A 0 ThrustThingZ(0,15,0,1)
+        TNT1 A 0 A_FaceTarget
+        ID11 ABC 6
+        TNT1 A 1 A_SpawnItem ("DeadImp_NoLeg", 5)
+		Stop}}
 
 
 Actor DeadImp_NoHead: DeadImp
@@ -1861,7 +1895,16 @@ Actor DeadImp_Half: DeadImp
 		TNT1 AA 0 A_SpawnItem("MeatDeathSmall", 0, 10)
 		TNT1 A 0 A_NoBlocking
 		Stop
-		}}
+	Death.Fatality:
+    Death.Melee:
+    Death.Kick:
+	Death.ExplosiveImpact:
+  	    TNT1 A 0 A_SpawnItem("GibsZ")
+        TNT1 AAA 0 A_CustomMissile ("Brutal_FlyingBlood", 50, 0, random (0, 360), 2, random (0, 160))
+		TNT1 A 0 A_CustomMissile ("XDeath2", 5, 0, random (0, 360), 2, random (0, 160))
+		TNT1 A 0 A_CustomMissile ("XDeath2", 5, 0, random (0, 360), 2, random (0, 160))
+		TNT1 A 0 A_CustomMissile ("XDeath2", 5, 0, random (0, 360), 2, random (0, 160))
+        Stop}}
 		  
 Actor impfacesorapedomgthisiscruel: DeadImp_Half
 {Health 200 States{Spawn:

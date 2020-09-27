@@ -18,6 +18,16 @@ ACTOR Arachnotron2: Arachnotron1 2542
 		TNT1 A 0 HealThing(1)
 		Goto Missile
 		
+	Pain.Lightning:
+		TNT1 A 0
+		TNT1 A 0 A_SpawnItemEx ("StunElectrocute", random (-4, 4), random (-4, 4),  random (16, 32), 0, 0)
+		ARAC I 1 A_Pain
+		ARAC IIIIIIIIII 3 A_SpawnItemEx ("StunElectrocute", random (-12, 12), random (-12, 12),  random (16, 52), 0, 0)
+		ARAC I 1 A_Pain
+		ARAC IIIIIIIIII 3 A_SpawnItemEx ("StunElectrocute", random (-12, 12), random (-12, 12),  random (16, 52), 0, 0)
+		ARAC I 1 A_Pain
+		Goto Missile
+		
 	Spawn:
 		ARAC AB 10 A_Look
 		Loop
@@ -168,6 +178,14 @@ Death.SuperPlasma:
 		CARB Q -1
         Stop
 
+	Death.Ice:
+	Death.Freeze:
+	Death.Frost:
+		TNT1 A 0 A_ChangeFlag("SHOOTABLE", 0)
+		TNT1 A 0 A_ChangeFlag("SOLID", 0)
+		TNT1 A 0 A_SpawnItemEx("FrozenArachnotron2", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION | SXF_TRANSFERAMBUSHFLAG | SXF_TRANSFERPOINTERS, 0, tid)
+		Stop
+
     Death.Fatality:
 	    TNT1 A 0
 		TNT1 A 0 A_Pain
@@ -271,6 +289,23 @@ Death.SuperPlasma:
 		ARAC P 5
 		ARAC ONMLKJ 5
 		Goto See+1
+	}
+}
+
+ACTOR ArachnotronDamaged2 : Arachnotron2
+{
+	Health 75
+	Speed 5
+	PainChance "Freeze", 255
+	States
+	{
+	Pain.Freeze:
+		TNT1 A 0
+		TNT1 A 0 A_JumpIfInventory("IsSlowed", 1, "Pain")
+		TNT1 A 0 ACS_NamedExecute("SlowingFreeze",0)
+		TNT1 A 0 A_GiveInventory("IsSlowed", 1)
+		Goto Super::Pain
+	    
 	}
 }
 

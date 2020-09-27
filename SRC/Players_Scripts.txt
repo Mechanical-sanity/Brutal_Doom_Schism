@@ -1,0 +1,71 @@
+#library "Players_Scripts"
+#include "zcommon.acs"
+
+Script "Player_Check" Enter
+{
+	if (CheckInventory("IsPaladin"))
+	{
+		//printbold(s:"Paladin");
+		ACS_NamedExecuteAlways("Set_Ammo_For_Paladin", 0, 0, 0);
+	}
+	else if (CheckInventory("IsSorcerer"))
+	{
+		//printbold(s:"Mage");
+		ACS_NamedExecuteAlways("Set_Ammo_For_Mage", 0, 0, 0);
+	}
+}
+
+Script "Set_Ammo_For_Mage" (void)
+{
+	SetAmmoCapacity("Clip1", 100);	//Pistol Ammo
+	SetAmmoCapacity("Clip2", 200);	//Rifle Ammo
+	SetAmmoCapacity("Clip3", 50);	//Heavy Ammo
+	SetAmmoCapacity("AmmoShell", 25);	//Shell Ammo
+}
+
+Script "Set_Ammo_For_Paladin" (void)
+{
+	SetAmmoCapacity("Clip1", 200);	//Pistol Ammo
+	SetAmmoCapacity("Clip2", 200);	//Rifle Ammo
+	SetAmmoCapacity("Clip3", 80);	//Heavy Ammo
+	SetAmmoCapacity("AmmoShell", 40);	//Shell Ammo
+	SetAmmoCapacity("AmmoRocket", 25);	//Rocket Ammo
+}
+
+
+///---> For BackPack
+
+Script "For_Backpack" (void)
+{
+	if (CheckInventory("IsPaladin"))
+	{
+		ACS_NamedExecuteAlways("Set_Ammo_For_Paladin_Bp", 0, 0, 0);
+		Terminate;
+	}
+	else if (CheckInventory("IsSorcerer"))
+	{
+		ACS_NamedExecuteAlways("Set_Ammo_For_Mage_Bp", 0, 0, 0);
+		Terminate;
+	}
+	SetAmmoCapacity("Clip1", 400);	//Pistol Ammo
+	SetAmmoCapacity("Clip2", 600);	//Rifle Ammo
+	SetAmmoCapacity("Clip3", 200);	//Heavy Ammo
+	SetAmmoCapacity("AmmoShell", 100);	//Shell Ammo
+}
+
+Script "Set_Ammo_For_Mage_Bp" (void)
+{
+	SetAmmoCapacity("Clip1", 200);	//Pistol Ammo
+	SetAmmoCapacity("Clip2", 400);	//Rifle Ammo
+	SetAmmoCapacity("Clip3", 100);	//Heavy Ammo
+	SetAmmoCapacity("AmmoShell", 50);	//Shell Ammo
+}
+
+Script "Set_Ammo_For_Paladin_Bp" (void)
+{
+	SetAmmoCapacity("Clip1", 400);	//Pistol Ammo
+	SetAmmoCapacity("Clip2", 400);	//Rifle Ammo
+	SetAmmoCapacity("Clip3", 160);	//Heavy Ammo
+	SetAmmoCapacity("AmmoShell", 80);	//Shell Ammo
+	SetAmmoCapacity("AmmoRocket", 50);	//Rocket Ammo
+}

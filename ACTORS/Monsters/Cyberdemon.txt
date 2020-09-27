@@ -8,7 +8,6 @@ ACTOR TheCyberdemon: Cyberdemon //Replaces Cyberdemon // see MonsterSpawner.txt 
 	damagefactor "TeleportRemover", 0.0
 	DamageFactor "CauseSplash", 0.0 DamageFactor "CauseObjectsToSplashSlime", 0.0 DamageFactor "CauseObjectsToSplashNukage", 0.0
 	DamageFactor "CauseObjectsToSplashBlood", 0.0 DamageFactor "CauseObjectsToSplashLava", 0.0
-	+NOICEDEATH
     Health 5000
     damagefactor "Crush", 20.0
 	PainSound "CYBPAIN"

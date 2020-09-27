@@ -1,186 +1,16 @@
-ACTOR ScimitarFamiliar2 12345 
-{
-   //$Category Monsters
-   Health 50
-   PainChance 85
-   Speed 20 
-   Radius 16 
-   Height 32 
-   Mass 25
-   Alpha .5
-   MeleeDamage 25
-   Damage (random(50,120))
-   Damagetype Cut
-   MONSTER
-   //+FLOORCLIP
-   +DONTHURTSPECIES
-   +NOGRAVITY
-   +FLOAT
-   +NOBLOOD
-    +FRIENDLY
-	+DONTFALL 
-	+NOICEDEATH
-	Species "Marines"
-	MaxStepHeight 64
-	MaxDropOffHeight 64
-	MeleeRange 32
-	
-   SeeSound "scimitar/scimisee"
-   PainSound "scimitar/scimipai"
-   DeathSound "scimitar/scimidth"
-   Obituary "%o was sliced by a Scimitar."
-
-   States 
-   { 
-   Spawn: 
-       SCIM A 3 BRIGHT A_Look 
-       Loop 
-   See: 
-       SCIM A 3 BRIGHT A_Chase 
-       Loop 
-   //Missile:
-    //   SCIM D 4 BRIGHT A_FaceTarget
-	//   SCIM E 0 Bright A_PlaySound("scimitar/scimiatk")
-       //SCIM D 4 Bright A_CustomMissile ("ScimShot1",32,0,0,0,0)
-	//   goto Charge
-    //   Goto See  
-   Melee:
-       SCIM C 4 BRIGHT A_FaceTarget
-       SCIM A 4 BRIGHT
-       SCIM B 4 BRIGHT A_MeleeAttack
-       SCIM B 0 A_PlaySound ("scimitar/scimihit")
-       Goto See
-   Pain:  
-       SCIM F 6 BRIGHT A_Pain 
-       Goto See 
-   Death: 
-       SCIM G 6 BRIGHT A_Scream
-       SCIM H 6 BRIGHT A_NoBlocking
-       SCIM I 6 BRIGHT
-       SCIM J 6 BRIGHT
-       SCIM K 6 BRIGHT
-       SCIM L -1
-       Stop
-   Charge:
-       SCIM E 0 Bright A_PlaySound("scimitar/scimiatk")
-       SCIM F 4 A_FaceTarget
-	    TNT1 A 0 A_SpawnItem ("BlueFlareMedium", 0, 24)
-       SCIM F 4 A_SkullAttack
-   	    TNT1 A 0 A_SpawnItem ("BlueFlareMedium", 0, 24)
-       SCIM F 4 A_FaceTarget
-		TNT1 A 0 A_SpawnItem ("BlueFlareMedium", 0, 24)
-       SCIM F 4 A_SkullAttack
-   	    TNT1 A 0 A_SpawnItem ("BlueFlareMedium", 0, 24)
-       SCIM F 4 A_FaceTarget
-	    TNT1 A 0 A_SpawnItem ("BlueFlareMedium", 0, 24)
-       SCIM F 4 A_SkullAttack
-       SCIM F 0 A_Stop
-       SCIM F 1
-       Goto See
-   Raise: 
-       SCIM BCA 5 
-       Goto See 
-   } 
-}
-
-
-ACTOR ScimShot1
-{
-   Radius 4
-   Height 8
-   Speed 50
-   Damage 2
-   PROJECTILE
-   Damagetype "Bone"
-   +THRUGHOST
-   +RIPPER
-   DeathSound "weapons/glahit"
-   States
-   {
-   Spawn:
-      RFX1 PPPPPPPP 1 Bright A_SpawnItemEx("ScimTrail1",0,0,0,0,0,0,0,128,0)
-      NULL AAAAAAAA 0 A_SpawnItemEx("ScimShot2",0,0,0,25,random(-6,6),momz+random(-3,3),0,0,0)
-      stop
-   Death:
-      RFX1 L 0 Bright A_SetTranslucent(0.67,1)
-      RFX1 LMNO 4 Bright
-      stop
-   }
-}
-
-ACTOR ScimTrail1
-{   
-   Radius 0
-   Height 1
-   Damage 0
-   Speed 0
-   Scale 0.5
-   PROJECTILE
-   RENDERSTYLE ADD
-   ALPHA 0.50
-   States
-   {
-   Spawn:
-      BONE BCDEFGH 2 Bright
-      Stop 
-   }
-}
-
-ACTOR ScimShot2
-{
-   Radius 2
-   Height 4
-   Speed 35
-   Damage 1
-   PROJECTILE
-   Damagetype "Bone"
-   +THRUGHOST
-   DeathSound "weapons/thornx"
-   States
-   {
-   Spawn:
-      RFX1 A 1 Bright A_SpawnItemEx("ScimTrail2",0,0,0,0,0,0,0,128,0)
-      loop
-   Death:
-      RFX1 G 0 Bright A_SetTranslucent(0.67,1)
-      RFX1 GHIJCDEF 3 Bright
-      stop
-   }
-}
-
-ACTOR ScimTrail2
-{   
-   Radius 1
-   Height 1
-   RENDERSTYLE ADD
-   ALPHA 0.50
-   +NOGRAVITY
-   +NOBLOCKMAP
-   States
-   {
-   Spawn:
-      RFX1 BCDEF 3 Bright
-      Stop 
-   }
-}
-
-ACTOR ScimitarFamiliar
+ACTOR ScimitarCompanion : SwitchableDecoration
 {
 	Game Doom
-	Health 100
+	Health 50
 	Radius 16
 	Height 32
-	Mass 50
-	Speed 35
+	Mass 25
+	Speed 20
 	DeathHeight 4
+	FloatSpeed 3
 	BurnHeight 0
-	Damage (random(50,120))
-	PainChance 255
-	PainChance "Kick", 255
-	damagefactor "GibRemoving", 0.0 damagefactor "HangingHook", 0
-	PainChance "Avoid", 255
-	damagefactor "Fire", 0 damagefactor "sAW", 4.0 damagefactor "Cut", 4.0
 	Monster
+	Species "Marines"
     +NOBLOOD
 	damagefactor "Blood", 0.0 damagefactor "BlueBlood", 0.0 damagefactor "GreenBlood", 0.0
     damagefactor "Fatality", 5.0 damagefactor "PussyGrab", 50.0
@@ -190,162 +20,565 @@ ACTOR ScimitarFamiliar
 	RenderStyle Normal
     bloodcolor none
 	+FLOAT +NOGRAVITY +DONTFALL +NOICEDEATH
+	+FLOATBOB
+	FloatBobPhase -1
 	+FORCEXYBILLBOARD
-	
-   SeeSound "scimitar/scimisee"
-   PainSound "scimitar/scimipai"
-   DeathSound "scimitar/scimidth"
-   Obituary "%o was sliced by a Scimitar."
-
-	DamageType "Cut"
-	//MinMissileChance 50
-	BloodType "LostSoulBlood"
+	-NORADIUSDMG
+	+QUICKTORETALIATE
+    +DONTHURTSPECIES
+    +FIXMAPTHINGPOS 
+	+LOOKALLAROUND
+	+PUSHABLE
+	+SLIDESONWALLS
+	-CANNOTPUSH
+	-COUNTKILL
+	+DONTSPLASH
+	+FIXMAPTHINGPOS
+	+NORADIUSDMG
+	+USESPECIAL
+	+MTHRUSPECIES
+	+THRUSPECIES
+	+NOTAUTOAIMED
+	+SHOOTABLE
+	+NOBLOCKMONST
+    MeleeDamage 25
+    Damage (random(50,120))
+    Damagetype Cut
+	MeleeRange 32
+	Activation THINGSPEC_Activate
 	damagefactor "ExplosiveImpact", 3.0
 	damagefactor "Shrapnel", 3.0
 	damagefactor "Explosives", 3.0
-	Tag "Lost Soul"
-    Alpha 1
-	
-   +DONTHURTSPECIES
-   +FLOAT
-   +NOBLOOD
-   +FRIENDLY
-	Species "Marines"
-
-	
+	DeathSound "Explosion"
+	Tag "Scimitar"
+    Scale 0.8
+	AttackSound "none"
+	//MaxStepHeight 52
+	//MaxDropOffHeight 52
+	ActiveSound "none"
+	damagefactor "Cut", 0.1
+	damagefactor "FriendBullet", 0.0
+    damagefactor "Blood", 0.0    damagefactor "GreenBlood", 0.0    damagefactor "BlueBlood", 0.0    damagefactor "Taunt", 0.0    damagefactor "KillMe", 0.0
+    damagefactor "Blood", 0.0 damagefactor "BlueBlood", 0.0 damagefactor "GreenBlood", 0.0
+    damagefactor "Shrapnel", 0.0
+	damagefactor "SpawnMarine", 0.0
+	DropItem "RifleDrop"
+	//damagefactor "HelperMarineFatallity", 0.0
+	SeeSound "None"
+	Obituary "%o was sliced by a Scimitar."
+	Mass 50
 	States
 	{
-	Pain.Avoid: 
-	  TNT1 A 0
-	  TNT1 A 0 A_Jump(255, "AvoidLeft", "AvoidRight")
-	  Goto AvoidLeft
-	  AvoidLeft:
-	    SCIM A 1 A_FaceTarget
-	    TNT1 A 0 ThrustThing(angle*256/360+192, 15, 0, 0)
-        SCIM A 5 A_FaceTarget
-        Goto Missile
-	AvoidRight:
-	    SCIM A 1 A_FaceTarget
-	    TNT1 A 0 ThrustThing(angle*256/360+64, 15, 0, 0)
-        SCIM A 5 A_FaceTarget
-        Goto Missile
-		
+	
+	Active:
+		SCIM A 3 BRIGHT
+		TNT1 A 0 A_SpawnItemEx ("BlueFlareMedium", 0, 0, 15)
+		SCIM A 3 BRIGHT
+		TNT1 A 0 A_SpawnItemEx ("BlueFlareMedium", 0, 0, 15)
+		TNT1 AAAA 0 A_SpawnItemEx("FreezerTrailSparksSmall", 0, 0, random(15, 25), random(10, 30)*0.1, 0, random(0, 10)*0.1, random(-1,-360), SXF_CLIENTSIDE|SXF_NOCHECKPOSITION)
+		Goto See
+	
 	Spawn:
 		SCIM A 0
-		TNT1 A 0 A_CheckSight("Spawn2")
-		SCIM A 2 BRIGHT A_Look
-		TNT1 A 0 A_SpawnItem ("BlueFlareMedium", 0, 24)
-		//SCIM AA 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-		Loop
+		SCIM A 0 A_PlaySound("FRZIDLE", 6,0.2,1)
+		TNT1 A 0 A_GiveInventory("TargetIsAMarine")
+		SCIM BCA  2 BRIGHT A_Look
+		TNT1 A 0 A_SpawnItemEx ("BlueFlareMedium", 0, 0, 15)
+		TNT1 AAAA 0 A_SpawnItemEx("FreezerTrailSparksSmall", 0, 0, random(15, 25), random(10, 30)*0.1, 0, random(0, -10)*3, random(-1,-360), SXF_CLIENTSIDE|SXF_NOCHECKPOSITION)	
+		Goto See
 		
-    Spawn2:
-		LSOZ AAAAAAAA 10 A_Look
-		TNT1 A 0 A_CheckSight("Spawn2")
-		Goto Spawn
-	See:
-	    TNT1 A 0
-		TNT1 A 0 A_TakeInventory("MaxLostSoulRange", 30)
-		SCIM A 2 BRIGHT A_Chase("", "")
-		//TNT1 A 0 A_JumpIfCloser(160, "Retreat")
-		TNT1 A 0 A_ChangeFlag("NOPAIN", 0)
-		//LSOL A 0 A_CustomMissile ("CoolAndNewFlameTrailsLongAlpha", 24, 0, random (0, 360), 2, random (0, 160))
-		SCIM A 2 BRIGHT A_Chase
-		//TNT1 A 0 A_JumpIfCloser(160, "Retreat")
-	    TNT1 A 0 A_SpawnItem ("BlueFlareMedium", 0, 24)
-		//LSOL A 0 A_CustomMissile ("CoolAndNewFlameTrailsLongAlpha", 24, 0, random (0, 360), 2, random (0, 160))
-     //   SCIM A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-		Loop
-	Retreat:
-		SCIM A 1 A_FaceTarget
-		TNT1 A 0 A_Recoil(3)
-	    TNT1 A 0 A_SpawnItem ("BlueFlareMedium", 0, 24)
-		//LSOL A 0 A_CustomMissile ("CoolAndNewFlameTrailsLongAlpha", 24, 0, random (0, 360), 2, random (0, 160))
-     //   SCIM A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-	    Goto See
+	ForgetTarget:
+		TNT1 A 0 A_ClearTarget
+		Goto See
 	
-	   Charge:
-       SCIM F 2 A_FaceTarget
-	   SCIM A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-       SCIM F 2 A_SkullAttack
-	   SCIM A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-       SCIM F 2 A_FaceTarget
-	   SCIM A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-       SCIM F 2 A_SkullAttack
-	   SCIM A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-       SCIM F 2 A_FaceTarget
-	   SCIM A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-       SCIM F 2 A_SkullAttack
-       SCIM F 0 A_Stop
-       SCIM F 1
-       Goto See
+	See:
+		TNT1 A 0 A_SpawnItemEx ("BlueFlareMedium", 0, 0, 15)
+		TNT1 AAAA 0 A_SpawnItemEx("FreezerTrailSparksSmall", 0, 0, random(15, 25), random(10, 30)*0.1, 0, random(0, -10)*0.3, random(-1,-360), SXF_CLIENTSIDE|SXF_NOCHECKPOSITION)
+		TNT1 A 0 A_ChangeFlag("NODROPOFF", 0)	
+		TNT1 A 0 A_ChangeFLag("FRIENDLY", 1)
+		TNT1 A 0 A_JumpIfInTargetInventory("TargetIsAMarine", 1, "FollowPLayer")//
+		TNT1 A 0 A_ChangeFlag("MISSILEMORE", 1)
+		TNT1 A 0 A_ChangeFlag("MISSILEEVENMORE", 1)
+		TNT1 A 0 A_Recoil(-1)
+		TNT1 A 0 A_JumpIfInTargetInventory("TargetIsAMarine", 1, "FollowPLayer")//
+		SCIM AA 1 BRIGHT A_Chase
+		TNT1 A 0 A_SpawnItemEx("ScimitarTrail", 0, 0, 0, 0, 0, 0, 0,
+                           SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
+		TNT1 A 0 A_SpawnItemEx ("BlueFlareMedium", 0, 0, 15)
+		TNT1 AAAA 0 A_SpawnItemEx("FreezerTrailSparksSmall", 0, 0, random(15, 25), random(10, 30)*0.1, 0, random(0, -10)*0.2, random(-1,-360), SXF_CLIENTSIDE|SXF_NOCHECKPOSITION)
+		TNT1 A 0 A_ChangeFlag("FASTER", 0)
+		TNT1 A 0 A_Recoil(-1)
+		TNT1 A 0 A_JumpIfInTargetInventory("TargetIsAMarine", 1, "FollowPLayer")//
+		SCIM AA 1 BRIGHT A_Chase
+		TNT1 A 0 A_SpawnItemEx("ScimitarTrail", 0, 0, 0, 0, 0, 0, 0,
+                           SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
+		TNT1 A 0 A_Recoil(-1)
+		TNT1 A 0 A_JumpIfInTargetInventory("TargetIsAMarine", 1, "FollowPLayer")//
+		SCIM AA 1 BRIGHT A_Chase
+		TNT1 A 0 A_SpawnItemEx("ScimitarTrail", 0, 0, 0, 0, 0, 0, 0,
+                           SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
+		TNT1 A 0 A_SpawnItemEx ("BlueFlareMedium", 0, 0, 15)
+		TNT1 AAAA 0 A_SpawnItemEx("FreezerTrailSparksSmall", 0, 0, random(15, 25), random(10, 30)*0.1, 0, random(0, -10)*0.2, random(-1,-360), SXF_CLIENTSIDE|SXF_NOCHECKPOSITION)
+		TNT1 A 0 A_ChangeFLag("FRIENDLY", 0)
+		TNT1 A 0 A_Recoil(-1)
+		TNT1 A 0 A_JumpIfInTargetInventory("TargetIsAMarine", 1, "FollowPLayer")//
+		SCIM AA 1 BRIGHT A_Chase
+		TNT1 A 0 A_SpawnItemEx("ScimitarTrail", 0, 0, 0, 0, 0, 0, 0,
+                           SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
+		TNT1 A 0 A_ChangeFLag("FRIENDLY", 1)
+		TNT1 A 0 A_Recoil(-1)
+		TNT1 A 0 A_JumpIfInTargetInventory("TargetIsAMarine", 1, "FollowPLayer")//
+		SCIM AA 1 BRIGHT A_Chase
+		TNT1 A 0 A_SpawnItemEx ("BlueFlareMedium", 0, 0, 15)
+		TNT1 A 0 A_SpawnItemEx("ScimitarTrail", 0, 0, 0, 0, 0, 0, 0,
+                           SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
+		TNT1 AAAA 0 A_SpawnItemEx("FreezerTrailSparksSmall", 0, 0, random(15, 25), random(10, 30)*0.1, 0, random(0, -10)*0.3, random(-1,-360), SXF_CLIENTSIDE|SXF_NOCHECKPOSITION)
+		TNT1 A 0 A_Recoil(-1)
+		TNT1 A 0 A_JumpIfInTargetInventory("TargetIsAMarine", 1, "FollowPLayer")//
+		SCIM AA 1 BRIGHT A_Chase
+		TNT1 A 0 A_SpawnItemEx("ScimitarTrail", 0, 0, 0, 0, 0, 0, 0,
+                           SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
+		TNT1 A 0 A_Recoil(-1)
+		TNT1 A 0 A_JumpIfInTargetInventory("TargetIsAMarine", 1, "FollowPLayer")//
+		SCIM AA 1 BRIGHT A_Chase
+		TNT1 A 0 A_SpawnItemEx ("BlueFlareMedium", 0, 0, 15)
+		TNT1 A 0 A_SpawnItemEx("ScimitarTrail", 0, 0, 0, 0, 0, 0, 0,
+                           SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
+		TNT1 AAAA 0 A_SpawnItemEx("FreezerTrailSparksSmall", 0, 0, random(15, 25), random(10, 30)*0.1, 0, random(0, -10)*0.3, random(-1,-360), SXF_CLIENTSIDE|SXF_NOCHECKPOSITION)
+		TNT1 A 0 A_Recoil(-1)
+		TNT1 A 0 A_CheckSight("ForgetTarget")
+		TNT1 A 0 A_JumpIfInTargetInventory("TargetIsAMarine", 1, "FollowPLayer")//
+		TNT1 A 0 A_CheckSight("FollowPLayer")
+		TNT1 A 0 A_ChangeFLag("FRIENDLY", 0)
+		TNT1 A 0 A_ChangeFlag("SHOOTABLE", 0)
 		
+		SCIM AA 1 BRIGHT A_Chase
+		TNT1 A 0 A_SpawnItemEx("ScimitarTrail", 0, 0, 0, 0, 0, 0, 0,
+                           SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
+		TNT1 A 0 A_Recoil(-1)
+		TNT1 A 0 A_JumpIfCloser(200, "Waits")
+		TNT1 A 0 A_CheckSight("CheckIfPlayerSee")
+		TNT1 A 0 A_SpawnItemEx ("BlueFlareMedium", 0, 0, 15)
+		
+		TNT1 AAAA 0 A_SpawnItemEx("FreezerTrailSparksSmall", 0, 0, random(15, 25), random(10, 30)*0.1, 0, random(0, -10)*0.1, random(-1,-360), SXF_CLIENTSIDE|SXF_NOCHECKPOSITION)
+		
+		SCIM AA 1 BRIGHT A_Chase
+		TNT1 A 0 A_SpawnItemEx("ScimitarTrail", 0, 0, 0, 0, 0, 0, 0,
+                           SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
+		TNT1 A 0 A_Recoil(-1)
+		TNT1 A 0 A_JumpIfInTargetInventory("IsPlayer", 1, "FollowPlayer")
+		TNT1 A 0 A_JumpIfCloser(200, "Waits")
+		TNT1 A 0 A_CheckSight("CheckIfPlayerSee")
+		TNT1 A 0 A_SpawnItemEx ("BlueFlareMedium", 0, 0, 15)
+		
+		TNT1 AAAA 0 A_SpawnItemEx("FreezerTrailSparksSmall", 0, 0, random(15, 25), random(10, 30)*0.1, 0, random(0, -10)*0.2, random(-1,-360), SXF_CLIENTSIDE|SXF_NOCHECKPOSITION)
+		
+		SCIM AA 1 BRIGHT A_Chase
+		TNT1 A 0 A_SpawnItemEx("ScimitarTrail", 0, 0, 0, 0, 0, 0, 0,
+                           SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
+		TNT1 A 0 A_Recoil(-1)
+		TNT1 A 0 A_JumpIfInTargetInventory("IsPlayer", 1, "FollowPlayer")
+		TNT1 A 0 A_JumpIfCloser(200, "Waits")
+		TNT1 A 0 A_CheckSight("CheckIfPlayerSee")
+		TNT1 A 0 A_SpawnItemEx ("BlueFlareMedium", 0, 0, 15)
+		
+		TNT1 AAAA 0 A_SpawnItemEx("FreezerTrailSparksSmall", 0, 0, random(15, 25), random(10, 30)*0.1, 0, random(0, -10)*0.3, random(-1,-360), SXF_CLIENTSIDE|SXF_NOCHECKPOSITION)
+		
+		SCIM AA 1 BRIGHT A_Chase
+		TNT1 A 0 A_Recoil(-1)
+		TNT1 A 0 A_SpawnItemEx("ScimitarTrail", 0, 0, 0, 0, 0, 0, 0,
+                           SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
+		TNT1 A 0 A_JumpIfInTargetInventory("IsPlayer", 1, "FollowPlayer")
+		TNT1 A 0 A_JumpIfCloser(200, "Waits")
+		TNT1 A 0 A_CheckSight("CheckIfPlayerSee")
+		TNT1 A 0 A_SpawnItemEx ("BlueFlareMedium", 0, 0, 15)
+		
+		TNT1 AAAA 0 A_SpawnItemEx("FreezerTrailSparksSmall", 0, 0, random(15, 25), random(10, 30)*0.1, 0, random(0, -10)*0.3, random(-1,-360), SXF_CLIENTSIDE|SXF_NOCHECKPOSITION)
+		
+		
+		TNT1 A 0 A_JumpIfCloser(200, "Waits")
+		TNT1 A 0 A_JumpIfInTargetInventory("IsPlayer", 1, "FollowPlayer")
+		Goto See
+	
+	BecomeEnemy23:
+		SCIM A 1 BRIGHT
+		TNT1 A 0 A_ClearTarget
+		TNT1 A 0 A_ChangeFlag("SHOOTABLE", 0)
+		TNT1 A 0 A_ChangeFLag("FRIENDLY", 0)
+		Goto FollowPlayer	
+	
+	FollowPlayer:
+		TNT1 A 0 A_SpawnItemEx ("BlueFlareMedium", 0, 0, 15)
+		TNT1 A 0 A_SpawnItemEx("FreezerTrailSparksSmall", 0, 0, random(15, 25), random(10, 30)*0.1, 0, random(0, -10)*0.3, random(-1,-360), SXF_CLIENTSIDE|SXF_NOCHECKPOSITION)
+		
+	    TNT1 A 0 A_ChangeFlag("FRIENDLY", 0)
+		//TNT1 A 0 A_ChangeFlag("FASTER", 1)
+		TNT1 A 0 A_ChangeFlag("SHOOTABLE", 0)
+	    TNT1 A 0 A_JumpIfCloser(100, "Waits")
+		TNT1 A 0 A_ChangeFlag("MISSILEMORE", 0)
+		TNT1 A 0 A_ChangeFlag("MISSILEEVENMORE", 0)
+		SCIM A 1 BRIGHT A_Chase
+		TNT1 A 0 A_SpawnItemEx("ScimitarTrail", 0, 0, 0, 0, 0, 0, 0,
+                           SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
+		TNT1 A 0 A_Recoil(-1)
+		TNT1 A 0 A_Recoil(-1)
+		SCIM AA 1 BRIGHT A_Chase
+		TNT1 A 0 A_SpawnItemEx("ScimitarTrail", 0, 0, 0, 0, 0, 0, 0,
+                           SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
+		TNT1 A 0 A_Recoil(-1)
+		SCIM AA 1 BRIGHT A_Chase
+		TNT1 A 0 A_SpawnItemEx("ScimitarTrail", 0, 0, 0, 0, 0, 0, 0,
+                           SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
+		TNT1 A 0 A_Recoil(-1)
+		SCIM AA 1 BRIGHT A_Chase
+		TNT1 A 0 A_SpawnItemEx("ScimitarTrail", 0, 0, 0, 0, 0, 0, 0,
+                           SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
+		TNT1 AAAA 0 A_SpawnItemEx("FreezerTrailSparksSmall", 0, 0, random(15, 25), random(10, 30)*0.1, 0, random(0, -10)*0.2, random(-1,-360), SXF_CLIENTSIDE|SXF_NOCHECKPOSITION)
+		TNT1 A 0 A_Recoil(-1)
+		SCIM AA 1 BRIGHT A_Chase
+		TNT1 A 0 A_SpawnItemEx("ScimitarTrail", 0, 0, 0, 0, 0, 0, 0,
+                           SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
+		TNT1 A 0 A_Recoil(-1)
+		SCIM AA 1 BRIGHT A_Chase
+		TNT1 A 0 A_SpawnItemEx("ScimitarTrail", 0, 0, 0, 0, 0, 0, 0,
+                           SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
+		TNT1 A 0 A_Recoil(-1)
+		SCIM AA 1 BRIGHT A_Chase
+		TNT1 A 0 A_SpawnItemEx("ScimitarTrail", 0, 0, 0, 0, 0, 0, 0,
+                           SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
+		TNT1 A 0 A_Recoil(-1)
+		SCIM AA 1 BRIGHT A_Chase
+		TNT1 A 0 A_SpawnItemEx("ScimitarTrail", 0, 0, 0, 0, 0, 0, 0,
+                           SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
+		TNT1 A 0 A_Recoil(-1)
+		TNT1 A 0 A_SpawnItemEx ("BlueFlareMedium", 0, 0, 15)
+		
+		TNT1 AAAA 0 A_SpawnItemEx("FreezerTrailSparksSmall", 0, 0, random(15, 25), random(10, 30)*0.1, 0, random(0, -10)*0.3, random(-1,-360), SXF_CLIENTSIDE|SXF_NOCHECKPOSITION)
+		TNT1 A 0 A_ChangeFlag("FRIENDLY", 1)
+		TNT1 A 0 A_JumpIfTargetInLOS("See")
+		TNT1 A 0 A_ChangeFlag("FRIENDLY", 0)				
+		TNT1 A 0 A_CheckSight("CheckIfPlayerSee")
+		Loop
+	
+	CheckRangeToWait:
+		TNT1 A 0
+		TNT1 A 0 A_JumpIfCloser(100, "Waits")
+		Goto FollowPLayer
+	
+	CheckIfPlayerSee:
+		TNT1 A 0
+		SCIM AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 0 BRIGHT A_FastChase
+		TNT1 A 0 A_ChangeFlag("SHOOTABLE", 0)
+		TNT1 A 0 A_ChangeFLag("FRIENDLY", 0)
+		////TNT1 A 0 Thing_Hate(94, 0, 0)
+		TNT1 A 0 A_JumpIfCloser(600, 2)
+		Goto Pathfind
+		TNT1 AAA 0
+		Goto FollowPlayer
+	
+	
+	
+	Pathfind:
+		TNT1 A 0
+		TNT1 A 0 A_ChangeFLag("FRIENDLY", 0)
+		TNT1 A 0 A_JumpIFInTargetInventory("IsPLayer", 1, 1)
+		Goto FollowPLayer
+		//TNT1 A 1 A_Chase("", "")
+	TNT1 A 0 A_ChangeFlag("SHOOTABLE", 0)
+		TNT1 A 0 A_ChangeFlag("NOBLOCKMAP", 1)
+		TNT1 A 0 A_ChangeFlag("NOCLIP", 1)
+		TNT1 A 0 A_ChangeFlag("SOLID", 0)
+		TNT1 A 0 A_Noblocking
+		TNT1 A 0 A_SpawnItemEx ("ScimitarPathfinder",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION,0)
+		Stop
+	
+	
+	
+	Waits:
+		TNT1 A 0 A_SpawnItemEx ("BlueFlareMedium", 0, 0, 15)
+		TNT1 AAAA 0 A_SpawnItemEx("FreezerTrailSparksSmall", 0, 0, random(15, 25), random(10, 30)*0.1, 0, random(0, -10)*0.3, random(-1,-360), SXF_CLIENTSIDE|SXF_NOCHECKPOSITION)
+		SCIM A 1 BRIGHT
+		TNT1 A 0 A_JumpIfInTargetInventory("IsPlayer", 1, 2)
+		TNT1 A 0 A_ClearTarget
+		Goto See
+		TNT1 A 0 A_ChangeFlag("FRIENDLY", 0)
+		TNT1 A 0 A_ChangeFlag("MISSILEMORE", 1)
+		TNT1 A 0 A_ChangeFlag("MISSILEEVENMORE", 1)
+		TNT1 A 0 A_ChangeFlag("SHOOTABLE", 0)
+		TNT1 A 0 A_ChangeFlag("SOLID", 0)
+		TNT1 A 0 A_JumpIfInTargetInventory("TargetIsAMarine", 1, "BecomeEnemy23")
+		//TNT1 A 0 A_Jump(32, "Waits2")
+		//TNT1 A 0 A_Jump(32, "Waits3")		
+		SCIM A 8 BRIGHT A_Stop
+		TNT1 A 0 A_SpawnItemEx("ScimitarTrail", 0, 0, 0, 0, 0, 0, 0,
+                           SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
+		TNT1 A 0 A_SpawnItemEx ("BlueFlareMedium", 0, 0, 15)
+		
+		TNT1 AAAA 0 A_SpawnItemEx("FreezerTrailSparksSmall", 0, 0, random(15, 25), random(10, 30)*0.1, 0, random(0, -10)*0.2, random(-1,-360), SXF_CLIENTSIDE|SXF_NOCHECKPOSITION)
+		
+		SCIM A 8 BRIGHT A_Stop
+		TNT1 A 0 A_SpawnItemEx("ScimitarTrail", 0, 0, 0, 0, 0, 0, 0,
+                           SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
+		TNT1 AAAA 0 A_SpawnItemEx("FreezerTrailSparksSmall", 0, 0, random(15, 25), random(10, 30)*0.1, 0, random(0, -10)*0.2, random(-1,-360), SXF_CLIENTSIDE|SXF_NOCHECKPOSITION)
+		TNT1 A 0 A_Stop
+		TNT1 A 0 A_CheckSight("FollowPlayer")
+		TNT1 A 0 A_ChangeFLag("FRIENDLY", 1)
+		TNT1 A 0 A_ClearTarget
+		
+		TNT1 A 0 A_ChangeFlag("SHOOTABLE", 1)
+		SCIM A 8 BRIGHT A_Look
+		TNT1 A 0 A_SpawnItemEx("ScimitarTrail", 0, 0, 0, 0, 0, 0, 0,
+                           SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
+		TNT1 AAAA 0 A_SpawnItemEx("FreezerTrailSparksSmall", 0, 0, random(15, 25), random(10, 30)*0.1, 0, random(0, -10)*0.2, random(-1,-360), SXF_CLIENTSIDE|SXF_NOCHECKPOSITION)
+		TNT1 A 0 A_ChangeFLag("FRIENDLY", 0)
+		TNT1 A 0 A_ChangeFlag("SHOOTABLE", 0)
+		SCIM A 7 BRIGHT A_LookEx(0, 0, 0, 0, 0, "FollowPlayer")
+		TNT1 A 0 A_SpawnItemEx("ScimitarTrail", 0, 0, 0, 0, 0, 0, 0,
+                           SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
+		TNT1 AAAA 0 A_SpawnItemEx("FreezerTrailSparksSmall", 0, 0, random(15, 25), random(10, 30)*0.1, 0, random(0, -10)*0.2, random(-1,-360), SXF_CLIENTSIDE|SXF_NOCHECKPOSITION)
+		TNT1 A 0 A_CheckSIght("FollowPlayer")
+		TNT1 A 0 A_ChangeFlag("SHOOTABLE", 1)
+		TNT1 A 0 A_JumpIfCloser(120, "Waits")
+		Goto FollowPlayer
+	
+	Waits2:
+		TNT1 A 0 A_SetAngle(random(90, -90) + angle)
+		SCIM A 8 BRIGHT A_Stop
+		
+		TNT1 AAAA 0 A_SpawnItemEx("FreezerTrailSparksSmall", 0, 0, random(15, 25), random(10, 30)*0.1, 0, random(0, -10)*0.2, random(-1,-360), SXF_CLIENTSIDE|SXF_NOCHECKPOSITION)
+		TNT1 A 0 
+		SCIM A 8 BRIGHT A_Stop
+		
+		TNT1 AAAA 0 A_SpawnItemEx("FreezerTrailSparksSmall", 0, 0, random(15, 25), random(10, 30)*0.1, 0, random(0, -10)*0.2, random(-1,-360), SXF_CLIENTSIDE|SXF_NOCHECKPOSITION)
+		TNT1 A 0 A_CheckSight("FollowPlayer")
+		TNT1 A 0 A_ChangeFLag("FRIENDLY", 1)
+		TNT1 A 0 A_ClearTarget
+		
+		TNT1 A 0 A_ChangeFlag("SHOOTABLE", 1)
+		SCIM A 0 BRIGHT A_Look
+		TNT1 A 0 A_ChangeFLag("FRIENDLY", 0)
+		TNT1 A 0 A_ChangeFlag("SHOOTABLE", 0)
+		
+		TNT1 AAAA 0 A_SpawnItemEx("FreezerTrailSparksSmall", 0, 0, random(15, 25), random(10, 30)*0.1, 0, random(0, -10)*0.2, random(-1,-360), SXF_CLIENTSIDE|SXF_NOCHECKPOSITION)
+		SCIM A 1 BRIGHT A_LookEx(0, 0, 0, 0, 0, "FollowPlayer")
+		TNT1 A 0 A_CheckSIght("FollowPlayer")
+		TNT1 A 0 A_ChangeFlag("SHOOTABLE", 1)
+		TNT1 A 0 A_JumpIfCloser(200, "Waits")
+		Goto FollowPLayer
+	
+	Waits3:
+		TNT1 A 0
+		TNT1 AAA 0
+		TNT1 A 0 A_SetAngle(random(90, -90) + angle)
+		SCIM A 8 BRIGHT A_Stop
+		
+		TNT1 AAAA 0 A_SpawnItemEx("FreezerTrailSparksSmall", 0, 0, random(15, 25), random(10, 30)*0.1, 0, random(0, -10)*0.2, random(-1,-360), SXF_CLIENTSIDE|SXF_NOCHECKPOSITION)
+		TNT1 A 0 
+		SCIM A 8 BRIGHT A_Stop
+		
+		TNT1 AAAA 0 A_SpawnItemEx("FreezerTrailSparksSmall", 0, 0, random(15, 25), random(10, 30)*0.1, 0, random(0, -10)*0.2, random(-1,-360), SXF_CLIENTSIDE|SXF_NOCHECKPOSITION)
+		TNT1 A 0 A_CheckSight("FollowPlayer")
+		TNT1 A 0 A_ChangeFLag("FRIENDLY", 1)
+		TNT1 A 0 A_ClearTarget
+		
+		TNT1 A 0 A_ChangeFlag("SHOOTABLE", 1)
+		SCIM A 0 BRIGHT A_Look
+		TNT1 A 0 A_ChangeFLag("FRIENDLY", 0)
+		TNT1 A 0 A_ChangeFlag("SHOOTABLE", 0)
+		SCIM A 1 BRIGHT A_LookEx(0, 0, 0, 0, 0, "FollowPlayer")
+		
+		TNT1 AAAA 0 A_SpawnItemEx("FreezerTrailSparksSmall", 0, 0, random(15, 25), random(10, 30)*0.1, 0, random(0, -10)*0.2, random(-1,-360), SXF_CLIENTSIDE|SXF_NOCHECKPOSITION)
+		TNT1 A 0 A_CheckSIght("FollowPlayer")
+		TNT1 A 0 A_ChangeFlag("SHOOTABLE", 1)
+		TNT1 A 0 A_JumpIfCloser(200, "Waits")
+		Goto FollowPLayer
+	
 	Missile:
-		SKUL A 0 BRIGHT A_SpawnItem ("BlueFlare", 0, 24)
-		TNT1 A 0 A_ChangeFlag("NOPAIN", 1)
-		SCIM D 3 BRIGHT A_FaceTarget
-		SKUL A 0 BRIGHT A_SpawnItem ("BlueFlare", 0, 24)
-		SCIM F 0 BRIGHT A_SkullAttack
-       // TNT1 A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-		SCIM FF 2 BRIGHT A_SpawnItem ("BlueFlareMEdium", 0, 24)
-        //TNT1 A 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
-		SCIM FF 2 BRIGHT A_SpawnItem ("BlueFlareMEdium", 0, 24)
-		TNT1 A 0 A_JumpIfInventory("MaxLostSoulRange", 10, "See")
-		TNT1 A 0 A_giveInventory("MaxLostSoulRange", 1)
-		Goto Missile+6
+		TNT1 A 0 A_AlertMonsters 
+		TNT1 A 0 A_JumpIfInTargetInventory("TargetIsAMarine", 1, "FollowPLayer")
+		TNT1 A 0 A_JumpIfInTargetInventory("IsPlayer", 1, "CheckRangeToWait")
+		TNT1 A 0 A_JumpIfTargetInLOS("Charge",180,JLOSF_CLOSENOJUMP | JLOSF_COMBATANTONLY,1200,900)
+		TNT1 A 0 A_JumpIfTargetInLOS("Melee",	0,JLOSF_CLOSENOJUMP | JLOSF_COMBATANTONLY,150)
+		Goto Charge
+	 
+	 Melee:
+		TNT1 A 0 A_JumpIfInTargetInventory("TargetIsAMarine", 1, "FollowPLayer")
+	   SCIM A 2 BRIGHT A_FaceTarget
+       SCIM C 3 BRIGHT A_FaceTarget
+	   TNT1 A 0 A_Recoil (-1)
+       SCIM A 2 BRIGHT A_Recoil (-1)
+	   SCIM B 2 BRIGHT A_Recoil (-1)
+       SCIM F 2 BRIGHT A_CustomMissile("SwordSwing", 0, 0, 0, 8)
+       SCIM F 2 BRIGHT A_CustomMissile("SwordSwing", 0, 0, 0, 8)
+	   SCIM B 0 A_PlaySound ("scimitar/scimihit")
+       Goto FollowPLayer
+	
+	Charge:
+		TNT1 A 0 A_Recoil (-8)
+		TNT1 A 0 A_JumpIfInTargetInventory("TargetIsAMarine", 1, "FollowPLayer")
+       SCIM E 0 Bright A_PlaySound("scimitar/scimiatk")
+       SCIM F 4 BRIGHT A_FaceTarget
+	   TNT1 A 0 A_SpawnItemEx("ScimitarTrailCharge", 0, 0, 0, 0, 0, 0, 0,
+                           SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
+	   	TNT1 A 0 A_Recoil (-8)
+	    TNT1 A 0 A_SpawnItem ("BlueFlareMedium", 0, 24)
+       SCIM F 4 BRIGHT A_CustomMissile("SwordLunge", 0, 0, 0, 0)
+	    TNT1 A 0 A_SpawnItemEx("ScimitarTrailCharge", 0, 0, 0, 0, 0, 0, 0,
+                           SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
+	   	TNT1 A 0 A_Recoil (-8)
+   	    TNT1 A 0 A_SpawnItem ("BlueFlareMedium", 0, 24)
+       SCIM F 4 BRIGHT A_FaceTarget
+	   TNT1 A 0 A_SpawnItemEx("ScimitarTrailCharge", 0, 0, 0, 0, 0, 0, 0,
+                           SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
+	   	TNT1 A 0 A_Recoil (-8)
+		TNT1 A 0 A_SpawnItem ("BlueFlareMedium", 0, 24)
+       SCIM F 4 BRIGHT A_CustomMissile("SwordLunge", 0, 0, 0, 0)
+	   	TNT1 A 0 A_SpawnItemEx("ScimitarTrailCharge", 0, 0, 0, 0, 0, 0, 0,
+                           SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
+	   	TNT1 A 0 A_Recoil (-8)
+   	    TNT1 A 0 A_SpawnItem ("BlueFlareMedium", 0, 24)
+       SCIM F 4 BRIGHT A_FaceTarget
+	    TNT1 A 0 A_SpawnItemEx("ScimitarTrailCharge", 0, 0, 0, 0, 0, 0, 0,
+                           SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
+	   	TNT1 A 0 A_Recoil (-8)
+	    TNT1 A 0 A_SpawnItem ("BlueFlareMedium", 0, 24)
+       SCIM F 4 BRIGHT A_CustomMissile("SwordLunge", 0, 0, 0, 0)
+	   	TNT1 A 0 A_SpawnItemEx("ScimitarTrailCharge", 0, 0, 0, 0, 0, 0, 0,
+                           SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
+	   	TNT1 A 0 A_Recoil (-8)
+       SCIM F 0 BRIGHT A_Stop
+       SCIM F 1 BRIGHT
+       Goto FollowPLayer   
+			
+	Raise: 
+       SCIM BCA 5 
+       Goto FollowPLayer 
+	   
 	Pain:
-        //TNT1 AAA 0 A_CustomMissile ("SoulTrails", 12, 0, random (0, 360), 2, random (0, 160))
-		SCIM F 3 BRIGHT
+        TNT1 AAA 0 A_CustomMissile ("SoulTrails", 12, 0, random (0, 360), 2, random (0, 160))
+		SCIM A 3 BRIGHT
         TNT1 A 0 A_Jump (128, 3)
         Goto Avoid
         TNT1 AAA 0
-        //TNT1 AAA 0 A_CustomMissile ("SoulTrails", 12, 0, random (0, 360), 2, random (0, 160))
-		SCIM F 1 BRIGHT A_Pain
-		Goto See
-
-   Melee:
-       SCIM C 4 BRIGHT A_FaceTarget
-       SCIM AA 2 BRIGHT A_CustomMissile("SwordSlash", 0, 0, 0, 3)
-       SCIM BB 2 BRIGHT A_CustomMissile("SwordSlash", 0, 0, 0, 3)
-       SCIM B 0 A_PlaySound ("scimitar/scimihit")
-       Goto See
+        TNT1 AAA 0 A_CustomMissile ("SoulTrails", 12, 0, random (0, 360), 2, random (0, 160))
+		SCIM A 1 BRIGHT A_Pain
+		Goto FollowPlayer
 
 	Avoid:
          NULL A 0 A_FaceTarget
          SCIM A 6 A_FastChase
+       //FZB1 AA 0 A_CustomMissile ("SoulTrails", 24, 0, random (0, 360), 2, random (0, 160))
 		SCIM A 0 BRIGHT A_SpawnItem ("BlueFlareMedium", 0, 24)
 
          NULL A 0 A_FaceTarget
-         SCIM B 6 BRIGHT A_FastChase
-		SCIM A 0 BRIGHT A_SpawnItem ("BlueFlareMedium", 0, 24)
+         SCIM A 6 BRIGHT A_FastChase
+		 SCIM A 0 BRIGHT A_SpawnItem ("BlueFlareMedium", 0, 24)
 
          NULL A 0 A_FaceTarget
-         SCIM B 6 BRIGHT A_FastChase
-		SCIM A 0 BRIGHT A_SpawnItem ("BlueFlareMedium", 0, 24)
+         SCIM A 6 BRIGHT A_FastChase
+		 SCIM A 0 BRIGHT A_SpawnItem ("BlueFlareMedium", 0, 24)
 
          NULL A 0 A_FaceTarget
-         SCIM B 6 BRIGHT A_FastChase
+        SCIM A 6 BRIGHT A_FastChase
 		SCIM A 0 BRIGHT A_SpawnItem ("BlueFlareMedium", 0, 24)
 
 		Goto Missile
 
-    Death: 
+	Death: 
        SCIM G 6 BRIGHT A_Scream
        SCIM H 6 BRIGHT A_NoBlocking
        SCIM I 6 BRIGHT
        SCIM J 6 BRIGHT
        SCIM K 6 BRIGHT
        SCIM L -1
-
-
-    Pain.KillMe:
-    Pain.Taunt:
-        TNT1 A 0
-		TNT1 A 0 HealThing(1)
-        Goto Missile
-    Death.KillMe:
-    Death.Taunt:
-	    TNT1 A 0 A_ChangeFlag("SOLID", 0)
-        TNT1 A 0 A_SpawnItem("LostSoul")
-        Stop
+       Stop
 	}
+}
+
+ACTOR ScimitarPathfinder
+{
+	Radius 32
+	Height 56
+	Speed 20
+	Health 4000
+	PainChance 255
+	MaxTargetRange 150
+	Monster
+	damagefactor "SpawnMarine", 8000.0
+	MaxDropOffHeight 1200
+	MaxStepHeight 1200
+	-COUNTKILL
+	+NOTARGET
+	+THRUACTORS
+	+MISSILEMORE
+	+MISSILEEVENMORE
+	+FASTER
+    +DONTSPLASH
+	-SHOOTABLE
+	-FRIENDLY
+	+NOCLIP
+	+LOOKALLAROUND
+	+NOINFIGHTING
+	States
+	{
+	Spawn:
+	Pain:
+    See:
+		TNT1 A 0 A_ChangeFlag("FRIENDLY", 0)
+		TNT1 A 0 A_ChangeFlag("NOCLIP", 1)
+		//TNT1 A 0 Thing_ChangeTID(0,98)
+		//TNT1 A 0 Thing_Hate(98, 0, 0)
+		TNT1 A 0
+		TNT1 A 0 A_GiveInventory("TargetIsAMarine", 1)
+		TNT1 AAAAA 1 A_Chase
+		//TNT1 A 0 Thing_Hate(98, 0, 0)
+		TNT1 A 0
+		TNT1 A 0 A_GiveInventory("TargetIsAMarine", 1)
+		TNT1 A 1 A_FaceTarget
+		Loop
+
+	Missile:
+	    TNT1 A 0
+		TNT1 A 0 A_ChangeFlag("NOCLIP", 0)
+	    TNT1 A 0 A_Recoil(-4)
+		TNT1 A 1
+		TNT1 A 0 A_JumpIf(momx == 0, "CheckAgain")
+	SpawnMarine:	
+		TNT1 A 0 A_Scream
+		TNT1 A 0 A_NoBlocking
+		TNT1 A 0 A_SpawnItemEx("ScimitarCompanion",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION,0)
+		Stop
+	CheckAgain:
+		TNT1 A 0
+		TNT1 A 0 A_JumpIF(momy == 0, "See")
+		Goto SpawnMarine
+	}
+}
+
+ACTOR ScimitarTrail
+{
+  RenderStyle "Add"
+  Scale 0.7
+  +NOINTERACTION
+  States
+  {
+  Spawn:
+    TNT1 A 1
+    SCIM A 1 Bright A_FadeOut(0.25)
+    Wait
+  }
+}
+
+ACTOR ScimitarTrailCharge
+{
+  RenderStyle "Add"
+  Scale 0.7
+  +NOINTERACTION
+  States
+  {
+  Spawn:
+    TNT1 A 1
+    SCIM F 1 Bright A_FadeOut(0.25)
+    Wait
+  }
 }

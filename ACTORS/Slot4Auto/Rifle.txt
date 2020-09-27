@@ -456,6 +456,7 @@ ACTOR Rifle : BrutalWeapon
 		
 	TurboReload:
 		"####" A 0 A_Takeinventory("HasUnloaded",1)
+		"####" A 0 A_JumpIfInventory("RifleAmmo", 30, "FinishReload")
 		"####" A 0 A_JumpIfInventory("Clip2",1,"RefillTo30")
 		Goto Ready
 	

@@ -1215,12 +1215,12 @@ ACTOR RifleZombie //Replaces ZombieMan
 		TNT1 A 0 A_JumpIfInTargetInventory("HeavyStrikeUpward", 1, "HeavyHead")
 		TNT1 A 0 A_CustomMissile ("XDeathZombieManHeadBeheaded", 50, 0, random (0, 360), 2, random (50, 90))	
   	    ZMAD B 0 A_XScream
-		
+		TNT1 A 0 A_GiveToTarget("rage",10)
 		ZMAD C 0 A_NoBlocking
 		TNT1 A 0 A_FaceTarget
 		TNT1 A 0 A_GiveToTarget("SoulAmmo", 10)
 		TNT1 AAA 0 A_CustomMissile ("BloodMistBig", 50, 0, random (0, 360), 2, random (30, 90))
-		ZZD6 A 6
+		ZZD6 A 6 A_NoBlocking
 		TNT1 A 0 A_SpawnItemEx ("Zombiemanfallingbeheaded",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION,0)
 		TNT1 A -1
 		ZMAD E 0

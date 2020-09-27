@@ -365,7 +365,19 @@ states
 	}
 }
 
-
+Actor BlackSunFlare : Flare_General
+{
+alpha 0.8
+yscale 7
+xscale 7
+states
+	{
+	Spawn:
+	    LEYS O 90 BRIGHT
+		LEYS ooooooooooooooooooooooooOOOOOOOOOOOOOOOOO 2 BRIGHT a_fADEouT(0.02)
+		Stop
+	}
+}
 
 Actor BFGBigFlare : Flare_General
 {

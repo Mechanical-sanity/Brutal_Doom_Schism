@@ -401,7 +401,7 @@ ACTOR Frostmancy : BrutalWeapon
 		TNT1 A 0 A_FireCustomMissile("BlueFlareSpawn",15,0,0,0)
 		TNT1 A 0 A_TakeInventory("BrutalGreenMana",1)
 		TNT1 A 0 A_GiveInventory("PowerChargeFrost",1)
-		TNT1 A 0 A_SetAngle(random(0.6, -0.6) + angle)
+		TNT1 A 0 A_SetAngle(frandom(0.6, -0.6) + angle)
 		F5CH U 1 BRIGHT 
 		F6CH U 1 BRIGHT 
 		TNT1 A 0 A_FireCustomMissile("BlueFlareSpawn",15,0,0,0)
@@ -413,7 +413,7 @@ ACTOR Frostmancy : BrutalWeapon
 		TNT1 A 0 A_FireCustomMissile("BlueFlareSpawn",15,0,0,0)
 		TNT1 A 0 A_TakeInventory("BrutalGreenMana",1)
 		TNT1 A 0 A_GiveInventory("PowerChargeFrost",1)
-		TNT1 A 0 A_SetAngle(random(0.6, -0.6) + angle)		
+		TNT1 A 0 A_SetAngle(frandom(0.6, -0.6) + angle)		
 		F6CH U 1 BRIGHT 
 		F4CH U 1 BRIGHT 
 		TNT1 A 0 A_FireCustomMissile("BlueFlareSpawn",15,0,0,0)
@@ -424,7 +424,7 @@ ACTOR Frostmancy : BrutalWeapon
 		F5CH U 1 BRIGHT 
 		F6CH U 1 BRIGHT 
 		TNT1 A 0 A_FireCustomMissile("BlueFlareSpawn",15,0,0,0)
-		TNT1 A 0 A_SetAngle(random(0.6, -0.6) + angle)
+		TNT1 A 0 A_SetAngle(frandom(0.6, -0.6) + angle)
 		TNT1 A 0 A_ReFire("Hold5")
 		Goto Discharge
 	
@@ -452,7 +452,7 @@ ACTOR Frostmancy : BrutalWeapon
 		TNT1 A 0 A_TakeInventory("BrutalGreenMana",1)
 		TNT1 A 0 A_GiveInventory("PowerChargeFrost",1)
 		TNT1 A 0 A_JumpIfInventory("FiredSecondary", 1, "CastInfernalOnager")
-		TNT1 A 0 A_SetAngle(random(0.6, -0.6) + angle)
+		TNT1 A 0 A_SetAngle(frandom(0.6, -0.6) + angle)
 		FZS2 L 2 BRIGHT 
 		TNT1 A 0 A_FireCustomMissile("BlueFlareSpawn",15,0,0,0)
 		TNT1 A 0 A_TakeInventory("BrutalGreenMana",1)
@@ -464,7 +464,7 @@ ACTOR Frostmancy : BrutalWeapon
 		TNT1 A 0 A_TakeInventory("BrutalGreenMana",1)
 		TNT1 A 0 A_GiveInventory("PowerChargeFrost",1)
 		TNT1 A 0 A_JumpIfInventory("FiredSecondary", 1, "CastInfernalOnager")
-		TNT1 A 0 A_SetAngle(random(0.6, -0.6) + angle)		
+		TNT1 A 0 A_SetAngle(frandom(0.6, -0.6) + angle)		
 		FZS2 N 2 BRIGHT 
 		TNT1 A 0 A_FireCustomMissile("BlueFlareSpawn",15,0,0,0)
 		TNT1 A 0 A_TakeInventory("BrutalGreenMana",1)
@@ -474,7 +474,7 @@ ACTOR Frostmancy : BrutalWeapon
 		TNT1 A 0 A_FireCustomMissile("ShakeYourAss", 0, 0, 0, 0)
 		FZS2 O 2 BRIGHT 
 		TNT1 A 0 A_FireCustomMissile("BlueFlareSpawn",15,0,0,0)
-		TNT1 A 0 A_SetAngle(random(0.6, -0.6) + angle)
+		TNT1 A 0 A_SetAngle(frandom(0.6, -0.6) + angle)
 		TNT1 A 0 A_ReFire("IceOrbCharge")
 		Goto CastInfernalOnager
 		

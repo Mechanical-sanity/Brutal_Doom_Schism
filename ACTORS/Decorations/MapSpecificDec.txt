@@ -972,18 +972,6 @@ YScale 0.5
 +DONTFALL
 +NOTAUTOAIMED
 damagefactor "Bullet", 10.0 damagefactor "Shotgun", 10.0 damagefactor "Minigun", 10.0 
-damagefactor "Avoid", 0.0
-	damagefactor "Blood", 0.0    damagefactor "BlueBlood", 0.0    damagefactor "GreenBlood", 0.0  damagefactor "Water", 0.0
-	damagefactor "RevenantHitStomach", 0.0
-	damagefactor "Head", 0.0	damagefactor "FriendBullet", 0.0    damagefactor "Taunt", 0.0    damagefactor "KillMe", 0.0
-	damagefactor "CancelTeleportFog", 0.0	damagefactor "BHFTOnBarrel", 0.0	damagefactor "GibRemoving", 0.0
-	damagefactor "SpawnMarine", 0.0	damagefactor "TeleportRemover", 0.0	damagefactor "MinorHead", 0.0
-	damagefactor "Decaptate", 0.0	damagefactor "MonsterKnocked", 0.0
-	DamageFactor "CauseSplash", 0.0 DamageFactor "CauseObjectsToSplashSlime", 0.0 DamageFactor "CauseObjectsToSplashNukage", 0.0
-	DamageFactor "CauseObjectsToSplashBlood", 0.0 DamageFactor "CauseObjectsToSplashLava", 0.0
-	damagefactor "HelperMarineFatallity", 0.0	damagefactor "Leg", 0.0	DamageFactor "KillMeBot", 0.0
-	damagefactor "Avoid", 0.0    damagefactor "Stealth", 0.0
-    damagefactor "KillMe", 0.0 damagefactor "Trample", 0.0
 Health 60
 Mass 999999
 Renderstyle Add
@@ -1001,8 +989,7 @@ States
 		TNT1 A 0 A_KillChildren
 		XXX1 B 0 A_SpawnItemEx("DestroyedCeilLamp", 0, 0, 0, 0, 0, 0, 0)//random (0, 360))
 		Stop
-}
-}
+}}
 
 Actor SmallRedLightBtmm
 {
@@ -1012,18 +999,6 @@ Actor SmallRedLightBtmm
 +NOTAUTOAIMED
 Health 5000
 Mass 99999
-damagefactor "Avoid", 0.0
-	damagefactor "Blood", 0.0    damagefactor "BlueBlood", 0.0    damagefactor "GreenBlood", 0.0  damagefactor "Water", 0.0
-	damagefactor "RevenantHitStomach", 0.0
-	damagefactor "Head", 0.0	damagefactor "FriendBullet", 0.0    damagefactor "Taunt", 0.0    damagefactor "KillMe", 0.0
-	damagefactor "CancelTeleportFog", 0.0	damagefactor "BHFTOnBarrel", 0.0	damagefactor "GibRemoving", 0.0
-	damagefactor "SpawnMarine", 0.0	damagefactor "TeleportRemover", 0.0	damagefactor "MinorHead", 0.0
-	damagefactor "Decaptate", 0.0	damagefactor "MonsterKnocked", 0.0
-	DamageFactor "CauseSplash", 0.0 DamageFactor "CauseObjectsToSplashSlime", 0.0 DamageFactor "CauseObjectsToSplashNukage", 0.0
-	DamageFactor "CauseObjectsToSplashBlood", 0.0 DamageFactor "CauseObjectsToSplashLava", 0.0
-	damagefactor "HelperMarineFatallity", 0.0	damagefactor "Leg", 0.0	DamageFactor "KillMeBot", 0.0
-	damagefactor "Avoid", 0.0    damagefactor "Stealth", 0.0
-    damagefactor "KillMe", 0.0 damagefactor "Trample", 0.0
 DamageFactor "RemoveLampBr", 99999.0
 States
 	{
@@ -1036,6 +1011,7 @@ States
 			XXX1 A 1
 			Stop	
 }		}
+
 
 Actor RemoveLampBr
 {
@@ -3785,9 +3761,10 @@ Scale 0.6
 DropItem "HealthPlus" 128
 DropItem "ArmorShard" 128
 DropItem "Stimpack" 128
-DropItem "Clips" 128
-DropItem "CLIP1Drop" 128
-DropItem "Shells" 128
+//DropItem "CLIP1Drop" 128
+//DropItem "Clips" 128
+//DropItem "Shells" 128
+
 states
 	{
 	Spawn:

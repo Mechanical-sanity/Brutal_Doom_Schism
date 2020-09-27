@@ -1,0 +1,560 @@
+
+ACTOR WerecatCompanion: SwitchableDecoration
+{
+	Game Doom
+	Radius 16
+	MaxTargetRange 2000
+	MeleeThreshold 50
+	damagefactor "Avoid", 0.0
+	Height 54
+    Speed 4
+	FastSpeed 4
+    Health 500
+	PainChance 25
+	PainChance "Saw", 150
+	PainChance "Cut", 240
+	PainChance "Minor", 200 //It means that pistols and SMG will cause pain VERY OFTEN! *evil laugh*
+	PainChance "Kick", 255 PainChance "Leg", 255
+	PainChance "LowKick", 200 PainChance "HangingHook", 0
+	PainChance "Stun", 125
+	PainChance "Freeze", 255
+	PainChance "Kick", 255
+	PainChance "Explosive", 255
+	DamageType Lightning
+	Monster
+	Species "Marines"
+	Scale 0.7
+	+FLOORCLIP
+	-NORADIUSDMG
+	+QUICKTORETALIATE
+    +DONTHURTSPECIES
+    +FIXMAPTHINGPOS 
+	+LOOKALLAROUND
+	+PUSHABLE
+	+SLIDESONWALLS
+	-CANNOTPUSH
+	-COUNTKILL
+	+DONTSPLASH
+	+FIXMAPTHINGPOS
+	+NORADIUSDMG
+	+USESPECIAL
+	+MTHRUSPECIES
+	+THRUSPECIES
+	+DONTHURTSPECIES
+	+NOTAUTOAIMED
+	+SHOOTABLE
+	+NOBLOCKMONST
+	+FLOAT +NOGRAVITY +DONTFALL 
+	+FLOATBOB
+	FloatSpeed 3
+	FloatBobPhase -1
+	Activation THINGSPEC_Activate
+	DamageFactor "CauseSplash", 0.0 DamageFactor "CauseObjectsToSplashSlime", 0.0 DamageFactor "CauseSplashNukage", 0.0 DamageFactor "CauseSplashBlood", 0.0 DamageFactor "CauseSplashLava", 0.0
+	damagefactor "TeleportRemover", 0.0
+	damagefactor "GibRemoving", 0.0
+	damagefactor "Leg", 0.0
+	damagefactor "Shotgun", 1.0
+	damagefactor "Minigun", 1.0
+	damagefactor "SSG", 1.0
+	damagefactor "Trample", 0.0
+	damagefactor "bullet", 1.0
+	damagefactor "Minigun", 1.0
+	damagefactor "shotgun", 1.0
+	damagefactor "InstakillMarines", 40.0
+	damagefactor "Desintegrate", 1.0
+	damagefactor "ExplosiveImpact", 1.0
+	damagefactor "Fatality", 0.0
+	AttackSound "none"
+	MaxStepHeight 52
+	MaxDropOffHeight 52
+	ActiveSound "none"
+	damagefactor "Cut", 1.0
+    BloodType "Brutal_Blood", "BloodSPlatterReplacer", "SawBlood"
+	damagefactor "FriendBullet", 0.0
+    damagefactor "Blood", 0.0    damagefactor "GreenBlood", 0.0    damagefactor "BlueBlood", 0.0    damagefactor "Taunt", 0.0    damagefactor "KillMe", 0.0
+	DeathSound "Cast/Supermagic"
+	PainSound "KNIGHT/PAIN"
+    damagefactor "Blood", 0.0 damagefactor "BlueBlood", 0.0 damagefactor "GreenBlood", 0.0
+    damagefactor "Shrapnel", 1.0
+	damagefactor "SpawnMarine", 0.0
+	DropItem "RuneAmmo", 2
+	damagefactor "HelperMarineFatallity", 0.0
+	SeeSound "None"
+	Obituary "%o has been unwelcomed by a Werecat."
+	Mass 300
+	Tag "Werecat"
+	States
+	{
+	
+	Active:
+		//TNT1 A 0 A_ChangeFlag("NOBLOCKMAP", 1)
+		TNT1 A 0 A_PlaySound("MINACT2", 2)
+		//TNT1 A 0 A_CustomMissile ("OrderTitle2", 50, 0, 0, 2, 90)
+		HLGD AABBCCDD 2
+		TNT1 A 0 A_ChangeFlag("NOBLOCKMAP", 1)
+		Goto See
+		
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_GiveInventory("TargetIsAMarine")
+		MINT A 1 A_Look
+		Goto See
+	
+	ForgetTarget:
+		TNT1 A 0 A_ClearTarget
+		Goto See
+	
+	See:
+		TNT1 A 0 A_GiveInventory("TargetIsAMarine")
+		TNT1 A 0 A_ChangeFlag("NODROPOFF", 0)	
+		TNT1 A 0 A_ChangeFLag("FRIENDLY", 1)
+		TNT1 A 0 A_JumpIfInTargetInventory("TargetIsAMarine", 1, "FollowPLayer")//
+		TNT1 A 0 A_ChangeFlag("MISSILEMORE", 1)
+		TNT1 A 0 A_ChangeFlag("MISSILEEVENMORE", 1)
+		TNT1 A 0 A_AlertMonsters
+		TNT1 A 0 A_JumpIfInTargetInventory("TargetIsAMarine", 1, "FollowPLayer")//
+		
+		HLGD BBB 1 A_Chase
+		TNT1 AAA 0 A_SpawnItemEx ("TrailSparksSmallDown", random(-10,10), random(-10,10), 0, 0, 0,0)
+		TNT1 A 0 //A_ChangeFlag("FASTER", 0)
+		TNT1 A 0 A_Recoil(-1)
+		TNT1 A 0 A_JumpIfInTargetInventory("TargetIsAMarine", 1, "FollowPLayer")//
+		
+		HLGD BBB 1 A_Chase
+		TNT1 AAA 0 A_SpawnItemEx ("TrailSparksSmallDown", random(-10,10), random(-10,10), 0, 0, 0,0)
+		TNT1 A 0 A_Recoil(-1)
+		TNT1 A 0 A_JumpIfInTargetInventory("TargetIsAMarine", 1, "FollowPLayer")//
+		
+		HLGD BBB 1 A_Chase
+		TNT1 AAA 0 A_SpawnItemEx ("TrailSparksSmallDown", random(-10,10), random(-10,10), 0, 0, 0,0)
+		TNT1 A 0 A_ChangeFLag("FRIENDLY", 0)
+		TNT1 A 0 A_Recoil(-1)
+		TNT1 A 0 A_JumpIfInTargetInventory("TargetIsAMarine", 1, "FollowPLayer")//
+		TNT1 A 0 A_SpawnItemEx("WerecatTrailCharge", -5, 0, 0, 0, 0, 0, 0,
+                           SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
+		HLGD BBB 1 A_Chase
+		TNT1 A 0 A_ChangeFLag("FRIENDLY", 1)
+		TNT1 A 0 A_Recoil(-1)
+		TNT1 A 0 A_JumpIfInTargetInventory("TargetIsAMarine", 1, "FollowPLayer")//
+		
+		HLGD BBB 1 A_Chase
+		TNT1 AAA 0 A_SpawnItemEx ("TrailSparksSmallDown", random(-10,10), random(-10,10), 0, 0, 0,0)
+		TNT1 A 0 //A_ChangeFlag("FASTER", 0)
+		TNT1 A 0 A_Recoil(-1)
+		TNT1 A 0 A_JumpIfInTargetInventory("TargetIsAMarine", 1, "FollowPLayer")//
+		TNT1 A 0 A_SpawnItemEx("WerecatTrailCharge", -5, 0, 0, 0, 0, 0, 0,
+                           SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
+		HLGD BBB 1 A_Chase
+		TNT1 A 0 A_Recoil(-1)
+		TNT1 A 0 A_JumpIfInTargetInventory("TargetIsAMarine", 1, "FollowPLayer")//
+		
+		HLGD BBB 1 A_Chase
+		TNT1 AAA 0 A_SpawnItemEx ("TrailSparksSmallDown", random(-10,10), random(-10,10), 0, 0, 0,0)
+		TNT1 A 0 A_ChangeFLag("FRIENDLY", 0)
+		TNT1 A 0 A_Recoil(-1)
+		TNT1 A 0 A_JumpIfInTargetInventory("TargetIsAMarine", 1, "FollowPLayer")//
+
+		HLGD BBB 1 A_Chase
+		TNT1 AAA 0 A_SpawnItemEx ("TrailSparksSmallDown", random(-10,10), random(-10,10), 0, 0, 0,0)
+		TNT1 A 0 A_ChangeFLag("FRIENDLY", 1)
+		TNT1 A 0 A_Recoil(-1)
+		TNT1 A 0 A_JumpIfInTargetInventory("TargetIsAMarine", 1, "FollowPLayer")//
+		TNT1 A 0 A_SpawnItemEx("WerecatTrailCharge", -5, 0, 0, 0, 0, 0, 0,
+                           SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
+		Goto See
+		
+	BecomeEnemy23:
+		MINT A 1
+		TNT1 A 0 A_ClearTarget
+		//TNT1 A 0 A_ChangeFlag("SHOOTABLE", 0)
+		TNT1 A 0 A_ChangeFLag("FRIENDLY", 0)
+		Goto FollowPlayer
+		
+	FollowPlayer:
+	    TNT1 A 0 A_ChangeFlag("FRIENDLY", 0)
+		//TNT1 A 0 A_ChangeFlag("FASTER", 1)
+		//TNT1 A 0 A_ChangeFlag("SHOOTABLE", 0)
+	    TNT1 A 0 A_JumpIfCloser(200, "Waits")
+		TNT1 A 0 A_ChangeFlag("MISSILEMORE", 0)
+		TNT1 A 0 A_ChangeFlag("MISSILEEVENMORE", 0)
+	Followplayer1:
+		TNT1 A 0 A_ChangeFlag("FRIENDLY", 0)
+		//TNT1 A 0 A_ChangeFlag("FASTER", 1)
+		//TNT1 A 0 A_ChangeFlag("SHOOTABLE", 0)
+	    TNT1 A 0 A_JumpIfCloser(200, "Waits")
+		TNT1 A 0 A_ChangeFlag("MISSILEMORE", 0)
+		TNT1 A 0 A_ChangeFlag("MISSILEEVENMORE", 0)
+		TNT1 A 0 A_SpawnItemEx("WerecatTrailCharge", -5, 0, 0, 0, 0, 0, 0,
+                           SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
+		HLGD BBB 1 A_Chase
+		TNT1 AAA 0 A_SpawnItemEx ("TrailSparksSmallDown", random(-10,10), random(-10,10), 0, 0, 0,0)
+		TNT1 A 0 A_Recoil(-1)
+
+
+		HLGD BBB 1 A_Chase
+		TNT1 AAA 0 A_SpawnItemEx ("TrailSparksSmallDown", random(-10,10), random(-10,10), 0, 0, 0,0)
+		TNT1 A 0 A_Recoil(-1)
+
+
+		HLGD BBB 1 A_Chase
+		TNT1 AAA 0 A_SpawnItemEx ("TrailSparksSmallDown", random(-10,10), random(-10,10), 0, 0, 0,0)
+		TNT1 A 0 A_Recoil(-1)
+		TNT1 A 0 A_Recoil(-1)
+		TNT1 A 0 A_SpawnItemEx("WerecatTrailCharge", -5, 0, 0, 0, 0, 0, 0,
+                           SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
+		HLGD BBB 1 A_Chase
+		TNT1 AAA 0 A_SpawnItemEx ("TrailSparksSmallDown", random(-10,10), random(-10,10), 0, 0, 0,0)
+		HLGD BBB 1 A_Chase
+		TNT1 AAA 0 A_SpawnItemEx ("TrailSparksSmallDown", random(-10,10), random(-10,10), 0, 0, 0,0)
+		TNT1 A 0 A_Recoil(-1)
+
+		HLGD BBB 1 A_Chase
+		TNT1 AAA 0 A_SpawnItemEx ("TrailSparksSmallDown", random(-10,10), random(-10,10), 0, 0, 0,0)
+		TNT1 A 0 A_Recoil(-1)
+		TNT1 A 0 A_SpawnItemEx("WerecatTrailCharge", -5, 0, 0, 0, 0, 0, 0,
+                           SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
+		TNT1 A 0 A_ChangeFlag("FRIENDLY", 1)
+		TNT1 A 0 A_JumpIfTargetInLOS("See")
+		TNT1 A 0 A_ChangeFlag("FRIENDLY", 0)
+		TNT1 A 0 A_CheckSight("CheckIfPlayerSee")
+		Loop
+	
+	CheckRangeToWait:
+		TNT1 A 0
+		TNT1 A 0 A_JumpIfCloser(200, "Waits")
+		Goto FollowPLayer
+		
+	CheckIfPlayerSee:
+		TNT1 A 0 A_JumpIfTargetInLOS(2,360,JLOSF_TARGETLOS)
+		TNT1 A 0 A_JumpIfCloser(600,1)
+		goto TeleportToPlayer	
+		Goto FollowPlayer
+		/*
+		TNT1 A 0
+		MINT AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 0 A_FastChase
+		//TNT1 A 0 A_ChangeFlag("SHOOTABLE", 0)
+		TNT1 A 0 A_ChangeFLag("FRIENDLY", 0)
+		////TNT1 A 0 Thing_Hate(94, 0, 0)
+		TNT1 A 0 A_JumpIfCloser(800, 2)
+		Goto Pathfind
+		TNT1 AAA 0
+		Goto FollowPlayer
+	*/
+	
+	
+	Pathfind:
+		TNT1 A 0
+		TNT1 A 0 A_ChangeFLag("FRIENDLY", 0)
+		TNT1 A 0 A_JumpIFInTargetInventory("IsPLayer", 1, 1)
+		Goto FollowPLayer
+		//TNT1 A 1 A_Chase("", "")
+	//TNT1 A 0 A_ChangeFlag("SHOOTABLE", 0)
+		TNT1 A 0 A_ChangeFlag("NOBLOCKMAP", 1)
+		TNT1 A 0 A_ChangeFlag("NOCLIP", 1)
+		TNT1 A 0 A_ChangeFlag("SOLID", 0)
+		TNT1 A 0 A_Noblocking
+		TNT1 A 0 A_SpawnItemEx ("WerecatPathfinder",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION,0)
+		Stop
+	
+	
+	
+	Waits:
+		HLGD B 1
+		TNT1 A 0 A_SpawnItemEx("WerecatTrailCharge", -5, 0, 0, 0, 0, 0, 0,
+                           SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
+		TNT1 A 0
+		TNT1 A 0 A_JumpIfInTargetInventory("IsPlayer", 1, 2)
+		TNT1 A 0 A_ClearTarget
+		Goto See
+		TNT1 A 0 A_ChangeFlag("FRIENDLY", 0)
+		TNT1 A 0 A_ChangeFlag("MISSILEMORE", 1)
+		TNT1 A 0 A_ChangeFlag("MISSILEEVENMORE", 1)
+		//TNT1 A 0 A_ChangeFlag("SHOOTABLE", 0)
+		//TNT1 A 0 A_ChangeFlag("SOLID", 0)
+		TNT1 A 0 A_JumpIfInTargetInventory("TargetIsAMarine", 1, "BecomeEnemy23")
+		TNT1 A 0 A_Jump(32, "Waits2")
+		TNT1 A 0 A_Jump(32, "Waits3")
+		HLGD BBBB 2 A_SpawnItemEx ("TrailSparksSmallDown", random(-10,10), random(-10,10), 0, 0, 0,0)
+		TNT1 A 0 A_Stop
+		TNT1 A 0 A_SpawnItemEx("WerecatTrailCharge", -5, 0, 0, 0, 0, 0, 0,
+                           SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
+		HLGD BBBB 2 A_SpawnItemEx ("TrailSparksSmallDown", random(-10,10), random(-10,10), 0, 0, 0,0)
+		TNT1 A 0 A_Stop
+		TNT1 A 0 A_SpawnItemEx("WerecatTrailCharge", -5, 0, 0, 0, 0, 0, 0,
+                           SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
+		TNT1 A 0 A_CheckSight("FollowPlayer")
+		TNT1 A 0 A_ChangeFLag("FRIENDLY", 1)
+		TNT1 A 0 A_ClearTarget
+		TNT1 A 0 A_ChangeFlag("SHOOTABLE", 1)
+		HLGD B 0 A_Look
+		TNT1 A 0 A_SpawnItemEx("WerecatTrailCharge", -5, 0, 0, 0, 0, 0, 0,
+                           SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
+		TNT1 A 0 A_ChangeFLag("FRIENDLY", 0)
+		//TNT1 A 0 A_ChangeFlag("SHOOTABLE", 0)
+		HLGD B 1 A_LookEx(0, 0, 0, 0, 0, "FollowPlayer")
+		TNT1 A 0 A_SpawnItemEx ("TrailSparksSmallDown", random(-10,10), random(-10,10), 0, 0, 0,0)
+		TNT1 A 0 A_SpawnItemEx("WerecatTrailCharge", -5, 0, 0, 0, 0, 0, 0,
+                           SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
+		TNT1 A 0 A_CheckSIght("FollowPlayer")
+		TNT1 A 0 A_ChangeFlag("SHOOTABLE", 1)
+		TNT1 A 0 A_JumpIfCloser(200, "Waits")
+		Goto FollowPlayer
+	
+	Waits2:
+		TNT1 A 0
+		TNT1 A 0 A_SetAngle(random(90, -90) + angle)
+		HLGD BBBB 2 A_SpawnItemEx ("TrailSparksSmallDown", random(-10,10), random(-10,10), 0, 0, 0,0)
+		TNT1 A 0 A_Stop	
+		TNT1 A 0 A_SpawnItemEx("WerecatTrailCharge", -5, 0, 0, 0, 0, 0, 0,
+                           SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
+		HLGD BBBB 2 A_SpawnItemEx ("TrailSparksSmallDown", random(-10,10), random(-10,10), 0, 0, 0,0)
+		TNT1 A 0 A_Stop
+		TNT1 A 0 A_SpawnItemEx("WerecatTrailCharge", -5, 0, 0, 0, 0, 0, 0,
+                           SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
+		TNT1 A 0 A_CheckSight("FollowPlayer")
+		TNT1 A 0 A_ChangeFLag("FRIENDLY", 1)
+		TNT1 A 0 A_ClearTarget
+		TNT1 A 0 A_ChangeFlag("SHOOTABLE", 1)
+		HLGD A 0 A_Look
+		TNT1 A 0 A_ChangeFLag("FRIENDLY", 0)
+		//TNT1 A 0 A_ChangeFlag("SHOOTABLE", 0)
+		HLGD B 1 A_LookEx(0, 0, 0, 0, 0, "FollowPlayer")
+		TNT1 A 0 A_CheckSIght("FollowPlayer")
+		TNT1 A 0 A_ChangeFlag("SHOOTABLE", 1)
+		TNT1 A 0 A_JumpIfCloser(200, "Waits")
+		Goto FollowPLayer
+	
+	Waits3:
+			TNT1 A 0
+			TNT1 AAA 0
+			TNT1 A 0 A_SetAngle(random(90, -90) + angle)
+			HLGD BBBB 3 A_SpawnItemEx ("TrailSparksSmallDown", random(-10,10), random(-10,10), 0, 0, 0,0)
+			TNT1 A 0 A_Stop
+			TNT1 A 0 A_SpawnItemEx("WerecatTrailCharge", -5, 0, 0, 0, 0, 0, 0,
+                           SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
+			HLGD BBBB 2 A_SpawnItemEx ("TrailSparksSmallDown", random(-10,10), random(-10,10), 0, 0, 0,0)
+			TNT1 A 0 A_SpawnItemEx("WerecatTrailCharge", -5, 0, 0, 0, 0, 0, 0,
+                           SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
+			HLGD BBB 3 A_SpawnItemEx ("TrailSparksSmallDown", random(-10,10), random(-10,10), 0, 0, 0,0)
+			TNT1 A 0 A_Stop
+			TNT1 A 0 A_SpawnItemEx("WerecatTrailCharge", -5, 0, 0, 0, 0, 0, 0,
+                           SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
+			TNT1 A 0 HealThing(20)
+			TNT1 A 0 A_CheckSight("FollowPlayer")
+			TNT1 A 0 A_ChangeFLag("FRIENDLY", 1)
+			TNT1 A 0 A_ClearTarget
+			
+			TNT1 A 0 A_ChangeFlag("SHOOTABLE", 1)
+			HLGD B 0 A_Look
+			TNT1 A 0 A_ChangeFLag("FRIENDLY", 0)
+			//TNT1 A 0 A_ChangeFlag("SHOOTABLE", 0)
+			HLGD B 1 A_LookEx(0, 0, 0, 0, 0, "FollowPlayer")
+			TNT1 A 0 A_CheckSIght("FollowPlayer")
+			TNT1 A 0 A_ChangeFlag("SHOOTABLE", 1)
+			TNT1 A 0 A_JumpIfCloser(200, "Waits")
+			Goto FollowPLayer
+	
+	Missile:
+			TNT1 A 0 A_AlertMonsters 
+			TNT1 A 0 A_JumpIfInTargetInventory("TargetIsAMarine", 1, "FollowPLayer")//
+			TNT1 A 0 A_JumpIfInTargetInventory("IsPlayer", 1, "CheckRangeToWait")
+			ZHRT E 0 A_JUMP(128, "rail")
+			ZHRT E 0 A_JUMP(128, "ball")
+	rail:
+        HLGD EFG 5 A_FACETARGET
+		TNT1 AAA 0 A_SpawnItemEx ("TrailSparksSmallDown", random(-10,10), random(-10,10), 0, 0, 0,0)
+		HLGD E 0 A_PLAYSOUND("Cast/Lightning")
+		HLGD H 4 BRIGHT A_CustomRailgun(50, 0, "none", 05FAFA, RGF_Silent, 1, 50, "TeslaZapperPuff", 10,5, random(512,1024), 0,0,0, "LightningDotz", 0)
+		HLGD H 0 BRIGHT A_CustomRailgun(50, 0, "none", 05FAFA, RGF_Silent, 1, 50, "TeslaZapperPuff", 10,5, random(512,1024), 0,0,0, "LightningDotz", 0)
+        HLGD g 4 A_FACETARGET
+		TNT1 AAA 0 A_SpawnItemEx ("TrailSparksSmallDown", random(-10,10), random(-10,10), 0, 0, 0,0)
+        HLGD H 4 BRIGHT A_CustomRailgun(50, 0, "none", 05FAFA, RGF_Silent, 1, 50, "TeslaZapperPuff", 10,5, random(512,1024), 0,0,0, "LightningDotz", 0)
+        HLGD H 0 BRIGHT A_CustomRailgun(50, 0, "none", 05FAFA, RGF_Silent, 1, 50, "TeslaZapperPuff", 10,5, random(512,1024), 0,0,0, "LightningDotz", 0)
+        HLGD g 4 A_FACETARGET
+		TNT1 AAA 0 A_SpawnItemEx ("TrailSparksSmallDown", random(-10,10), random(-10,10), 0, 0, 0,0)
+        HLGD H 4 BRIGHT A_CustomRailgun(50, 0, "none", 05FAFA, RGF_Silent, 1, 50, "TeslaZapperPuff", 10,5, random(512,1024), 0,0,0, "LightningDotz", 0)
+		HLGD H 0 BRIGHT A_CustomRailgun(50, 0, "none", 05FAFA, RGF_Silent, 1, 50, "TeslaZapperPuff", 10,5, random(512,1024), 0,0,0, "LightningDotz", 0)
+        HLGD g 4 A_FACETARGET
+		TNT1 AAA 0 A_SpawnItemEx ("TrailSparksSmallDown", random(-10,10), random(-10,10), 0, 0, 0,0)
+        HLGD H 4 BRIGHT A_CustomRailgun(50, 0, "none", 05FAFA, RGF_Silent, 1, 50, "TeslaZapperPuff", 10,5, random(512,1024), 0,0,0, "LightningDotz", 0)
+        HLGD H 0 BRIGHT A_CustomRailgun(50, 0, "none", 05FAFA, RGF_Silent, 1, 50, "TeslaZapperPuff", 10,5, random(512,1024), 0,0,0, "LightningDotz", 0)
+        HLGD g 4 A_FACETARGET
+		TNT1 AAA 0 A_SpawnItemEx ("TrailSparksSmallDown", random(-10,10), random(-10,10), 0, 0, 0,0)
+        HLGD H 4 BRIGHT A_CustomRailgun(50, 0, "none", 05FAFA, RGF_Silent, 1, 50, "TeslaZapperPuff", 10,5, random(512,1024), 0,0,0, "LightningDotz", 0)
+		HLGD H 4 BRIGHT A_CustomRailgun(50, 0, "none", 05FAFA, RGF_Silent, 1, 50, "TeslaZapperPuff", 10,5, random(512,1024), 0,0,0, "LightningDotz", 0)
+		HLGD g 7 A_FACETARGET
+		TNT1 AAA 0 A_SpawnItemEx ("TrailSparksSmallDown", random(-10,10), random(-10,10), 0, 0, 0,0)
+      GOTO SEE
+	ball:
+	    HLGD EFG 12 A_FACETARGET
+		TNT1 AAAAAAA 0 A_SpawnItemEx ("TrailSparksSmallDown", random(-10,10), random(-10,10), 0, 0, 0,0)
+        HLGD g 4 A_FACETARGET
+		TNT1 AAA 0 A_SpawnItemEx ("TrailSparksSmallDown", random(-10,10), random(-10,10), 0, 0, 0,0)
+        HLGD g 4 BRIGHT  A_CUSTOMMISSILE("StunBall",32,0,0,0,0)
+		TNT1 AAA 0 A_SpawnItemEx ("TrailSparksSmallDown", random(-10,10), random(-10,10), 0, 0, 0,0)
+        HLGD fe 12 A_FACETARGET
+		TNT1 AAA 0 A_SpawnItemEx ("TrailSparksSmallDown", random(-10,10), random(-10,10), 0, 0, 0,0)
+       GOTO SEE
+	   
+		Pain:
+			HLGD H 2
+			TNT1 A 0 A_ChangeFlag("NODROPOFF", 0)
+			HLGD H 6 A_Pain
+			TNT1 AAA 0 A_SpawnItemEx ("TrailSparksSmallDown", random(-10,10), random(-10,10), 0, 0, 0,0)
+			Goto FollowPlayer	
+
+		DEATH:
+			HLGD I 20
+			HLGD I 1 A_SCREAM
+			_UA8 s 6 bright //a_custommissile("WolfmansStick",11,0,Random(0,360))
+			_UA8 s 5 bright A_NOBLOCKING
+			_UA8 s 5 bright a_FALL
+			_UA8 s 5 bright a_fadeout
+        STOP
+	
+	}
+}
+
+
+ACTOR WerecatPathfinder
+{
+	Radius 32
+	Height 56
+	Speed 20
+	Health 4000
+	PainChance 255
+	MaxTargetRange 150
+	Monster
+	damagefactor "SpawnMarine", 8000.0
+	MaxDropOffHeight 1200
+	MaxStepHeight 1200
+	-COUNTKILL
+	+NOTARGET
+	+THRUACTORS
+	+MISSILEMORE
+	+MISSILEEVENMORE
+	+FASTER
+    +DONTSPLASH
+	-SHOOTABLE
+	-FRIENDLY
+	+NOCLIP
+	+LOOKALLAROUND
+	+NOINFIGHTING
+	States
+	{
+	Spawn:
+	Pain:
+    See:
+		TNT1 A 0 A_ChangeFlag("FRIENDLY", 0)
+		TNT1 A 0 A_ChangeFlag("NOCLIP", 1)
+		//TNT1 A 0 Thing_ChangeTID(0,98)
+		//TNT1 A 0 Thing_Hate(98, 0, 0)
+		TNT1 A 0
+		TNT1 A 0 A_GiveInventory("TargetIsAMarine", 1)
+		TNT1 AAAAA 1 A_Chase
+		//TNT1 A 0 Thing_Hate(98, 0, 0)
+		TNT1 A 0
+		TNT1 A 0 A_GiveInventory("TargetIsAMarine", 1)
+		TNT1 A 1 A_FaceTarget
+		Loop
+
+	Missile:
+	    TNT1 A 0
+		TNT1 A 0 A_ChangeFlag("NOCLIP", 0)
+	    TNT1 A 0 A_Recoil(-4)
+		TNT1 A 1
+		TNT1 A 0 A_JumpIf(momx == 0, "CheckAgain")
+	SpawnMarine:	
+		TNT1 A 0 A_Scream
+		TNT1 A 0 A_NoBlocking
+		TNT1 A 0 A_SpawnItemEx("WerecatCompanion",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION,0)
+		TNT1 A 0 A_SpawnItem("FriendlymarineTFog")
+		Stop
+	CheckAgain:
+		TNT1 A 0
+		TNT1 A 0 A_JumpIF(momy == 0, "See")
+		Goto SpawnMarine
+	}
+}
+
+
+ACTOR WerecatCompanionNew: WerecatCompanion
+{
+-FRIENDLY
+	Speed 4
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 A_GiveInventory("TargetIsAMarine", 1)
+	Goto See
+	Pain:
+    See:
+		TNT1 A 0 A_ChangeFlag("FRIENDLY", 0)
+		TNT1 A 0 Thing_ChangeTID(0,98)
+		TNT1 AAAAAAAAAAAAAAAAA 1 A_Chase
+		//TNT1 A 0 Thing_Hate(98, 264, 0)
+		TNT1 A 0 A_Recoil(-5)
+		TNT1 A 0 A_SpawnItem("MarineSpawnChecker")
+		TNT1 A 1 A_FaceTarget
+		Loop
+	Death:
+	Missile:
+		TNT1 A 0
+	    TNT1 A 0 A_Recoil(-2)
+		TNT1 A 1
+		TNT1 A 0 A_Scream
+		TNT1 A 0 A_NoBlocking
+		TNT1 A 0 A_SpawnItemEx("WerecatCompanion",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION,0)
+		//TNT1 A 0 A_SpawnItemEx("MarineAdd",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION,0)
+		TNT1 A 0 A_SpawnItem("FriendlymarineTFog")
+		Stop
+	}
+}
+
+ACTOR WerecatCompanionAdd: WerecatCompanion
+{
+	Speed 4
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 A_GiveInventory("TargetIsAMarine", 1)
+	Goto See
+	Pain:
+    See:
+		TNT1 A 0 A_ChangeFlag("FRIENDLY", 0)
+		TNT1 A 0 Thing_ChangeTID(0,98)
+		TNT1 AAAAAAAAAAAAAAAAA 1 A_Chase
+		//TNT1 A 0 Thing_Hate(98, 264, 0)
+		TNT1 A 0 A_Recoil(-5)
+		TNT1 A 1 A_FaceTarget
+		Loop
+	Death:
+	Missile:
+		TNT1 A 1
+		TNT1 A 0 A_Scream
+		TNT1 A 0 A_NoBlocking
+		TNT1 A 200
+		TNT1 A 0 A_GiveToTarget("NumberOfAllies", 1)
+		Stop
+	}
+}
+
+ACTOR WerecatTrailCharge
+{
+  RenderStyle "Stencil"
+  StencilColor "blue"
+  Scale 0.7
+  Alpha 0.5
+  +NOINTERACTION
+  States
+  {
+  Spawn:
+    TNT1 A 3
+    HLGD B 1 A_FadeOut(0.25)
+	TNT1 A 3
+    HLGD B 1 A_FadeOut(0.25)
+    Wait
+  }
+}

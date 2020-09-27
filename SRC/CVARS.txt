@@ -329,9 +329,10 @@ Script "CheckVoxels" (VOID)
 if	(GetCvar("bd_voxeldec") == 0) { SetACtorState(0, "Disappear"); }
 }
 
-
-
-
+Script "ScreenEffects" (VOID)
+{
+	if	(GetCvar("bd_ScreenFX") == 0) { GiveInventory("ScreenFX",1); }
+}
 
 
 
