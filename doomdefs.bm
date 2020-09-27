@@ -1,423 +1,325 @@
 #include doomwalls.bm
 #include doommonsters.bm
-
-
 brightmap sprite BG2GA0
 {
 	map "brightmaps/BFG10K/B10BA0.png"
 }
-
 brightmap sprite BG2GB0
 {
 	map "brightmaps/BFG10K/B10BB0.png"
 }
-
 brightmap sprite BG2GC0
 {
 	map "brightmaps/BFG10K/B10BC0.png"
 }
-
 brightmap sprite BG2GD0
 {
 	map "brightmaps/BFG10K/B10BD0.png"
 }
-
 brightmap sprite BG2GE0
 {
 	map "brightmaps/BFG10K/B10BE0.png"
 }
-
 brightmap sprite BG2GF0
 {
 	map "brightmaps/BFG10K/B10BF0.png"
 }
-
 brightmap sprite BG2GG0
 {
 	map "brightmaps/BFG10K/B10BG0.png"
 }
-
 brightmap sprite BG2GH0
 {
 	map "brightmaps/BFG10K/B10BH0.png"
 }
-
 brightmap sprite BG2GI0
 {
 	map "brightmaps/BFG10K/B10BI0.png"
 }
-
 brightmap sprite BG2GJ0
 {
 	map "brightmaps/BFG10K/B10BJ0.png"
 }
-
 brightmap sprite BG2GK0
 {
 	map "brightmaps/BFG10K/B10BK0.png"
 }
-
 brightmap sprite BG2GL0
 {
 	map "brightmaps/BFG10K/B10BL0.png"
 }
-
 brightmap sprite BG2GM0
 {
 	map "brightmaps/BFG10K/B10BM0.png"
 }
-
 brightmap sprite BG2GN0
 {
 	map "brightmaps/BFG10K/B10BN0.png"
 }
-
 brightmap sprite BG2GO0
 {
 	map "brightmaps/BFG10K/B10BO0.png"
 }
-
-
 brightmap sprite BFGCA0
 {
 	map "brightmaps/doom/BFGC0.png"
 	disablefullbright
 }
-
 brightmap sprite BFGCB0
 {
 	map "brightmaps/doom/BFGC0.png"
 	disablefullbright
 }
-
 brightmap sprite BFGCC0
 {
 	map "brightmaps/doom/BFGC0.png"
 	disablefullbright
 }
-
 brightmap sprite BFGCD0
 {
 	map "brightmaps/doom/BFGC0.png"
 	disablefullbright
 }
-
-
 brightmap sprite PLSTB0
 {
 	map "brightmaps/doom/PLSTB0.png"
 	disablefullbright
 }
-
 brightmap sprite PLSTA0
 {
 	map "brightmaps/doom/PLSTA0.png"
 	disablefullbright
 }
-
-
 brightmap sprite RIFFA0
 {
 	map "brightmaps/doom/RIFFA0.png"
 	disablefullbright
 }
-
-
 brightmap sprite CHAFA0
 {
 	map "brightmaps/doom/CHAFA0.png"
 	disablefullbright
 }
-
 brightmap sprite CHAFC0
 {
 	map "brightmaps/doom/CHAFC0.png"
 	disablefullbright
 }
-
-
 brightmap sprite SM2FA0
 {
 	map "brightmaps/doom/SM2FA0.png"
 	disablefullbright
 }
-
 brightmap sprite SM2FB0
 {
 	map "brightmaps/doom/SM2FB0.png"
 	disablefullbright
 }
-
-
 brightmap sprite PISTA0
 {
 	map "brightmaps/doom/PISTA0.png"
 	disablefullbright
 }
-
 brightmap sprite PI2FA0
 {
 	map "brightmaps/doom/PI2FA0.png"
 	disablefullbright
 }
-
-
-
 brightmap sprite A12FA0
 {
 	map "brightmaps/doom/A12FA0.png"
 	disablefullbright
 }
-
-
 brightmap sprite SHTNA0
 {
 	map "brightmaps/doom/SHTNA0.png"
 	disablefullbright
 }
-
 brightmap sprite SHTAA0
 {
 	map "brightmaps/doom/SHTAA0.png"
 	disablefullbright
 }
-
-
 brightmap sprite SHTAB0
 {
 	map "brightmaps/doom/SHTAB0.png"
 	disablefullbright
 }
-
-
 brightmap sprite SHTAC0
 {
 	map "brightmaps/doom/SHTAC0.png"
 	disablefullbright
 }
-
-
 brightmap sprite SHTAD0
 {
 	map "brightmaps/doom/SHTAD0.png"
 	disablefullbright
 }
-
-
 brightmap sprite SHTAE0
 {
 	map "brightmaps/doom/SHTAE0.png"
 	disablefullbright
 }
-
-
 brightmap sprite SHT8A0
 {
 	map "brightmaps/doom/SHT8A0.png"
 	disablefullbright
 }
-
-
 brightmap sprite SHT8D0
 {
 	map "brightmaps/doom/SHT8D0.png"
 	disablefullbright
 }
-
 brightmap sprite SHT8E0
 {
 	map "brightmaps/doom/SHT8E0.png"
 	disablefullbright
 }
-
 brightmap sprite SHT8F0
 {
 	map "brightmaps/doom/SHT8F0.png"
 	disablefullbright
 }
-
 brightmap sprite SHT8G0
 {
 	map "brightmaps/doom/SHT8G0.png"
 	disablefullbright
 }
-
 brightmap sprite SHT8H0
 {
 	map "brightmaps/doom/SHT8H0.png"
 	disablefullbright
 }
-
 brightmap sprite SHT8I0
 {
 	map "brightmaps/doom/SHT8I0.png"
 	disablefullbright
 }
-
 brightmap sprite SHT8J0
 {
 	map "brightmaps/doom/SHT8J0.png"
 	disablefullbright
 }
-
 brightmap sprite SHT8K0
 {
 	map "brightmaps/doom/SHT8K0.png"
 	disablefullbright
 }
-
 brightmap sprite SHT8L0
 {
 	map "brightmaps/doom/SHT8L0.png"
 	disablefullbright
 }
-
 brightmap sprite BARIA0
 {
 	map "brightmaps/doom/BARBRI.png"
 }
-
 brightmap sprite BARIB0
 {
 	map "brightmaps/doom/BARBRI.png"
 }
-
 brightmap sprite BARIC0
 {
 	map "brightmaps/doom/BARBRI.png"
 }
-
 brightmap sprite BARID0
 {
 	map "brightmaps/doom/BARBRI.png"
 }
-
 brightmap sprite THRGA0
 {
 	map "brightmaps/barrelweapon/THRGAB.png"
 }
-
 brightmap sprite THRGE0
 {
 	map "brightmaps/barrelweapon/THRGEB.png"
 }
-
 brightmap sprite THRGB0
 {
 	map "brightmaps/barrelweapon/THRGBB.png"
 }
-
 brightmap sprite THRGC0
 {
 	map "brightmaps/barrelweapon/THRGCB.png"
 }
-
 brightmap sprite THRGD0
 {
 	map "brightmaps/barrelweapon/THRGDB.png"
 }
-
 brightmap sprite CBRAB0
 {
 	map "brightmaps/doom/LABRABR1.png"
 }
-
 brightmap sprite CBRAC0
 {
 	map "brightmaps/doom/LABRABR3.png"
 }
-
 brightmap sprite CBRAD0
 {
 	map "brightmaps/doom/LABRABR4.png"
 }
-
 brightmap sprite CBRAE0
 {
 	map "brightmaps/doom/LABRABR2.png"
 }
-
-
 brightmap sprite BURBA0
 {
 	map "brightmaps/doom/BURBAB1.png"
 }
-
 brightmap sprite BURBB0
 {
 	map "brightmaps/doom/BURBAB2.png"
 }
-
 brightmap sprite BURBC0
 {
 	map "brightmaps/doom/BURBAB3.png"
 }
-
 brightmap sprite BON2B0
 {
 	map "brightmaps/doom/BON2BR.png"
 }
-
 brightmap sprite BON2C0
 {
 	map "brightmaps/doom/BON2CR.png"
 }
-
 brightmap sprite BON2D0
 {
 	map "brightmaps/doom/BON2DR.png"
 }
-
-
 brightmap sprite RAILA0 {	map "brightmaps/doom/RAIBA.png" }
 brightmap sprite RAILB0 {	map "brightmaps/doom/RAIBA.png" }
 brightmap sprite RAILC0 {	map "brightmaps/doom/RAIBA.png" }
 brightmap sprite RAILD0 {	map "brightmaps/doom/RAIBA.png" }
-
 brightmap sprite FLMTA0 {	map "brightmaps/doom/FLMBA0.png" }
 brightmap sprite FLMTB0 {	map "brightmaps/doom/FLMBB0.png" }
 brightmap sprite FLMTC0 {	map "brightmaps/doom/FLMBC0.png" }
-
-
 brightmap texture LITEBLU3
 {
 	map "brightmaps/LITB3.PNG"
 }
-
-
-
 brightmap Texture SPACM1
 {
    map "brightmaps/SPACOM1B.png"
 }
-
 brightmap Texture SPACM2
 {
    map "brightmaps/SPACOM1B.png"
 }
-
 brightmap Texture SPACM3
 {
    map "brightmaps/SPACOM1B.png"
 }
-
 brightmap Texture SPACM4
 {
    map "brightmaps/SPACOM1B.png"
 }
-
-
-
 //From Dox778's personalized Addon
-
 brightmap sprite PI2FA0 { map "brightmaps/doom/PI2FA0.png" disablefullbright }
 brightmap sprite PI2FD0 { map "brightmaps/doom/PI2FD0.png" disablefullbright }
-
 brightmap sprite SHOFA0 { map "brightmaps/doom/SHOFAB.png" disablefullbright }
 brightmap sprite SHOFB0 { map "brightmaps/doom/SHOFBB.png" disablefullbright }
 brightmap sprite SHTUA0 { map "brightmaps/doom/SHTUAB.png" disablefullbright }
 brightmap sprite SHTUB0 { map "brightmaps/doom/SHTUBB.png" disablefullbright }
-
 brightmap sprite SMGFA0 { map "brightmaps/doom/SMGFA0.png" disablefullbright }
 brightmap sprite SMGFB0 { map "brightmaps/doom/SMGFB0.png" disablefullbright }
 brightmap sprite SMGFC0 { map "brightmaps/doom/SMGFC0.png" disablefullbright }
@@ -425,7 +327,6 @@ brightmap sprite SMGGA0 { map "brightmaps/doom/SMGGA0.png" disablefullbright }
 brightmap sprite SMGSA0 { map "brightmaps/doom/SMGGA0.png" disablefullbright }
 brightmap sprite SMGSB0 { map "brightmaps/doom/SMGGA0.png" disablefullbright }
 brightmap sprite SMGSC0 { map "brightmaps/doom/SMGGA0.png" disablefullbright }
-
 brightmap sprite PLSNA0 { map "brightmaps/doom/PLSNA0.png" disablefullbright }
 brightmap sprite P2SRF0 { map "brightmaps/doom/P2SRFB.png" disablefullbright }
 brightmap sprite P2SRG0 { map "brightmaps/doom/P2SRGB.png" disablefullbright }
@@ -437,28 +338,22 @@ brightmap sprite PLSRG0 { map "brightmaps/doom/PLSRGB.png" disablefullbright }
 brightmap sprite PLSRH0 { map "brightmaps/doom/PLSRHB.png" disablefullbright }
 brightmap sprite PLSRI0 { map "brightmaps/doom/PLSRIB.png" disablefullbright }
 brightmap sprite PLSRJ0 { map "brightmaps/doom/PLSRJB.png" disablefullbright }
-
 brightmap sprite RLNFA0 { map "brightmaps/doom/RLNFA0.png" disablefullbright }
 brightmap sprite RLNFB0 { map "brightmaps/doom/RLNFB0.png" disablefullbright }
-
 brightmap sprite DURIB0 { map "brightmaps/doom/DURIB0.png" disablefullbright }
 brightmap sprite DURID0 { map "brightmaps/doom/DURID0.png" disablefullbright }
-
 brightmap sprite HBUSB0 { map "brightmaps/doom/HBUSB0.png" disablefullbright }
 brightmap sprite HBUSC0 { map "brightmaps/doom/HBUSC0.png" disablefullbright }
-
 brightmap sprite RAIFA0 { map "brightmaps/doom/RAIFA0.png" disablefullbright }
 brightmap sprite RAIFB0 { map "brightmaps/doom/RAIFB0.png" disablefullbright }
 brightmap sprite RAIKA0 { map "brightmaps/doom/RAIBA.png" disablefullbright }
 brightmap sprite RAIKB0 { map "brightmaps/doom/RAIBA.png" disablefullbright }
 brightmap sprite RAIKC0 { map "brightmaps/doom/RAIBA.png" disablefullbright }
 brightmap sprite RAIKD0 { map "brightmaps/doom/RAIBA.png" disablefullbright }
-
 brightmap sprite MP40B0 { map "brightmaps/doom/MP40BB.png" fullbright }
 brightmap sprite MP41F0 { map "brightmaps/doom/MP41FB.png" disablefullbright }
 brightmap sprite MP42B0 { map "brightmaps/doom/MP42BB.png" disablefullbright }
 brightmap sprite MP42D0 { map "brightmaps/doom/MP42DB.png" disablefullbright }
-
 brightmap sprite bg2gk0 { map "brightmaps/doom/bg2gk0.png" disablefullbright }
 brightmap sprite bg2gl0 { map "brightmaps/doom/bg2gl0.png" disablefullbright }
 brightmap sprite bg2gm0 { map "brightmaps/doom/bg2gm0.png" disablefullbright }
@@ -470,49 +365,39 @@ brightmap sprite bg2se0 { map "brightmaps/doom/bg2seB.png" disablefullbright }
 brightmap sprite bg2sf0 { map "brightmaps/doom/bg2sfB.png" disablefullbright }
 brightmap sprite bg2sg0 { map "brightmaps/doom/bg2sgB.png" disablefullbright }
 brightmap sprite bg2sh0 { map "brightmaps/doom/bg2shB.png" disablefullbright }
-
 brightmap sprite FLMTD0 { map "brightmaps/doom/FLMTD0.png" disablefullbright }
 brightmap sprite FLMTE0 { map "brightmaps/doom/FLMTE0.png" disablefullbright }
 brightmap sprite FLMFF0 { map "brightmaps/doom/FLMFF0.png" disablefullbright }
 brightmap sprite FLMFG0 { map "brightmaps/doom/FLMFG0.png" disablefullbright }
-
 brightmap sprite bg2gf0 { map "brightmaps/doom/bg2gh0.png" disablefullbright }
 brightmap sprite bg2gg0 { map "brightmaps/doom/bg2gh0.png" disablefullbright }
 brightmap sprite bg2gh0 { map "brightmaps/doom/bg2gh0.png" disablefullbright }
 brightmap sprite bg2gi0 { map "brightmaps/doom/bg2gh0.png" disablefullbright }
 brightmap sprite bg2gj0 { map "brightmaps/doom/bg2gh0.png" disablefullbright }
-
 brightmap sprite GLAFA0 { map "brightmaps/doom/GLAFA0.png" disablefullbright }
-
 brightmap sprite RVCGB0 { map "brightmaps/doom/RVCGB0.png" disablefullbright }
 brightmap sprite RVCGC0 { map "brightmaps/doom/RVCGC0.png" disablefullbright }
 brightmap sprite RVCGF0 { map "brightmaps/doom/RVCGF0.png" disablefullbright }
 brightmap sprite RVCGG0 { map "brightmaps/doom/RVCGG0.png" disablefullbright }
-
 brightmap sprite MGN1B0 { map "brightmaps/doom/MGN1B0.png" disablefullbright }
 brightmap sprite MGN1K0 { map "brightmaps/doom/MGN1K0.png" disablefullbright }
-
 brightmap sprite REVOC0 { map "brightmaps/doom/REVOC0.png" disablefullbright }
 brightmap sprite REVOD0 { map "brightmaps/doom/REVOD0.png" disablefullbright }
-
 brightmap sprite A12GA0 { map "brightmaps/doom/A12GA0.png" disablefullbright }
 brightmap sprite A12FB0 { map "brightmaps/doom/A12FB0.png" disablefullbright }
 brightmap sprite A12FC0 { map "brightmaps/doom/A12FC0.png" disablefullbright }
 brightmap sprite A12FD0 { map "brightmaps/doom/A12FD0.png" disablefullbright }
 brightmap sprite A12FE0 { map "brightmaps/doom/A12FE0.png" disablefullbright }
 brightmap sprite A12FF0 { map "brightmaps/doom/A12FF0.png" disablefullbright }
-
 brightmap sprite A12AD0 { map "brightmaps/doom/A12AD0.png" disablefullbright }
 brightmap sprite A12AE0 { map "brightmaps/doom/A12AE0.png" disablefullbright }
 brightmap sprite A12AF0 { map "brightmaps/doom/A12AF0.png" disablefullbright }
 brightmap sprite A12AG0 { map "brightmaps/doom/A12AG0.png" disablefullbright }
-
 brightmap sprite A12SA0 { map "brightmaps/doom/A12SAB.png" disablefullbright }
 brightmap sprite A12SB0 { map "brightmaps/doom/A12SBB.png" disablefullbright }
 brightmap sprite A12SC0 { map "brightmaps/doom/A12SCB.png" disablefullbright }
 brightmap sprite A12SD0 { map "brightmaps/doom/A12SDB.png" disablefullbright }
 brightmap sprite A12SE0 { map "brightmaps/doom/A12SEB.png" disablefullbright }
-
 brightmap sprite A12RA0 { map "brightmaps/doom/A12RAB.png" disablefullbright }
 brightmap sprite A12RB0 { map "brightmaps/doom/A12RBB.png" disablefullbright }
 brightmap sprite A12RC0 { map "brightmaps/doom/A12RCB.png" disablefullbright }
@@ -534,7 +419,6 @@ brightmap sprite A12RR0 { map "brightmaps/doom/A12RRB.png" disablefullbright }
 brightmap sprite A12RS0 { map "brightmaps/doom/A12RSB.png" disablefullbright }
 brightmap sprite A12RT0 { map "brightmaps/doom/A12RTB.png" disablefullbright }
 brightmap sprite A12RU0 { map "brightmaps/doom/A12RUB.png" disablefullbright }
-
 brightmap sprite A1R1A0 { map "brightmaps/doom/A1R1AB.png" disablefullbright }
 brightmap sprite A1R1B0 { map "brightmaps/doom/A1R1BB.png" disablefullbright }
 brightmap sprite A1R1C0 { map "brightmaps/doom/A1R1CB.png" disablefullbright }
@@ -546,7 +430,6 @@ brightmap sprite A1R1H0 { map "brightmaps/doom/A1R1HB.png" disablefullbright }
 brightmap sprite A1R1I0 { map "brightmaps/doom/A1R1IB.png" disablefullbright }
 brightmap sprite A1R1J0 { map "brightmaps/doom/A1R1JB.png" disablefullbright }
 brightmap sprite A1R1T0 { map "brightmaps/doom/A1R1TB.png" disablefullbright }
-
 brightmap sprite BFGNA0 { map "brightmaps/doom/BFGNA0.png" disablefullbright }
 brightmap sprite BFGSA0 { map "brightmaps/doom/BFGSAB.png" disablefullbright }
 brightmap sprite BFGSB0 { map "brightmaps/doom/BFGSBB.png" disablefullbright }
@@ -554,12 +437,10 @@ brightmap sprite BFGSC0 { map "brightmaps/doom/BFGSCB.png" disablefullbright }
 brightmap sprite BFGSD0 { map "brightmaps/doom/BFGSDB.png" disablefullbright }
 brightmap sprite BFGSE0 { map "brightmaps/doom/BFGSEB.png" disablefullbright }
 brightmap sprite BFGSF0 { map "brightmaps/doom/BFGSFB.png" disablefullbright }
-
 brightmap sprite BFGCA0 { map "brightmaps/doom/BFGCAB.png" disablefullbright }
 brightmap sprite BFGCB0 { map "brightmaps/doom/BFGCBB.png" disablefullbright }
 brightmap sprite BFGCC0 { map "brightmaps/doom/BFGCCB.png" disablefullbright }
 brightmap sprite BFGCD0 { map "brightmaps/doom/BFGCDB.png" disablefullbright }
-
 brightmap sprite BFGAF0 { map "brightmaps/doom/BFGAFB.png" disablefullbright }
 brightmap sprite BFGAG0 { map "brightmaps/doom/BFGAGB.png" disablefullbright }
 brightmap sprite BFGAH0 { map "brightmaps/doom/BFGAHB.png" disablefullbright }
@@ -567,7 +448,6 @@ brightmap sprite BFGAI0 { map "brightmaps/doom/BFGAIB.png" disablefullbright }
 brightmap sprite BFGAJ0 { map "brightmaps/doom/BFGAJB.png" disablefullbright }
 brightmap sprite BFGAK0 { map "brightmaps/doom/BFGAKB.png" disablefullbright }
 brightmap sprite BFGAL0 { map "brightmaps/doom/BFGALB.png" disablefullbright }
-
 brightmap sprite 2SMSA0 { map "brightmaps/doom/2SMSAB.png" disablefullbright }
 brightmap sprite 2SMSB0 { map "brightmaps/doom/2SMSBB.png" disablefullbright }
 brightmap sprite 2SMSC0 { map "brightmaps/doom/2SMSCB.png" disablefullbright }
@@ -632,18 +512,14 @@ brightmap sprite SMSAE0 { map "brightmaps/doom/SMSAEB.png" disablefullbright }
 brightmap sprite SMGCZ0 { map "brightmaps/doom/SMGZCB.png" disablefullbright }
 brightmap sprite SMGDZ0 { map "brightmaps/doom/SMGZDB.png" disablefullbright }
 brightmap sprite SMGEZ0 { map "brightmaps/doom/SMGZEB.png" disablefullbright }
-
 brightmap sprite BON2B0 { map "brightmaps/doom/BON2BR.png" disablefullbright }
 brightmap sprite BON2C0 { map "brightmaps/doom/BON2CR.png" disablefullbright }
 brightmap sprite BON2D0 { map "brightmaps/doom/BON2DR.png" disablefullbright }
-
 brightmap sprite UNHFE0 { map "brightmaps/doom/UNHFE0.png" disablefullbright }
 brightmap sprite UNHFF0 { map "brightmaps/doom/UNHFF0.png" disablefullbright }
 brightmap sprite UNHFG0 { map "brightmaps/doom/UNHFG0.png" disablefullbright }
 brightmap sprite UNHFH0 { map "brightmaps/doom/UNHFH0.png" disablefullbright }
-
 brightmap sprite RI2FA0 { map "brightmaps/doom/RI2FA0.png" disablefullbright }
-
 brightmap sprite SHTIA0 { map "brightmaps/doom/SHTIAB.png" disablefullbright }
 brightmap sprite SHTIB0 { map "brightmaps/doom/SHTIAB.png" disablefullbright }
 brightmap sprite SHTIC0 { map "brightmaps/doom/SHTIAB.png" disablefullbright }
@@ -652,3 +528,210 @@ brightmap sprite SHTIH0 { map "brightmaps/doom/SHTIAB.png" disablefullbright }
 brightmap sprite SHTII0 { map "brightmaps/doom/SHTIAB.png" disablefullbright }
 brightmap sprite SH81B0 { map "brightmaps/doom/SH81AB.png" disablefullbright }
 brightmap sprite SH81C0 { map "brightmaps/doom/SH81AB.png" disablefullbright }
+//FROST BY SCHRODINGER CAT//
+BrightMap Sprite FRZRA0
+{
+    Map "Sprites/Weapons/EXTENDED_FIREARMS/FreezeGun/brightmaps/FRZXA0.png"
+	DisableFullBright
+}
+BrightMap Sprite FRZRB0
+{
+    Map "Sprites/Weapons/EXTENDED_FIREARMS/FreezeGun/brightmaps/FRZXB0.png"
+	DisableFullBright
+}
+BrightMap Sprite FRZRC0
+{
+    Map "Sprites/Weapons/EXTENDED_FIREARMS/FreezeGun/brightmaps/FRZXC0.png"
+	DisableFullBright
+}
+BrightMap Sprite FR1DA0
+{
+    Map "Sprites/Weapons/EXTENDED_FIREARMS/FreezeGun/brightmaps/FR1XA0.png"
+	DisableFullBright
+}
+BrightMap Sprite FR1DB0
+{
+    Map "Sprites/Weapons/EXTENDED_FIREARMS/FreezeGun/brightmaps/FR1XB0.png"
+	DisableFullBright
+}
+BrightMap Sprite FR1DC0
+{
+    Map "Sprites/Weapons/EXTENDED_FIREARMS/FreezeGun/brightmaps/FR1XC0.png"
+	DisableFullBright
+}
+BrightMap Sprite FREKA0
+{
+    Map "Sprites/Weapons/EXTENDED_FIREARMS/FreezeGun/brightmaps/FREXA0.png"
+	DisableFullBright
+}
+BrightMap Sprite FREKB0
+{
+    Map "Sprites/Weapons/EXTENDED_FIREARMS/FreezeGun/brightmaps/FREXB0.png"
+	DisableFullBright
+}
+BrightMap Sprite FREKC0
+{
+    Map "Sprites/Weapons/EXTENDED_FIREARMS/FreezeGun/brightmaps/FREXC0.png"
+	DisableFullBright
+}
+BrightMap Sprite FREKD0
+{
+    Map "Sprites/Weapons/EXTENDED_FIREARMS/FreezeGun/brightmaps/FREXD0.png"
+	DisableFullBright
+}
+BrightMap Sprite FREKE0
+{
+    Map "Sprites/Weapons/EXTENDED_FIREARMS/FreezeGun/brightmaps/FREXE0.png"
+	DisableFullBright
+}
+BrightMap Sprite FREKF0
+{
+    Map "Sprites/Weapons/EXTENDED_FIREARMS/FreezeGun/brightmaps/FREXF0.png"
+	DisableFullBright
+}
+BrightMap Sprite FRFIA0
+{
+    Map "Sprites/Weapons/EXTENDED_FIREARMS/FreezeGun/brightmaps/FRXXA0.png"
+	DisableFullBright
+}
+BrightMap Sprite FRFIB0
+{
+    Map "Sprites/Weapons/EXTENDED_FIREARMS/FreezeGun/brightmaps/FRXXB0.png"
+	DisableFullBright
+}
+BrightMap Sprite FRFIC0
+{
+    Map "Sprites/Weapons/EXTENDED_FIREARMS/FreezeGun/brightmaps/FRXXC0.png"
+	DisableFullBright
+}
+BrightMap Sprite FRFID0
+{
+    Map "Sprites/Weapons/EXTENDED_FIREARMS/FreezeGun/brightmaps/FRXXD0.png"
+	DisableFullBright
+}
+BrightMap Sprite FRFIE0
+{
+    Map "Sprites/Weapons/EXTENDED_FIREARMS/FreezeGun/brightmaps/FRXXE0.png"
+	DisableFullBright
+}
+BrightMap Sprite FRFIF0
+{
+    Map "Sprites/Weapons/EXTENDED_FIREARMS/FreezeGun/brightmaps/FRXXF0.png"
+	DisableFullBright
+}
+BrightMap Sprite FRFIG0
+{
+    Map "Sprites/Weapons/EXTENDED_FIREARMS/FreezeGun/brightmaps/FRXXG0.png"
+	DisableFullBright
+}
+BrightMap Sprite FRFIH0
+{
+    Map "Sprites/Weapons/EXTENDED_FIREARMS/FreezeGun/brightmaps/FRXXG0.png"
+	DisableFullBright
+}
+BrightMap Sprite FRFII0
+{
+    Map "Sprites/Weapons/EXTENDED_FIREARMS/FreezeGun/brightmaps/FRXXG0.png"
+	DisableFullBright
+}
+BrightMap Sprite FRFIJ0
+{
+    Map "Sprites/Weapons/EXTENDED_FIREARMS/FreezeGun/brightmaps/FRXXG0.png"
+	DisableFullBright
+}
+BrightMap Sprite FRNAA0
+{
+    Map "Sprites/Weapons/EXTENDED_FIREARMS/FreezeGun/brightmaps/FRAXA0.png"
+	DisableFullBright
+}
+BrightMap Sprite FRRLA0
+{
+    Map "Sprites/Weapons/EXTENDED_FIREARMS/FreezeGun/brightmaps/FRRXA0.png"
+	DisableFullBright
+}
+BrightMap Sprite FRRLB0
+{
+    Map "Sprites/Weapons/EXTENDED_FIREARMS/FreezeGun/brightmaps/FRRXB0.png"
+	DisableFullBright
+}
+BrightMap Sprite FRRLC0
+{
+    Map "Sprites/Weapons/EXTENDED_FIREARMS/FreezeGun/brightmaps/FRRXC0.png"
+	DisableFullBright
+}
+BrightMap Sprite FRRLD0
+{
+    Map "Sprites/Weapons/EXTENDED_FIREARMS/FreezeGun/brightmaps/FRRXD0.png"
+	DisableFullBright
+}
+BrightMap Sprite FRRLE0
+{
+    Map "Sprites/Weapons/EXTENDED_FIREARMS/FreezeGun/brightmaps/FRRXE0.png"
+	DisableFullBright
+}
+BrightMap Sprite FRRLF0
+{
+    Map "Sprites/Weapons/EXTENDED_FIREARMS/FreezeGun/brightmaps/FRRXF0.png"
+	DisableFullBright
+}
+BrightMap Sprite FRRLG0
+{
+    Map "Sprites/Weapons/EXTENDED_FIREARMS/FreezeGun/brightmaps/FRRXG0.png"
+	DisableFullBright
+}
+BrightMap Sprite FRRLH0
+{
+    Map "Sprites/Weapons/EXTENDED_FIREARMS/FreezeGun/brightmaps/FRRXH0.png"
+	DisableFullBright
+}
+BrightMap Sprite FRRLI0
+{
+    Map "Sprites/Weapons/EXTENDED_FIREARMS/FreezeGun/brightmaps/FRRXI0.png"
+	DisableFullBright
+}
+BrightMap Sprite FRRLJ0
+{
+    Map "Sprites/Weapons/EXTENDED_FIREARMS/FreezeGun/brightmaps/FRRXJ0.png"
+	DisableFullBright
+}
+BrightMap Sprite FRRLK0
+{
+    Map "Sprites/Weapons/EXTENDED_FIREARMS/FreezeGun/brightmaps/FRRXK0.png"
+	DisableFullBright
+}
+BrightMap Sprite FRRLL0
+{
+    Map "Sprites/Weapons/EXTENDED_FIREARMS/FreezeGun/brightmaps/FRRXL0.png"
+	DisableFullBright
+}
+BrightMap Sprite FRRLM0
+{
+    Map "Sprites/Weapons/EXTENDED_FIREARMS/FreezeGun/brightmaps/FRRXM0.png"
+	DisableFullBright
+}
+
+BrightMap Sprite FRDDA0
+{
+    Map "Sprites/Weapons/EXTENDED_FIREARMS/FreezeGun/brightmaps/FREXE0.png"
+	DisableFullBright
+}
+BrightMap Sprite FRDDB0
+{
+    Map "Sprites/Weapons/EXTENDED_FIREARMS/FreezeGun/brightmaps/FREXD0.png"
+	DisableFullBright
+}
+BrightMap Sprite FRDDC0
+{
+    Map "Sprites/Weapons/EXTENDED_FIREARMS/FreezeGun/brightmaps/FREXC0.png"
+	DisableFullBright
+}
+BrightMap Sprite FRDDD0
+{
+    Map "Sprites/Weapons/EXTENDED_FIREARMS/FreezeGun/brightmaps/FREXB0.png"
+	DisableFullBright
+}
+BrightMap Sprite FRDDE0
+{
+    Map "Sprites/Weapons/EXTENDED_FIREARMS/FreezeGun/brightmaps/FREXA0.png"
+	DisableFullBright
+}

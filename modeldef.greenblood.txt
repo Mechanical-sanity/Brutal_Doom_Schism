@@ -1,7 +1,5 @@
 //Unfortunately, Zandronum still doesn't supports flat sprites, so to ensure that the mode can work
 //both on GZDoom and Zandronum, it's still necessary to use 3D models.
-
-
 Model GreenGiantBloodSpot      // Name of actor in DECORATE
 {
    Path "models/bloodspot"    // Path to model in PK3
@@ -11,10 +9,6 @@ Model GreenGiantBloodSpot      // Name of actor in DECORATE
    ZOffset 0.6
    FrameIndex BPDL A 0 0         // The sprite lump, sprite frame, model index, frame number
 }
-
-
-
-
 Model GreenBigBloodSpot      // Name of actor in DECORATE
 {
    Path "models/bloodspot"    // Path to model in PK3
@@ -24,8 +18,6 @@ Model GreenBigBloodSpot      // Name of actor in DECORATE
    ZOffset 0.6
    FrameIndex BPDL A 0 0         // The sprite lump, sprite frame, model index, frame number
 }
-
-
 Model Green_BloodSpot      // Name of actor in DECORATE
 {
    Path "models/bloodspot"    // Path to model in PK3
@@ -35,7 +27,6 @@ Model Green_BloodSpot      // Name of actor in DECORATE
    FrameIndex BPDL A 0 0         // The sprite lump, sprite frame, model index, frame number
    ZOffset 1.3
 }
-
 Model Green_BloodSpot      // Name of actor in DECORATE
 {
    Path "models/bloodspot"    // Path to model in PK3
@@ -45,7 +36,6 @@ Model Green_BloodSpot      // Name of actor in DECORATE
    FrameIndex BPDL B 0 0         // The sprite lump, sprite frame, model index, frame number
    ZOffset 1.4
 }
-
 Model Green_BloodSpot      // Name of actor in DECORATE
 {
    Path "models/bloodspot"    // Path to model in PK3
@@ -55,7 +45,6 @@ Model Green_BloodSpot      // Name of actor in DECORATE
    FrameIndex BPDL C 0 0         // The sprite lump, sprite frame, model index, frame number
    ZOffset 1.5
 }
-
 Model Green_BloodSpot      // Name of actor in DECORATE
 {
    Path "models/bloodspot"    // Path to model in PK3
@@ -65,8 +54,6 @@ Model Green_BloodSpot      // Name of actor in DECORATE
    FrameIndex BPDL D 0 0         // The sprite lump, sprite frame, model index, frame number
    ZOffset 1.6
 }
-
-
 Model GreenMinuscleBloodSpot      // Name of actor in DECORATE
 {
    Path "models/bloodspot"    // Path to model in PK3
@@ -76,7 +63,6 @@ Model GreenMinuscleBloodSpot      // Name of actor in DECORATE
    FrameIndex BPDL A 0 0         // The sprite lump, sprite frame, model index, frame number
    ZOffset 1.4
 }
-
 Model GreenMinuscleBloodSpot      // Name of actor in DECORATE
 {
    Path "models/bloodspot"    // Path to model in PK3
@@ -86,7 +72,6 @@ Model GreenMinuscleBloodSpot      // Name of actor in DECORATE
    ZOffset 1.5
    FrameIndex BPDL B 0 0         // The sprite lump, sprite frame, model index, frame number
 }
-
 Model GreenMinuscleBloodSpot      // Name of actor in DECORATE
 {
    Path "models/bloodspot"    // Path to model in PK3
@@ -96,7 +81,6 @@ Model GreenMinuscleBloodSpot      // Name of actor in DECORATE
    ZOffset 1.6
    FrameIndex BPDL C 0 0         // The sprite lump, sprite frame, model index, frame number
 }
-
 Model GreenMinuscleBloodSpot      // Name of actor in DECORATE
 {
    Path "models/bloodspot"    // Path to model in PK3
@@ -106,8 +90,6 @@ Model GreenMinuscleBloodSpot      // Name of actor in DECORATE
    ZOffset 1.3
    FrameIndex BPDL D 0 0         // The sprite lump, sprite frame, model index, frame number
 }
-
-
 Model GreenMinuscleBloodSpot      // Name of actor in DECORATE
 {
    Path "models/bloodspot"    // Path to model in PK3
@@ -117,8 +99,6 @@ Model GreenMinuscleBloodSpot      // Name of actor in DECORATE
    ZOffset 1.7
    FrameIndex BPDL C 0 0         // The sprite lump, sprite frame, model index, frame number
 }
-
-
 Model GreenMinuscleBloodSpot      // Name of actor in DECORATE
 {
    Path "models/bloodspot"    // Path to model in PK3
@@ -128,8 +108,6 @@ Model GreenMinuscleBloodSpot      // Name of actor in DECORATE
    ZOffset 1.7
    FrameIndex BPDL D 0 0         // The sprite lump, sprite frame, model index, frame number
 }
-
-
 Model GreenWaterbloodspot      // Name of actor in DECORATE
 {
    Path "models/bloodspot"    // Path to model in PK3
@@ -139,10 +117,8 @@ Model GreenWaterbloodspot      // Name of actor in DECORATE
    ZOffset 1.0
    ROTATING
    Rotation-Speed 1
-   
-   FrameIndex BPDL E 0 0         // The sprite lump, sprite frame, model index, frame number
+      FrameIndex BPDL E 0 0         // The sprite lump, sprite frame, model index, frame number
 }
-
 Model Green_FlyingBlood      // Name of actor in DECORATE
 {
    Path "models/bloodspot"    // Path to model in PK3
@@ -152,7 +128,6 @@ Model Green_FlyingBlood      // Name of actor in DECORATE
    ZOffset 1.6
    FrameIndex BPDL B 0 0         // The sprite lump, sprite frame, model index, frame number
 }
-
 Model Green_FlyingBlood      // Name of actor in DECORATE
 {
    Path "models/bloodspot"    // Path to model in PK3
@@ -162,8 +137,6 @@ Model Green_FlyingBlood      // Name of actor in DECORATE
    ZOffset 1.6
    FrameIndex BPDL A 0 0         // The sprite lump, sprite frame, model index, frame number
 }
-
-
 Model GreenCeilBloodSpot      // Name of actor in DECORATE
 {
    Path "models/bloodspot"    // Path to model in PK3
@@ -173,7 +146,6 @@ Model GreenCeilBloodSpot      // Name of actor in DECORATE
    ZOffset -0.1
    FrameIndex BPDL A 0 0         // The sprite lump, sprite frame, model index, frame number
 }
-
 Model GreenCeilBloodSpotLarge      // Name of actor in DECORATE
 {
    Path "models/bloodspot"    // Path to model in PK3
@@ -183,7 +155,6 @@ Model GreenCeilBloodSpotLarge      // Name of actor in DECORATE
    ZOffset -0.1
    FrameIndex BPDL a 0 0         // The sprite lump, sprite frame, model index, frame number
 }
-
 Model GreenMediumBloodSpot2      // Name of actor in DECORATE
 {
    Path "models/bloodspot"    // Path to model in PK3
@@ -193,7 +164,6 @@ Model GreenMediumBloodSpot2      // Name of actor in DECORATE
    ZOffset 1.6
    FrameIndex BPDL A 0 0         // The sprite lump, sprite frame, model index, frame number
 }
-
 Model GreenMediumBloodSpot      // Name of actor in DECORATE
 {
    Path "models/bloodspot"    // Path to model in PK3
@@ -203,9 +173,6 @@ Model GreenMediumBloodSpot      // Name of actor in DECORATE
    ZOffset 1.6
    FrameIndex BPDL A 0 0         // The sprite lump, sprite frame, model index, frame number
 }
-
-
-
 Model SplatteredGreenSmall     // Name of actor in DECORATE
 {
    Path "models/bloodspot"    // Path to model in PK3
@@ -215,9 +182,6 @@ Model SplatteredGreenSmall     // Name of actor in DECORATE
    ZOffset 1.6
    FrameIndex BPDL A 0 0         // The sprite lump, sprite frame, model index, frame number
 }
-
-
-
 Model SplatteredGreenLarge     // Name of actor in DECORATE
 {
    Path "models/bloodspot"    // Path to model in PK3
@@ -227,7 +191,6 @@ Model SplatteredGreenLarge     // Name of actor in DECORATE
    ZOffset 0.6
    FrameIndex BPDL A 0 0         // The sprite lump, sprite frame, model index, frame number
 }
-
 Model GreenGrowingBloodPool     // Name of actor in DECORATE
 {
    Path "models/bloodspot"    // Path to model in PK3
@@ -237,10 +200,6 @@ Model GreenGrowingBloodPool     // Name of actor in DECORATE
    ZOffset 0.65
    FrameIndex TNT5 A 0 0         // The sprite lump, sprite frame, model index, frame number
 }
-
-
-
-
 Model GreenBloodFootPrintLeft      // Name of actor in DECORATE
 {
    Path "models/bloodspot"    // Path to model in PK3
@@ -250,8 +209,6 @@ Model GreenBloodFootPrintLeft      // Name of actor in DECORATE
    ZOffset 1.6
    FrameIndex BPDL A 0 0         // The sprite lump, sprite frame, model index, frame number
 }
-
-
 Model GreenBloodFootPrintRight      // Name of actor in DECORATE
 {
    Path "models/bloodspot"    // Path to model in PK3

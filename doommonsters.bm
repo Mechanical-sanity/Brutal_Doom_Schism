@@ -5456,9 +5456,7 @@ brightmap sprite RSPIY0
 {
 	map "brightmaps/doom/monsters/ArachnotronX/RSPIY0.png"
 }
-
 //Zombie1
-
 brightmap sprite POSRA1
 {
 	map "brightmaps/doom/Monsters/ZombieMan/possa1.png"
@@ -5553,10 +5551,7 @@ brightmap sprite POSRF5
 	//iwad
 	disablefullbright
 }
-
-
 //Zombie1 Pistol
-
 brightmap sprite PSPOA1
 {
 	map "brightmaps/doom/Monsters/ZombieMan/possa1.png"
@@ -5621,7 +5616,6 @@ brightmap sprite PSPOE3E7
 {
 	map "brightmaps/doom/Monsters/ZombieMan/posse3e7.png"
 }
-
 brightmap sprite PSPOF1
 {
 	map "brightmaps/doom/Monsters/ZombieMan/PSPOF1.png"
@@ -5652,9 +5646,7 @@ brightmap sprite PSPOF5
 	//iwad
 	disablefullbright
 }
-
 //Zombie2
-
 brightmap sprite SPOSA1
 {
 	map "brightmaps/doom/Monsters/ShotgunGuy/sposa1.png"
@@ -5667,7 +5659,6 @@ brightmap sprite SPOSA3A7
 {
 	map "brightmaps/doom/Monsters/ShotgunGuy/sposa3a7.png"
 }
-
 brightmap sprite SPOSB1
 {
 	map "brightmaps/doom/Monsters/ShotgunGuy/sposb1.png"
@@ -5680,7 +5671,6 @@ brightmap sprite SPOSB3B7
 {
 	map "brightmaps/doom/Monsters/ShotgunGuy/sposb3b7.png"
 }
-
 brightmap sprite SPOSC1
 {
 	map "brightmaps/doom/Monsters/ShotgunGuy/sposc1.png"
@@ -5693,7 +5683,6 @@ brightmap sprite SPOSC3C7
 {
 	map "brightmaps/doom/Monsters/ShotgunGuy/sposc3c7.png"
 }
-
 brightmap sprite SPOSD1
 {
 	map "brightmaps/doom/Monsters/ShotgunGuy/sposd1.png"
@@ -5706,7 +5695,6 @@ brightmap sprite SPOSD3D7
 {
 	map "brightmaps/doom/Monsters/ShotgunGuy/sposd3d7.png"
 }
-
 brightmap sprite SPOSE1
 {
 	map "brightmaps/doom/Monsters/ShotgunGuy/spose1.png"
@@ -5719,112 +5707,1233 @@ brightmap sprite SPOSE3E7
 {
 	map "brightmaps/doom/Monsters/ShotgunGuy/spose3e7.png"
 }
-
 brightmap sprite SPOSF1
 {
 	map "brightmaps/doom/Monsters/ShotgunGuy/sposf1.png"
 	//iwad
 	disablefullbright
 }
-
 brightmap sprite PSS3F1
 {
 	map "brightmaps/doom/Monsters/ShotgunGuy/PSS3f1.png"
 	//iwad
 	disablefullbright
 }
-
 brightmap sprite SPOSF2
 {
 	map "brightmaps/doom/Monsters/ShotgunGuy/sposf2.png"
 	//iwad
 	disablefullbright
 }
-
 brightmap sprite SPOSF8
 {
 	map "brightmaps/doom/Monsters/ShotgunGuy/sposf8.png"
 	//iwad
 	disablefullbright
 }
-
-
-
 brightmap sprite SPOSF5
 {
 	//iwad
 	map "brightmaps/doom/Monsters/ShotgunGuy/sposf5.png"
 	disablefullbright
 }
-
-
 brightmap sprite DIABF1
 {
 	map "brightmaps/doom/Monsters/Diabolist/DIABF1.png"
 	disablefullbright
 }
-
-
 brightmap sprite DIABF2F8
 {
 	map "brightmaps/doom/Monsters/Diabolist/DIABF2F8.png"
 	disablefullbright
 }
-
 brightmap sprite DIABF3F7
 {
 	map "brightmaps/doom/Monsters/Diabolist/DIABF3F7.png"
 	disablefullbright
 }
-
 brightmap sprite DIABF4F6
 {
 	map "brightmaps/doom/Monsters/Diabolist/DIABF4F6.png"
 	disablefullbright
 }
-
 brightmap sprite DIABF5
 {
 	map "brightmaps/doom/Monsters/Diabolist/DIABF5.png"
 	disablefullbright
 }
-
-
-
 brightmap sprite DIABE1
 {
 	map "brightmaps/doom/Monsters/Diabolist/DIABF1.png"
 	disablefullbright
 }
-
 brightmap sprite DIABE2E8
 {
 	map "brightmaps/doom/Monsters/Diabolist/DIABF2F8.png"
 	disablefullbright
 }
-
 brightmap sprite DIABE3E7
 {
 	map "brightmaps/doom/Monsters/Diabolist/DIABF3F7.png"
 	disablefullbright
 }
-
 brightmap sprite DIABE4E6
 {
 	map "brightmaps/doom/Monsters/Diabolist/DIABF4F6.png"
 	disablefullbright
 }
-
 brightmap sprite DIABE5
 {
 	map "brightmaps/doom/Monsters/Diabolist/DIABF5.png"
 	disablefullbright
 }
-
-
-
-
-
-
-
-
+BrightMap Sprite DIABA1D1
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABA1"
+DisableFullBright
+}
+BrightMap Sprite DIABA2D8
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABA2"
+DisableFullBright
+}
+BrightMap Sprite DIABA7D3
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABA7"
+DisableFullBright
+}
+BrightMap Sprite DIABA8D2
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABA8"
+DisableFullBright
+}
+BrightMap Sprite DIABB1E1
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABB1"
+DisableFullBright
+}
+BrightMap Sprite DIABB2E8
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABB2"
+DisableFullBright
+}
+BrightMap Sprite DIABB8E2
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABB8"
+DisableFullBright
+}
+BrightMap Sprite DIABC1F1
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABC1"
+DisableFullBright
+}
+BrightMap Sprite DIABC2F8
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABC2"
+DisableFullBright
+}
+BrightMap Sprite DIABC8F2
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABC8"
+DisableFullBright
+}
+BrightMap Sprite DIABG1
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABG1"
+DisableFullBright
+}
+BrightMap Sprite DIABG2
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABG2"
+DisableFullBright
+}
+BrightMap Sprite DIABG3
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABG3"
+DisableFullBright
+}
+BrightMap Sprite DIABG4
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABG4"
+DisableFullBright
+}
+BrightMap Sprite DIABG5
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABG5"
+DisableFullBright
+}
+BrightMap Sprite DIABG6
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABG6"
+DisableFullBright
+}
+BrightMap Sprite DIABG7
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABG7"
+DisableFullBright
+}
+BrightMap Sprite DIABG8
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABG8"
+DisableFullBright
+}
+BrightMap Sprite DIABH1
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABH1"
+DisableFullBright
+}
+BrightMap Sprite DIABH2
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABH2"
+DisableFullBright
+}
+BrightMap Sprite DIABH3
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABH3"
+DisableFullBright
+}
+BrightMap Sprite DIABH4
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABH4"
+DisableFullBright
+}
+BrightMap Sprite DIABH5
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABH5"
+DisableFullBright
+}
+BrightMap Sprite DIABH6
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABH6"
+DisableFullBright
+}
+BrightMap Sprite DIABH7
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABH7"
+DisableFullBright
+}
+BrightMap Sprite DIABH8
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABH8"
+DisableFullBright
+}
+BrightMap Sprite DIABI1
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABI1"
+DisableFullBright
+}
+BrightMap Sprite DIABI2
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABI2"
+DisableFullBright
+}
+BrightMap Sprite DIABI3
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABI3"
+DisableFullBright
+}
+BrightMap Sprite DIABI4
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABI4"
+DisableFullBright
+}
+BrightMap Sprite DIABI5
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABI5"
+DisableFullBright
+}
+BrightMap Sprite DIABI6
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABI6"
+DisableFullBright
+}
+BrightMap Sprite DIABI7
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABI7"
+DisableFullBright
+}
+BrightMap Sprite DIABI8
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABI8"
+DisableFullBright
+}
+BrightMap Sprite DIABJ1
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABJ1"
+DisableFullBright
+}
+BrightMap Sprite DIABJ2
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABJ2"
+DisableFullBright
+}
+BrightMap Sprite DIABJ3
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABJ3"
+DisableFullBright
+}
+BrightMap Sprite DIABJ4
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABJ4"
+DisableFullBright
+}
+BrightMap Sprite DIABJ5
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABJ5"
+DisableFullBright
+}
+BrightMap Sprite DIABJ6
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABJ6"
+DisableFullBright
+}
+BrightMap Sprite DIABJ7
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABJ7"
+DisableFullBright
+}
+BrightMap Sprite DIABJ8
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABJ8"
+DisableFullBright
+}
+BrightMap Sprite DIABK1
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABK1"
+DisableFullBright
+}
+BrightMap Sprite DIABK2
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABK2"
+DisableFullBright
+}
+BrightMap Sprite DIABK3
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABK3"
+DisableFullBright
+}
+BrightMap Sprite DIABK4
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABK4"
+DisableFullBright
+}
+BrightMap Sprite DIABK5
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABK5"
+DisableFullBright
+}
+BrightMap Sprite DIABK6
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABK6"
+DisableFullBright
+}
+BrightMap Sprite DIABK7
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABK7"
+DisableFullBright
+}
+BrightMap Sprite DIABK8
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABK8"
+DisableFullBright
+}
+BrightMap Sprite DIABL1
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABL1"
+DisableFullBright
+}
+BrightMap Sprite DIABL2
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABL2"
+DisableFullBright
+}
+BrightMap Sprite DIABL3
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABL3"
+DisableFullBright
+}
+BrightMap Sprite DIABL4
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABL4"
+DisableFullBright
+}
+BrightMap Sprite DIABL5
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABL5"
+DisableFullBright
+}
+BrightMap Sprite DIABL6
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABL6"
+DisableFullBright
+}
+BrightMap Sprite DIABL7
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABL7"
+DisableFullBright
+}
+BrightMap Sprite DIABL8
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABL8"
+DisableFullBright
+}
+BrightMap Sprite DIABM1
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABM1"
+DisableFullBright
+}
+BrightMap Sprite DIABM2
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABM2"
+DisableFullBright
+}
+BrightMap Sprite DIABM3
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABM3"
+DisableFullBright
+}
+BrightMap Sprite DIABM4
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABM4"
+DisableFullBright
+}
+BrightMap Sprite DIABM5
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABM5"
+DisableFullBright
+}
+BrightMap Sprite DIABM6
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABM6"
+DisableFullBright
+}
+BrightMap Sprite DIABM7
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABM7"
+DisableFullBright
+}
+BrightMap Sprite DIABM8
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABM8"
+DisableFullBright
+}
+BrightMap Sprite DIABN1
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABN1"
+DisableFullBright
+}
+BrightMap Sprite DIABN2
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABN2"
+DisableFullBright
+}
+BrightMap Sprite DIABN3
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABN3"
+DisableFullBright
+}
+BrightMap Sprite DIABN4
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABN4"
+DisableFullBright
+}
+BrightMap Sprite DIABN5
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABN5"
+DisableFullBright
+}
+BrightMap Sprite DIABN6
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABN6"
+DisableFullBright
+}
+BrightMap Sprite DIABN7
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABN7"
+DisableFullBright
+}
+BrightMap Sprite DIABN8
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABN8"
+DisableFullBright
+}
+BrightMap Sprite DIABO1
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABO1"
+DisableFullBright
+}
+BrightMap Sprite DIABO2
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABO3"
+DisableFullBright
+}
+BrightMap Sprite DIABO3
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABO3"
+DisableFullBright
+}
+BrightMap Sprite DIABO4
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABO4"
+DisableFullBright
+}
+BrightMap Sprite DIABO5
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABO5"
+DisableFullBright
+}
+BrightMap Sprite DIABO6
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABO6"
+DisableFullBright
+}
+BrightMap Sprite DIABO7
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABO7"
+DisableFullBright
+}
+BrightMap Sprite DIABO8
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABO8"
+DisableFullBright
+}
+BrightMap Sprite DIABP1
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABP1"
+DisableFullBright
+}
+BrightMap Sprite DIABP2
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABP2"
+DisableFullBright
+}
+BrightMap Sprite DIABP3
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABP3"
+DisableFullBright
+}
+BrightMap Sprite DIABP4
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABP4"
+DisableFullBright
+}
+BrightMap Sprite DIABP5
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABP5"
+DisableFullBright
+}
+BrightMap Sprite DIABP6
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABP6"
+DisableFullBright
+}
+BrightMap Sprite DIABP7
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABP7"
+DisableFullBright
+}
+BrightMap Sprite DIABP8
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABP8"
+DisableFullBright
+}
+BrightMap Sprite DIABQ1
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABQ1"
+DisableFullBright
+}
+BrightMap Sprite DIABQ2
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABQ2"
+DisableFullBright
+}
+BrightMap Sprite DIABQ3
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABQ3"
+DisableFullBright
+}
+BrightMap Sprite DIABQ4
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIABQ4"
+DisableFullBright
+}
+BrightMap Sprite DIA2A1
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIA2A1"
+DisableFullBright
+}
+BrightMap Sprite DIA2A2
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIA2A2"
+DisableFullBright
+}
+BrightMap Sprite DIA2A3
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIA2A3"
+DisableFullBright
+}
+BrightMap Sprite DIA2A4
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIA2A4"
+DisableFullBright
+}
+BrightMap Sprite DIA2A5
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIA2A5"
+DisableFullBright
+}
+BrightMap Sprite DIA2A6
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIA2A6"
+DisableFullBright
+}
+BrightMap Sprite DIA2A7
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIA2A7"
+DisableFullBright
+}
+BrightMap Sprite DIA2A8
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIA2A8"
+DisableFullBright
+}
+BrightMap Sprite DIA2B1
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIA2B1"
+DisableFullBright
+}
+BrightMap Sprite DIA2B2
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIA2B2"
+DisableFullBright
+}
+BrightMap Sprite DIA2B3
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIA2B3"
+DisableFullBright
+}
+BrightMap Sprite DIA2B4
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIA2B4"
+DisableFullBright
+}
+BrightMap Sprite DIA2B5
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIA2B5"
+DisableFullBright
+}
+BrightMap Sprite DIA2B6
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIA2B6"
+DisableFullBright
+}
+BrightMap Sprite DIA2B7
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIA2B7"
+DisableFullBright
+}
+BrightMap Sprite DIA2B8
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIA2B8"
+DisableFullBright
+}
+BrightMap Sprite DIA2C1
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIA2C1"
+DisableFullBright
+}
+BrightMap Sprite DIA2C2
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIA2C2"
+DisableFullBright
+}
+BrightMap Sprite DIA2C3
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIA2C3"
+DisableFullBright
+}
+BrightMap Sprite DIA2C4
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIA2C4"
+DisableFullBright
+}
+BrightMap Sprite DIA2C5
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIA2C5"
+DisableFullBright
+}
+BrightMap Sprite DIA2C6
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIA2C6"
+DisableFullBright
+}
+BrightMap Sprite DIA2C7
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIA2C7"
+DisableFullBright
+}
+BrightMap Sprite DIA2C8
+{
+Map "brightmaps/doom/Monsters/Diabolist/BMDIA2C8"
+DisableFullBright
+}
+BrightMap Sprite FRITA1
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITA1"
+	DisableFullBright
+}
+BrightMap Sprite FRITA2A8
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITA2"
+	DisableFullBright
+}
+BrightMap Sprite FRITA3A7
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITA3"
+	DisableFullBright
+}
+BrightMap Sprite FRITA4A6
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITA4"
+	DisableFullBright
+}
+BrightMap Sprite FRITA5
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITA5"
+	DisableFullBright
+}
+BrightMap Sprite FRITB1
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITB1"
+	DisableFullBright
+}
+BrightMap Sprite FRITB2B8
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITB2"
+	DisableFullBright
+}
+BrightMap Sprite FRITB3B7
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITB3"
+	DisableFullBright
+}
+BrightMap Sprite FRITB4B6
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITB4"
+	DisableFullBright
+}
+BrightMap Sprite FRITB5
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITB5"
+	DisableFullBright
+}
+BrightMap Sprite FRITC1
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITC1"
+	DisableFullBright
+}
+BrightMap Sprite FRITC2C8
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITC2"
+	DisableFullBright
+}
+BrightMap Sprite FRITC3C7
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITC3"
+	DisableFullBright
+}
+BrightMap Sprite FRITC4C6
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITC4"
+	DisableFullBright
+}
+BrightMap Sprite FRITC5
+{
+    Map BMFRITC5
+	DisableFullBright
+}
+BrightMap Sprite FRITD1
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITD1"
+	DisableFullBright
+}
+BrightMap Sprite FRITD2D8
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITD2"
+	DisableFullBright
+}
+BrightMap Sprite FRITD3D7
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITD3"
+	DisableFullBright
+}
+BrightMap Sprite FRITD4D6
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITD4"
+	DisableFullBright
+}
+BrightMap Sprite FRITD5
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITD5"
+	DisableFullBright
+}
+BrightMap Sprite FRITE1
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITE1"
+	DisableFullBright
+}
+BrightMap Sprite FRITE2E8
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITE2"
+	DisableFullBright
+}
+BrightMap Sprite FRITE3E7
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITE3"
+	DisableFullBright
+}
+BrightMap Sprite FRITE4E6
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITE4"
+	DisableFullBright
+}
+BrightMap Sprite FRITE5
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITE5"
+	DisableFullBright
+}
+BrightMap Sprite FRITF1
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITF1"
+	DisableFullBright
+}
+BrightMap Sprite FRITF2F8
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITF2"
+	DisableFullBright
+}
+BrightMap Sprite FRITF3F7
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITF3"
+	DisableFullBright
+}
+BrightMap Sprite FRITF4F6
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITF4"
+	DisableFullBright
+}
+BrightMap Sprite FRITF5
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITF5"
+	DisableFullBright
+}
+BrightMap Sprite FRITG1
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITG1"
+	DisableFullBright
+}
+BrightMap Sprite FRITG2G8
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITG2"
+	DisableFullBright
+}
+BrightMap Sprite FRITG3G7
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITG3"
+	DisableFullBright
+}
+BrightMap Sprite FRITG4G6
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITG4"
+	DisableFullBright
+}
+BrightMap Sprite FRITG5
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITG5"
+	DisableFullBright
+}
+BrightMap Sprite FRITH1
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITH1"
+	DisableFullBright
+}
+BrightMap Sprite FRITH2
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITH2"
+	DisableFullBright
+}
+BrightMap Sprite FRITH3
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITH3"
+	DisableFullBright
+}
+BrightMap Sprite FRITH4
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITH4"
+	DisableFullBright
+}
+BrightMap Sprite FRITH5
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITH5"
+	DisableFullBright
+}
+BrightMap Sprite FRITH6
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITH6"
+	DisableFullBright
+}
+BrightMap Sprite FRITH7
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITH7"
+	DisableFullBright
+}
+BrightMap Sprite FRITH8
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITH8"
+	DisableFullBright
+}
+BrightMap Sprite FRITI0
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITI0"
+	DisableFullBright
+}
+BrightMap Sprite FRITJ0
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITJ0"
+	DisableFullBright
+}
+BrightMap Sprite FRITK0
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITK0"
+	DisableFullBright
+}
+BrightMap Sprite FRITL0
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITL0"
+	DisableFullBright
+}
+BrightMap Sprite FRITM0
+{"
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITM0
+	DisableFullBright
+}
+BrightMap Sprite FRITN0
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITN0"
+	DisableFullBright
+}
+BrightMap Sprite FRITO0
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITO0"
+	DisableFullBright
+}
+BrightMap Sprite FRITP0
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITP0"
+	DisableFullBright
+}
+BrightMap Sprite FRITQ0
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITQ0"
+	DisableFullBright
+}
+BrightMap Sprite FRITR0
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITR0"
+	DisableFullBright
+}
+BrightMap Sprite FRITS1
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITS1"
+	DisableFullBright
+}
+BrightMap Sprite FRITS2
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITS2"
+	DisableFullBright
+}
+BrightMap Sprite FRITS3
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITS3"
+	DisableFullBright
+}
+BrightMap Sprite FRITS4
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITS4"
+	DisableFullBright
+}
+BrightMap Sprite FRITS5
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITS5"
+	DisableFullBright
+}
+BrightMap Sprite FRITS6
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITS6"
+	DisableFullBright
+}
+BrightMap Sprite FRITS7
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITS7"
+	DisableFullBright
+}
+BrightMap Sprite FRITS8
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITS8"
+	DisableFullBright
+}
+BrightMap Sprite FRITT1
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITT1"
+	DisableFullBright
+}
+BrightMap Sprite FRITT2
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITT2"
+	DisableFullBright
+}
+BrightMap Sprite FRITT3
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITT3"
+	DisableFullBright
+}
+BrightMap Sprite FRITT4
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITT4"
+	DisableFullBright
+}
+BrightMap Sprite FRITT5
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITT5"
+	DisableFullBright
+}
+BrightMap Sprite FRITT6
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITT6"
+	DisableFullBright
+}
+BrightMap Sprite FRITT7
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITT7"
+	DisableFullBright
+}
+BrightMap Sprite FRITT8
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITT8"
+	DisableFullBright
+}
+BrightMap Sprite FRITU1
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITU1"
+	DisableFullBright
+}
+BrightMap Sprite FRITU2
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITU2"
+	DisableFullBright
+}
+BrightMap Sprite FRITU3
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITU3"
+	DisableFullBright
+}
+BrightMap Sprite FRITU4
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITU4"
+	DisableFullBright
+}
+BrightMap Sprite FRITU5
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITU5"
+	DisableFullBright
+}
+BrightMap Sprite FRITU6
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITU6"
+	DisableFullBright
+}
+BrightMap Sprite FRITU7
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITU7"
+	DisableFullBright
+}
+BrightMap Sprite FRITU8
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRITU8"
+	DisableFullBright
+}
+BrightMap Sprite FRTBA0
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRTBA0"
+	DisableFullBright
+}
+BrightMap Sprite FRTBB0
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRTBB0"
+	DisableFullBright
+}
+BrightMap Sprite FRTBC0
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRTBC0"
+	DisableFullBright
+}
+BrightMap Sprite FRTBD0
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRTBD0"
+	DisableFullBright
+}
+BrightMap Sprite FRTBE0
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRTBE0"
+	DisableFullBright
+}
+BrightMap Sprite FRTBF0
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRTBF0"
+	DisableFullBright
+}
+BrightMap Sprite FRTBG0
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRTBG0"
+	DisableFullBright
+}
+BrightMap Sprite FRTBH0
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRTBH0"
+	DisableFullBright
+}
+BrightMap Sprite FRTBI0
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRTBI0"
+	DisableFullBright
+}
+BrightMap Sprite FRTFA0
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRTFA0"
+	DisableFullBright
+}
+BrightMap Sprite FRTFB0
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRTFB0"
+	DisableFullBright
+}
+BrightMap Sprite FRTFC0
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRTFC0"
+	DisableFullBright
+}
+BrightMap Sprite FRTFD0
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRTFD0"
+	DisableFullBright
+}
+BrightMap Sprite FRTFE0
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRTFE0"
+	DisableFullBright
+}
+BrightMap Sprite FRTFF0
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRTFF0"
+	DisableFullBright
+}
+BrightMap Sprite FRTFG0
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRTFG0"
+	DisableFullBright
+}
+BrightMap Sprite FRTFH0
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRTFH0"
+	DisableFullBright
+}
+BrightMap Sprite FRTFI0
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRTFI0"
+	DisableFullBright
+}
+BrightMap Sprite FRTFJ0
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRTFJ0"
+	DisableFullBright
+}
+BrightMap Sprite FRTFK0
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRTFK0"
+	DisableFullBright
+}
+BrightMap Sprite FRTFL0
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRTFL0"
+	DisableFullBright
+}
+BrightMap Sprite FRTFM0
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRTFM0"
+	DisableFullBright
+}
+BrightMap Sprite FRTFN0
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRTFN0"
+	DisableFullBright
+}
+BrightMap Sprite FRTFO0
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRTFO0"
+	DisableFullBright
+}
+BrightMap Sprite FRTMA1A5
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRTMA1"
+	DisableFullBright
+}
+BrightMap Sprite FRTMA2A8
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRTMA2"
+	DisableFullBright
+}
+BrightMap Sprite FRTMA3A7
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRTMA3"
+	DisableFullBright
+}
+BrightMap Sprite FRTMA4A6
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRTMA4"
+	DisableFullBright
+}
+BrightMap Sprite FRTMB1B5
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRTMB1"
+	DisableFullBright
+}
+BrightMap Sprite FRTMB2B8
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRTMB2"
+	DisableFullBright
+}
+BrightMap Sprite FRTMB3B7
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRTMB3"
+	DisableFullBright
+}
+BrightMap Sprite FRTMB4B6
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRTMB4"
+	DisableFullBright
+}
+BrightMap Sprite FRTMC0
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRTMC0"
+	DisableFullBright
+}
+BrightMap Sprite FRTMD0
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRTMD0"
+	DisableFullBright
+}
+BrightMap Sprite FRTME0
+{
+    Map "brightmaps/doom/Monsters/Afrit/BMFRTME0"
+	DisableFullBright
+}

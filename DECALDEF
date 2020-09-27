@@ -6,9 +6,7 @@ decal IceScorch
 	y-scale 1.25
 	randomflipx
 	randomflipy
-	
 }
-
 decal SawVertical
 {
 	pic SawVert
@@ -18,7 +16,6 @@ decal SawVertical
 	randomflipy
 	randomflipx
 }
-
 decal SawHorizontal
 {
 	pic SawHori
@@ -28,7 +25,6 @@ decal SawHorizontal
 	randomflipy
 	randomflipx
 }
-
 decal Crack1
 {
 	pic BFGLITE1
@@ -36,7 +32,6 @@ decal Crack1
 	randomflipy
 	randomflipx
 }
-
 decal Crack2
 {
 	pic BFGLITE2
@@ -44,13 +39,11 @@ decal Crack2
 	randomflipy
 	randomflipx
 }
-
 decalgroup Crack
 {
 	Crack1	1
 	Crack2	1
 }
-
 decal GiantScorch
 {
 	pic SCORCH1
@@ -60,7 +53,6 @@ decal GiantScorch
 	randomflipx
 	randomflipy
 }
-
 decal FlamethrowerScorch
 {
 	pic SCORCH75
@@ -70,7 +62,6 @@ decal FlamethrowerScorch
 	randomflipx
 	randomflipy
 }
-
 decal SkullScorch1 
 { 
    pic PLASMA1 
@@ -80,7 +71,6 @@ decal SkullScorch1
    randomflipx 
    randomflipy 
 } 
-
 decal SkullScorch2 
 { 
    pic PLASMA2 
@@ -90,13 +80,11 @@ decal SkullScorch2
    randomflipx 
    randomflipy 
 } 
-
 decalgroup SkullScorch 
 { 
    SkullScorch1   1 
    SkullScorch2   1 
 } 
-
 decal BigScorch
 {
 	pic SCORCH1
@@ -106,7 +94,6 @@ decal BigScorch
 	randomflipx
 	randomflipy
 }
-
 decal BiggerScorch
 {
 	pic SCORCH1
@@ -116,7 +103,6 @@ decal BiggerScorch
 	randomflipx
 	randomflipy
 }
-
 decal FireworxScorch
 {
 	pic SCORCH1
@@ -126,7 +112,6 @@ decal FireworxScorch
 	randomflipx
 	randomflipy
 }
-
 decal SmallerScorch
 {
 	pic SCORCH1

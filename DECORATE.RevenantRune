@@ -15,15 +15,11 @@ Actor DemonRuneRevenant : PowerupGiver
 		DMRU ABCD 6 Bright
 		loop
 	}
-
 }
-
-
 Actor PowerTransformRevenant : PowerMorph
 {
 	PowerMorph.PlayerClass "RevenantPlayer"
 }
-
 Actor RevenantPlayer : DoomPlayer
 {
 	Radius 16
@@ -79,8 +75,7 @@ Actor RevenantPlayer : DoomPlayer
 	See:
 		SKEL ABCDEF 3
 		Goto Spawn
-		
-	Melee:
+			Melee:
 	Missile:
 		SKEL J 2 BRIGHT
 		SKEL K 2
@@ -121,9 +116,6 @@ Actor RevenantPlayer : DoomPlayer
 		Stop	
 		}
 }
-
-
-
 ACTOR D4RevenantHUD : DoomWeapon
 {
 	Weapon.AmmoUse1 0
@@ -138,15 +130,12 @@ ACTOR D4RevenantHUD : DoomWeapon
 		D4RW A 1 A_WeaponReady
 		TNT1 A 0 A_JumpIfInventory("CeaseMorph", 1, "CeaseMorph")
 		Loop
-	
-	Steady:	
+		Steady:	
 		TNT1 A 0
 		TNT1 A 1  A_JumpIfInventory("CeaseMorph", 1, "CeaseMorph")
 		TNT1 A 0 A_JumpIfInventory("GoFatality", 1, "Steady")
 		Goto Select
-		
-	
-	Deselect:
+			Deselect:
 		D4RW CBA 1
 		D4RW AAAAAAAAAAAA 0 A_Lower
 		TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAA 1 A_Lower
@@ -158,8 +147,7 @@ ACTOR D4RevenantHUD : DoomWeapon
 		TNT1 A 0 A_PlaySound("skeleton/sight")
 		D4RW ABC 1 A_JumpIfInventory("CeaseMorph", 1, "CeaseMorph")
 		Goto Ready
-		
-	Fire:
+			Fire:
 		TNT1 A 0
 		D4RW A 1 A_JumpIfInventory("CeaseMorph", 1, "CeaseMorph")
 		TNT1 A 0 A_PlaySound("MICRO1", 1)
@@ -187,12 +175,10 @@ ACTOR D4RevenantHUD : DoomWeapon
 		D4RW C 2 BRIGHT  A_JumpIfInventory("CeaseMorph", 1, "CeaseMorph")
 		D4RW A 30
 		Goto Ready
-		
-	Spawn:
+			Spawn:
 		SHOT A -1
 		Stop
-		
-	CeaseMorph:
+			CeaseMorph:
 		TNT1 A 0
 		TNT1 A 0 A_TakeInventory("CeaseMorph", 1)
 		TNT1 A 0 ACS_NamedExecuteAlways("BDForceUnmorph")
@@ -200,12 +186,6 @@ ACTOR D4RevenantHUD : DoomWeapon
 		Goto Ready	
 	}
 }
-
-
-
-
-
-
 ACTOR D4RevenantROcket: Rocket2
 {
 	Radius 8

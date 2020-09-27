@@ -15,10 +15,7 @@
     reactiontime = 3
     perception = 4
     chatfrequency = 1
-    
-}
-
-
+   }
 {
     name = "Destroyer"
     script = HUMANBOT
@@ -35,11 +32,7 @@
     reactiontime = 4
     perception = 4
     chatfrequency = 1
-    
-}
-
-
-
+    }
 {
     name = "Executioner"
     script = HUMANBOT
@@ -57,13 +50,7 @@
     reactiontime = 4
     perception = 4
     chatfrequency = 1
-    
-}
-
-
-
-
-
+   }
 {
     name = "Warmonger"
     script = HUMANBOT
@@ -81,5 +68,4 @@
     reactiontime = 4
     perception = 4
     chatfrequency = 1
-    
-}
+    }

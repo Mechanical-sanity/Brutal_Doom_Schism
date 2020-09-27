@@ -9,7 +9,6 @@ bot[1] = destroyer
 bot[2] = executioner
 bot[3] = warmonger
 }
-
 {
 mapname = BDM02
 gamemode = deathmatch
@@ -21,8 +20,6 @@ bot[1] = destroyer
 bot[2] = executioner
 bot[3] = warmonger
 }
-
-
 {
 mapname = BDM03
 gamemode = deathmatch
@@ -34,7 +31,6 @@ bot[1] = destroyer
 bot[2] = executioner
 bot[3] = warmonger
 }
-
 {
 mapname = BDM04
 gamemode = deathmatch
@@ -46,8 +42,6 @@ bot[1] = destroyer
 bot[2] = executioner
 bot[3] = warmonger
 }
-
-
 {
 mapname = BDM05
 gamemode = deathmatch
@@ -62,8 +56,6 @@ bot[4] = grunt
 bot[5] = destroyer
 bot[6] = executioner
 }
-
-
 {
 mapname = BDM06
 gamemode = deathmatch
@@ -75,8 +67,6 @@ bot[1] = destroyer
 bot[2] = executioner
 bot[3] = warmonger
 }
-
-
 {
 mapname = BDM07
 gamemode = deathmatch
@@ -88,8 +78,6 @@ bot[1] = destroyer
 bot[2] = executioner
 bot[3] = warmonger
 }
-
-
 {
 mapname = BDM08
 gamemode = deathmatch
@@ -101,8 +89,6 @@ bot[1] = destroyer
 bot[2] = executioner
 bot[3] = warmonger
 }
-
-
 {
 mapname = BDM09
 gamemode = deathmatch
@@ -114,8 +100,6 @@ bot[1] = destroyer
 bot[2] = executioner
 bot[3] = warmonger
 }
-
-
 {
 mapname = BDM10
 gamemode = deathmatch

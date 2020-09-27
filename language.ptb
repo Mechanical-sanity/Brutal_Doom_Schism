@@ -1,14 +1,11 @@
 [ptb pt br]
-
 D_DEVSTR = "Modo de desenvolvimento ATIVADO.\n";
 D_CDROM = "Rodando do CD/DVD-ROM: zdoom.ini em c:\\zdoomdat\n";
 PRESSKEY = "aperte qualquer tecla.";
 PRESSYN = "escolha Sim ou Não";
-
 QUITMSG = "deseja mesmo sair?";
 TXT_YES = "Sim";
 TXT_NO = "Não";
-
 // Mensagens de saída DooM 1
 QUITMSG1 = "por favor, não saia, \nprecisamos matá-los...";
 QUITMSG2 = "vamo nessa, isso já está\nficando insuportável!";
@@ -17,7 +14,6 @@ QUITMSG4 = "então você gosta mais do windows\ndo que de mim, certo?";
 QUITMSG5 = "nao vá, eu acho que vi algo\nse mexendo naquele canto!";
 QUITMSG6 = "sabe, na próxima vez,\nvocê já era.";
 QUITMSG7 = "vá em frente, saia.\nveja se me preocupo.";
-
 // Mensagens de saída DooM II
 QUITMSG8 = " >sair \n >pedindo permissão para sair\n(tem certeza??)";
 QUITMSG9 = "nao vá agora, um \nburaco negro lhe espera\n na saida!";
@@ -26,7 +22,6 @@ QUITMSG11 = "se fosse seu chefe, \nvocê estaria demitido!";
 QUITMSG12 = "OK, pode ir.\nmas pode esquecer sua pontuação!";
 QUITMSG13 = "vá. \nquando voltar, estarei lhe esperando\ncom meu BFG.";
 QUITMSG14 = "você tem sorte por não\nlhe dar um prêmio por pensar\n em sair.";
-
 // Mensagens de saída Strife
 QUITMSG15 = "aonde pensa que vai?!\n e quanto a nos?";
 QUITMSG16 = "interrompendo carnificina....\n tem certeza disso?";
@@ -36,7 +31,6 @@ QUITMSG19 = "pensei que fosse diferente...";
 QUITMSG20 = "OK! tchau para voce tambem!";
 QUITMSG21 = "pode ir.\nmas sabemos seu esconderijo...";
 QUITMSG22 = "hein? pode repetir?\nvoce deseja sair?";
-
 // Mensagens de saída Chex
 QUITMSG23 = "Nao saia agora, precisamos\nacabar com eles!";
 QUITMSG24 = "Nao desista --- porque\neles nunca desistirao!";
@@ -45,7 +39,6 @@ QUITMSG26 = "Espero que tudo isso\nso seja fome.";
 QUITMSG27 = "Nao va.\nPrecisamos de sua ajuda!";
 QUITMSG28 = "Nao nos abandone!!!";
 QUITMSG29 = "O verdadeiro Chex(R) Warrior\n nunca desistiria!";
-
 LOADNET = "impossível carregar, porque \n está em partida online!\naperte uma tecla.";
 QLOADNET = "impossível carregar, porque está online!\n\naperte uma tecla.";
 QSAVESPOT = "escolha um slot antes de fazer isso de novo.\n\naperte uma tecla.";
@@ -119,7 +112,6 @@ BETA_BONUS1 = "Voce pegou uma adaga demoniaca.";
 BETA_BONUS2 = "Voce pegou um skullchest.";
 BETA_BONUS3 = "Voce pegou um cetro maligno.";
 BETA_BONUS4 = "Voce pegou uma biblia nao sagrada.";
-
 // Níveis (preferi deixar original por compatibilidade)
 HUSTR_E1M1 = "E1M1: Hangar";
 HUSTR_E1M2 = "E1M2: Nuclear Plant";
@@ -157,7 +149,6 @@ HUSTR_E4M6 = "E4M6: Against Thee Wickedly";
 HUSTR_E4M7 = "E4M7: And Hell Followed";
 HUSTR_E4M8 = "E4M8: Unto The Cruel";
 HUSTR_E4M9 = "E4M9: Fear";
-
 HUSTR_1 = "nivel 1: entryway";
 HUSTR_2 = "nivel 2: underhalls";
 HUSTR_3 = "nivel 3: the gantlet";
@@ -190,7 +181,6 @@ HUSTR_29 = "nivel 29: the living end";
 HUSTR_30 = "nivel 30: icon of sin";
 HUSTR_31 = "nivel 31: wolfenstein";
 HUSTR_32 = "nivel 32: grosse";
-
 PHUSTR_1 = "nivel 1: congo";
 PHUSTR_2 = "nivel 2: well of souls";
 PHUSTR_3 = "nivel 3: aztec";
@@ -223,7 +213,6 @@ PHUSTR_29 = "nivel 29: odyssey of noises";
 PHUSTR_30 = "nivel 30: the gateway of hell";
 PHUSTR_31 = "nivel 31: cyberden";
 PHUSTR_32 = "nivel 32: go 2 it";
-
 THUSTR_1 = "nivel 1: system control";
 THUSTR_2 = "nivel 2: human bbq";
 THUSTR_3 = "nivel 3: power control";
@@ -256,14 +245,12 @@ THUSTR_29 = "nivel 29: river styx";
 THUSTR_30 = "nivel 30: last call";
 THUSTR_31 = "nivel 31: pharaoh";
 THUSTR_32 = "nivel 32: caribbean";
-
 HUSTR_TALKTOSELF1 = "Você pensa...";
 HUSTR_TALKTOSELF2 = "Tem alguém aí?";
 HUSTR_TALKTOSELF3 = "Não tem ninguém que possa responder";
 HUSTR_TALKTOSELF4 = "Você está ficando louco...";
 HUSTR_TALKTOSELF5 = "Eu juro que vi alguém...";
 HUSTR_MESSAGESENT = "[Mensagem enviada]";
-
 AMSTR_FOLLOWON = "Siga-me ATIVADO";
 AMSTR_FOLLOWOFF = "Siga-me DESATIVADO";
 AMSTR_GRIDON = "Area quad. ATIVADO";
@@ -287,7 +274,6 @@ STSTR_CLEV = "Pulando para...\n";
 TXT_BUDDHAON = "Modo Buddha ATIVADO";
 TXT_BUDDHAOFF = "Modo Buddha DESATIVADO";
 TXT_DEFAULTPICKUPMSG = "Você pegou um objeto";
-
 E1TEXT =
 	"Apos todo o esforço limpando \n"
 	"a base da lua, voce deveria ganhar um prêmio, \n"
@@ -424,7 +410,6 @@ C6TEXT =
 	"MEUS PARABÉNS, DE NOVO! VOCÊ ACHOU\n"
 	"OUTRO NÍVEL SECRETO. QUERO VER PASSAR\n"
 	"ESSE AGORA!\n";
-
 // Plutonia and TNT intermission screens (50% ainda não traduzido)
 P1TEXT =
 	"Voce vangloria sua vitoria em cima da carcaca\n"
@@ -536,7 +521,6 @@ T6TEXT =
 	"\n"
 	"As you step off the transport, you hear\n"
 	"the stomp of a cyberdemon's iron shoe.";
-
 // Lista de personagens (ordem deve ser seguida a risca)
 CC_ZOMBIE = "ZOMBIEMAN";
 CC_SHOTGUN = "SHOTGUN GUY";
@@ -555,7 +539,6 @@ CC_ARCH = "ARCH-VILE";
 CC_SPIDER = "THE SPIDER MASTERMIND";
 CC_CYBER = "THE CYBERDEMON";
 CC_HERO = "OUR HERO";
-
 // New strings from BOOM
 PD_BLUEC = "Precisa de uma credencial azul para abrir a porta";
 PD_REDC = "Precisa de uma credencial vermelha para abrir a porta";
@@ -570,7 +553,6 @@ PD_ALL3O = "Precisa das 3 chaves para ativar este objeto";
 PD_ALL6 = "Precisa das 6 chaves para abrir a porta";
 PD_ALL6O = "Precisa das 6 chaves para ativar este objeto";
 PD_ALLKEYS = "Precisa de todas as chaves";
-
 // MBF (BOOM?) narration backgrounds
 bgflatE1 = "FLOOR4_8";
 bgflatE2 = "SFLR6_1";
@@ -583,11 +565,9 @@ bgflat30 = "RROCK17";
 bgflat15 = "RROCK13";
 bgflat31 = "RROCK19";
 bgcastcall = "BOSSBACK";
-
 // Mensagens de fim de partida online
 TXT_FRAGLIMIT = "Pontuação atingida.";
 TXT_TIMELIMIT = "Tempo atingido.";
-
 // Mensagens de pontos cumulativos
 SPREEKILLSELF = "%o estava indo bem até se matar!";
 SPREEOVER = "A matança de %o foi interrompida por %k";
@@ -596,13 +576,11 @@ SPREE10 = "%k continua indo bem!";
 SPREE15 = "%k está dominando!";
 SPREE20 = "%k não se cansa por nada!";
 SPREE25 = "%k parece profissional!";
-
 // Mensagens de COMBO
 MULTI2 = "COMBO 2X!";
 MULTI3 = "COMBO 3X!";
 MULTI4 = "COMBO 4X!";
 MULTI5 = "Santa Mãe do Céu!!!";
-
 // Obituario
 // Primeiro suicidios, depois as mortes
 OB_SUICIDE = "%o suicidou-se.";
@@ -617,7 +595,6 @@ OB_SPLASH = "%o parou no lugar errado.";
 OB_R_SPLASH = "%o deveria ter se afastado.";
 OB_ROCKET = "%o deveria ter se afastado.";
 OB_KILLEDSELF = "%o se matou.";
-
 OB_VOODOO = "%o morreu pelo poder do voodoo.";
 OB_STEALTHBABY = "%o achou que viu um arachnotron.";
 OB_STEALTHVILE = "%o achou que viu um archvile.";
@@ -654,7 +631,6 @@ OB_BABY = "%o foi pego por um arachnotron.";
 OB_CYBORG = "%o foi arrebentado pelo cyberdemon.";
 OB_WOLFSS = "%o viu um Nazi.";
 OB_DOG = "%o foi atacado por um cachorro.";
-
 OB_CHICKEN = "%o foi cutucado ate a morte.";
 OB_BEAST = "%o foi carbonizado por um weredragon.";
 OB_CLINK = "%o foi cortado por um sabreclaw.";
@@ -673,7 +649,6 @@ OB_MUMMYLEADER = "%o agonizou na frente de um nitrogolem.";
 OB_SNAKE = "%o foi sacudido por um ophidian.";
 OB_WIZARD = "%o foi amaldicoado por um wizard.";
 OB_WIZARDHIT = "%o foi apalpado por um wizard.";
-
 //Hexen Obituaries (Ainda não traduzido)
 OB_FIREDEMON = "%o tasted an Afrit's fire.";
 OB_DEMON1 = "%o was scalded by a Serpent.";
@@ -694,7 +669,6 @@ OB_FBOSS = "%o was slain by Zedek.";
 OB_MBOSS = "%o couldn't absorb Menelkir's Mana.";
 OB_CBOSS = "%o was baptized by Traductus.";
 OB_HERESIARCH = "%o had %p bones rolled by the Heresiarch.";
-
 //Strife obituaries (ainda não traduzido)
 OB_ACOLYTE = "%o was zealously shot down by an Acolyte.";
 OB_MACIL = "%o should have never rebelled against Macil.";
@@ -716,7 +690,6 @@ OB_TEMPLAR = "%o was vaporized by a Templar.";
 OB_REAVERHIT = "%o was sliced open by a Reaver.";
 OB_REAVER = "%o was shot down by a Reaver.";
 OB_COMMONUS = "%o foi eslameado por um flemoid.";
-
 // Chex obituaries
 OB_BIPEDICUS = "%o foi eslameado por um bipedicus.";
 OB_BIPEDICUS2 = "%o foi eslameado por um armored bipedicus.";
@@ -730,7 +703,6 @@ OB_MAXIMUS = "%o foi derrotado por um Maximus.";
 // Existe um "You defeated a maximus" que eu não pude traduzir, se alguém souber qual a linha que traduz me diga no fórum onde você o baixou
 OB_FLEMMINE = "%o foi eslameado por um Flem mine.";
 OB_SNOTFOLUS = "%o foi derrotado pelo Lord Snotfolus.";
-
 OB_MPFIST = "%k fez justiça com as próprias mãos, na cara de %o.";
 OB_MPCHAINSAW = "%k usou o poder da motoserra para abrir %o.";
 OB_MPPISTOL = "%o foi morto pela pistola de %k.";
@@ -745,7 +717,6 @@ OB_MPBFG_SPLASH = "Ninguem se esconde do BFG de %k, nem mesmo %o.";
 OB_MPTELEFRAG = "%o foi "telefragged" por %k.";
 OB_RAILGUN = "%o was railed by %k.";
 OB_MPBFG_MBF = "%o foi arrebentado pelo BFG de %k.";
-
 OB_MPSTAFF = "%o levou uma sova do bastão de %k.";
 OB_MPGAUNTLETS = "%o tomou um choque das luvas de %k.";
 OB_MPGOLDWAND = "%o acenou para o bastao magico de %k.";
@@ -754,7 +725,6 @@ OB_MPBLASTER = "%o sentiu o poder da garra de dragao de %k.";
 OB_MPSKULLROD = "%o foi mandado bem pra baixo pelo bastao do inferno de %k.";
 OB_MPPHOENIXROD = "%o virou cinzas com o bastao da fenix de %k.";
 OB_MPMACE = "%o saiu pulando apos ver a clava de fogo de %k.";
-
 OB_MPPSTAFF = "%o tomou um tapa do bastao de %k.";
 OB_MPPGAUNTLETS = "%o sangrou nas luvas de %k.";
 OB_MPPGOLDWAND = "%o foi massacrado pelo bastao magico de %k.";
@@ -763,7 +733,6 @@ OB_MPPBLASTER = "%o foi cortado pela garra de dragao de %k.";
 OB_MPPSKULLROD = "%k usou seu bastao do inferno para banir %o.";
 OB_MPPPHOENIXROD = "%o foi queimado pelo bastao da fenix de %k.";
 OB_MPPMACE = "%o foi esmagado pela clava de %k.";
-
 OB_MPFWEAPFIST = "%o was beaten to a pulp by %k's bare fists."; 
 OB_MPFWEAPAXE = "%o got the axe from %k."; 
 OB_MPFWEAPHAMMERM = "%o had %p head caved in by %k's hammer."; 
@@ -778,7 +747,6 @@ OB_MPMWEAPWAND = "%o took one too many sapphire beams from %k.";
 OB_MPMWEAPFROST = "%o was turned into a frosty fellow by %k."; 
 OB_MPMWEAPLIGHTNING = "%o recieved a shocking revelation from %k."; 
 OB_MPMWEAPBLOODSCOURGE = "%o was wiped off the face of the universe by %k's Bloodscourge.";
-
 OB_MPPUNCHDAGGER = "%o foi pego pela faca de %k."; 
 OB_MPELECTRICBOLT = "%o recebeu alguns choques de %k."; 
 OB_MPPOISONBOLT = "%o recebeu uma dose letal da ira de %k."; 
@@ -789,17 +757,14 @@ OB_MPPHOSPHOROUSGRENADE = "%o nao fugiu do fogo causado pelas granadas PH de %k.
 OB_MPFLAMETHROWER = "%o virou churrasco por causa de %k."; 
 OB_MPMAULER = "%o foi vaporizado por %k."; 
 OB_MPSIGIL = "%o sentiu o poder de %k:SIGIL.";
-
 // Same as OB_MPTELEFRAG, but shown when a monster telefrags you
 OB_MONTELEFRAG = "%o foi "telefragged" por um monstro.";
-
 OB_DEFAULT = "%o morreu.";
 OB_MPDEFAULT = "%o foi morto por %k.";
 OB_FRIENDLY1 = "%k é cego.";
 OB_FRIENDLY2 = "%k pensa que sabe o que faz.";
 OB_FRIENDLY3 = "%k errou o tiro.";
 OB_FRIENDLY4 = "%k perde outro ponto.";
-
 // Item tags: Doom weapons
 TAG_FIST ="Soco Ingles";
 TAG_CHAINSAW = "Motoserra";
@@ -810,7 +775,6 @@ TAG_CHAINGUN = "Metralhadora";
 TAG_ROCKETLAUNCHER = "Lança-foguetes";
 TAG_PLASMARIFLE = "Rifle de Plasma";
 TAG_BFG9000 = "O BFG 9000";
-
 // Item tags: Heretic weapons
 TAG_STAFF = "Bastao";
 TAG_GAUNTLETS = "Luvas do Necromancer";
@@ -820,7 +784,6 @@ TAG_BLASTER = "Garras de dragao";
 TAG_SKULLROD = "Bastao do inferno";
 TAG_PHOENIXROD = "Bastao da Fenix";
 TAG_MACE = "Clava de fogo";
-
 // Item tags: Heretic artifacts
 TAG_ARTIEGG = "Ovo mutante";
 TAG_ARTIFIREBOMB = "Bomba-relogio dos Antigos";
@@ -832,7 +795,6 @@ TAG_ARTISUPERHEALTH = "Urna mistica";
 TAG_ARTITELEPORT = "Dispositivo do caos";
 TAG_ARTITOMEOFPOWER = "Livro do poder";
 TAG_ARTITORCH = "Tocha";
-
 // Item tags: Hexen weapons
 TAG_CWEAPMACE = "Mace of Contrition";
 TAG_CWEAPSTAFF = "Serpent Staff";
@@ -846,7 +808,6 @@ TAG_MWEAPWAND = "Sapphire Wand";
 TAG_MWEAPFROST = "Frost Shards";
 TAG_MWEAPLIGHTNING = "Arcs of Death";
 TAG_MWEAPBLOODSCOURGE = "Bloodscourge";
-
 // Item tags: Hexen artifacts
 TAG_ARTIBLASTRADIUS = "Disc of Repulsion";
 TAG_ARTIBOOSTARMOR = "Dragonskin Bracers";
@@ -861,7 +822,6 @@ TAG_ARTIPORK = "Porkelator";
 TAG_ARTISPEED = "Boots of Speed";
 TAG_ARTISUMMON = "Dark Servant";
 TAG_ARTITELEPORTOTHER = "Banishment Device";
-
 // Item tags: Hexen puzzle items
 TAG_ARTIPUZZSKULL = "Yorick's Skull";
 TAG_ARTIPUZZGEMBIG = "Heart of D'Sparil";
@@ -880,7 +840,6 @@ TAG_ARTIPUZZGEAR1 = "Iron gear";
 TAG_ARTIPUZZGEAR2 = "Brass gear";
 TAG_ARTIPUZZGEAR3 = "Brass and iron gear";
 TAG_ARTIPUZZGEAR4 = "Silver and brass gear";
-
 // Item tags: Strife weapons
 TAG_PUNCHDAGGER = "Faca";
 TAG_STRIFECROSSBOW1 = "Besta";
@@ -893,7 +852,6 @@ TAG_MAULER2 = "Mauler";
 TAG_GLAUNCHER1 = "Lanca-granadas";
 TAG_GLAUNCHER2 = "Lanca-granadas";
 TAG_SIGIL = "SIGIL";
-
 // Item tags: Strife artifacts
 TAG_COIN = "moeda(s)";
 TAG_MEDPATCH = "Primeiros socorros (pequeno)";
@@ -934,7 +892,6 @@ TAG_ENERGYPACK = "Energia (grande)";
 TAG_POISONBOLTS = "Flechas (veneno)";	// "poison_arrows" in the Teaser
 TAG_ELECTRICBOLTS = "Flechas (eletricas)";	// "electric_arrows" in the Teaser
 TAG_AMMOSATCHEL = "Pacote de municao";	// "Back_pack" in the Teaser
-
 // Item tags: Strife keys
 TAG_BASEKEY = "Chave da Base";
 TAG_GOVSKEY = "Chave do Governador";	// "Rebel_Key" in the Teaser
@@ -964,7 +921,6 @@ TAG_FACTORYKEY = "Chave da fabrica";	// "New_Key3" in the Teaser
 TAG_MINEKEY = "Chave da mina";	// "New_Key4" in the Teaser
 TAG_NEWKEY5 = "Chave Nova5";
 TAG_ORACLEPASS = "Passe do Oraculo";
-
 // Item tags: misc Strife stuff
 TAG_10GOLD = "10 moedas";
 TAG_25GOLD = "25 moedas";
@@ -973,7 +929,6 @@ TAG_300GOLD = "sortudo! 300 moedas";
 TAG_QUEST4 = "quest4";
 TAG_QUEST5 = "quest5";
 TAG_QUEST6 = "quest6";
-
 // Item tags: Strife NPCs
 TAG_ACOLYTE = "ACOLYTE";
 TAG_ARMORER = "Armeiro";
@@ -988,7 +943,6 @@ TAG_RATBUDDY = "rat buddy";
 TAG_REBEL = "Rebelde";
 TAG_TEMPLAR = "TEMPLAR";
 TAG_WEAPONSMITH = "Ferreiro";
-
 // Item tags: Chex weapons
 TAG_SPOON = "Colher";
 TAG_SPORK = "Super garfo";
@@ -999,7 +953,6 @@ TAG_RAPIDZORCHER = "Zorcher automatico";
 TAG_ZORCHPROPULSOR = "Propulsor Zorch";
 TAG_PHASINGZORCHER = "Mega Zorcher";
 TAG_LAZDEVICE = "LAZ Device";
-
 // Heretic strings (ainda não traduzida)
 HE1TEXT =
 		"with the destruction of the iron\n"
@@ -1098,7 +1051,6 @@ HE5TEXT =
 		"that it is not within you to\n"
 		"surrender without a fight. eyes\n"
 		"wide, you go to meet your fate.";
-
 // EPISODE 1 - THE CITY OF THE DAMNED
 HHUSTR_E1M1 = "THE DOCKS";
 HHUSTR_E1M2 = "THE DUNGEONS";
@@ -1109,7 +1061,6 @@ HHUSTR_E1M6 = "THE CATHEDRAL";
 HHUSTR_E1M7 = "THE CRYPTS";
 HHUSTR_E1M8 = "HELL'S MAW";
 HHUSTR_E1M9 = "THE GRAVEYARD";
-
 // EPISODE 2 - HELL'S MAW
 HHUSTR_E2M1 = "THE CRATER";
 HHUSTR_E2M2 = "THE LAVA PITS";
@@ -1120,7 +1071,6 @@ HHUSTR_E2M6 = "THE LABYRINTH";
 HHUSTR_E2M7 = "THE GREAT HALL";
 HHUSTR_E2M8 = "THE PORTALS OF CHAOS";
 HHUSTR_E2M9 = "THE GLACIER";
-
 // EPISODE 3 - THE DOME OF D'SPARIL
 HHUSTR_E3M1 = "THE STOREHOUSE";
 HHUSTR_E3M2 = "THE CESSPOOL";
@@ -1131,7 +1081,6 @@ HHUSTR_E3M6 = "THE HALLS OF FEAR";
 HHUSTR_E3M7 = "THE CHASM";
 HHUSTR_E3M8 = "D'SPARIL'S KEEP";
 HHUSTR_E3M9 = "THE AQUIFER";
-
 // EPISODE 4: THE OSSUARY
 HHUSTR_E4M1 = "CATAFALQUE";
 HHUSTR_E4M2 = "BLOCKHOUSE";
@@ -1142,7 +1091,6 @@ HHUSTR_E4M6 = "HALLS OF THE APOSTATE";
 HHUSTR_E4M7 = "RAMPARTS OF PERDITION";
 HHUSTR_E4M8 = "SHATTERED BRIDGE";
 HHUSTR_E4M9 = "MAUSOLEUM";
-
 // EPISODE 5: THE STAGNANT DEMESNE
 HHUSTR_E5M1 = "OCHRE CLIFFS";
 HHUSTR_E5M2 = "RAPIDS";
@@ -1153,15 +1101,11 @@ HHUSTR_E5M6 = "COLONNADE";
 HHUSTR_E5M7 = "FOETID MANSE";
 HHUSTR_E5M8 = "FIELD OF JUDGEMENT";
 HHUSTR_E5M9 = "SKEIN OF D'SPARIL";
-
 // Keys
-
 TXT_GOTBLUEKEY = "CHAVE AZUL";
 TXT_GOTYELLOWKEY = "CHAVE AMARELA";
 TXT_GOTGREENKEY = "CHAVE AZUL";
-
 // Artifacts
-
 TXT_ARTIHEALTH = "FRASCO DE QUARTZO";
 TXT_ARTIFLY = "ASAS DE IRA";
 TXT_ARTIINVULNERABILITY = "ANEL DE INVENCIBILIDADE";
@@ -1172,17 +1116,13 @@ TXT_ARTISUPERHEALTH = "URNA MISTICA";
 TXT_ARTITORCH = "TOCHA";
 TXT_ARTIFIREBOMB = "BOMBA-RELOGIO DOS ANTIGOS";
 TXT_ARTITELEPORT = "DISPOSITIVO DO CAOS";
-
 // Items
-
 TXT_ITEMHEALTH = "AMPOLA DE CRISTAL";
 TXT_ITEMBAGOFHOLDING = "BOLSA DE UTENSILIOS";
 TXT_ITEMSHIELD1 = "ESCUDO DE PRATA";
 TXT_ITEMSHIELD2 = "ESCUDO ENCANTADO";
 TXT_ITEMSUPERMAP = "PERGAMINHO - MAPA";
-
 // Ammo
-
 TXT_AMMOGOLDWAND1 = "CRISTAL MAGICO";
 TXT_AMMOGOLDWAND2 = "GEODO DE CRISTAL";
 TXT_AMMOMACE1 = "ESFERAS PARA CLAVA";
@@ -1195,20 +1135,16 @@ TXT_AMMOSKULLROD1 = "RUNAS PEQUENAS";
 TXT_AMMOSKULLROD2 = "RUNAS GRANDES";
 TXT_AMMOPHOENIXROD1 = "ESFERA DE CHAMAS";
 TXT_AMMOPHOENIXROD2 = "ESFERA DO INFERNO";
-
 // Weapons
-
 TXT_WPNMACE = "CLAVA DE FOGO";
 TXT_WPNCROSSBOW = "BESTA MAGICA";
 TXT_WPNBLASTER = "GARRAS DE DRAGAO";
 TXT_WPNSKULLROD = "BASTAO DO INFERNO";
 TXT_WPNPHOENIXROD = "BASTAO DA FENIX";
 TXT_WPNGAUNTLETS = "LUVAS DO NECROMANCER";
-
 TXT_NEEDBLUEKEY = "VOCE PRECISA DA CHAVE AZUL PARA ABRIR A PORTA";
 TXT_NEEDGREENKEY = "VOCE PRECISA DA CHAVE VERDE PARA ABRIR A PORTA";
 TXT_NEEDYELLOWKEY = "VOCE PRECISA DA CHAVE AMARELA PARA ABRIR A PORTA";
-
 TXT_CHEATPOWERON = "PODER ATIVADO";
 TXT_CHEATPOWEROFF = "PODER DESATIVADO";
 TXT_CHEATHEALTH = "SAUDE CHEIA";
@@ -1231,19 +1167,13 @@ TXT_LEADBOOTSON = "BOTAS ATIVADAS";
 TXT_LEADBOOTSOFF = "BOTAS DESATIVADAS";
 TXT_LIGHTER = "Voce se sente leve";
 TXT_GRAVITY = "Gravidade volta a funcionar normalmente";
-
 RAVENQUITMSG = "DESEJA MESMO SAIR?";
-
 // Hexen strings
-
 // Mana
-
 TXT_MANA_1 = "MANA AZUL";
 TXT_MANA_2 = "MANA VERDE";
 TXT_MANA_BOTH = "MANA COMBINADA";
-
 // Keys
-
 TXT_KEY_STEEL = "STEEL KEY";
 TXT_KEY_CAVE = "CAVE KEY";
 TXT_KEY_AXE = "AXE KEY";
@@ -1255,7 +1185,6 @@ TXT_KEY_RUSTED = "RUSTED KEY";
 TXT_KEY_HORN = "HORN KEY";
 TXT_KEY_SWAMP = "SWAMP KEY";
 TXT_KEY_CASTLE = "CASTLE KEY";
-
 TXT_NEED_KEY_STEEL = "You need the STEEL KEY";
 TXT_NEED_KEY_CAVE = "You need the CAVE KEY";
 TXT_NEED_KEY_AXE = "You need the AXE KEY";
@@ -1267,9 +1196,7 @@ TXT_NEED_KEY_RUSTED = "You need the RUSTED KEY";
 TXT_NEED_KEY_HORN = "You need the HORN KEY";
 TXT_NEED_KEY_SWAMP = "You need the SWAMP KEY";
 TXT_NEED_KEY_CASTLE = "You need the CASTLE KEY";
-
 // Artifacts
-
 TXT_ARTIINVULNERABILITY2 = "ICON OF THE DEFENDER";
 TXT_ARTISUMMON = "DARK SERVANT";
 TXT_ARTIEGG2 = "PORKALATOR";
@@ -1280,9 +1207,7 @@ TXT_ARTIBOOSTMANA = "KRATER OF MIGHT";
 TXT_ARTIBOOSTARMOR = "DRAGONSKIN BRACERS";
 TXT_ARTIBLASTRADIUS = "DISC OF REPULSION";
 TXT_ARTIHEALINGRADIUS = "MYSTIC AMBIT INCANT";
-
 // Puzzle artifacts
-
 TXT_ARTIPUZZSKULL = "YORICK'S SKULL";
 TXT_ARTIPUZZGEMBIG = "HEART OF D'SPARIL";
 TXT_ARTIPUZZGEMRED = "RUBY PLANET";
@@ -1298,16 +1223,12 @@ TXT_ARTIPUZZCWEAPON = "HOLY RELIC";
 TXT_ARTIPUZZMWEAPON = "SIGIL OF THE MAGUS";
 TXT_ARTIPUZZGEAR = "CLOCK GEAR";
 TXT_USEPUZZLEFAILED = "YOU CANNOT USE THIS HERE";
-
 // Items
-
 TXT_ARMOR1 = "MESH ARMOR";
 TXT_ARMOR2 = "FALCON SHIELD";
 TXT_ARMOR3 = "PLATINUM HELMET";
 TXT_ARMOR4 = "AMULET OF WARDING";
-
 // Weapons
-
 TXT_WEAPON_F2 = "TIMON'S AXE";
 TXT_WEAPON_F3 = "HAMMER OF RETRIBUTION";
 TXT_WEAPON_F4 = "QUIETUS ASSEMBLED";
@@ -1321,9 +1242,7 @@ TXT_WEAPONPIECE = "A weapon piece! This is your lucky day!";
 TXT_QUIETUS_PIECE = "SEGMENT OF QUIETUS";
 TXT_WRAITHVERGE_PIECE = "SEGMENT OF WRAITHVERGE";
 TXT_BLOODSCOURGE_PIECE = "SEGMENT OF BLOODSCOURGE";
-
 // Strife locks
-
 TXT_NEEDKEY = "Voce nao possui a chave";
 TXT_NEED_PASSCARD = "Precisa do cartao de passe";
 TXT_NEED_PASSCARD_DOOR = "Precisa do cartao de passe para abrir a porta";
@@ -1339,20 +1258,15 @@ TXT_NEED_REDCRYSTAL = "Voce precisa do cristal vermelho";
 TXT_NEED_BLUECRYSTAL = "Voce precisa do cristal azul";
 TXT_RETAIL_ONLY = "AREA DISPONIVEL NA VERSAO REGISTRADA";
 TXT_DOES_NOT_WORK = "Parece que nao funciona";
-
 // Strife - mensagens de missoes
-
 TXT_QUEST_14 = "Voce explodiu o cristal";
 TXT_QUEST_16 = "Voce explodiu as portas";
 TXT_QUEST_27 = "Voce explodiu o computador";
-
 TXT_KILLED_BISHOP = "Voce matou o bispo!";
 TXT_KILLED_ORACLE = "Voce matou o Oraculo!";
 TXT_KILLED_MACIL = "Voce matou Macil!";
 TXT_KILLED_LOREMASTER = "Voce matou o Loremaster!";
-
 // Strife - mensagens gerais
-
 TXT_METALARMOR = "Voce pegou a armadura de metal.";
 TXT_LEATHERARMOR = "Voce pegou a armadura leve.";
 TXT_MEDPATCH = "Voce pegou um pequeno kit de primeiros socorros.";
@@ -1379,7 +1293,6 @@ TXT_DEGNINORE = "Voce pegou o minerio Degnin.";
 TXT_SCANNER = "Voce pegou o scanner.";
 TXT_NEEDMAP = "O scanner nao funciona sem um mapa!\n";
 TXT_PRISONPASS = "Voce pegou o passe da prisao.";
-
 TXT_STRIFECROSSBOW = "Voce pegou a besta.";
 TXT_ASSAULTGUN = "Voce pegou a metralhadora.";
 TXT_MMLAUNCHER = "Voce pegou o mini lanca-misseis.";
@@ -1387,8 +1300,6 @@ TXT_FLAMER = "Voce pegou o lanca-chamas.";
 TXT_MAULER = "Voce pegou o mauler.";
 TXT_GLAUNCHER = "Voce pegou o lanca-granadas.";
 TXT_SIGIL = "Voce pegou o SIGIL.";
-
-
 TXT_BASEKEY = "Voce pegou a chave da Base.";
 TXT_GOVSKEY = "Voce pegou a chave do Governador.";
 TXT_PASSCARD = "Voce pegou o cartao de passe.";
@@ -1417,7 +1328,6 @@ TXT_FACTORYKEY = "Voce pegou a chave da Fabrica.";
 TXT_MINEKEY = "Voce pegou a chave da Mina.";
 TXT_NEWKEY5 = "Voce pegou a Chave Nova5.";
 TXT_ORACLEPASS = "Voce pegou o passe do Oraculo.";
-
 TXT_HEGRENADES = "Voce pegou granadas HE.";
 TXT_PHGRENADES = "Voce pegou granadas PH.";
 TXT_CLIPOFBULLETS = "Voce pegou um clipe.";
@@ -1429,9 +1339,7 @@ TXT_ENERGYPACK = "Voce pegou uma celula de energia (grande).";
 TXT_POISONBOLTS = "Voce pegou flechas (venenosas).";
 TXT_ELECTRICBOLTS = "Voce pegou flechas (eletricas).";
 TXT_AMMOSATCHEL = "Voce pegou uma mochila de municao.";
-
 // Diálogos aleatórios
-
 TXT_RANDOM_PEASANT_01 = "Por favor, nao me machuque.";
 TXT_RANDOM_PEASANT_02 = "Se pretende me machucar, te digo que nao valera a pena.";
 TXT_RANDOM_PEASANT_03 = "Eu nao sei de nada.";
@@ -1442,7 +1350,6 @@ TXT_RANDOM_PEASANT_07 = "Eu nao tenho certeza, mas acho que conheco alguns dos a
 TXT_RANDOM_PEASANT_08 = "A Ordem mantem tudo trancado a sete chaves.";
 TXT_RANDOM_PEASANT_09 = "Nao tem como isso ser uma forca de seguranca.";
 TXT_RANDOM_PEASANT_10 = "Eu soube que a Ordem esta bem nervosa por causa das acoes dos opositores por aqui.";
-
 TXT_RANDOM_REBEL_01 = "Nao ha como a Ordem ficar contra a gente.";
 TXT_RANDOM_REBEL_02 = "Estamos quase prontos para o ataque. Os planos de Macil estao fazendo efeito.";
 TXT_RANDOM_REBEL_03 = "Estamos todos lhe protegendo, nao se preocupe.";
@@ -1453,7 +1360,6 @@ TXT_RANDOM_REBEL_07 = "Macil disse que voce e a nova esperanca. Lembre-se disso.
 TXT_RANDOM_REBEL_08 = "Assim que derrubarmos esses charlatas, poderemos reconstruir o mundo do jeito certo.";
 TXT_RANDOM_REBEL_09 = "Lembre-se que nao esta lutando por si mesmo, mas por todos nos.";
 TXT_RANDOM_REBEL_10 = "Enquanto um de nos ainda estiver em pe, teremos chance de vencer.";
-
 TXT_RANDOM_AGUARD_01 = "Continue andando.";
 TXT_RANDOM_AGUARD_02 = "Siga a verdadeirta fe e entao comecara a entender.";
 TXT_RANDOM_AGUARD_03 = "Somente atraves da morte que alguem podera renascer.";
@@ -1464,7 +1370,6 @@ TXT_RANDOM_AGUARD_07 = "Continue andando!";
 TXT_RANDOM_AGUARD_08 = "Se o alarme disparar, nao fique no nosso caminho!";
 TXT_RANDOM_AGUARD_09 = "A Ordem vai limpar o mundo e arruma-lo dentro da nova era.";
 TXT_RANDOM_AGUARD_10 = "Algum problema? Eu acho que nao.";
-
 TXT_RANDOM_BEGGAR_01 = "Uma ajuda para os pobres?";
 TXT_RANDOM_BEGGAR_02 = "O que esta olhando, terrestre?";
 TXT_RANDOM_BEGGAR_03 = "Voce nao tem comida, tem?";
@@ -1475,7 +1380,6 @@ TXT_RANDOM_BEGGAR_07 = "Observe, pois este sera seu futuro um dia.";
 TXT_RANDOM_BEGGAR_08 = "Nao ha nada mais irritante do que um da superficie com atitude!";
 TXT_RANDOM_BEGGAR_09 = "A Ordem nao tera muito trabalho com voces, pateticos opositores.";
 TXT_RANDOM_BEGGAR_10 = "Cuidado, o da superficie; Nos sabemos quem sao nossos inimigos!";
-
 TXT_RANDOM_PGUARD_01 = "Nos somos as maos da fe. Se nos irritar, esqueca da gente!";
 TXT_RANDOM_PGUARD_02 = "A Ordem limpara o mundo dos fracos e corruptos!";
 TXT_RANDOM_PGUARD_03 = "Obedeca a lei dos mestres!";
@@ -1486,98 +1390,76 @@ TXT_RANDOM_PGUARD_07 = "Tenha seu lugar junto com os certos, junte-se a nos!";
 TXT_RANDOM_PGUARD_08 = "A Ordem protege a si propria.";
 TXT_RANDOM_PGUARD_09 = "Acolytes? Eles ainda tem de ver a gloria total da Ordem.";
 TXT_RANDOM_PGUARD_10 = "Se ainda existe honra dentro de seu patetico corpo, voce vai entrar para os bracos da Ordem.";
-
 TXT_RANDOMGOODBYE_1 = "Fui!";
 TXT_RANDOMGOODBYE_2 = "Muito obrigado.";
 TXT_RANDOMGOODBYE_3 = "Ate mais tarde!";
 TXT_HAVEENOUGH		= "Voce parece ter bastante!";
 TXT_GOAWAY			= "Va embora!";
-
 // Skills: (partes não traduzidas ainda)
-
 SKILL_BABY			= "Facil";
 SKILL_EASY			= "Medio";
 SKILL_NORMAL		= "Dificil";
 SKILL_HARD			= "Desafio";
 SKILL_NIGHTMARE		= "PESADELO!";
-
 $ifgame(chex) SKILL_BABY = "Bem facil";
 $ifgame(chex) SKILL_EASY = "Ainda facil";
 $ifgame(chex) SKILL_NORMAL = "Muita gosma";
 $ifgame(chex) SKILL_HARD = "Gosma extrema";
 $ifgame(chex) SKILL_NIGHTMARE = "So para os melhores!";
-
 SSKILL_BABY			= "Treino";
 SSKILL_EASY			= "Iniciante";
 SSKILL_NORMAL		= "Veterano";
 SSKILL_HARD			= "Elite";
 SSKILL_NIGHTMARE	= "Banho de sangue";
-
 // Menu
 MNU_NEWGAME			= "NOVO JOGO";
 MNU_OPTIONS			= "OPCOES";
 MNU_GAMEFILES		= "JOGOS SALVOS";
 MNU_INFO			= "INFO";
 MNU_QUITGAME		= "SAIR";
-
 MNU_FIGHTER			= "FIGHTER";
 MNU_CLERIC			= "CLERIC";
 MNU_MAGE			= "MAGE";
 MNU_RANDOM			= "RANDOM";
-
 MNU_LOADGAME		= "CARREGAR";
 MNU_SAVEGAME		= "SALVAR";
-
 MNU_COTD			= "CITY OF THE DAMNED";
 MNU_HELLSMAW		= "HELL'S MAW";
 MNU_DOME			= "THE DOME OF D'SPARIL";
 MNU_OSSUARY			= "THE OSSUARY";
 MNU_DEMESNE			= "THE STAGNANT DEMESNE";
-
 MNU_WETNURSE		= "THOU NEEDETH A WET-NURSE";
 MNU_YELLOWBELLIES	= "YELLOWBELLIES-R-US";
 MNU_BRINGEST		= "BRINGEST THEM ONETH";
 MNU_SMITE			= "THOU ART A SMITE-MEISTER";
 MNU_BLACKPLAGUE		= "BLACK PLAGUE POSSESSES THEE";
-
 MNU_NOPICTURE		= "No Picture";
 MNU_DIFFVERSION		= "Versao\nDiferente";
 MNU_NOFILES			= "Vazio";
-
 MNU_CHOOSECLASS		= "Escolha a classe:";
 MNU_CHOOSESKILL		= "ESCOLHA A DIFICULDADE:";
-
 MNU_SQUIRE			= "SQUIRE";
 MNU_KNIGHT			= "KNIGHT";
 MNU_WARRIOR			= "WARRIOR";
 MNU_BERSERKER		= "BERSERKER";
 MNU_TITAN			= "TITAN";
-                                    
 MNU_ALTARBOY		= "ALTAR BOY";
 MNU_ACOLYTE			= "ACOLYTE";
 MNU_PRIEST			= "PRIEST";
 MNU_CARDINAL		= "CARDINAL";
 MNU_POPE			= "POPE";
-                                    
 MNU_APPRENTICE		= "APPRENTICE";
 MNU_ENCHANTER		= "ENCHANTER";
 MNU_SORCERER        = "SORCERER";
 MNU_WARLOCK			= "WARLOCK";
 MNU_ARCHMAGE		= "ARCHMAGE";
-
 MNU_PLAYERSETUP		= "PLAYER SETUP";
-
 MNU_DELETESG		= "Deseja mesmo deletar:\n";
-
 $ifgame(heretic) SWSTRING = "SOMENTE DISPONIVEL NA VERSAO REGISTRADA";
-
 MNU_EPISODE			= "Selecione um episodio";
-
 WI_FINISHED			= "finalizado";
 WI_ENTERING			= "Entrando:";
-
 // Bloodbath announcer (não traduzido ainda)
-
 BBA_BONED = "%k boned %o like a fish";
 BBA_CASTRA = "%k castrated %o";
 BBA_CREAMED = "%k creamed %o";
@@ -1609,14 +1491,12 @@ BBA_HOSED = "%k hosed %o";
 BBA_SPRAYED = "%k sprayed %o";
 BBA_DOGMEAT = "%k made dog meat out of %o";
 BBA_BEATEN = "%k beat %o like a cur";
-
 BBA_EXCREMENT = "%o is excrement";
 BBA_HAMBURGER = "%o is hamburger";
 BBA_SCROTUM = "%o suffered scrotum separation";
 BBA_POPULATION = "%o volunteered for population control";
 BBA_SUICIDE = "%o has suicided";
 BBA_DARWIN = "%o received the Darwin Award";
-
 // Chex Quest Strings
 $ifgame(chex) HUSTR_E1M1 = "E1M1: Landing Zone";
 $ifgame(chex) HUSTR_E1M2 = "E1M2: Storage Facility";
@@ -1633,7 +1513,6 @@ $ifgame(chex) HUSTR_E3M2 = "E3M2: United Cereals";
 $ifgame(chex) HUSTR_E3M3 = "E3M3: Villa Chex";
 $ifgame(chex) HUSTR_E3M4 = "E3M4: Provincial Park";
 $ifgame(chex) HUSTR_E3M5 = "E3M5: Meteor Spaceship";
-
 $ifgame(chex) E1TEXT =
 		"Apos mandar a monstruosa Flembrane.\n"
 		"de volta a sua dimensao, voce solta os\n"
@@ -1648,7 +1527,6 @@ $ifgame(chex) E1TEXT =
 		"ve que os flemoids de algum jeito chegaram\n"
 		"aqui. Prepare-se para\n"
 		"Chex Quest 2: Terror in Chex City!";
-
 $ifgame(chex) E2TEXT = 
 		"Voce zorcheou os flemoids restantes\n"
 		"que ficaram nos esgotos. Chex City foi\n"
@@ -1662,7 +1540,6 @@ $ifgame(chex) E2TEXT =
 		"para o planeta dos cereais!"
 		"\n Prepare-se para\n"
 		"Chex Quest 3: Invasion!";
-
 $ifgame(chex) E3TEXT = 
 		"Com este ultimo tiro, voce zorcheia Lord\n"
 		"Snotfolus de volta a sua dimensao! Contra\n"
@@ -1675,17 +1552,12 @@ $ifgame(chex) E3TEXT =
 		"\n"
 		"Mas se eles voltarem, voce sabe que estara\n"
 		"pronto para lutar!\n";
-
 CLOADNET = "impossivel carregar, porque \n esta em partida online!\naperte uma tecla.";
 CNEWGAME = "impossivel iniciar um novo jogo\nenquanto se esta online.\n\naperte uma tecla.";
-
 CNIGHTMARE = "Cuidado, isto vai ser dificil.\nDeseja continuar?\n";
-
 CSWSTRING = "este e Chex(R) Quest. procure\npor outros niveis na internet.\n";
-
 $ifgame(chex) NETEND = "voce nao pode finalizar uma partida online!\npressione qualquer tecla.";
 $ifgame(chex) ENDGAME = "deseja realmente sair?\n";
-
 GOTCHEXARMOR = "Pegou a armadura Chex(R).";
 GOTSUPERCHEXARMOR = "Pegou a super armadura Chex(R)!";
 GOTWATER = "Pegou um copo de agua.";
@@ -1699,7 +1571,6 @@ GOTVEGETABLESNEED = "Vegetais sao REALMENTE bons para voce!";
 GOTVEGETABLES = "Pegou uma bacia de vegetais.";
 GOTSLIMESUIT = "Achou roupa anti-radiacao";
 GOTCHEXMAP = "Achou um GPS";
-
 GOTZORCHRECHARGE = "Pegou carga para mini zorcher.";
 GOTMINIZORCHPACK = "Pegou mais cargas para mini zorcher.";
 GOTPROPULSORRECHARGE = "Pegou carga para propulsor zorch.";
@@ -1709,7 +1580,6 @@ GOTPHASINGZORCHERPACK = "Pegou mais carga para mega zorcher.";
 GOTLARGEZORCHERRECHARGE = "Pegou carga para zorcher grande.";
 GOTLARGEZORCHERPACK = "Pegou mais carga para zorcher grande.";
 GOTZORCHPACK = "Pegou um Zorchpak!";
-
 GOTLAZDEVICE = "Voce achou LAZ Device! Legal!";
 GOTRAPIDZORCHER = "Voce achou Zorcher automatico!";
 GOTSUPERBOOTSPORK = "Voce achou Super garfo!";
@@ -1718,13 +1588,11 @@ GOTPHASINGZORCHER = "Voce achou Mega Zorcher!";
 GOTLARGEZORCHER = "Voce achou Zorcher grande!";
 GOTSUPERLARGEZORCHER = "Voce achou Super Zorcher!";
 GOTMINIZORCHER = "Voce achou Mini Zorcher.";
-
 $ifgame(chex) STSTR_DQDON = "Modo invencivel ATIVADO";
 $ifgame(chex) STSTR_DQDOFF = "Modo invencivel DESATIVADO";
 $ifgame(chex) STSTR_FAADDED = "Zorch adicionado";
 $ifgame(chex) STSTR_KFAADDED = "Super Zorch adicionado";
 $ifgame(chex) STSTR_CHOPPERS = "... coma Chex(R)!";
-
 OB_MPSPOON = "%o foi comido de colher por %k.";
 OB_MPBOOTSPORK = "%o foi misturado pelo garfo de %k.";
 OB_MPZORCH = "%o foi zorcheado por %k.";

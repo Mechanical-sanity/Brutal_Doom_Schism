@@ -3,14 +3,11 @@ fader LiquidFader
    DecayStart 3
    DecayTime 6
 }
-
-
 fader LiquidFaderFast
 {
    DecayStart 3
    DecayTime 4
 }
-
 slider Drops
 {
    DistX 0
@@ -18,22 +15,18 @@ slider Drops
    SlideStart 0.01
    SlideTime 5
 }
-
-
 stretcher waterstretcher
 {
    GoalY 2.8
    StretchStart 0
    StretchTime 3
 }
-
 Combiner WaterDropEffect
 {
    LiquidFaderFast
    Drops
    waterstretcher
 }
-
 decal WaterDrops1
 {
 	pic WSPL1A
@@ -43,7 +36,6 @@ decal WaterDrops1
 	randomflipx
 	animator WaterDropEffect
 }
-
 decal WaterDrops2
 {
 	pic WSPL1B
@@ -53,7 +45,6 @@ decal WaterDrops2
 	randomflipx
 	animator WaterDropEffect
 }
-
 decal WaterDrops3
 {
 	pic WSPL1C
@@ -63,15 +54,12 @@ decal WaterDrops3
 	randomflipx
 	animator WaterDropEffect
 }
-
 decalgroup waterdrops
 {
 	waterdrops1	1
 	waterdrops2	1
 	waterdrops3	1
 }
-
-
 decal WaterSmear1
 {
 	pic BSPLAT1
@@ -83,7 +71,6 @@ decal WaterSmear1
 	animator LiquidFader
 	lowerdecal WaterDrops
 }
-
 decal WaterSmear2
 {
 	pic BSPLAT2
@@ -95,7 +82,6 @@ decal WaterSmear2
 	animator LiquidFader
 	lowerdecal WaterDrops
 }
-
 decal WaterSmear3
 {
 	pic BSPLAT3
@@ -107,7 +93,6 @@ decal WaterSmear3
 	animator LiquidFader
 	lowerdecal WaterDrops
 }
-
 decal WaterSmear4
 {
 	pic BSPLAT4
@@ -119,7 +104,6 @@ decal WaterSmear4
 	animator LiquidFader
 	lowerdecal WaterDrops
 }
-
 decalgroup watersplash
 {
 	WaterSmear1	1
@@ -127,16 +111,6 @@ decalgroup watersplash
 	WaterSmear3	1
 	WaterSmear4	1
 }
-
-
-
-
-
-
-
-
-
-
 decal GreenWaterSmear1
 {
 	pic BSPLAT1
@@ -148,7 +122,6 @@ decal GreenWaterSmear1
 	fullbright
 	animator LiquidFader
 }
-
 decal GreenWaterSmear2
 {
 	pic BSPLAT2
@@ -160,7 +133,6 @@ decal GreenWaterSmear2
 	fullbright
 	animator LiquidFader
 }
-
 decal GreenWaterSmear3
 {
 	pic BSPLAT3
@@ -172,7 +144,6 @@ decal GreenWaterSmear3
 	fullbright
 	animator LiquidFader
 }
-
 decal GreenWaterSmear4
 {
 	pic BSPLAT4
@@ -184,7 +155,6 @@ decal GreenWaterSmear4
 	fullbright
 	animator LiquidFader
 }
-
 decalgroup slimesplash
 {
 	GreenWaterSmear1	1
@@ -192,11 +162,6 @@ decalgroup slimesplash
 	GreenWaterSmear3	1
 	GreenWaterSmear4	1
 }
-
-
-
-
-
 decal BloodWaterSmear1
 {
 	pic BSPLAT1
@@ -207,7 +172,6 @@ decal BloodWaterSmear1
 	randomflipx
 	animator LiquidFader
 }
-
 decal BloodWaterSmear2
 {
 	pic BSPLAT2
@@ -218,7 +182,6 @@ decal BloodWaterSmear2
 	randomflipx
 	animator LiquidFader
 }
-
 decal BloodWaterSmear3
 {
 	pic BSPLAT3
@@ -229,7 +192,6 @@ decal BloodWaterSmear3
 	randomflipx
 	animator LiquidFader
 }
-
 decal BloodWaterSmear4
 {
 	pic BSPLAT4
@@ -240,7 +202,6 @@ decal BloodWaterSmear4
 	randomflipx
 	animator LiquidFader
 }
-
 decalgroup BloodWaterDecal
 {
 	BloodWaterSmear1	1
@@ -248,12 +209,6 @@ decalgroup BloodWaterDecal
 	BloodWaterSmear3	1
 	BloodWaterSmear4	1
 }
-
-
-
-
-
-
 decal BulletDecalNew1
 {
 	pic BULDE1

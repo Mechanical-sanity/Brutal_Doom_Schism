@@ -12,10 +12,7 @@ DIGINUMBER
        9 DIGNUM9S
        - DIGMINUS    
    }
-   
-   
-   
-///////////////////////////////////////////////////// 
+   ///////////////////////////////////////////////////// 
 // Full Helmet HUD   
 AMMOFONT
 	{
@@ -30,7 +27,6 @@ AMMOFONT
 		8 STYSNUM8
 		9 STYSNUM9
 	}
-
 DIGIFONT_SMALL
 {
 	0 DIGINUM0
@@ -44,7 +40,6 @@ DIGIFONT_SMALL
 	8 DIGINUM8
 	9 DIGINUM9
 }
-
 DIGIFONT_LARGE
 {
 	0 DIGLNUM0
@@ -58,5 +53,4 @@ DIGIFONT_LARGE
 	8 DIGLNUM8
 	9 DIGLNUM9
 }  
-
 /////////////////////////////////////////////////

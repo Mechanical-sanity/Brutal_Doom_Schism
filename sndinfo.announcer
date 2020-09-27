@@ -169,7 +169,6 @@ $alias announcer/94c/yourteamhastheflag			announcer/97d/yourteamhastheflag
 $alias announcer/94c/youvelostthelead			announcer/97d/youvelostthelead
 $alias announcer/94c/youvetakenthelead			announcer/97d/youvetakenthelead
 $alias announcer/94c/youwin						announcer/97d/youwin
-
 announcer/95k/accuracy							announcer/95k/accuracy.lmp
 announcer/95k/blueflagreturned					announcer/95k/blueflagreturned.lmp
 announcer/95k/blueflagtaken						announcer/95k/blueflagtaken.lmp
@@ -255,7 +254,6 @@ $alias announcer/95k/votenow					announcer/97d/votenow
 $alias announcer/95k/votepassed					announcer/97d/votepassed
 $alias announcer/95k/whiteflagreturned			announcer/97d/whiteflagreturned
 $alias announcer/95k/youvelostthelead			announcer/97d/youvelostthelead
-
 announcer/96f/accuracy							announcer/96f/accuracy.lmp
 announcer/96f/blueflagreturned					announcer/96f/blueflagreturned.lmp
 announcer/96f/blueflagtaken						announcer/96f/blueflagtaken.lmp
@@ -341,7 +339,6 @@ $alias announcer/96f/whiteflagreturned			announcer/97d/whiteflagreturned
 $alias announcer/96f/votefailed					announcer/97d/votefailed
 $alias announcer/96f/votenow					announcer/97d/votenow
 $alias announcer/96f/votepassed					announcer/97d/votepassed
-
 announcer/97c3/accuracy						announcer/97c3/accuracy.flac
 announcer/97c3/assist						announcer/97c3/assist.flac
 announcer/97c3/blueflagdropped				announcer/97c3/blueflagdropped.flac

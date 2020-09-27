@@ -7,15 +7,12 @@ splash 	nukage
  sound		world/lavasizzle
  NoAlert
 }
-
 splash Slime
 {
 	smallclass 	none
 	smallclip		6
 	smallsound		world/sludgegloopsmall
-	
-
-	baseclass		SlimeSplashBase
+		baseclass		SlimeSplashBase
 	chunkclass		SlimeChunk
 	chunkxvelshift	8
 	chunkyvelshift	8
@@ -24,7 +21,6 @@ splash Slime
 	sound			world/watersplash
 	NoAlert
 }
-
 splash 	water
 {
  smallclass 	watersplashbasesmall
@@ -33,46 +29,36 @@ splash 	water
  sound			world/watersplash
  NoAlert
 }
-
 splash 	blood
 {
  smallclass 	bloodsplashbasesmall
  smallclip		6
- 
- baseclass		bloodsplashbase3
+  baseclass		bloodsplashbase3
  sound			world/watersplash
  NoAlert
 }
-
 splash 	lava
 {
  smallclass 	LavaSplashBase
  smallclip		6
  //smallsound	world/lavasizzlesmall
-
  baseclass		LavaSplashBase
-
  sound		world/lavasizzle
  NoAlert
- 
- 
-}
+ }
 //********** Terrain **********
-
 terrain	 nukage
 {
  splash 	nukage
  footclip	 1
  liquid
 }
-
 terrain	water
 {
  splash 	water
  footclip	 1
  liquid
 }
-
 terrain	lava
 {
  splash 	lava
@@ -80,24 +66,18 @@ terrain	lava
  liquid
  damagetype		"Fire"
 }
-
 terrain	blood
 {
  footclip	 1
  liquid
  splash 	blood
 }
-
 terrain Slime
 {
  footclip	 1
  liquid
  splash Slime
 }
-
-
-
-
 floor BLOOD1 Blood
 floor BLOOD2 Blood
 floor BLOOD3 Blood
@@ -118,5 +98,4 @@ floor SLIME05 Slime
 floor SLIME06 Slime
 floor SLIME07 Slime
 floor SLIME08 Slime
-
 floor GRWAT_01 Slime

@@ -1,6 +1,4 @@
 [enu eng en default]
-
-
 LOADNET = "you can't do load while in a net game!\n\npress a key.";
 QLOADNET = "you can't quickload during a netgame!\n\npress a key.";
 QSAVESPOT = "you haven't picked a quicksave slot yet!\n\npress a key.";
@@ -75,7 +73,6 @@ BETA_BONUS1 = "You pick up a demonic dagger.";
 BETA_BONUS2 = "You pick up a skullchest.";
 BETA_BONUS3 = "You pick up an evil sceptre.";
 BETA_BONUS4 = "You pick up an unholy bible.";
-
 AMSTR_FOLLOWON = "Follow Mode ON";
 AMSTR_FOLLOWOFF = "Follow Mode OFF";
 AMSTR_GRIDON = "Grid ON";
@@ -104,7 +101,6 @@ TXT_BUDDHAOFF = "Buddha mode OFF";
 TXT_BUDDHA2ON = "Ultimate Buddha Mode ON";
 TXT_BUDDHA2OFF = "Ultimate Buddha Mode OFF";
 TXT_DEFAULTPICKUPMSG = "You got a pickup";
-
 // New strings from BOOM
 PD_BLUEC = "You need a blue card to open this door";
 PD_REDC = "You need a red card to open this door";
@@ -119,7 +115,6 @@ PD_ALL3O = "You need all three keys to activate this object";
 PD_ALL6 = "You need all six keys to open this door";
 PD_ALL6O = "You need all six keys to activate this object";
 PD_ALLKEYS = "You need all the keys";
-
 // MBF (BOOM?) narration backgrounds
 bgflatE1 = "FLOOR4_8";
 bgflatE2 = "SFLR6_1";
@@ -132,11 +127,9 @@ bgflat30 = "RROCK17";
 bgflat15 = "RROCK13";
 bgflat31 = "RROCK19";
 bgcastcall = "BOSSBACK";
-
 // Gameflow messages
 TXT_FRAGLIMIT = "Fraglimit hit.";
 TXT_TIMELIMIT = "Timelimit hit.";
-
 // Spree messages
 SPREEKILLSELF = "%o was looking good until %g killed %hself!";
 SPREEOVER = "%o's killing spree was ended by %k";
@@ -145,13 +138,11 @@ SPREE10 = "%k is on a rampage!";
 SPREE15 = "%k is dominating!";
 SPREE20 = "%k is unstoppable!";
 SPREE25 = "%k is Godlike!";
-
 // Mulitkill messages
 MULTI2 = "Double kill!";
 MULTI3 = "Multi kill!";
 MULTI4 = "Ultra kill!";
 MULTI5 = "Monster kill!";
-
 // Obituary strings
 // First the self-kills, then the other-kills
 OB_SUICIDE = "%o suicides.";
@@ -166,24 +157,20 @@ OB_SPLASH = "%o stood in the wrong spot.";
 OB_R_SPLASH = "%o should have stood back.";
 OB_ROCKET = "%o should have stood back.";
 OB_KILLEDSELF = "%o killed %hself.";
-
 // Same as OB_MPTELEFRAG, but shown when a monster telefrags you
 OB_MONTELEFRAG = "%o was telefragged.";
-
 OB_DEFAULT = "%o died.";
 OB_MPDEFAULT = "%o was killed by %k.";
 OB_FRIENDLY1 = "%k mows down a teammate.";
 OB_FRIENDLY2 = "%k checks %p glasses.";
 OB_FRIENDLY3 = "%k gets a frag for the other team.";
 OB_FRIENDLY4 = "%k loses another friend.";
-
 SAVEGAMENAME = "zdoomsv";
 STARTUP1 = "";
 STARTUP2 = "";
 STARTUP3 = "";
 STARTUP4 = "";
 STARTUP5 = "";
-
 // Scoreboard text
 SCORE_ITEMS = "ITEMS";
 SCORE_BONUS = "BONUS";
@@ -197,7 +184,6 @@ SCORE_DEATHS = "DEATHS";
 SCORE_MISSED = "MISSED";
 SCORE_TOTAL = "TOTAL";
 SCORE_LVLTIME = "LEVEL TIME";
-
 // Item tags: Doom weapons
 TAG_FIST = "Brass Knuckles";
 TAG_CHAINSAW = "Chainsaw";
@@ -208,17 +194,12 @@ TAG_CHAINGUN = "Chaingun";
 TAG_ROCKETLAUNCHER = "Rocket Launcher";
 TAG_PLASMARIFLE = "Plasma Rifle";
 TAG_BFG9000 = "BFG 9000";
-
-
-
-
 // Main Menu
 MNU_NEWGAME			= "NEW GAME";
 MNU_OPTIONS			= "OPTIONS";
 MNU_GAMEFILES		= "GAME FILES";
 MNU_INFO			= "INFO";
 MNU_QUITGAME		= "QUIT GAME";
-
 // Skills
 MNU_CHOOSESKILL		= "CHOOSE SKILL LEVEL:";
 
@@ -227,50 +208,42 @@ SKILL_EASY			= "Hey, not too rough";
 SKILL_NORMAL		= "Hurt me plenty";
 SKILL_HARD			= "Ultra-Violence";
 SKILL_NIGHTMARE		= "NIGHTMARE!";
-
 CSKILL_BABY			= "Easy does it";
 CSKILL_EASY			= "Not so sticky";
 CSKILL_NORMAL		= "Gobs of goo";
 CSKILL_HARD			= "Extreme Ooze";
 CSKILL_NIGHTMARE	= "Super Slimey!";
-
 SSKILL_BABY			= "Training";
 SSKILL_EASY			= "Rookie";
 SSKILL_NORMAL		= "Veteran";
 SSKILL_HARD			= "Elite";
 SSKILL_NIGHTMARE	= "Bloodbath";
-
 MNU_WETNURSE		= "THOU NEEDETH A WET-NURSE";
 MNU_YELLOWBELLIES	= "YELLOWBELLIES-R-US";
 MNU_BRINGEST		= "BRINGEST THEM ONETH";
 MNU_SMITE			= "THOU ART A SMITE-MEISTER";
 MNU_BLACKPLAGUE		= "BLACK PLAGUE POSSESSES THEE";
-
 MNU_SQUIRE			= "SQUIRE";
 MNU_KNIGHT			= "KNIGHT";
 MNU_WARRIOR			= "WARRIOR";
 MNU_BERSERKER		= "BERSERKER";
 MNU_TITAN			= "TITAN";
-                                    
-MNU_ALTARBOY		= "ALTAR BOY";
+ MNU_ALTARBOY		= "ALTAR BOY";
 MNU_ACOLYTE			= "ACOLYTE";
 MNU_PRIEST			= "PRIEST";
 MNU_CARDINAL		= "CARDINAL";
 MNU_POPE			= "POPE";
-                                    
-MNU_APPRENTICE		= "APPRENTICE";
+   MNU_APPRENTICE		= "APPRENTICE";
 MNU_ENCHANTER		= "ENCHANTER";
 MNU_SORCERER        = "SORCERER";
 MNU_WARLOCK			= "WARLOCK";
 MNU_ARCHMAGE		= "ARCHMAGE";
-
 // Classes
 MNU_CHOOSECLASS		= "CHOOSE CLASS:";
 MNU_FIGHTER			= "FIGHTER";
 MNU_CLERIC			= "CLERIC";
 MNU_MAGE			= "MAGE";
 MNU_RANDOM			= "RANDOM";
-
 // Game Files
 MNU_LOADGAME		= "LOAD GAME";
 MNU_SAVEGAME		= "SAVE GAME";
@@ -278,7 +251,6 @@ MNU_NOPICTURE		= "No Picture";
 MNU_DIFFVERSION		= "Different\nVersion";
 MNU_NOFILES			= "No files";
 MNU_DELETESG		= "Do you really want to delete the savegame\n";
-
 // Episodes
 MNU_EPISODE			= "Select Episode";
 MNU_COTD			= "CITY OF THE DAMNED";
@@ -287,7 +259,6 @@ MNU_DOME			= "THE DOME OF D'SPARIL";
 MNU_OSSUARY			= "THE OSSUARY";
 MNU_DEMESNE			= "THE STAGNANT DEMESNE";
 $ifgame(heretic) SWSTRING = "ONLY AVAILABLE IN THE REGISTERED VERSION";
-
 // Options Menu
 OPTMNU_TITLE				= "OPTIONS";
 OPTMNU_CONTROLS				= "Customize Controls";
@@ -306,9 +277,7 @@ OPTMNU_VIDEO				= "Set video mode";
 OPTMNU_DEFAULTS				= "Reset to defaults";
 OPTMNU_RESETTOSAVED			= "Reset to last saved";
 OPTMNU_CONSOLE				= "Go to console";
-
 // Controls Menu
-
 CNTRLMNU_TITLE					= "CUSTOMIZE CONTROLS";
 CNTRLMNU_SWITCHTEXT1			= "ENTER to change, BACKSPACE to clear";
 CNTRLMNU_SWITCHTEXT2			= "Press new key for control, ESC to cancel";
@@ -379,9 +348,7 @@ CNTRLMNU_POPUPS					= "Strife Popup Screens";
 CNTRLMNU_MISSION				= "Mission objectives";
 CNTRLMNU_KEYS					= "Keys list";
 CNTRLMNU_STATS					= "Weapons/ammo/stats";
-
 // Mouse Menu
-
 MOUSEMNU_TITLE				= "MOUSE OPTIONS";
 MOUSEMNU_ENABLEMOUSE		= "Enable mouse";
 MOUSEMNU_MOUSEINMENU		= "Enable mouse in menus";
@@ -398,12 +365,9 @@ MOUSEMNU_ALWAYSMOUSELOOK	= "Always Mouselook";
 MOUSEMNU_INVERTMOUSE		= "Invert Mouse";
 MOUSEMNU_LOOKSPRING			= "Lookspring";
 MOUSEMNU_LOOKSTRAFE			= "Lookstrafe";
-
 // Joystick Menu
-
 JOYMNU_CONFIG				= "CONFIGURE CONTROLLER";
 JOYMNU_OPTIONS				= "CONTROLLER OPTIONS";
-
 // Player Setup Menu
 MNU_PLAYERSETUP		= "PLAYER SETUP";
 PLYRMNU_NAME			= "Name";
@@ -418,7 +382,6 @@ PLYRMNU_PLAYERGENDER	= "Gender";
 PLYRMNU_AUTOAIM			= "Autoaim";
 PLYRMNU_SWITCHONPICKUP	= "Switch on pickup";
 PLYRMNU_ALWAYSRUN		= "Always Run";
-
 // Display Options
 DSPLYMNU_TITLE					= "DISPLAY OPTIONS";
 DSPLYMNU_SCOREBOARD				= "Scoreboard Options";
@@ -453,7 +416,6 @@ DSPLYMNU_DIMCOLOR				= "Dim color";
 DSPLYMNU_MOVEBOB 				= "View bob amount while moving";
 DSPLYMNU_STILLBOB 				= "View bob amount while not moving";
 DSPLYMNU_BOBSPEED				= "Weapon bob speed";
-
 // HUD Options
 HUDMNU_TITLE					= "HUD Options";
 HUDMNU_ALTHUD					= "Alternative HUD";
@@ -474,7 +436,6 @@ HUDMNU_HEXENFLASHES				= "Hexen weapon flashes";
 HUDMNU_POISONFLASHES			= "Poison damage flashes";
 HUDMNU_ICEFLASHES				= "Ice death flashes";
 HUDMNU_HAZARDFLASHES			= "Poison Buildup flashes";
-
 // AltHUD Options
 ALTHUDMNU_TITLE					= "Alternative HUD";
 ALTHUDMNU_ENABLE				= "Enable alternative HUD";
@@ -507,7 +468,6 @@ ALTHUDMNU_COORDINATECOLOR		= "Coordinate color";
 ALTHUDMNU_COORDINATEMODE		= "Coordinate mode";
 ALTHUDMNU_STATSNAMECOLOR		= "Statistics name color";
 ALTHUDMNU_STATSCOLOR			= "Statistics color";
-
 // Misc. Options
 MISCMNU_TITLE					= "Miscellaneous Options";
 MISCMNU_MERGEKEYS				= "Merge left+right Alt/Ctrl/Shift";
@@ -522,7 +482,6 @@ MISCMNU_DEHLOAD					= "Load *.deh/*.bex lumps";
 MISCMNU_CACHENODES				= "Cache nodes";
 MISCMNU_CACHETIME				= "Time threshold for node caching";
 MISCMNU_CLEARNODECACHE			= "Clear node cache";
-
 // Automap Options
 AUTOMAPMNU_TITLE				= "AUTOMAP OPTIONS";
 AUTOMAPMNU_COLORSET				= "Map color set";
@@ -545,7 +504,6 @@ AUTOMAPMNU_SHOWKEYS				= "Show keys (cheat)";
 AUTOMAPMNU_SHOWTRIGGERLINES		= "Show trigger lines";
 AUTOMAPMNU_SHOWTHINGSPRITES		= "Show things as sprites";
 AUTOMAPMNU_PTOVERLAY			= "Overlay portals";
-
 // Automap Controls
 MAPCNTRLMNU_TITLE 			= "CUSTOMIZE MAP CONTROLS";
 MAPCNTRLMNU_CONTROLS		= "Map Controls";
@@ -561,7 +519,6 @@ MAPCNTRLMNU_TOGGLEGRID		= "Toggle grid";
 MAPCNTRLMNU_TOGGLETEXTURE	= "Toggle texture";
 MAPCNTRLMNU_SETMARK			= "Set mark";
 MAPCNTRLMNU_CLEARMARK		= "Clear mark";
-
 // Automap Colors
 MAPCOLORMNU_TITLE 						= "CUSTOMIZE MAP COLORS";
 MAPCOLORMNU_DEFAULTMAPCOLORS			= "Restore default custom colors";
@@ -591,7 +548,6 @@ MAPCOLORMNU_COUNTITEMCOLOR 				= "Count Items";
 MAPCOLORMNU_OVERLAY 					= "Overlay Mode";
 MAPCOLORMNU_OVCHEATMODE 				= "Overlay Cheat Mode";
 MAPCOLORMNU_PORTAL						= "Portal Overlays";
-
 // Message Options
 MSGMNU_TITLE				= "MESSAGES";
 MSGMNU_SHOWMESSAGES			= "Show messages";
@@ -611,7 +567,6 @@ MSGMNU_CENTEREDMESSAGES		= "Centered Messages";
 MSGMNU_SCREENSHOTMESSAGES	= "Screenshot messages";
 MSGMNU_LONGSAVEMESSAGES		= "Detailed save messages";
 MSGMNU_DEVELOPER			= "Developer message mode";
-
 // Scoreboard Options
 SCRBRDMNU_TITLE				= "SCOREBOARD OPTIONS";
 SCRBRDMNU_COOPERATIVE		= "Cooperative Options";
@@ -621,7 +576,6 @@ SCRBRDMNU_YOURCOLOR			= "Your Player Color";
 SCRBRDMNU_OTHERPLAYERCOLOR	= "Other Players' Color";
 SCRBRDMNU_DEATHMATCH		= "Deathmatch Options";
 SCRBRDMNU_TEAMDEATHMATCH	= "Team Deathmatch Options";
-
 // Gameplay Menu
 GMPLYMNU_TITLE				= "GAMEPLAY OPTIONS";
 GMPLYMNU_TEAMPLAY			= "Teamplay";		
@@ -678,7 +632,6 @@ GMPLYMNU_KEEPPOWERUPS		= "Keep powerups";
 GMPLYMNU_KEEPAMMO			= "Keep ammo";
 GMPLYMNU_LOSEHALFAMMO		= "Lose half ammo";
 GMPLYMNU_SPAWNWHEREDIED		= "Spawn where died";
-
 // Compatibility Options
 CMPTMNU_TITLE				= "COMPATIBILITY OPTIONS";
 CMPTMNU_MODE				= "Compatibility mode";
@@ -727,7 +680,6 @@ CMPTMNU_SOUNDCUTOFF			= "Sounds stop when actor vanishes";
 CMPTMNU_SOUNDTARGET			= "Use original sound target handling";
 CMPTMNU_TELEPORT			= "Scripted teleports don't trigger sector actions";
 CMPTMNU_PUSHWINDOW			= "Non-blocking lines can be pushed";
-
 // Sound Options
 SNDMNU_TITLE			= "SOUND OPTIONS";
 SNDMNU_SFXVOLUME		= "Sounds volume";
@@ -743,7 +695,6 @@ SNDMNU_OPENAL			= "OpenAL options";
 SNDMNU_RESTART			= "Restart sound";
 SNDMNU_ADVANCED			= "Advanced options";
 SNDMNU_MODREPLAYER		= "Module replayer options";
-
 // Fmod Options
 FMODMNU_TITLE			= "FMOD OPTIONS";
 FMODMNU_WATERCUTOFF		= "Underwater cutoff";
@@ -754,12 +705,10 @@ FMODMNU_RESAMPLER		= "Resampler";
 FMODMNU_HRTFFILTER		= "HRTF filter";
 FMODMNU_BUFFERSIZE		= "Buffer size";
 FMODMNU_BUFFERCOUNT		= "Buffer count";
-
 // OpenAL Options
 OPENALMNU_TITLE				= "OPENAL OPTIONS";
 OPENALMNU_PLAYBACKDEVICE	= "Playback device";
 OPENALMNU_ENABLEEFX			= "Enable EFX";
-
 // Advanced Sound Options
 ADVSNDMNU_TITLE				= "ADVANCED SOUND OPTIONS";
 ADVSNDMNU_SAMPLERATE		= "Sample rate";
@@ -783,7 +732,6 @@ ADVSNDMNU_TIMIDITYCHORUS	= "Chorus";
 ADVSNDMNU_TIMIDITYVOLUME	= "Relative volume";
 ADVSNDMNU_WILDMIDI			= "WildMidi";
 ADVSNDMNU_WILDMIDICONFIG	= "WildMidi config file";
-
 // Module Replayer Options
 MODMNU_TITLE			= "MODULE REPLAYER OPTIONS";
 MODMNU_REPLAYERENGINE	= "Replayer engine";
@@ -791,7 +739,6 @@ MODMNU_MASTERVOLUME		= "Master Volume";
 MODMNU_QUALITY			= "Quality";
 MODMNU_VOLUMERAMPING	= "Volume ramping";
 MODMNU_CHIPOMATIC		= "Chip-o-matic";
-
 // Video Options
 VIDMNU_TITLE			= "VIDEO MODE";
 VIDMNU_FULLSCREEN		= "Fullscreen";
@@ -802,7 +749,6 @@ VIDMNU_5X4ASPECTRATIO	= "Enable 5:4 aspect ratio";
 VIDMNU_ENTERTEXT		= "Press ENTER to set mode";
 VIDMNU_TESTTEXT1		= "T to test mode for 5 seconds";
 VIDMNU_TESTTEXT2		= "Please wait 5 seconds...";
-
 // Network Options
 NETMNU_TITLE					= "NETWORK OPTIONS";
 NETMNU_LOCALOPTIONS				= "Local options";
@@ -813,7 +759,6 @@ NETMNU_LERPTHRESHOLD			= "Lerp Threshold";
 NETMNU_HOSTOPTIONS				= "Host options";
 NETMNU_EXTRATICS				= "Extra Tics";
 NETMNU_TICBALANCE				= "Latency balancing";
-
 // Option Values
 OPTVAL_OFF					= "Off";
 OPTVAL_ON					= "On";
@@ -1009,22 +954,14 @@ OPTSTR_NOINTERPOLATION		= "No interpolation";
 OPTSTR_SPLINE				= "Spline";
 OPTSTR_FMOD					= "FMOD Ex";
 OPTSTR_OPENAL				= "OpenAL";
-
-
-
 SAFEMESSAGE			= "Do you really want to do this?";
 MNU_COLORPICKER		= "SELECT COLOR";
-
-
 WI_FINISHED			= "finished";
 WI_ENTERING			= "Now entering:";
-
 AM_MONSTERS			= "Monsters:";
 AM_SECRETS			= "Secrets:";
 AM_ITEMS			= "Items:";
-
 // Bloodbath announcer
-
 BBA_BONED = "%k boned %o like a fish";
 BBA_CASTRA = "%k castrated %o";
 BBA_CREAMED = "%k creamed %o";
@@ -1056,21 +993,18 @@ BBA_HOSED = "%k hosed %o";
 BBA_SPRAYED = "%k sprayed %o";
 BBA_DOGMEAT = "%k made dog meat out of %o";
 BBA_BEATEN = "%k beat %o like a cur";
-
 BBA_EXCREMENT = "%o is excrement";
 BBA_HAMBURGER = "%o is hamburger";
 BBA_SCROTUM = "%o suffered scrotum separation";
 BBA_POPULATION = "%o volunteered for population control";
 BBA_SUICIDE = "%o has suicided";
 BBA_DARWIN = "%o received the Darwin Award";
-
 // Chex Quest Strings
 CHUSTR_E1M1 = "E1M1: Landing Zone";
 CHUSTR_E1M2 = "E1M2: Storage Facility";
 CHUSTR_E1M3 = "E1M3: Experimental Lab";
 CHUSTR_E1M4 = "E1M4: Arboretum";
 CHUSTR_E1M5 = "E1M5: Caverns of Bazoik";
-
 CE1TEXT =
 		"Mission accomplished.\n"
 		"\n"
@@ -1082,24 +1016,18 @@ CE1TEXT =
 		"\n"
 		"\n"
 		"Press the escape key to continue...";
-
 CE2TEXT = "You've done it!";
 CE3TEXT = "Wonderful Job!";
 CE4TEXT = "Fantastic";
-
 CLOADNET = "you can't do load while in a net quest!\n\npress a key.";
 $ifgame(chex) QSPROMPT = "quicksave over your quest named\n\n'%s'?\n\npress y or n.";
 $ifgame(chex) QLOADNET = "you can't quickload during a netquest!\n\npress a key.";
 $ifgame(chex) QLPROMPT = "do you want to quickload the quest named\n\n'%s'?\n\npress y or n.";
 CNEWGAME = "you can't start a new quest\nwhile in a network quest.\n\npress a key.";
-
 CNIGHTMARE = "Careful, this will be tough.\nDo you wish to continue?\n\npress y or n.";
-
 CSWSTRING = "this is Chex(R) Quest. look for\n\nfuture levels at www.chexquest.com.\n\npress a key.";
-
 $ifgame(chex) NETEND = "you can't end a netquest!\n\npress a key.";
 $ifgame(chex) ENDGAME = "are you sure you want to end the quest?\n\npress y or n.";
-
 GOTCHEXARMOR = "Picked up the Chex(R) Armor.";
 GOTSUPERCHEXARMOR = "Picked up the Super Chex(R) Armor!";
 GOTWATER = "Picked up a glass of water.";
@@ -1113,7 +1041,6 @@ GOTVEGETABLESNEED = "Vegetables are REALLY good for you!";
 GOTVEGETABLES = "Picked up a bowl of vegetables.";
 GOTSLIMESUIT = "Found a Slime-Proof Suit";
 GOTCHEXMAP = "Found a Computer Area Map";
-
 GOTZORCHRECHARGE = "Picked up a mini zorch recharge.";
 GOTMINIZORCHPACK = "Picked up a mini zorch pack.";
 GOTPROPULSORRECHARGE = "Picked up a zorch propulsor recharge.";
@@ -1123,7 +1050,6 @@ GOTPHASINGZORCHERPACK = "Picked up a phasing zorcher pack.";
 GOTLARGEZORCHERRECHARGE = "Picked up a large zorcher recharge.";
 GOTLARGEZORCHERPACK = "Picked up a large zorcher pack.";
 GOTZORCHPACK = "Picked up a Zorchpak!";
-
 GOTLAZDEVICE = "You got the LAZ Device! Woot!";
 GOTRAPIDZORCHER = "You got the Rapid Zorcher!";
 GOTSUPERBOOTSPORK = "You got the Super Bootspork!";
@@ -1132,19 +1058,16 @@ GOTPHASINGZORCHER = "You got the Phasing Zorcher!";
 GOTLARGEZORCHER = "You got the Large Zorcher!";
 GOTSUPERLARGEZORCHER = "You got the Mega Zorcher!";
 GOTMINIZORCHER = "Picked up a Mini Zorcher.";
-
 $ifgame(chex) STSTR_DQDON = "Invincible Mode ON";
 $ifgame(chex) STSTR_DQDOFF = "Invincible Mode OFF";
 $ifgame(chex) STSTR_FAADDED = "Zorch Added";
 $ifgame(chex) STSTR_KFAADDED = "Super Zorch Added";
 $ifgame(chex) STSTR_CHOPPERS = "... Eat Chex(R)!";
-
 OB_COMMONUS = "%o was slimed by a flemoid.";
 OB_BIPEDICUS = "%o was slimed by a bipedicus.";
 OB_BIPEDICUS2 = "%o was slimed by an armored bipedicus.";
 OB_CYCLOPTIS = "%o was slimed by a cycloptis.";
 OB_FLEMBRANE = "%o was defeated by the Flembrane.";
-
 OB_MPSPOON = "%o was spoon fed by %k.";
 OB_MPBOOTSPORK = "%o was thouroughly mixed with %k's bootspork.";
 OB_MPZORCH = "%o was zorched by %k.";
@@ -1155,12 +1078,10 @@ OB_MPP_SPLASH = "%o was hit by %k's propulsor.";
 OB_MPPHASEZORCH = "%o was phase zorched by %k.";
 OB_MPLAZ_BOOM = "%o fell prey to %k's LAZ device.";
 OB_MPLAZ_SPLASH = "%o was lazzed by %k.";
-
 // Music names for Doom. These are needed in the string table only so that they can
 // be replaced by Dehacked. 
 // Note that these names are not prefixed with 'd_' because that's how Dehacked patches 
 // expect them.
-
 MUSIC_E1M1 = "e1m1";
 MUSIC_E1M2 = "e1m2";
 MUSIC_E1M3 = "e1m3";
@@ -1228,20 +1149,16 @@ MUSIC_ULTIMA = "ultima";
 MUSIC_READ_M = "read_m";
 MUSIC_DM2TTL = "dm2ttl";
 MUSIC_DM2INT = "dm2int";
-
 // GZDoom exclusive:
-
 DSPLYMNU_GLOPT		= "OpenGL Options";
 DSPLYMNU_GAMMA		= "Gamma correction";
 DSPLYMNU_CONTRAST 	="Contrast";
 DSPLYMNU_HWGAMMA	= "Hardware Gamma";
-
 // OpenGL Options
 GLMNU_TITLE		= "OPENGL OPTIONS";
 GLMNU_DYNLIGHT	= "Dynamic Light Options";
 GLMNU_TEXOPT	= "Texture Options";
 GLMNU_PREFS		= "Preferences";
-
 // Texture Options
 GLTEXMNU_TITLE			= "TEXTURE OPTIONS";
 GLTEXMNU_TEXENABLED 	= "Textures enabled";
@@ -1256,7 +1173,6 @@ GLTEXMNU_RESIZEFNT 		= "Resize fonts";
 GLTEXMNU_PRECACHETEX 	= "Precache GL textures";
 GLTEXMNU_TRIMSPREDGE	= "Trim sprite edges";
 GLTEXMNU_SORTDRAWLIST 	= "Sort draw lists by texture";
-
 // Dynamic Light Options
 GLLIGHTMNU_TITLE 			= "DYNAMIC LIGHTS";
 GLLIGHTMNU_LIGHTSENABLED 	= "Dynamic Lights enabled";
@@ -1264,7 +1180,6 @@ GLLIGHTMNU_LIGHTDEFS		= "Enable light definitions";
 GLLIGHTMNU_CLIPLIGHTS 		= "Clip lights";
 GLLIGHTMNU_LIGHTSPRITES 	= "Lights affect sprites";
 GLLIGHTMNU_LIGHTPARTICLES 	= "Lights affect particles";
-
 // OpenGL Preferences
 GLPREFMNU_TITLE 				= "OPENGL PREFERENCES";
 GLPREFMNU_SECLIGHTMODE 			= "Sector light mode";
@@ -1292,7 +1207,6 @@ GLPREFMNU_LENS					= "Lens distortion effect";
 GLPREFMNU_SSAO					= "Ambient occlusion quality";
 GLPREFMNU_SSAO_PORTALS			= "Portals with AO";
 GLPREFMNU_FXAA					= "FXAA Quality";
-
 // Option Values
 OPTVAL_SMART 				= "Smart";
 OPTVAL_SMARTER 				= "Smarter";
