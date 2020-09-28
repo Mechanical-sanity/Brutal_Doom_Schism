@@ -1,505 +1,505 @@
-//Fader
-fader Disappear
-{
-	DecayStart	0.5
-	DecayTime	4.0
-}
-//////////
-//upright slash (left)
-decal SlashDecalUL1
-{
-	pic SLSHDEC1
-	translucent 0.85
-	shade "00 00 00"
-	x-scale 0.35
-	y-scale 0.45
-}
-decal SlashDecalUL2
-{
-	pic SLSHDEC2
-	translucent 0.85
-	shade "00 00 00"
-	x-scale 0.35
-	y-scale 0.45
-}
-decal SlashDecalUL3
-{
-	pic SLSHDEC3
-	translucent 0.85
-	shade "00 00 00"
-	x-scale 0.35
-	y-scale 0.45
-}
-decal SlashDecalUL4
-{
-	pic SLSHDEC3
-	translucent 0.85
-	shade "00 00 00"
-	x-scale 0.35
-	y-scale 0.55
-}
-Decalgroup SlashDecalUL
-{
-    SlashDecalUL1   1
-    SlashDecalUL2   1 
-	SlashDecalUL3	1
-	SlashDecalUL4	1
-}
-//Generator SlashPuffWalpUL SlashDecalUL
-//////////
-//upright slash (right)
-decal SlashDecalUR1
-{
-	pic SLSHDEC1
-	translucent 0.85
-	shade "00 00 00"
-	x-scale 0.35
-	y-scale 0.45
-	flipx
-}
-decal SlashDecalUR2
-{
-	pic SLSHDEC2
-	translucent 0.85
-	shade "00 00 00"
-	x-scale 0.35
-	y-scale 0.45
-	flipx
-}
-decal SlashDecalUR3
-{
-	pic SLSHDEC3
-	translucent 0.85
-	shade "00 00 00"
-	x-scale 0.35
-	y-scale 0.45
-	flipx
-}
-decal SlashDecalUR4
-{
-	pic SLSHDEC3
-	translucent 0.85
-	shade "00 00 00"
-	x-scale 0.35
-	y-scale 0.55
-	flipx
-}
-Decalgroup SlashDecalUpRight
-{
-    SlashDecalUR1   1
-    SlashDecalUR2   1 
-	SlashDecalUR3	1
-	SlashDecalUR4	1
-}
-//Generator SlashPuffWalpURpRight SlashDecalUpRight
-//////////
-//left sideways slash
-decal SlashDecalL1
-{
-	pic SLSHDEL1
-	translucent 0.85
-	shade "00 00 00"
-	x-scale 0.75
-	y-scale 0.25
-}
-decal SlashDecalL2
-{
-	pic SLSHDEL2
-	translucent 0.85
-	shade "00 00 00"
-	x-scale 0.75
-	y-scale 0.25
-}
-decal SlashDecalL3
-{
-	pic SLSHDEL3
-	translucent 0.85
-	shade "00 00 00"
-	x-scale 0.75
-	y-scale 0.25
-}
-decal SlashDecalL4
-{
-	pic SLSHDEL3
-	translucent 0.85
-	shade "00 00 00"
-	x-scale 0.85
-	y-scale 0.35
-}
-Decalgroup SlashDecalLeft 
-{
-    SlashDecalL1    1
-    SlashDecalL2    1 
-	SlashDecalL3	1
-	SlashDecalL4	1
-}
-//Generator SlashPuffWalpLeft SlashDecalLeft
-//////////
-//right sideways slash
-decal SlashDecalR1
-{
-	pic SLSHDEL1
-	translucent 0.85
-	shade "00 00 00"
-	x-scale 0.75
-	y-scale 0.25
-	flipx
-}
-decal SlashDecalR2
-{
-	pic SLSHDEL2
-	translucent 0.85
-	shade "00 00 00"
-	x-scale 0.75
-	y-scale 0.25
-	flipx
-}
-decal SlashDecalR3
-{
-	pic SLSHDEL3
-	translucent 0.85
-	shade "00 00 00"
-	x-scale 0.75
-	y-scale 0.25
-	flipx
-}
-decal SlashDecalR4
-{
-	pic SLSHDEL3
-	translucent 0.85
-	shade "00 00 00"
-	x-scale 0.85
-	y-scale 0.35
-	flipx
-}
-Decalgroup SlashDecalRight
-{
-    SlashDecalR1    1
-    SlashDecalR2    1 
-	SlashDecalR3	1
-	SlashDecalR4	1
-}
-//////////
-//left sideways slash Big (Super Slash)
-decal BSlashDecalL1
-{
-	pic SLSHDEL1
-	translucent 0.85
-	shade "00 00 00"
-	x-scale 0.75
-	y-scale 0.25
-}
-decal BSlashDecalL2
-{
-	pic SLSHDEL2
-	translucent 0.85
-	shade "00 00 00"
-	x-scale 1.50
-	y-scale 0.50
-}
-decal BSlashDecalL3
-{
-	pic SLSHDEL3
-	translucent 0.85
-	shade "00 00 00"
-	x-scale 1.50
-	y-scale 0.50
-}
-decal BSlashDecalL4
-{
-	pic SLSHDEL3
-	translucent 0.85
-	shade "00 00 00"
-	x-scale 1.70
-	y-scale 0.70
-}
-Decalgroup SlashDecalLeftBig
-{
-    BSlashDecalL1    1
-    BSlashDecalL2    1 
-	BSlashDecalL3	1
-	BSlashDecalL4	1
-}
-//Quietus Stab
-decal QuietusStabUnder
-{
-	pic SLSHDEC1
-	translucent 0.75
-	shade "00 00 00"
-	flipx
-	x-scale 0.25
-	y-scale 0.25
-}
-decal QuietusStabDecal
-{
-	pic SLSHDEL1
-	translucent 0.85
-	shade "80 ff 80"
-	fullbright
-	flipx
-	x-scale 0.25
-	y-scale 0.25
-	animator Disappear
-	lowerdecal QuietusStabUnder
-}
-//Generator QuietPuffS QuietusStabDecal
-//////////
-//Quietus Razor Slash Left (glow effect)
-decal RSlashDecalL1
-{
-	pic SLSHDEL1
-	translucent 0.75
-	shade "80 ff 80"
-	fullbright
-	x-scale 0.75
-	y-scale 0.25
-	animator Disappear
-	lowerdecal SlashDecalL1
-}
-decal RSlashDecalL2
-{
-	pic SLSHDEL2
-	translucent 0.75
-	shade "80 ff 80"
-	x-scale 0.75
-	y-scale 0.25
-	animator Disappear
-	lowerdecal SlashDecalL2
-}
-decal RSlashDecalL3
-{
-	pic SLSHDEL3
-	translucent 0.75
-	shade "80 ff 80"
-	x-scale 0.75
-	y-scale 0.25
-	animator Disappear
-	lowerdecal SlashDecalL3
-}
-decal RSlashDecalL4
-{
-	pic SLSHDEL3
-	translucent 0.75
-	shade "80 ff 80"
-	x-scale 0.85
-	y-scale 0.35
-	animator Disappear
-	lowerdecal SlashDecalL4
-}
-decalgroup RazorLeftSlashDecal
-{
-	RSlashDecalL1	1
-	RSlashDecalL2	1
-	RSlashDecalL3	1
-	RSlashDecalL4	1
-}
-//Generator RazorPuffL RazorLeftSlashDecal
-//////////
-//Quietus Razor Slash Right (glow effect)
-decal RSlashDecalR1
-{
-	pic SLSHDEL1
-	translucent 0.75
-	shade "80 ff 80"
-	fullbright
-	flipx
-	x-scale 0.75
-	y-scale 0.25
-	animator Disappear
-	lowerdecal SlashDecalR1
-}
-decal RSlashDecalR2
-{
-	pic SLSHDEL2
-	translucent 0.75
-	shade "80 ff 80"
-	flipx
-	x-scale 0.75
-	y-scale 0.25
-	animator Disappear
-	lowerdecal SlashDecalR2
-}
-decal RSlashDecalR3
-{
-	pic SLSHDEL3
-	translucent 0.75
-	shade "80 ff 80"
-	flipx
-	x-scale 0.75
-	y-scale 0.25
-	animator Disappear
-	lowerdecal SlashDecalR3
-}
-decal RSlashDecalR4
-{
-	pic SLSHDEL3
-	translucent 0.75
-	shade "80 ff 80"
-	flipx
-	x-scale 0.85
-	y-scale 0.35
-	animator Disappear
-	lowerdecal SlashDecalR4
-}
-decalgroup RazorRightSlashDecal
-{
-	RSlashDecalR1	1
-	RSlashDecalR2	1
-	RSlashDecalR3	1
-	RSlashDecalR4	1
-}
-//Generator RazorPuffR RazorRightSlashDecal
-//////////
-//Quietus Razor Slash Upright-Left (glow effect)
-decal RSlashDecalUL1
-{
-	pic SLSHDEC1
-	translucent 0.75
-	shade "80 ff 80"
-	x-scale 0.35
-	y-scale 0.45
-	animator Disappear
-	lowerdecal SlashDecalUL1
-}
-decal RSlashDecalUL2
-{
-	pic SLSHDEC2
-	translucent 0.75
-	shade "80 ff 80"
-	x-scale 0.35
-	y-scale 0.45
-	animator Disappear
-	lowerdecal SlashDecalUL2
-}
-decal RSlashDecalUL3
-{
-	pic SLSHDEC3
-	translucent 0.75
-	shade "80 ff 80"
-	x-scale 0.35
-	y-scale 0.45
-	animator Disappear
-	lowerdecal SlashDecalUL3
-}
-decal RSlashDecalUL4
-{
-	pic SLSHDEC3
-	translucent 0.75
-	shade "80 ff 80"
-	x-scale 0.35
-	y-scale 0.55
-	animator Disappear
-	lowerdecal SlashDecalUL4
-}
-Decalgroup RazorUprightLeftSlashDecal
-{
-    RSlashDecalUL1   1
-    RSlashDecalUL2   1 
-	RSlashDecalUL3	 1
-	RSlashDecalUL4	 1
-}
-//Generator RazorPuffUL RazorUprightLeftSlashDecal
-//////////
-//Quietus Razor Slash Upright-Right (glow effect)
-decal RSlashDecalUR1
-{
-	pic SLSHDEC1
-	translucent 0.75
-	shade "80 ff 80"
-	flipx
-	x-scale 0.35
-	y-scale 0.45
-	animator Disappear
-	lowerdecal SlashDecalUR1
-}
-decal RSlashDecalUR2
-{
-	pic SLSHDEC2
-	translucent 0.75
-	shade "80 ff 80"
-	flipx
-	x-scale 0.35
-	y-scale 0.45
-	animator Disappear
-	lowerdecal SlashDecalUR2
-}
-decal RSlashDecalUR3
-{
-	pic SLSHDEC3
-	translucent 0.75
-	shade "80 ff 80"
-	flipx
-	x-scale 0.35
-	y-scale 0.45
-	animator Disappear
-	lowerdecal SlashDecalUR3
-}
-decal RSlashDecalUR4
-{
-	pic SLSHDEC3
-	translucent 0.75
-	shade "80 ff 80"
-	flipx
-	x-scale 0.35
-	y-scale 0.55
-	animator Disappear
-	lowerdecal SlashDecalUR4
-}
-Decalgroup RazorUprightRightSlashDecal
-{
-    RSlashDecalUR1   1
-    RSlashDecalUR2   1 
-	RSlashDecalUR3	 1
-	RSlashDecalUR4	 1
-}
-//Generator RazorPuffUR RazorUprightRightSlashDecal
-//////////
-//Quietus Razor Slash Left (glow effect)
-decal BRSlashDecalL1
-{
-	pic SLSHDEL1
-	translucent 0.75
-	shade "80 ff 80"
-	fullbright
-	x-scale 1.50
-	y-scale 0.50
-	animator Disappear
-	lowerdecal BSlashDecalL1
-}
-decal BRSlashDecalL2
-{
-	pic SLSHDEL2
-	translucent 0.75
-	shade "80 ff 80"
-	x-scale 1.50
-	y-scale 0.50
-	animator Disappear
-	lowerdecal BSlashDecalL2
-}
-decal BRSlashDecalL3
-{
-	pic SLSHDEL3
-	translucent 0.75
-	shade "80 ff 80"
-	x-scale 1.50
-	y-scale 0.50
-	animator Disappear
-	lowerdecal BSlashDecalL3
-}
-decal BRSlashDecalL4
-{
-	pic SLSHDEL3
-	translucent 0.75
-	shade "80 ff 80"
-	x-scale 1.70
-	y-scale 0.70
-	animator Disappear
-	lowerdecal BSlashDecalL4
-}
-decalgroup RazorLeftSlashDecalBig
-{
-	BRSlashDecalL1	1
-	BRSlashDecalL2	1
-	BRSlashDecalL3	1
-	BRSlashDecalL4	1
-}
+	//Fader
+	fader Disappear
+	{
+		DecayStart	0.5
+		DecayTime	4.0
+	}
+	//////////
+	//upright slash (left)
+	decal SlashDecalUL1
+	{
+		pic SLSHDEC1
+		translucent 0.85
+		shade "00 00 00"
+		x-scale 0.35
+		y-scale 0.45
+	}
+	decal SlashDecalUL2
+	{
+		pic SLSHDEC2
+		translucent 0.85
+		shade "00 00 00"
+		x-scale 0.35
+		y-scale 0.45
+	}
+	decal SlashDecalUL3
+	{
+		pic SLSHDEC3
+		translucent 0.85
+		shade "00 00 00"
+		x-scale 0.35
+		y-scale 0.45
+	}
+	decal SlashDecalUL4
+	{
+		pic SLSHDEC3
+		translucent 0.85
+		shade "00 00 00"
+		x-scale 0.35
+		y-scale 0.55
+	}
+	Decalgroup SlashDecalUL
+	{
+		SlashDecalUL1   1
+		SlashDecalUL2   1 
+		SlashDecalUL3	1
+		SlashDecalUL4	1
+	}
+	//Generator SlashPuffWalpUL SlashDecalUL
+	//////////
+	//upright slash (right)
+	decal SlashDecalUR1
+	{
+		pic SLSHDEC1
+		translucent 0.85
+		shade "00 00 00"
+		x-scale 0.35
+		y-scale 0.45
+		flipx
+	}
+	decal SlashDecalUR2
+	{
+		pic SLSHDEC2
+		translucent 0.85
+		shade "00 00 00"
+		x-scale 0.35
+		y-scale 0.45
+		flipx
+	}
+	decal SlashDecalUR3
+	{
+		pic SLSHDEC3
+		translucent 0.85
+		shade "00 00 00"
+		x-scale 0.35
+		y-scale 0.45
+		flipx
+	}
+	decal SlashDecalUR4
+	{
+		pic SLSHDEC3
+		translucent 0.85
+		shade "00 00 00"
+		x-scale 0.35
+		y-scale 0.55
+		flipx
+	}
+	Decalgroup SlashDecalUpRight
+	{
+		SlashDecalUR1   1
+		SlashDecalUR2   1 
+		SlashDecalUR3	1
+		SlashDecalUR4	1
+	}
+	//Generator SlashPuffWalpURpRight SlashDecalUpRight
+	//////////
+	//left sideways slash
+	decal SlashDecalL1
+	{
+		pic SLSHDEL1
+		translucent 0.85
+		shade "00 00 00"
+		x-scale 0.75
+		y-scale 0.25
+	}
+	decal SlashDecalL2
+	{
+		pic SLSHDEL2
+		translucent 0.85
+		shade "00 00 00"
+		x-scale 0.75
+		y-scale 0.25
+	}
+	decal SlashDecalL3
+	{
+		pic SLSHDEL3
+		translucent 0.85
+		shade "00 00 00"
+		x-scale 0.75
+		y-scale 0.25
+	}
+	decal SlashDecalL4
+	{
+		pic SLSHDEL3
+		translucent 0.85
+		shade "00 00 00"
+		x-scale 0.85
+		y-scale 0.35
+	}
+	Decalgroup SlashDecalLeft 
+	{
+		SlashDecalL1    1
+		SlashDecalL2    1 
+		SlashDecalL3	1
+		SlashDecalL4	1
+	}
+	//Generator SlashPuffWalpLeft SlashDecalLeft
+	//////////
+	//right sideways slash
+	decal SlashDecalR1
+	{
+		pic SLSHDEL1
+		translucent 0.85
+		shade "00 00 00"
+		x-scale 0.75
+		y-scale 0.25
+		flipx
+	}
+	decal SlashDecalR2
+	{
+		pic SLSHDEL2
+		translucent 0.85
+		shade "00 00 00"
+		x-scale 0.75
+		y-scale 0.25
+		flipx
+	}
+	decal SlashDecalR3
+	{
+		pic SLSHDEL3
+		translucent 0.85
+		shade "00 00 00"
+		x-scale 0.75
+		y-scale 0.25
+		flipx
+	}
+	decal SlashDecalR4
+	{
+		pic SLSHDEL3
+		translucent 0.85
+		shade "00 00 00"
+		x-scale 0.85
+		y-scale 0.35
+		flipx
+	}
+	Decalgroup SlashDecalRight
+	{
+		SlashDecalR1    1
+		SlashDecalR2    1 
+		SlashDecalR3	1
+		SlashDecalR4	1
+	}
+	//////////
+	//left sideways slash Big (Super Slash)
+	decal BSlashDecalL1
+	{
+		pic SLSHDEL1
+		translucent 0.85
+		shade "00 00 00"
+		x-scale 0.75
+		y-scale 0.25
+	}
+	decal BSlashDecalL2
+	{
+		pic SLSHDEL2
+		translucent 0.85
+		shade "00 00 00"
+		x-scale 1.50
+		y-scale 0.50
+	}
+	decal BSlashDecalL3
+	{
+		pic SLSHDEL3
+		translucent 0.85
+		shade "00 00 00"
+		x-scale 1.50
+		y-scale 0.50
+	}
+	decal BSlashDecalL4
+	{
+		pic SLSHDEL3
+		translucent 0.85
+		shade "00 00 00"
+		x-scale 1.70
+		y-scale 0.70
+	}
+	Decalgroup SlashDecalLeftBig
+	{
+		BSlashDecalL1    1
+		BSlashDecalL2    1 
+		BSlashDecalL3	1
+		BSlashDecalL4	1
+	}
+	//Quietus Stab
+	decal QuietusStabUnder
+	{
+		pic SLSHDEC1
+		translucent 0.75
+		shade "00 00 00"
+		flipx
+		x-scale 0.25
+		y-scale 0.25
+	}
+	decal QuietusStabDecal
+	{
+		pic SLSHDEL1
+		translucent 0.85
+		shade "80 ff 80"
+		fullbright
+		flipx
+		x-scale 0.25
+		y-scale 0.25
+		animator Disappear
+		lowerdecal QuietusStabUnder
+	}
+	//Generator QuietPuffS QuietusStabDecal
+	//////////
+	//Quietus Razor Slash Left (glow effect)
+	decal RSlashDecalL1
+	{
+		pic SLSHDEL1
+		translucent 0.75
+		shade "80 ff 80"
+		fullbright
+		x-scale 0.75
+		y-scale 0.25
+		animator Disappear
+		lowerdecal SlashDecalL1
+	}
+	decal RSlashDecalL2
+	{
+		pic SLSHDEL2
+		translucent 0.75
+		shade "80 ff 80"
+		x-scale 0.75
+		y-scale 0.25
+		animator Disappear
+		lowerdecal SlashDecalL2
+	}
+	decal RSlashDecalL3
+	{
+		pic SLSHDEL3
+		translucent 0.75
+		shade "80 ff 80"
+		x-scale 0.75
+		y-scale 0.25
+		animator Disappear
+		lowerdecal SlashDecalL3
+	}
+	decal RSlashDecalL4
+	{
+		pic SLSHDEL3
+		translucent 0.75
+		shade "80 ff 80"
+		x-scale 0.85
+		y-scale 0.35
+		animator Disappear
+		lowerdecal SlashDecalL4
+	}
+	decalgroup RazorLeftSlashDecal
+	{
+		RSlashDecalL1	1
+		RSlashDecalL2	1
+		RSlashDecalL3	1
+		RSlashDecalL4	1
+	}
+	//Generator RazorPuffL RazorLeftSlashDecal
+	//////////
+	//Quietus Razor Slash Right (glow effect)
+	decal RSlashDecalR1
+	{
+		pic SLSHDEL1
+		translucent 0.75
+		shade "80 ff 80"
+		fullbright
+		flipx
+		x-scale 0.75
+		y-scale 0.25
+		animator Disappear
+		lowerdecal SlashDecalR1
+	}
+	decal RSlashDecalR2
+	{
+		pic SLSHDEL2
+		translucent 0.75
+		shade "80 ff 80"
+		flipx
+		x-scale 0.75
+		y-scale 0.25
+		animator Disappear
+		lowerdecal SlashDecalR2
+	}
+	decal RSlashDecalR3
+	{
+		pic SLSHDEL3
+		translucent 0.75
+		shade "80 ff 80"
+		flipx
+		x-scale 0.75
+		y-scale 0.25
+		animator Disappear
+		lowerdecal SlashDecalR3
+	}
+	decal RSlashDecalR4
+	{
+		pic SLSHDEL3
+		translucent 0.75
+		shade "80 ff 80"
+		flipx
+		x-scale 0.85
+		y-scale 0.35
+		animator Disappear
+		lowerdecal SlashDecalR4
+	}
+	decalgroup RazorRightSlashDecal
+	{
+		RSlashDecalR1	1
+		RSlashDecalR2	1
+		RSlashDecalR3	1
+		RSlashDecalR4	1
+	}
+	//Generator RazorPuffR RazorRightSlashDecal
+	//////////
+	//Quietus Razor Slash Upright-Left (glow effect)
+	decal RSlashDecalUL1
+	{
+		pic SLSHDEC1
+		translucent 0.75
+		shade "80 ff 80"
+		x-scale 0.35
+		y-scale 0.45
+		animator Disappear
+		lowerdecal SlashDecalUL1
+	}
+	decal RSlashDecalUL2
+	{
+		pic SLSHDEC2
+		translucent 0.75
+		shade "80 ff 80"
+		x-scale 0.35
+		y-scale 0.45
+		animator Disappear
+		lowerdecal SlashDecalUL2
+	}
+	decal RSlashDecalUL3
+	{
+		pic SLSHDEC3
+		translucent 0.75
+		shade "80 ff 80"
+		x-scale 0.35
+		y-scale 0.45
+		animator Disappear
+		lowerdecal SlashDecalUL3
+	}
+	decal RSlashDecalUL4
+	{
+		pic SLSHDEC3
+		translucent 0.75
+		shade "80 ff 80"
+		x-scale 0.35
+		y-scale 0.55
+		animator Disappear
+		lowerdecal SlashDecalUL4
+	}
+	Decalgroup RazorUprightLeftSlashDecal
+	{
+		RSlashDecalUL1   1
+		RSlashDecalUL2   1 
+		RSlashDecalUL3	 1
+		RSlashDecalUL4	 1
+	}
+	//Generator RazorPuffUL RazorUprightLeftSlashDecal
+	//////////
+	//Quietus Razor Slash Upright-Right (glow effect)
+	decal RSlashDecalUR1
+	{
+		pic SLSHDEC1
+		translucent 0.75
+		shade "80 ff 80"
+		flipx
+		x-scale 0.35
+		y-scale 0.45
+		animator Disappear
+		lowerdecal SlashDecalUR1
+	}
+	decal RSlashDecalUR2
+	{
+		pic SLSHDEC2
+		translucent 0.75
+		shade "80 ff 80"
+		flipx
+		x-scale 0.35
+		y-scale 0.45
+		animator Disappear
+		lowerdecal SlashDecalUR2
+	}
+	decal RSlashDecalUR3
+	{
+		pic SLSHDEC3
+		translucent 0.75
+		shade "80 ff 80"
+		flipx
+		x-scale 0.35
+		y-scale 0.45
+		animator Disappear
+		lowerdecal SlashDecalUR3
+	}
+	decal RSlashDecalUR4
+	{
+		pic SLSHDEC3
+		translucent 0.75
+		shade "80 ff 80"
+		flipx
+		x-scale 0.35
+		y-scale 0.55
+		animator Disappear
+		lowerdecal SlashDecalUR4
+	}
+	Decalgroup RazorUprightRightSlashDecal
+	{
+		RSlashDecalUR1   1
+		RSlashDecalUR2   1 
+		RSlashDecalUR3	 1
+		RSlashDecalUR4	 1
+	}
+	//Generator RazorPuffUR RazorUprightRightSlashDecal
+	//////////
+	//Quietus Razor Slash Left (glow effect)
+	decal BRSlashDecalL1
+	{
+		pic SLSHDEL1
+		translucent 0.75
+		shade "80 ff 80"
+		fullbright
+		x-scale 1.50
+		y-scale 0.50
+		animator Disappear
+		lowerdecal BSlashDecalL1
+	}
+	decal BRSlashDecalL2
+	{
+		pic SLSHDEL2
+		translucent 0.75
+		shade "80 ff 80"
+		x-scale 1.50
+		y-scale 0.50
+		animator Disappear
+		lowerdecal BSlashDecalL2
+	}
+	decal BRSlashDecalL3
+	{
+		pic SLSHDEL3
+		translucent 0.75
+		shade "80 ff 80"
+		x-scale 1.50
+		y-scale 0.50
+		animator Disappear
+		lowerdecal BSlashDecalL3
+	}
+	decal BRSlashDecalL4
+	{
+		pic SLSHDEL3
+		translucent 0.75
+		shade "80 ff 80"
+		x-scale 1.70
+		y-scale 0.70
+		animator Disappear
+		lowerdecal BSlashDecalL4
+	}
+	decalgroup RazorLeftSlashDecalBig
+	{
+		BRSlashDecalL1	1
+		BRSlashDecalL2	1
+		BRSlashDecalL3	1
+		BRSlashDecalL4	1
+	}

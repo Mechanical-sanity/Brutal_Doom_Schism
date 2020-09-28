@@ -1,1603 +1,1603 @@
-//Rebalance
-ICYWIND	"sounds/rebalance/ICYWIND.mp3" 
-//MK sounds I edited for Paladin's fists yesterday
-$RANDOM HVPNHIT {HVPNHIT1 HVPNHIT2 HVPNHIT3 HVPNHIT4}
-HVPNHIT1 HVPNHIT1 
-HVPNHIT2 HVPNHIT2
-HVPNHIT3 HVPNHIT3
-HVPNHIT4 HVPNHIT4
-$RANDOM PUNCHHIT {PNCHHIT1 PNCHHIT2 PNCHHIT3 PNCHHIT4 PNCHHIT5 PNCHHIT6 PNCHHIT7}
-PNCHHIT1 PNCHHIT1 
-PNCHHIT2 PNCHHIT2
-PNCHHIT3 PNCHHIT3
-PNCHHIT4 PNCHHIT4
-PNCHHIT5 PNCHHIT5
-PNCHHIT6 PNCHHIT6
-PNCHHIT7 PNCHHIT7
-$RANDOM METALHIT {METLHIT1 METLHIT2 METLHIT3}
-METLHIT1 METLHIT1 
-METLHIT2 METLHIT2
-METLHIT3 METLHIT3
-$RANDOM KICKHIT {KICKHIT1 KICKHIT2 KICKHIT3 KICKHIT4 KICKHIT5}
-KICKHIT1 KICKHIT1
-KICKHIT2 KICKHIT2 
-KICKHIT3 KICKHIT3 
-KICKHIT4 KICKHIT4 
-KICKHIT5 KICKHIT5
-$RANDOM FLESHHIT {FLESHIT1 FLESHIT2 FLESHIT3 FLESHIT4 FLESHIT5}
-FLESHIT1 FLESHIT1
-FLESHIT2 FLESHIT2
-FLESHIT3 FLESHIT3
-FLESHIT4 FLESHIT4
-FLESHIT5 FLESHIT5
-//Paladin's Voice
-$playeralias	Paladin	male	*death		    Paladin/Death
-$playeralias	Paladin	male	*xdeath		    Paladin/XDeath
-$playeralias	Paladin	male	*gibbed		    DSSLOP
-$playersounddup	Paladin	male	*wimpydeath 	*death
-$playersounddup	Paladin	male	*crazydeath	    *death
-$playersounddup	Paladin	male	*burndeath	    *xdeath
-$playeralias	Paladin	male	*pain100	    Paladin/Pain100
-$playeralias	Paladin	male	*pain75		    Paladin/Pain75
-$playeralias	Paladin	male	*pain50 	    Paladin/Pain50
-$playeralias	Paladin	male	*pain25		    Paladin/Pain25
-$playeralias	Paladin	male	*grunt		    Paladin/ShortExert
-$playeralias	Paladin	male	*land		    Paladin/Land
-$playeralias	Paladin	male	*jump		    Paladin/Jump
-$playersound	Paladin	male	*fist		    dsnone
-$playersounddup	Paladin	male	*usefail		*grunt
-$playeralias	Paladin	male	*weaponlaugh	Paladin/Laugh
-$playersounddup	Paladin	male	*evillaugh	    *weaponlaugh
-$random Paladin/Pain100	    { Paladin/Pain100_1 Paladin/Pain100_2 Paladin/Pain100_3 Paladin/Pain100_4 Paladin/Pain100_5 Paladin/Pain100_6 Paladin/Pain100_7 Paladin/Pain100_8 }
-$random Paladin/Pain75	        { Paladin/Pain75_1 Paladin/Pain75_2 Paladin/Pain75_3 }
-$random Paladin/Pain50	        { Paladin/Pain50_1 Paladin/Pain50_2 Paladin/Pain50_3 }
-$random Paladin/Pain25	        { Paladin/Pain25_1 Paladin/Pain25_2 }
-$random Paladin/Death	        { Paladin/Death1 Paladin/Death2 Paladin/Death3 }
-$random Paladin/ShortExert	    { Paladin/ShortExert1 Paladin/ShortExert2 Paladin/ShortExert3 }
-$random Paladin/MediumExert	{ Paladin/MediumExert1 Paladin/MediumExert2 Paladin/MediumExert3 }
-$random Paladin/LargeExert	    { Paladin/LargeExert1 Paladin/LargeExert2 Paladin/LargeExert3 }
-$random Paladin/SpellCast	    { Paladin/SpellCast1 Paladin/SpellCast2 }
-$random Paladin/SpellCastLarge	{ Paladin/SpellCastLarge1 Paladin/SpellCastLarge2 Paladin/SpellCastLarge3 }
-Paladin/Pain100_1          "Sounds/Paladin/Pain100_1.ogg"
-Paladin/Pain100_2          "Sounds/Paladin/Pain100_2.ogg"
-Paladin/Pain100_3          "Sounds/Paladin/Pain100_3.ogg"
-Paladin/Pain100_4          "Sounds/Paladin/Pain100_4.ogg"
-Paladin/Pain100_5          "Sounds/Paladin/Pain100_5.ogg"
-Paladin/Pain100_6          "Sounds/Paladin/Pain100_6.ogg"
-Paladin/Pain100_7          "Sounds/Paladin/Pain100_7.ogg"
-Paladin/Pain100_8          "Sounds/Paladin/Pain100_8.ogg"
-Paladin/Pain75_1           "Sounds/Paladin/Pain75_1.ogg"
-Paladin/Pain75_2           "Sounds/Paladin/Pain75_2.ogg"
-Paladin/Pain75_2           "Sounds/Paladin/Pain75_3.ogg"
-Paladin/Pain50_1           "Sounds/Paladin/Pain50_1.ogg"
-Paladin/Pain50_2           "Sounds/Paladin/Pain50_2.ogg"
-Paladin/Pain50_3           "Sounds/Paladin/Pain50_3.ogg"
-Paladin/Pain25_1           "Sounds/Paladin/Pain25_1.ogg"
-Paladin/Pain25_2           "Sounds/Paladin/Pain25_2.ogg"
-Paladin/Death1             "Sounds/Paladin/Death1.ogg"
-Paladin/Death2             "Sounds/Paladin/Death2.ogg"
-Paladin/Death3             "Sounds/Paladin/Death3.ogg"
-Paladin/XDeath             "Sounds/Paladin/XDeath.ogg"
-Paladin/Jump               "Sounds/Paladin/Jump.ogg"
-Paladin/Land               "Sounds/Paladin/Land.ogg"
-Paladin/Laugh              "Sounds/Paladin/Taunts/Laugh.ogg"
-Paladin/ShortExert1        "Sounds/Paladin/Exerts/Short1.ogg"
-Paladin/ShortExert2        "Sounds/Paladin/Exerts/Short2.ogg"
-Paladin/ShortExert3        "Sounds/Paladin/Exerts/Short3.ogg"
-Paladin/MediumExert1       "Sounds/Paladin/Exerts/Medium1.ogg"
-Paladin/MediumExert2       "Sounds/Paladin/Exerts/Medium2.ogg"
-Paladin/MediumExert3       "Sounds/Paladin/Exerts/Medium3.ogg"
-Paladin/LargeExert1        "Sounds/Paladin/Exerts/Large1.ogg"
-Paladin/LargeExert2        "Sounds/Paladin/Exerts/Large2.ogg"
-Paladin/LargeExert3        "Sounds/Paladin/Exerts/Large3.ogg"
-Paladin/SpellCast1         "Sounds/Paladin/Exerts/SpellCast1.ogg"
-Paladin/SpellCast2         "Sounds/Paladin/Exerts/SpellCast2.ogg"
-Paladin/SpellCastLarge1    "Sounds/Paladin/Exerts/SpellCastLarge1.ogg"
-Paladin/SpellCastLarge2    "Sounds/Paladin/Exerts/SpellCastLarge2.ogg"
-Paladin/SpellCastLarge3    "Sounds/Paladin/Exerts/SpellCastLarge3.ogg"
-$random Paladin/Taunt	
-{ 
-Paladin/Taunt1      Paladin/Taunt2      Paladin/Taunt3      Paladin/Taunt4      Paladin/Taunt5
-Paladin/Taunt6      Paladin/Taunt7      Paladin/Taunt8      Paladin/Taunt9      Paladin/Taunt10
-Paladin/Taunt11     Paladin/Taunt12     Paladin/Taunt13     Paladin/Taunt14     Paladin/Taunt15
-Paladin/Taunt16     Paladin/Taunt17     Paladin/Taunt18     Paladin/Taunt19     Paladin/Taunt20
-Paladin/Taunt21     Paladin/Taunt22     Paladin/Taunt23     Paladin/Taunt24     Paladin/Taunt25
-}
-Paladin/Taunt1    "Sounds/Paladin/Taunts/Taunt1.ogg"
-Paladin/Taunt2    "Sounds/Paladin/Taunts/Taunt2.ogg"
-Paladin/Taunt3    "Sounds/Paladin/Taunts/Taunt3.ogg"
-Paladin/Taunt4    "Sounds/Paladin/Taunts/Taunt4.ogg"
-Paladin/Taunt5    "Sounds/Paladin/Taunts/Taunt5.ogg"
-Paladin/Taunt6    "Sounds/Paladin/Taunts/Taunt6.ogg"
-Paladin/Taunt7    "Sounds/Paladin/Taunts/Taunt7.ogg"
-Paladin/Taunt8    "Sounds/Paladin/Taunts/Taunt8.ogg"
-Paladin/Taunt9    "Sounds/Paladin/Taunts/Taunt9.ogg"
-Paladin/Taunt10    "Sounds/Paladin/Taunts/Taunt10.ogg"
-Paladin/Taunt11    "Sounds/Paladin/Taunts/Taunt11.ogg"
-Paladin/Taunt12    "Sounds/Paladin/Taunts/Taunt12.ogg"
-Paladin/Taunt13    "Sounds/Paladin/Taunts/Taunt13.ogg"
-Paladin/Taunt14    "Sounds/Paladin/Taunts/Taunt14.ogg"
-Paladin/Taunt15    "Sounds/Paladin/Taunts/Taunt15.ogg"
-Paladin/Taunt16    "Sounds/Paladin/Taunts/Taunt16.ogg"
-Paladin/Taunt17    "Sounds/Paladin/Taunts/Taunt17.ogg"
-Paladin/Taunt18    "Sounds/Paladin/Taunts/Taunt18.ogg"
-Paladin/Taunt19    "Sounds/Paladin/Taunts/Taunt19.ogg"
-Paladin/Taunt20    "Sounds/Paladin/Taunts/Taunt20.ogg"
-Paladin/Taunt21    "Sounds/Paladin/Taunts/Taunt21.ogg"
-Paladin/Taunt22    "Sounds/Paladin/Taunts/Taunt22.ogg"
-Paladin/Taunt23    "Sounds/Paladin/Taunts/Taunt23.ogg"
-Paladin/Taunt24    "Sounds/Paladin/Taunts/Taunt24.ogg"
-Paladin/Taunt25    "Sounds/Paladin/Taunts/Taunt25.ogg"
-//Sorcerer's Voice
-$playeralias	Sorcerer	male	*death		    Sorcerer/Death
-$playeralias	Sorcerer	male	*xdeath		    Sorcerer/XDeath
-$playeralias	Sorcerer	male	*gibbed		    DSSLOP
-$playersounddup	Sorcerer	male	*wimpydeath 	*death
-$playersounddup	Sorcerer	male	*crazydeath	    *death
-$playersounddup	Sorcerer	male	*burndeath	    *xdeath
-$playeralias	Sorcerer	male	*pain100	    Sorcerer/Pain100
-$playeralias	Sorcerer	male	*pain75		    Sorcerer/Pain75
-$playeralias	Sorcerer	male	*pain50 	    Sorcerer/Pain50
-$playeralias	Sorcerer	male	*pain25		    Sorcerer/Pain25
-$playeralias	Sorcerer	male	*grunt		    Sorcerer/ShortExert
-$playeralias	Sorcerer	male	*land		    Sorcerer/Land
-$playeralias	Sorcerer	male	*jump		    Sorcerer/Jump
-$playersound	Sorcerer	male	*fist		    dsnone
-$playersounddup	Sorcerer	male	*usefail		*grunt
-$playeralias	Sorcerer	male	*weaponlaugh	Sorcerer/Laugh
-$playersounddup	Sorcerer	male	*evillaugh	    *weaponlaugh
-$random Sorcerer/Pain100	    { Sorcerer/Pain100_1 Sorcerer/Pain100_2 Sorcerer/Pain100_3 Sorcerer/Pain100_4 Sorcerer/Pain100_5 Sorcerer/Pain100_6 Sorcerer/Pain100_7 }
-$random Sorcerer/Pain75	        { Sorcerer/Pain75_1 Sorcerer/Pain75_2 }
-$random Sorcerer/Pain50	        { Sorcerer/Pain50_1 Sorcerer/Pain50_2 Sorcerer/Pain50_3 }
-$random Sorcerer/Pain25	        { Sorcerer/Pain25_1 Sorcerer/Pain25_2 Sorcerer/Pain25_3 }
-$random Sorcerer/Death	        { Sorcerer/Death1 Sorcerer/Death2 Sorcerer/Death3 }
-$random Sorcerer/Jump	        { Sorcerer/Jump1 Sorcerer/Jump2 }
-$random Sorcerer/Land	        { Sorcerer/Land1 Sorcerer/Land2 }
-$random Sorcerer/Pain	        { Sorcerer/Pain1 Sorcerer/Pain2 Sorcerer/Pain3 Sorcerer/Pain4 }
-$random Sorcerer/ShortExert	    { Sorcerer/ShortExert1 Sorcerer/ShortExert2 Sorcerer/ShortExert3 Sorcerer/ShortExert4 }
-$random Sorcerer/MediumExert	{ Sorcerer/MediumExert1 Sorcerer/MediumExert2 Sorcerer/MediumExert3 Sorcerer/MediumExert4 }
-$random Sorcerer/LargeExert	    { Sorcerer/LargeExert1 Sorcerer/LargeExert2 Sorcerer/LargeExert3 Sorcerer/LargeExert4 Sorcerer/LargeExert5 }
-$random Sorcerer/SpellCast	    { Sorcerer/SpellCast1 Sorcerer/SpellCast2 }
-$random Sorcerer/SpellCastLarge	{ Sorcerer/SpellCastLarge1 Sorcerer/SpellCastLarge2 Sorcerer/SpellCastLarge3 }
-Sorcerer/Pain100_1          "Sounds/Sorcerer/Pain100_1.ogg"
-Sorcerer/Pain100_2          "Sounds/Sorcerer/Pain100_2.ogg"
-Sorcerer/Pain100_3          "Sounds/Sorcerer/Pain100_3.ogg"
-Sorcerer/Pain100_4          "Sounds/Sorcerer/Pain100_4.ogg"
-Sorcerer/Pain100_5          "Sounds/Sorcerer/Pain100_5.ogg"
-Sorcerer/Pain100_6          "Sounds/Sorcerer/Pain100_6.ogg"
-Sorcerer/Pain100_7          "Sounds/Sorcerer/Pain100_7.ogg"
-Sorcerer/Pain75_1           "Sounds/Sorcerer/Pain75_1.ogg"
-Sorcerer/Pain75_2           "Sounds/Sorcerer/Pain75_2.ogg"
-Sorcerer/Pain50_1           "Sounds/Sorcerer/Pain50_1.ogg"
-Sorcerer/Pain50_2           "Sounds/Sorcerer/Pain50_2.ogg"
-Sorcerer/Pain50_3           "Sounds/Sorcerer/Pain50_3.ogg"
-Sorcerer/Pain25_1           "Sounds/Sorcerer/Pain25_1.ogg"
-Sorcerer/Pain25_2           "Sounds/Sorcerer/Pain25_2.ogg"
-Sorcerer/Pain25_3           "Sounds/Sorcerer/Pain25_3.ogg"
-Sorcerer/Death1             "Sounds/Sorcerer/Death1.ogg"
-Sorcerer/Death2             "Sounds/Sorcerer/Death2.ogg"
-Sorcerer/Death3             "Sounds/Sorcerer/Death3.ogg"
-Sorcerer/XDeath             "Sounds/Sorcerer/XDeath.ogg"
-Sorcerer/Jump1              "Sounds/Sorcerer/Jump1.ogg"
-Sorcerer/Jump2              "Sounds/Sorcerer/Jump2.ogg"
-Sorcerer/Land1              "Sounds/Sorcerer/Land1.ogg"
-Sorcerer/Land2              "Sounds/Sorcerer/Land2.ogg"
-Sorcerer/Laugh1             "Sounds/Sorcerer/Taunts/Laugh1.ogg"
-Sorcerer/Laugh2             "Sounds/Sorcerer/Taunts/Laugh2.ogg"
-Sorcerer/Laugh3             "Sounds/Sorcerer/Taunts/Laugh3.ogg"
-Sorcerer/Laugh4             "Sounds/Sorcerer/Taunts/Laugh4.ogg"
-Sorcerer/ShortExert1        "Sounds/Sorcerer/Exerts/Short1.ogg"
-Sorcerer/ShortExert2        "Sounds/Sorcerer/Exerts/Short2.ogg"
-Sorcerer/ShortExert3        "Sounds/Sorcerer/Exerts/Short3.ogg"
-Sorcerer/ShortExert4        "Sounds/Sorcerer/Exerts/Short4.ogg"
-Sorcerer/MediumExert1       "Sounds/Sorcerer/Exerts/Medium1.ogg"
-Sorcerer/MediumExert2       "Sounds/Sorcerer/Exerts/Medium2.ogg"
-Sorcerer/MediumExert3       "Sounds/Sorcerer/Exerts/Medium3.ogg"
-Sorcerer/MediumExert4       "Sounds/Sorcerer/Exerts/Medium4.ogg"
-Sorcerer/LargeExert1        "Sounds/Sorcerer/Exerts/Large1.ogg"
-Sorcerer/LargeExert2        "Sounds/Sorcerer/Exerts/Large2.ogg"
-Sorcerer/LargeExert3        "Sounds/Sorcerer/Exerts/Large3.ogg"
-Sorcerer/LargeExert4        "Sounds/Sorcerer/Exerts/Large4.ogg"
-Sorcerer/LargeExert5        "Sounds/Sorcerer/Exerts/Large5.ogg"
-Sorcerer/SpellCast1         "Sounds/Sorcerer/Exerts/SpellCast1.ogg"
-Sorcerer/SpellCast2         "Sounds/Sorcerer/Exerts/SpellCast2.ogg"
-Sorcerer/SpellCastLarge1    "Sounds/Sorcerer/Exerts/SpellCastLarge1.ogg"
-Sorcerer/SpellCastLarge2    "Sounds/Sorcerer/Exerts/SpellCastLarge2.ogg"
-Sorcerer/SpellCastLarge3    "Sounds/Sorcerer/Exerts/SpellCastLarge3.ogg"
-$random Sorcerer/Taunt	
-{ 
-Sorcerer/Taunt1      Sorcerer/Taunt2      Sorcerer/Taunt3      Sorcerer/Taunt4      Sorcerer/Taunt5
-Sorcerer/Taunt6      Sorcerer/Taunt7      Sorcerer/Taunt8      Sorcerer/Taunt9      Sorcerer/Taunt10
-Sorcerer/Taunt11     Sorcerer/Taunt12     Sorcerer/Taunt13     Sorcerer/Taunt14     Sorcerer/Taunt15
-Sorcerer/Taunt16     Sorcerer/Taunt17     Sorcerer/Taunt18     Sorcerer/Taunt19     Sorcerer/Taunt20
-Sorcerer/Taunt21     Sorcerer/Taunt22     Sorcerer/Taunt23     Sorcerer/Taunt24     Sorcerer/Taunt25
-Sorcerer/Taunt26     Sorcerer/Taunt27
-}
-Sorcerer/Taunt1    "Sounds/Sorcerer/Taunts/Taunt1.ogg"
-Sorcerer/Taunt2    "Sounds/Sorcerer/Taunts/Taunt2.ogg"
-Sorcerer/Taunt3    "Sounds/Sorcerer/Taunts/Taunt3.ogg"
-Sorcerer/Taunt4    "Sounds/Sorcerer/Taunts/Taunt4.ogg"
-Sorcerer/Taunt5    "Sounds/Sorcerer/Taunts/Taunt5.ogg"
-Sorcerer/Taunt6    "Sounds/Sorcerer/Taunts/Taunt6.ogg"
-Sorcerer/Taunt7    "Sounds/Sorcerer/Taunts/Taunt7.ogg"
-Sorcerer/Taunt8    "Sounds/Sorcerer/Taunts/Taunt8.ogg"
-Sorcerer/Taunt9    "Sounds/Sorcerer/Taunts/Taunt9.ogg"
-Sorcerer/Taunt10    "Sounds/Sorcerer/Taunts/Taunt10.ogg"
-Sorcerer/Taunt11    "Sounds/Sorcerer/Taunts/Taunt11.ogg"
-Sorcerer/Taunt12    "Sounds/Sorcerer/Taunts/Taunt12.ogg"
-Sorcerer/Taunt13    "Sounds/Sorcerer/Taunts/Taunt13.ogg"
-Sorcerer/Taunt14    "Sounds/Sorcerer/Taunts/Taunt14.ogg"
-Sorcerer/Taunt15    "Sounds/Sorcerer/Taunts/Taunt15.ogg"
-Sorcerer/Taunt16    "Sounds/Sorcerer/Taunts/Taunt16.ogg"
-Sorcerer/Taunt17    "Sounds/Sorcerer/Taunts/Taunt17.ogg"
-Sorcerer/Taunt18    "Sounds/Sorcerer/Taunts/Taunt18.ogg"
-Sorcerer/Taunt19    "Sounds/Sorcerer/Taunts/Taunt19.ogg"
-Sorcerer/Taunt20    "Sounds/Sorcerer/Taunts/Taunt20.ogg"
-Sorcerer/Taunt21    "Sounds/Sorcerer/Taunts/Taunt21.ogg"
-Sorcerer/Taunt22    "Sounds/Sorcerer/Taunts/Taunt22.ogg"
-Sorcerer/Taunt23    "Sounds/Sorcerer/Taunts/Taunt23.ogg"
-Sorcerer/Taunt24    "Sounds/Sorcerer/Taunts/Taunt24.ogg"
-Sorcerer/Taunt25    "Sounds/Sorcerer/Taunts/Taunt25.ogg"
-Sorcerer/Taunt26    "Sounds/Sorcerer/Taunts/Taunt26.ogg"
-Sorcerer/Taunt27    "Sounds/Sorcerer/Taunts/Taunt27.ogg"
-//Pyromancy
-$random Pyromancy/FireballCast	        { Pyromancy/FireballCast1 Pyromancy/FireballCast2 }
-$random Pyromancy/FireballHit	        { Pyromancy/FireballHit1 Pyromancy/FireballHit2 }
-Pyromancy/Draw              "Sounds/Spells/Pyromancy/Draw.ogg"
-Pyromancy/ChargeStart       "Sounds/Spells/Pyromancy/ChargeStart.ogg"
-Pyromancy/ChargeEnd         "Sounds/Spells/Pyromancy/ChargeEnd.ogg"
-Pyromancy/ChargeLoop1       "Sounds/Spells/Pyromancy/ChargeLoop1.ogg"
-Pyromancy/ChargeLoop2       "Sounds/Spells/Pyromancy/ChargeLoop2.ogg"
-Pyromancy/FireballCast1     "Sounds/Spells/Pyromancy/FireballCast1.ogg"
-Pyromancy/FireballCast2     "Sounds/Spells/Pyromancy/FireballCast2.ogg"
-Pyromancy/FireballHit1      "Sounds/Spells/Pyromancy/FireballHit1.ogg"
-Pyromancy/FireballHit2      "Sounds/Spells/Pyromancy/FireballHit2.ogg"
-//Cryomancy
-$random Cryomancy/IceballCast	        { Cryomancy/IceballCast1 Cryomancy/IceballCast2 Cryomancy/IceballCast3 }
-$random Cryomancy/IceballHit	        { Cryomancy/IceballHit1 Cryomancy/IceballHit2 }
-$random Cryomancy/IceBombExplodeAdd     { Cryomancy/IceBombExplodeAdd1 Cryomancy/IceBombExplodeAdd2 }
-$random Cryomancy/IceWallCast           { Cryomancy/IceWallCast1 Cryomancy/IceWallCast2 }
-$random Cryomancy/ShardCast	            { Cryomancy/ShardCast1 Cryomancy/ShardCast2 }
-$random Cryomancy/EnemyUnfreeze	            { Cryomancy/EnemyUnfreeze1 Cryomancy/EnemyUnfreeze2 }
-$random Cryomancy/EnemyShatter	            { Cryomancy/EnemyShatter1 Cryomancy/EnemyShatter2 }
-Cryomancy/Draw              "Sounds/Spells/Cryomancy/Draw.ogg"
-Cryomancy/ChargeStart       "Sounds/Spells/Cryomancy/ChargeStart.ogg"
-Cryomancy/ChargeEnd         "Sounds/Spells/Cryomancy/ChargeEnd.ogg"
-Cryomancy/ChargeLoop1       "Sounds/Spells/Cryomancy/ChargeLoop1.ogg"
-Cryomancy/ChargeLoop2       "Sounds/Spells/Cryomancy/ChargeLoop2.ogg"
-Cryomancy/IceballCast1     "Sounds/Spells/Cryomancy/IceballCast1.ogg"
-Cryomancy/IceballCast2     "Sounds/Spells/Cryomancy/IceballCast2.ogg"
-Cryomancy/IceballCast3     "Sounds/Spells/Cryomancy/IceballCast3.ogg"
-Cryomancy/IceballHit1      "Sounds/Spells/Cryomancy/IceballHit1.ogg"
-Cryomancy/IceballHit2      "Sounds/Spells/Cryomancy/IceballHit2.ogg"
-Cryomancy/IceBombCast     "Sounds/Spells/Cryomancy/IceballCast.ogg"
-Cryomancy/IceBombExplode      "Sounds/Spells/Cryomancy/IceBombExplode.ogg"
-Cryomancy/IceBombExplodeAdd1      "Sounds/Spells/Cryomancy/IceBombExplodeAdd1.ogg"
-Cryomancy/IceBombExplodeAdd2      "Sounds/Spells/Cryomancy/IceBombExplodeAdd2.ogg"
-Cryomancy/IceWallCast1     "Sounds/Spells/Cryomancy/IceWallCast1.ogg"
-Cryomancy/IceWallCast2     "Sounds/Spells/Cryomancy/IceWallCast2.ogg"
-Cryomancy/ShardCast1     "Sounds/Spells/Cryomancy/ShardCast1.ogg"
-Cryomancy/ShardCast2     "Sounds/Spells/Cryomancy/ShardCast2.ogg"
-Cryomancy/EnemyFreeze      "Sounds/SpellS/Cryomancy/EnemyFreeze.ogg"
-Cryomancy/EnemyUnfreeze1      "Sounds/SpellS/Cryomancy/EnemyUnfreeze1.ogg"
-Cryomancy/EnemyUnfreeze2      "Sounds/SpellS/Cryomancy/EnemyUnfreeze2.ogg"
-Cryomancy/EnemyShatter1      "Sounds/SpellS/Cryomancy/EnemyShatter1.ogg"
-Cryomancy/EnemyShatter2      "Sounds/SpellS/Cryomancy/EnemyShatter2.ogg"
-//Stormcast
-$random Stormcast/LightningBallCast	        { Stormcast/LightningBallCast1 Stormcast/LightningBallCast2 }
-$random Stormcast/LightningBallCastAdd      { Stormcast/LightningBallCastAdd1 Stormcast/LightningBallCastAdd2 }
-$random Stormcast/MultiCast	                { Stormcast/MultiCast1 Stormcast/MultiCast2 Stormcast/MultiCast3 Stormcast/MultiCast4 }
-Stormcast/Draw              "Sounds/Spells/Stormcast/Draw.ogg"
-//Stormcast/ChargeStart       "Sounds/Spells/Stormcast/ChargeStart.ogg"
-Stormcast/ChargeEnd         "Sounds/Spells/Stormcast/ChargeEnd.ogg"
-Stormcast/ChargeLoop1       "Sounds/Spells/Stormcast/ChargeLoop1.ogg"
-Stormcast/ChargeLoop2       "Sounds/Spells/Stormcast/ChargeLoop2.ogg"
-Stormcast/LightningBallCast1     "Sounds/Spells/Stormcast/LightningBallCast1.ogg"
-Stormcast/LightningBallCast2     "Sounds/Spells/Stormcast/LightningBallCast2.ogg"
-Stormcast/LightningBallCastAdd1      "Sounds/Spells/Stormcast/LightningBallCastAdd1.ogg"
-Stormcast/LightningBallCastAdd2      "Sounds/Spells/Stormcast/LightningBallCastAdd2.ogg"
-Stormcast/MultiCast1     "Sounds/Spells/Stormcast/MultiCast1.ogg"
-Stormcast/MultiCast2     "Sounds/Spells/Stormcast/MultiCast2.ogg"
-Stormcast/MultiCast3     "Sounds/Spells/Stormcast/MultiCast3.ogg"
-Stormcast/MultiCast4     "Sounds/Spells/Stormcast/MultiCast4.ogg"
-//Runecraft
-$random Runecraft/ProjectileCast	        { Runecraft/ProjectileCast1 Runecraft/ProjectileCast2 }
-$random Runecraft/SwordCast	                { Runecraft/SwordCast1 Runecraft/SwordCast2 Runecraft/SwordCast3 }
-Runecraft/Draw              "Sounds/Spells/Runecraft/Draw.ogg"
-Runecraft/ChargeStart       "Sounds/Spells/Runecraft/ChargeStart.ogg"
-Runecraft/ChargeEnd         "Sounds/Spells/Runecraft/ChargeEnd.ogg"
-Runecraft/ChargeLoop1       "Sounds/Spells/Runecraft/ChargeLoop1.ogg"
-Runecraft/ChargeLoop2       "Sounds/Spells/Runecraft/ChargeLoop2.ogg"
-Runecraft/ProjectileCast1     "Sounds/Spells/Runecraft/ProjectileCast1.ogg"
-Runecraft/ProjectileCast2     "Sounds/Spells/Runecraft/ProjectileCast2.ogg"
-Runecraft/ProjectileDetonate     "Sounds/Spells/Runecraft/ProjectileDetonate.ogg"
-Runecraft/SwordCast1     "Sounds/Spells/Runecraft/SwordCast1.ogg"
-Runecraft/SwordCast2     "Sounds/Spells/Runecraft/SwordCast2.ogg"
-Runecraft/SwordCast3     "Sounds/Spells/Runecraft/SwordCast3.ogg"
-Runecraft/ShieldCast     "Sounds/Spells/Runecraft/ShieldCast.ogg"
-//NEW MONSTERS
-queen/sight quesit
-queen/pain quepain
-queen/death quedie
-queen/active queact
-//queen/scream bqegg1a
-queen/fire qbfgfire
-electricplasma/shoot		PZAPSEE	
-electricplasma/hit		PZAPHIT
-queen/hit		qbfghit
-queen/melee		quebit
-//Aracnorb
-aracnorb/sight		dsaracst
-aracnorb/death		dsaracdt
-aracnorb/attack		dsaracfr
-//Cyber Baron
-cbaron/sight	cbarnsit
-cbaron/pain	cbarnpai
-cbaron/death	cbarndth
-cbaron/active	cbarnact
-cbaron/metal	cmetal
-//Cyber Imp
-$RANDOM CIMPSIT { CIMPSIT1 CIMPSIT2 }
-CIMPSIT1	CIMPCIT1
-CIMPSIT2	CIMPSIT2
-$RANDOM CIMPDTH { CIMPDTH1 CIMPDTH2 }
-CIMPDTH1	CIMPDTH1
-CIMPDTH2	CIMPDTH2
-CIMPPAIN	CIMPPAIN
-CIMPACT		CIMPACT
-//SuperDemon
-superdemon/death	DSSUPDTH
-superdemon/snarl	DSSUPSNA
-superdemon/crash	DSSUPLND
-//Diabolist
-monster/diasit dsdiasit
-monster/diapai dsdiapai
-monster/diadth dsdiadth
-monster/diaact dsdiaact
-weapons/firbfi dsfirbfi
-weapons/firmfi dsfirmfi
-weapons/firex4 dsfirex4
-weapons/diasht dsdiasht
-weapons/firex3 dsfirex3
-ClericFlameFire         dshellfi
-ClericFlameExplode      dshellex
-ClericFlameCircle       dsfirex5
-//Avatar
-monster/avasit dsavasit
-monster/avapai dsavapai
-monster/avadth dsavadth
-monster/avaact dsavaact
-monster/avaatk dsavaatk
-MageLightningFire dslight
-weapons/justfi dsjustfi
-weapons/gntini dsgntini
-weapons/devexp dsdevexp
-weapons/bwoosh dsbwoosh
-weapons/firex2 dsfirex2
-weapons/devzap dsdevzap
-weapons/gnthit dsgnthit
-monster/hadsit dshadsit
-monster/bomb FIREBALL
-monster/explode DSCMTEXP
-//DarkServant
-monster/acosit dsacosit
-monster/acopai dsacopai
-monster/acodth dsacodth
-monster/acoact dsacoact
-monster/blur dsblur
-monster/acosht dsacosht
-monster/acohit dsacohit
-//Afrit
-Afrit/CometFire FRITCMFR
-Afrit/CometHit	FRITCMHT
-Afrit/Hellfire	FRITFIRE
-//Pinky Steps
-$random pinky/step		{ PINKSTE1 PINKSTE2 PINKSTE3 PINKSTE4 PINKSTE5 }
-PINKSTE1	PINST1
-PINKSTE2 	PINST2
-PINKSTE3	PINST3
-PINKSTE4	PINST4
-PINKSTE5	PINST5
-$volume pinky/step 0.30
-$limit pinky/step 12 256
-//Heavy Machinegun M60 
-HMGFIRE HMGFIRE
-DSD3SI1 DSD3SI1
-MGCLAC MGCLAC
-CHAIN1 CHAIN1
-M60REL1 M60REL1
-M60REL2 M60REL2
-M60REL3 M60REL3
-//Freezer
-FRZIDLE FRZIDLE
-//Freezenades
-FRZFIRE2 FRZFIRE2
-$rolloff FRZFIRE2 1000 7500
-iceimpa "sounds/rebalance/iceimpact3.wav"
-coldcst "sounds/rebalance/coldcast.wav"
-icespik "sounds/rebalance/icespike3.wav"
-ICESHA ICESHA
-ICIMPA ICIMPA
-//Sniper Rifle
-$random SRFR { SRFR1 SRFR2 SRFR3 }
-SRFR1 SRFR1
-SRFR2 SRFR2
-SRFR3 SRFR3
-$rolloff SRFR1 100 2200
-SRBOLT SRBOLT
-//Heavy Rifle 
-Rifle/Fire	RIFLFIRE
-Rifle/Open	RIFLOPEN
-Rifle/Close	RIFLCLOS
-//Bolt Action Rifle
-M40RIF2			M40RIF2
-M40RIF3			M40RIF3
-M40RIF4			M40RIF4
-M40Rifle/Fire 	M40RIF1
-M40Rifle/Scope 	M40RIF2
-M40Rifle/Bolt1 	M40RIF3
-M40Rifle/Bolt2 	M40RIF4
-$volume 		M40Rifle/Fire 0.6
-//RotaryCannon
-AutoFire AutoFire
-ACNLOOP ACNLOOP
-CnonStar CnonStar
-CannonSpinDown CnonStop
-$Volume CannonSpinDown 0.6
-$Volume CannonSpinUp 0.6
-//QUAD SHOTGUN
-$limit weapons/quadshotgun/fire 0
-$limit weapons/quadshotgun/single 0
-$limit weapons/quadshotgun/kapow 0
-weapons/quadshotgun/fire 	QSGSHOT
-$volume weapons/quadshotgun/single 0.9
-$random weapons/quadshotgun/single { SINGLE01 SINGLE02 SINGLE03 }
-SINGLE01			SINGLE01
-SINGLE02			SINGLE02
-SINGLE03			SINGLE03
-weapons/quadshotgun/kapow 	SSGKAPOW
-$volume weapons/quadshotgun/kapow 1.0
-weapons/quadshotgun/open 	QSGOPEN
-weapons/quadshotgun/load 	QSGLOAD
-weapons/quadshotgun/close 	QSGCLOSE
-//PreciseMinigun
-weapons/minigunfire DSMINIGN
-$limit weapons/minigunfire 0
-$limit weapons/chaingun/fire 0
-chaingun/fire	CHGNSHOT
-chaingun/spin CHAINSPI
-//Weapons/Chaingun/Spin 	CHAINSPI
-chaingun/stop	CHAINSTO
-chaingun/start	CHAINSTA
-//SWORD
-$random SLMETA { SLMETA1 SLMETA2 SLMETA3 }
-SLMETA1 SLMETA1
-SLMETA2 SLMETA2
-SLMETA3 SLMETA3
-$random SWSWING {SWSWING1 SWSWING2 SWSWING3 SWSWING4 SWSWING5 SWSWING6}
-SWSWING1 SWSWING1
-SWSWING2 SWSWING2
-SWSWING3 SWSWING3
-SWSWING4 SWSWING4
-SWSWING5 SWSWING5
-SWSWING6 SWSWING6
-$random DGSWING {DGSWING1 DGSWING2 DGSWING3 DGSWING4 DGSWING5 DGSWING6}
-DGSWING1 DGSWING1
-DGSWING2 DGSWING2
-DGSWING3 DGSWING3
-DGSWING4 DGSWING4
-DGSWING5 DGSWING5
-DGSWING6 DGSWING6
-$random AXSWING {AXSWING1 AXSWING2 AXSWING3 AXSWING4 AXSWING5 AXSWING6 AXSWING7 AXSWING8}
-AXSWING1 AXSWING1
-AXSWING2 AXSWING2
-AXSWING3 AXSWING3
-AXSWING4 AXSWING4
-AXSWING5 AXSWING5
-AXSWING6 AXSWING6
-AXSWING7 AXSWING7
-AXSWING8 AXSWING8
-PYROEXP1 PYROEXP1
-PYROEXP2 PYROEXP2 
-PYROEXP3 PYROEXP3  
-PYROHIT1 PYROHIT1
-PYROHIT2 PYROHIT2
-PYROHIT3 PYROHIT3
-DSFIRSHT DSFIRSHT
-DSBAREXP DSBAREXP
-DSBOSPIT DSBOSPIT
-FLECH4 FLECH4
-BASH1 BASH1
-WHOP WHOP
-PHLMTW PHLMTW
-$random SLFLESH { SLFLESH1 SLFLESH2 SLFLESH3 }
-SLFLESH1 SLFLESH1
-SLFLESH2 SLFLESH2
-SLFLESH3 SLFLESH3
-//RUNECAST
-RUNEXP RUNEXP
-$rolloff RUNEXP 1400 3200
-RUNEXP2 RUNEXP2
-$rolloff RUNEXP2 1400 2400
-RUNESHLD RUNESHLD 
-$rolloff RUNESHLD 200 1500
-RUNECAST RUNECAST
-$rolloff RUNECAST 200 1000
-DSFRCLOP DSFRCLOP
-lockon lockon
-//CROSSBOW
-BOLTFLY1 BOLTFLY1
-BOLTFLY2 BOLTFLY2
-CROSSRELOAD CROSSRELOAD
-CROSSRELEASE CROSSRELEASE
-BOLTHIT BOLTHIT
-//STORMCAST
-PZAPSEE PZAPSEE
-PZAPFIRE PZAPFIRE
-PZAPLOOP PZAPLOOP
-PZAPHIT PZAPHIT
-PZAPCHRG PZAPCHRG
-PZAPRMBL PZAPRMBL
-PZAPBOMB PZAPBOMB
-PZAPBEXP PZAPBEXP
-PZAPHUM PZAPHUM
-PZAPSEL PZAPSEL
-PZAPCHR2 PZAPCHR2
-//STORMCAST
-$volume electrogun/bomb 4
-$rolloff electrogun/explode 1400 3200
-electrogun/pickup       PZAPPICK
-electrogun/shoot		PZAPSEE	
-electrogun/fire 		PZAPFIRE
-electrogun/loop         PZAPLOOP
-electrogun/hit			PZAPHIT
-electrogun/charge		PZAPCHRG	
-electrogun/cooloff      PZAPRMBL
-electrogun/charge2		PZAPCHR2
-electrogun/bomb         PZAPBOMB
-electrogun/explode      PZAPBEXP
-electrogun/hum          PZAPHUM
-electrogun/select       PZAPSEL
-STATIC1 "sounds/rebalance/static1.wav"
-STATIC2 "sounds/rebalance/static2.wav"
-STATIC3 "sounds/rebalance/static3.wav"
-STATIC4 "sounds/rebalance/static4.wav"
-$random STATIC {STATIC1 STATIC2 STATIC3 STATIC4}
-ZAP1 "sounds/rebalance/zap1.wav"
-ZAP2 "sounds/rebalance/zap2.wav"
-ZAP3 "sounds/rebalance/zap3.wav"
-ZAP4 "sounds/rebalance/zap4.wav"
-$random ZAP {ZAP1 ZAP2 ZAP3 ZAP4}
-CHRGEBL1 "sounds/rebalance/chargedbolt1.wav"
-CHRGEBL2 "sounds/rebalance/chargedbolt2.wav"
-CHRGEBL3 "sounds/rebalance/chargedbolt4.wav"
-$random CHRGEBL {CHRGEBL1 CHRGEBL2 CHRGEBL3}
-LIGHTN1 "sounds/rebalance/lightning1.wav"
-LIGHTN2 "sounds/rebalance/lightning2.wav"
-LIGHTN3 "sounds/rebalance/lightning3.wav"
-$random LIGHTN {LIGHTN1 LIGHTN2 LIGHTN3}
-TESLAH1 TESLAH1 
-TESLAH2 TESLAH2 
-TESLAH3 TESLAH3 
-TESLAH4 TESLAH4 
-LIGHTNG1 LIGHTNG1
-LIGHTNG2 LIGHTNG2
-LIGHTNG3 LIGHTNG3
-LIGHTNG4 LIGHTNG4
-$random LIGHTNG {LIGHTNG1 LIGHTNG2 LIGHTNG3} //LIGHTNG4 is special
-SPARKS1 SPARKS1
-SPARKS2 SPARKS2
-SPARKS3 SPARKS3
-SPARKS4 SPARKS4
-SPARKS5 SPARKS5
-SPARKS6 SPARKS6
-SPARKS7 SPARKS7
-SPARKS8 SPARKS8
-$random SPARKS {SPARKS1 SPARKS2 SPARKS3 SPARKS4 SPARKS5 SPARKS6 SPARKS7 SPARKS8}
-LCAST1 "sounds/rebalance/lightnlaunch1.wav" //ball lightning
-LCAST2 "sounds/rebalance/eleccast.wav"  // normal cast
-LCAST3 "sounds/rebalance/thunderbolt.wav" // bolt
-LCAST4 "sounds/rebalance/thundercast.wav" // ultimate
-$random SHOCK {LGBOMB TPZap1 LCAST2 LCAST1 LCAST3}
-STNBOEX STNBOEX
-STNBOMB STNBOMB
-LGBOMB LGBOMB
-$random thunder/hit { thunder/hit1 thunder/hit2 }
-thunder/hit1 THNDS01
-thunder/hit2 THNDS02
-TPortalLoop tp_loop
-TPZap1	tp_zap1
-TPZap2	tp_zap2
-$random TPortalZap {TPZap1 TPZap2}
-TPortalFade tp_fade
-TPortalAppear tp_app
-//MISC MAGIC
-PARAPSI PARAPSI
-FLAMECS FLAMECS 
-FIRECS FIRECS
-FIREBIG FIREBIG
-IGNITE IGNITE
-FIREBOLT FIREBOLT
-$random COLDHIT {COLDHIT1 COLDHIT2 COLDHIT3}
-COLDHIT1 COLDHIT1
-COLDHIT2 COLDHIT2
-COLDHIT3 COLDHIT3
-$random COLDEXP {COLDEXP1 COLDEXP2 COLDEXP3 COLDEXP4}
-COLDEXP1 COLDEXP1
-COLDEXP2 COLDEXP2
-COLDEXP3 COLDEXP3
-COLDEXP4 COLDEXP4
-SIZZLE1 SIZZLE1
-SIZZLE2 SIZZLE2
-SIZZLE3 SIZZLE3
-SINGE1 SINGE1
-SINGE2 SINGE2
-SINGE3 SINGE3
-PYROEXP1 PYROEXP1
-PYROEXP2 PYROEXP2
-PYROEXP3 PYROEXP3
-PYROHIT1 PYROHIT1
-PYROHIT2 PYROHIT2
-PYROHIT3 PYROHIT3
-//FAMILIARS
-elect1		invlight
-elect2		invligh2
-Invisiblesee		INVSEE
-Invisiblehit		INVHIT
-Invisiblepain		INVPAIN
-Invisibledeath		INVDEATH
-scimitar/scimisee	SCIMISEE
-scimitar/scimipai	SCIMIPAI
-scimitar/scimidth	SCIMIDTH
-scimitar/scimihit	SCIMIHIT
-scimitar/scimiatk	SCIMIATK
-Serp/Death FSDEATH
-Serp/Pain FSPAIN
-Serp/Flame FSFLAME
-Serp/FireSI FISIGHT
-Serp/FlameSI FLSIGHT
-Serp/FireID FIIDLE
-Serp/FlameID FLIDLE
-//ARTIFACTS
-misc/bttlup			flech4
-ScrollOfHellfire/Start	HFSCSTRT
-pickup/armororb			DSARMORB
-crucifix/use CRUCIUSE
-//EXPLOSIVES
-//Ammo satchels
-Weapons/SatchelToss	STCHTOSS
-Weapons/SatchelBounce	STCHBNC
-Weapons/SatchelPick	STCHPICK
-//Alt-Fire
-Weapons/SatchelHit	STCHHIT
-Weapons/SatchelOof	DSOOF
-//Pipebomb
-weapons/pbbounce			dspipbnc
-weapons/pbthrow		        dspipthr
-weapons/pbarm		        dspiparm
-weapons/explode1	        dspipex1
-weapons/explode2	        dspipex2
-weapons/explode3	        dspipex3
-weapons/explode4	        dspipex4
-$random weapons/explode  { weapons/explode1 weapons/explode2 weapons/explode3 weapons/explode4 }
-//Doomguy's Sounds
-$random FUCK { FUCK1 FUCK2 FUCK3 FUCK4 }
-FUCK1 FUCK1
-FUCK2 FUCK2
-FUCK3 FUCK3
-FUCK4 FUCK4
-ICOSCRE ICOSCRE
-ICOBREAT ICOBREAT
-ICOTHUND ICOTHUND
-ICOFIRE ICOFIRE
-ICOLAUG ICOLAUG
-NUKEEXPL NUKEEXPL
-$volume ICOLAUG 2.0
-ACIDMELT ACIDMELT
-FLASHON FLASHON
-FLASHOFF FLASHOFF
-INFRARED INFRARED
-$rolloff ICOLAUG 4000 6400
-$rolloff ICOFIRE 4000 6400
-$rolloff ICOBREAT 4000 6400
-$rolloff ICOSCRE 4000 6400
-NUKEEXP NUKEEXP
-$rolloff NUKEEXP 8000 12000
-$random HEDBON { HEDBON1 HEDBON2 HEDBON3 }
-HEDBON1 HEDBON1
-HEDBON2 HEDBON2
-HEDBON3 HEDBON3
-DSASHTBT DSASHTBT
-DSTELEPT DSTELEPT
-$random TAUNT0 { TAUNT01 TAUNT02 TAUNT03 TAUNT04 TAUNT05 TAUNT06 TAUNT07 TAUNT08 TAUNT09 TAUNT10 TAUNT11 TAUNT12 TAUNT13 TAUNT14 TAUNT15 TAUNT16 TAUNT17 TAUNT18 }
-TAUNT01 TAUNT01
-TAUNT02 TAUNT02
-TAUNT03 TAUNT03
-TAUNT04 TAUNT04
-TAUNT05 TAUNT05
-TAUNT06 TAUNT06
-TAUNT07 TAUNT07
-TAUNT08 TAUNT08
-TAUNT09 TAUNT09
-TAUNT10 TAUNT10
-TAUNT11 TAUNT11
-TAUNT12 TAUNT12
-TAUNT13 TAUNT13
-TAUNT14 TAUNT14
-TAUNT15 TAUNT15
-TAUNT16 TAUNT16
-TAUNT17 TAUNT17
-TAUNT18 TAUNT18
-$limit TAUNT0 1
-$random ONELIN { ONELIN01 ONELIN02 ONELIN03 ONELIN04 ONELIN05 ONELIN06 ONELIN07 ONELIN08 ONELIN09 ONELIN10 ONELIN11 ONELIN12}
-ONELIN01 ONELIN01
-ONELIN02 ONELIN02
-ONELIN03 ONELIN03
-ONELIN04 ONELIN04
-ONELIN05 ONELIN05
-ONELIN06 ONELIN06
-ONELIN07 ONELIN07
-ONELIN08 ONELIN08
-ONELIN09 ONELIN09
-ONELIN10 ONELIN10
-ONELIN11 ONELIN11
-ONELIN12 ONELIN12
-$limit ONELIN 1
-$random PIKUPTALK { PIKUPTALK1 PIKUPTALK2 PIKUPTALK3 PIKUPTALK4 }
-PIKUPTALK1 PIKUPTALK1
-PIKUPTALK2 PIKUPTALK2
-PIKUPTALK3 PIKUPTALK3
-PIKUPTALK4 PIKUPTALK4
-redburn	redburn
-world/watersplash		splash1
-PLSM9 PLSM9
-PLSTHRW PLSTHRW
-world/sludgegloop		dsploosh
-world/lavasizzle		dslvsiz
-world/drip			dsdrip2
-world/hotsiz			dshtsiz
-weapons/rifle			DSRIFLE
-weapons/sg			sgfire
-weapons/sgpump STGNPUMP
-weapons/empty DRYFIRE
-DRYFIRE DRYFIRE
-CLIPIN CLIPIN
-CLIPINSS CLIPINSS
-MP40 MP40
-$limit MP40 30
-$limit weapons/sg 10
-insertshell        SHELL_IN
-DSRLAUN DSRLAUN
-DSF2OOF DSF2OOF
-//PlayerSounds
-$playersound	player	male	*death		dspldeth
-$playersound	player	male	*xdeath		dspdiehi
-$playersound	player	male	*gibbed		dsslop
-$playersound	player	male	*grunt		dsoof
-$playersounddup	player	male	*land		*grunt
-$playersound	player	male	*jump		dsoof
-$playersound	player	male	*fist		dspunch
-$playersound	player	male	*usefail	dsnoway
-$playeralias	player	male	plpain		Pain1
-$playersound	player	female	*death		DSFDETH
-$playersound	player	female	*xdeath		DSFDIEHI
-$playersound	player	female	*gibbed		dsslop
-$playeralias	player	female	*grunt		DSFEMUF
-$playersound	player	female	*land		DSF2OOF
-$playeralias	player	female	*jump		DSFEMUF
-$playersound	player	female	*fist		dspunch
-$playeralias	player	female	*usefail	DSFEMUF
-$playersound	player	female	*taunt		dsftaunt
-$playeralias	player	female	plpain		DSFPAIN
-$random DSFPAIN { DSFPAIN1 DSFPAIN2 DSFPAIN3 DSFPAIN4 DSFPAIN5 DSFPAIN6 DSFPAIN7 }
-DSFPAIN1 DSFPAIN1
-DSFPAIN2 DSFPAIN2
-DSFPAIN3 DSFPAIN3
-DSFPAIN4 DSFPAIN4
-DSFPAIN5 DSFPAIN5
-DSFPAIN6 DSFPAIN6
-DSFPAIN7 DSFPAIN7
-$random DSFEMUF { dsfnowa1 dsfnowa2 dsfnowa3 }
-dsfnowa3 dsfnowa3
-dsfnowa2 dsfnowa2
-dsfnowa1 dsfnowa1
-TIRED TIRED
-$random MTAUN { MTAUN01 MTAUN02 MTAUN03 MTAUN04 MTAUN05 MTAUN06 }
-MTAUN01 MTAUN01
-MTAUN02 MTAUN02
-MTAUN03 MTAUN03
-MTAUN04 MTAUN04
-MTAUN05 MTAUN05
-MTAUN06 MTAUN06
-$limit MTAUN 1
-LANDS1 LANDS1
-$limit PlayerLandSound 3
-$random FTAUNT { FTAUNT1 FTAUNT2 FTAUNT3 FTAUNT4}
-FTAUNT1 FTAUNT1
-FTAUNT2 FTAUNT2
-FTAUNT3 FTAUNT3
-FTAUNT4 FTAUNT4
-$playersound	player	male	BIGSCRE		bigscrea
-$playersound	player	female	BIGSCRE		DSFDIEHI
-$playersound	player	female	*death		DSFDETH
-DSFDTHE BIGSCRE
-DSSALUTE DSSALUTE
-$playersound	player	male	SALUTE		DSSALUTE
-$playersound	player	female	SALUTE		DSFTAUN2
-$limit FUCK 1
-$limit weapons/rifle 0
-$rolloff weapons/rifle 100 2200
-$rolloff weapons/pistol 100 2200
-LAUNCH LAUNCH
-PLREADY PLREADY
-BFGREADY BFGREADy
-RLREADY RLREADY
-BFGEXPLO BFGEXPLO
-$rolloff BFGEXPLO 1200 2000
-BFGEXPL2 BFGEXPL2
-$rolloff BFGEXPL2 4000 8000
-BFGCHARGE BFGCHARG
-BFGFIRE BFGFIRE
-ARMOR ARMOR
-GOTHPB GOTHPB
-GOTHPS GOTHPS
-10KIDLE 10KIDLE
-10KSTART 10KSTART
-10KFIRE 10KFIRE
-10KSTOP 10KSTOP
-IBRN1 IBRN1
-IBRN2 IBRN2
-IBRN3 IBRN3
-RELOAD RELOAD
-weapons/firegrenade			GLAUNCH
-weapons/reloadgrenade			GRELOAD
-GRLLO1 GRLLO1
-GRLLO2 GRLLO2
-$rolloff weapons/firegrenade 3000 100 
-$limit world/watersplash 4
-$limit world/sludgegloop 2
-$limit world/drip 2
-$limit world/hotsiz 2
-$limit world/lavasizzle 2
-$volume ricochet/hit 0.7 
-$volume world/watersplash 0.3 
-$volume weapons/casing2 0.7 
-$rolloff world/watersplash 300 300 
-$volume weapons/sshoto	1.5
-$volume weapons/sshotc	1.5
-$volume weapons/sshotl  1.5
-weapons/plasmarifle PLASMA
-$limit weapons/plasmarifle 0
-$volume weapons/plasmarifle 0.9 
-Rocket/Launch DSRLAUN
-RKTSML RKTSML
-$rolloff world/RKTSML 1200 2000 
-SSHFIRE SSHFIRE
-weapons/ssg/open	SSGOPEN
-weapons/ssg/close	SSGCLOSE
-weapons/ssg/in		SSGIN
-weapons/ssg/fire	SSGFIRE
-FireSuperShotgun    SSGFIRE1
-$volume FireSuperShotgun  1.3
-$random world/ricochet      {  ricochet/hit world/b1lank }
-$random ricochet/hit        {  world/ricochet1 world/ricochet2 world/ricochet3 world/ricochet4 world/ricochet5 world/ricochet6 world/ricochet7 }
-world/ricochet1     ricoche1
-world/ricochet2     ricoche2
-world/ricochet3     ricoche3
-world/ricochet4     ricoche4
-world/ricochet5     ricoche5
-world/ricochet6     ricoche6
-world/ricochet7     ricoche7
-world/blank1        blanksnd
-world/blank2        blanksnd
-$random bulletwhistle { WHIST1 WHIST2 WHIST3 WHIST4 WHIST5 WHIST6 WHIST7}
-WHIST1 WHIST1
-WHIST2 WHIST2
-WHIST3 WHIST3
-WHIST4 WHIST4
-WHIST5 WHIST5
-WHIST6 WHIST6
-WHIST7 WHIST7
-//$rolloff bulletwhistle 100 200
-//$volume bulletwhistle  0.7
-$random BHITDIR {  BHITDIR1 BHITDIR2 BHITDIR3 BHITDIR4 BHITDIR5 world/b1lank}
-BHITDIR1 BHITDIR1
-BHITDIR2 BHITDIR2
-BHITDIR3 BHITDIR3
-BHITDIR4 BHITDIR4
-BHITDIR5 BHITDIR5
-$limit BHITDIR1 6
-$limit BHITDIR2 6
-$limit BHITDIR3 6
-$limit BHITDIR4 6
-$limit BHITDIR5 6
-$limit world/ricochet1 1
-$limit world/ricochet2 1
-$limit world/ricochet3 1
-$limit world/ricochet4 1
-$limit world/ricochet5 1
-$limit world/ricochet6 1
-$limit world/blank1 1
-$limit world/blank2 1
-$limit ricochet/hit 1
-$limit world/ricochet 1
-$rolloff world/ricochet1 200 700  
-$rolloff world/ricochet2 200 700
-$rolloff world/ricochet3 200 700 
-$rolloff world/ricochet4 200 700 
-$rolloff world/ricochet5 200 700 
-$rolloff world/ricochet6 200 700 
-$rolloff world/ricochet7 200 700
-$rolloff world/ricochet 200 700
-BIGEXPL2 BIGEXPL2
-//Brutal Doom's explosions sounds are actually 3 sounds playing at the same time so it can sound more realistic.
-//First sound. Very sharp, like exploding next to you.
-$random Explosion {Explode1 Explode2}
-Explode1 Explode1 
-Explode2 Explode2 
-$limit Explosion 4
-$rolloff  Explosion 900 1400
-// This is the second sound, it's muffled and can be heard one city block away.
-$random FAREXPL  {dsbarex1 dsbarex2 dsbarex3 dsbarex4 dsbarex5 dsbarex6 dsbarex7}
-dsbarex1 dsbarex1
-dsbarex2 dsbarex2
-dsbarex3 dsbarex3
-dsbarex4 dsbarex4
-dsbarex5 dsbarex5
-dsbarex6 dsbarex6
-dsbarex7 dsbarex7
-$limit FAREXPL 4
-$rolloff FAREXPL 1000 7500
-// This is the third sound, it's extremely muffled and can be heard anywhere in the map, sounds like distant thunder.
-distantexp distantexp
-$limit distantexp 4
-$rolloff distantexp 1000 9000
-//=============================================================================================
-//=============================================================================================
-//Distant gun sounds
-//Assault Rifle
-FARRIF FARRIF
-$limit FARRIF 80
-$rolloff  FARRIF 3000 6000
-//Heavy Machinegun
-FARHMG FARHMG
-$limit FARHMG 80
-$rolloff  FARHMG 3000 6000
-//Pistol or Shotgun
-FARSHT FARSHT
-$limit FARSHT 80
-$rolloff  FARSHT 3000 6000
-//Light Machinegun
-FARMGN FARMGN
-$limit FARMGN 20
-$rolloff  FARMGN 3000 6000
-//Autocannon
-FARCAN1 FARCAN1
-$rolloff  FARCAN1 6000 9000
-//SuperShotgun or Sniper Rifle
-FARSSG FARSSG
-$limit FARSSG 80
-$rolloff  FARSSG 3000 6000
-//=============================================================================================
-//=============================================================================================
-// Chainsaw Sounds
-DSSAWFUL DSSAWFUL
-DSSAWHIT DSSAWHIT
-DSSAWUP DSSAWUP
-DSSAWDIE DSSAWDIE
-weapons/chainsaw/draw	CSAWDRAW
-weapons/chainsaw/start	CSAWSTRT
-weapons/chainsaw/loop	CSAWFUL
-weapons/chainsaw/stop	CSAWSTOP
-weapons/chainsaw/idle	CSAWREDY
-CSAWCUT                 CSAWCUT
-//=============================================================================================
-weapons/shell1			dsshell1
-weapons/shell2			dsshell2
-weapons/shell3			dsshell3
-$random weapons/shell		{weapons/shell1 weapons/shell2 weapons/shell3}
-CHAINSPI CHAINSPI
-$random u45/fire	{ u45/fire1 u45/fire2 u45/fire3 u45/fire4}
-u45/fire1		uspfire1
-u45/fire2		uspfire2
-u45/fire3		uspfire3
-u45/fire4		uspfire4
-Ricochet		RIC1
-RIFLE RIFLE
-SSHFIRE SSHFIRE
-PLASMA PLASM
-PLSCHARG PLSCHARG
-PLSALTFR PLSALTFR
-PLSFULL PLSFULL
-IMPACT IMPACT
-$random puff/ric 		{ puff/ric1 puff/ric2 puff/ric3 puff/ric4 puff/ric5 puff/ric6 puff/ric7 }
-puff/ric1 			dsrich1
-puff/ric2 			dsrich2
-puff/ric3 			dsrich3
-puff/ric4 			dsrich4
-puff/ric5 			dsrich5
-puff/ric6 			dsrich6
-puff/ric7 			dsrich7
-$limit weapons/chaingun/fire 0
-weapons/chaingun/fire	CHGNSHOT
-weapons/chaingun/spin	CHGNSPIN
-weapons/chaingun/stop	CHGNSTOP
-weapons/chaingun/start	CHGNSTRT
-weapons/ssg/open	SSGOPEN
-weapons/ssg/close	SSGCLOSE
-weapons/ssg/in		SSGIN
-weapons/ssg/fire	SSGFIRE
-FireSuperShotgun    SSGFIRE1
-$rolloff SSGFIRE 100 2200
-$rolloff SSGFIRE1 100 2200
-weapons/shotgun2                    STGNSHOT
-weapons/shotgun/pump	            STGNPUMP
-weapons/assaultrifle                G2FIRE
-$rolloff weapons/shotgun2 100 2200
-REVOFIR REVOFIR
-REVOHAM REVOHAM
-RELOAD RELOAD
-RELO1 RELO1
-RELO2 RELO2
-insertshell        SHELL_IN
-M249        M249
-M249R1        M249R1
-M249R2        M249R2
-M249R3        M249R3
-M249R4        M249R4
-GLOCK18       GLOCK18
-$limit blooddrop 3
-BDFirePlace dstorch
-$limit BDfireplace 2
-$rolloff BDfireplace 100 900
-BDFirePlace2 dstorch2
-$limit BDfireplace2 2
-$rolloff BDfireplace2 100 900
-CHAINSPI CHAINSPI
-CHAINSTO CHAINSTO
-weapons/gswing                  dsswing
-weapons/gpunch                  dspunch
-DSSAWZIP DSSAWZIP
-DSSAWPUL DSSAWPUL
-$random fstatk { fstatk1 fstatk2 fstatk3 }
-fstatk1 fstatk1
-fstatk2 fstatk2
-fstatk3 fstatk3
-$random weapons/casing  { weapons/casing2 weapons/casing3 } 
-$limit weapons/casing  5
-weapons/casing2	dscasin1
-weapons/casing2	dscasin2
-weapons/casing3	dscasin3
-$random 40mmCasing  { 40CAS1 40CAS2 40CAS3 } 
-40CAS1 40CAS1
-40CAS2 40CAS2
-40CAS3 40CAS3
-$random SlowBurnDeath  { DSCULTF1 DSCULTF3 }
-DSCULTF1 DSCULTF1
-DSCULTF2 DSCULTF2
-DSCULTF3 DSCULTF3
-$rolloff  weapons/casing 100 600
-weapons/chainsaw/hitwall1	DSSAWAL1
-weapons/chainsaw/hitwall2	DSSAWAL2
-weapons/chainsaw/hitwall3	DSSAWAL3
-weapons/chainsaw/hitwall4	DSSAWAL4
-$random weapons/chainsaw/hitwall { weapons/chainsaw/hitwall1 weapons/chainsaw/hitwall2 weapons/chainsaw/hitwall3 weapons/chainsaw/hitwall4 }
-$limit weapons/chainsaw/hitwall 1
-$random BLOOOD  { DSBLUD01 DSBLUD02 DSBLUD03 }
-DSBLUD01 DSBLUD01
-DSBLUD02 DSBLUD02
-DSBLUD03 DSBLUD03
-PLATA1 PLATA1
-RLANDRAW RLANDRAW
-RLANSHOT RLANSHOT
-ROCKPKUP ROCKPKUP
-BERSPKUP BERSPKUP
-CBOXPKUP CBOXPKUP
-CELLPKUP CELLPKUP
-CHGNPKUP CHGNPKUP
-MEGAPKUP MEGAPKUP
-PLSDRAW PLSDRAW
-PLSCOOL PLSCOOL
-SHELPKUP SHELPKUP
-SHELPK1 SHELPK1
-SHELPK2 SHELPK2
-RCKCLIP RCKCLIP
-RCKCLIP2 RCKCLIP2
-$rolloff  RLANSHOT 1000 2000
-$random LSOD {LSOD1 LSOD2 LSOD3 LSOD4}
-LSOD1 LSOD1
-LSOD2 LSOD2
-LSOD3 LSOD3
-LSOD4 LSOD4
-DSBGSIT3 DSBGSIT3
-DSBGSIT4 DSBGSIT4
-DSGOTKEY DSGOTKEY
-GOTSKUL GOTSKUL
-DSPOSIT4 DSPOSIT4
-DSPOSIT5 DSPOSIT5
-DSPOSIT6 DSPOSIT6
-DSBIGDPN DSBIGDPN
-BEP BEP
-BEPBEP BEPBEP
-BEEEP BEEEP
-DSFDTHG DSFDTHG
-CHAINSTA CHAINSTA
-FLAMER FLAMER
-FLAMSTOP FLAMSTOP
-BREATHOF BREATHOF
-CLAP CLAP
-KNUCKLED KNUCKLED
-DSSALUTE DSSALUTE
-$random Sparks/Spawn { Sparks/Sound1  Sparks/Sound2  Sparks/Sound3  Sparks/Sound4 }
-Sparks/Sound1		SPARKS1
-Sparks/Sound2		SPARKS2
-Sparks/Sound3		SPARKS3
-Sparks/Sound4		SPARKS4
-DSBOTTLE DSBOTTLE
-DSPIPBNC DSPIPBNC
-TAUNT TAUNT
-Weapons/GrenadeFire	DSGRFIRE
-Weapons/GrenadeBounce	DSGRBNCE
-Weapons/GrenadeOpen	DSGROPEN
-Weapons/GrenadeLoad	DSGRLOAD
-Weapons/GrenadeClose	DSGRCLOS
-DSCANFIR DSCANFIR
-$rolloff DSCANFIR 600 2400
-//Mags
-$random weapons/smallmagdrop  { weapons/smallmagdrop1 weapons/smallmagdrop2 weapons/smallmagdrop3 weapons/smallmagdrop4 }
-weapons/smallmagdrop1		dsbounc1
-weapons/smallmagdrop2		dsbounc2
-weapons/smallmagdrop3		dsbounc3
-weapons/smallmagdrop4		dsbounc4
-$random weapons/largemagdrop  { weapons/largemagdrop1 weapons/largemagdrop2 weapons/largemagdrop3 weapons/largemagdrop4 }
-weapons/largemagdrop1		dsaounc1
-weapons/largemagdrop2		dsaounc2
-weapons/largemagdrop3		dsaounc3
-weapons/largemagdrop4		dsaounc4
-weapons/barrelpain		barrelz
-$volume weapons/smallmagdrop 0.5
-$volume weapons/largemagdrop 0.5
-//Impse
-$random imp/melee { imp/melee1 imp/melee2 imp/melee3 } 
-imp/melee1	IMPCLAW1
-imp/melee2	IMPCLAW2
-imp/melee3	IMPCLAW3
-$random player/cyborg/fist { marine/superfist1 marine/superfist2 marine/superfist3 marine/superfist4 marine/superfist5 }
-marine/superfist1 plspnch1
-marine/superfist2 plspnch2
-marine/superfist3 plspnch3
-marine/superfist4 plspnch4
-marine/superfist5 plspnch5
-//Zombies
-$random grunt/pain { DSPOPAI1 DSPOPAI2 DSPOPAI3 DSPOPAI4}
-DSPOPAI1 DSPOPAI1
-DSPOPAI2 DSPOPAI2
-DSPOPAI3 DSPOPAI3
-DSPOPAI4 DSPOPAI4
-$random grunt/sight { ZCSIT1 ZCSIT2 ZCSIT3 ZCSIT4 ZCSIT5}
-ZCSIT1 ZCSIT1
-ZCSIT2 ZCSIT2
-ZCSIT3 ZCSIT3
-ZCSIT4 ZCSIT4
-ZCSIT5 ZCSIT5
-$random BURNZOM {BURNZOM1 BURNZOM2 BURNZOM3}
-BURNZOM1 BURNZOM1
-BURNZOM2 BURNZOM2
-BURNZOM3 BURNZOM3
-$random zombiemarine/sight { zombiemarine/sight1
-zombiemarine/sight2
-zombiemarine/sight3
-zombiemarine/sight4
-zombiemarine/sight5
-zombiemarine/sight6
-zombiemarine/sight7
-zombiemarine/sight8
-zombiemarine/sight9
-zombiemarine/sight10
-zombiemarine/sight11 }
-zombiemarine/sight1	zspsit1
-zombiemarine/sight2	zspsit2
-zombiemarine/sight3	zspsit3
-zombiemarine/sight4	zspsit4
-zombiemarine/sight5	zspsit5
-zombiemarine/sight6	zspsit6
-zombiemarine/sight7	zspsit7
-zombiemarine/sight8	zspsit8
-zombiemarine/sight9	zspsit9
-zombiemarine/sight10	zspsit10
-zombiemarine/sight11	zspsit11
-$volume zombiemarine/sight 0.80
-$random zombiemarine/death
-{ zombiemarine/death1
-zombiemarine/death2
-zombiemarine/death3
-zombiemarine/death4
-zombiemarine/death5
-zombiemarine/death6
-zombiemarine/death7 }
-zombiemarine/death1	zspdth1
-zombiemarine/death2	zspdth2
-zombiemarine/death3	zspdth3
-zombiemarine/death4	zspdth4
-zombiemarine/death5	zspdth5
-zombiemarine/death6	zspdth6
-zombiemarine/death7	zspdth7
-$random zombiemarine/pain 
-{ zombiemarine/pain1
-zombiemarine/pain2
-zombiemarine/pain3
-zombiemarine/pain4
-zombiemarine/pain5
-zombiemarine/pain6
-zombiemarine/pain7
-zombiemarine/pain8
-zombiemarine/pain9
-zombiemarine/pain10
-zombiemarine/pain11 }
-zombiemarine/pain1		zsppn1
-zombiemarine/pain2		zsppn2
-zombiemarine/pain3		zsppn3
-zombiemarine/pain4		zsppn4
-zombiemarine/pain5		zsppn5
-zombiemarine/pain6		zsppn6
-zombiemarine/pain7		zsppn7
-zombiemarine/pain8		zsppn8
-zombiemarine/pain9		zsppn9
-zombiemarine/pain10	zsppn10
-zombiemarine/pain11	zsppn11
-$random zombiemarine/active { zombiemarine/active1 zombiemarine/active2 zombiemarine/active3 zombiemarine/active4 zombiemarine/active5 NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING }
-zombiemarine/active1	zspact1
-zombiemarine/active2	zspact2
-zombiemarine/active3	zspact3
-zombiemarine/active4	zspact4
-zombiemarine/active5	zspact5
-$volume zombiemarine/active 0.76
-IMPCHARG IMPCHARG
-DSRFIRE DSRFIRE
-KICK KICK
-FOOTWALL FOOTWALL
-PAIN1 PAIN1
-juggernaut/see BTKUNQV2
-juggernaut/roam BTKUNQV1
-juggernaut/engine BTKENGN1
-juggernaut/death BTKDETH1
-$random juggernaut/pain { BTKPAIN1 BTKPAIN2 BTKPAIN3 }
-BTKPAIN1 BTKPAIN1
-BTKPAIN2 BTKPAIN2
-BTKPAIN3 BTKPAIN3
-$rolloff  juggernaut/see 900 1100
-$rolloff  juggernaut/engine 900 1100
-$rolloff  juggernaut/death 900 2800
-$rolloff  juggernaut/pain 900 1100
-$rolloff  juggernaut/roam 900 1100
-$random DSMADTH { DSMADTH1 DSMADTH2 DSMADTH3 DSMADTH4 DSMADTH5 DSMADTH6 DSMADTH7 DSMADTH8 }
-DSMADTH1 DSMADTH1
-DSMADTH2 DSMADTH2
-DSMADTH3 DSMADTH3
-DSMADTH4 DSMADTH4
-DSMADTH5 DSMADTH5
-DSMADTH6 DSMADTH6
-DSMADTH7 DSMADTH7
-DSMADTH8 DSMADTH8
-SPIPAIN1 SPIPAIN1
-SPIPAIN2 SPIPAIN2
-CYBPAIN CYBPAIN
-PSXDPN PSXDPN
-CYBTAT CYBTAT
-$rolloff CYBTAT 50 8000
-//Marine Voices
-$random MRNAT { MRNAT1 MRNAT2 MRNAT3 MRNAT4 MRNAT5 MRNAT6 NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING 
-NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING
-NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING }
-MRNAT1 MRNAT1
-MRNAT2 MRNAT2
-MRNAT3 MRNAT3
-MRNAT4 MRNAT4
-MRNAT5 MRNAT5
-MRNAT6 MRNAT6
-LETSROCK LETSROCK
-$random MRNWC { MRNWT { MRNWT1 MRNWT2 MRNWT3 MRNWT4 MRNWT5 NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING
-NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING
-NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING
-NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING
-NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING
-NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING
-NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING}
-MRNWT1 MRNWT1
-MRNWT2 MRNWT2
-MRNWT3 MRNWT3
-MRNWT4 MRNWT4
-MRNWT5 MRNWT5
-$random MRNWC { MRNWC1 MRNWC2 MRNWC3 MRNWC4 MRNWC5 MRNWC6 NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING
-NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING
-NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING
-NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING
-NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING
-NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING
-NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING}
-MRNWC1 MRNWC1
-MRNWC2 MRNWC2
-MRNWC3 MRNWC3
-MRNWC4 MRNWC4
-MRNWC5 MRNWC5
-MRNWC6 MRNWC6
-MRNGI1 MRNGI1
-MRNGI2 MRNGI2
-$random MRNAG { MRNAG1 MRNAG2 }
-MRNAG1 MRNAG1
-MRNAG2 MRNAG2
-$random MarineGuard { MRNWT2 MRNWT1 MRNWT5 }
-$random MarineFollow { MRNWT4 }
-NOTHING NOTHING
-$rolloff  MRNAT 50 1000
-$rolloff  MRNWT 50 1000
-$rolloff  MRNWC 50 1000
-$rolloff  MRNGI1 50 1000
-$rolloff  MRNGI2 50 1000
-$rolloff  MRNAG 50 1000
-//From PTSD Simulator 2011 AKA Red Orchestra
-$random TorturedMarineBD { CPTRT01 CPTRT02 CPTRT03 CPTRT04 CPTRT05 CPTRT06 CPTRT07 CPTRT08 CPTRT09 CPTRT10 }
-CPTRT01 CPTRT01
-CPTRT02 CPTRT02
-CPTRT03 CPTRT04
-CPTRT05 CPTRT05
-CPTRT06 CPTRT06
-CPTRT07 CPTRT07
-CPTRT08 CPTRT08
-CPTRT09 CPTRT09
-CPTRT10 CPTRT10
-$rolloff  TorturedMarineBD 200 500
-$random TorturedMarineDieBD { CPTRT11 CPTRT12 CPTRT13 CPTRT14 }
-CPTRT11 CPTRT11
-CPTRT12 CPTRT12
-CPTRT13 CPTRT13
-CPTRT14 CPTRT14
-$random TorturedMarinePain { CPTRP1 CPTRP2 CPTRP3 }
-CPTRP1 CPTRP1
-CPTRP2 CPTRP2
-CPTRP3 CPTRP3
-ICEBRK1 ICEBRK1
-ICEBRK2 ICEBRK2
-CHGNSHOT CHGNSHOT
-$limit CHGNSHOT 0
-bigspl1 bigspl1
-$random nazi/sight { nazisight1 nazisight2 nazisight3 nazisight4 nazisight5 nazisight6 nazisight7 nazisight8 }
-$random nazi/death { nazideath1 nazideath2 nazideath3 nazideath4 nazideath5 nazideath6 nazideath7 nazideath8 nazideath9 nazideath10 nazideath11 }
-$random nazi/pain { nazipain1 nazipain2 nazipain3 nazipain4 nazipain5 nazipain6 nazipain7 nazipain8 }
-nazisight1 nazisit1
-nazisight2 nazisit1
-nazisight3 nazisit2
-nazisight4 nazisit3
-nazisight5 nazisit4
-nazisight5 nazisit5
-nazisight6 nazisit6
-nazisight7 nazisit7
-nazisight8 nazisit8
-nazideath1 nazidth1
-nazideath2 nazidth2
-nazideath3 nazidth3
-nazideath4 nazidth4
-nazideath5 nazidth5
-nazideath6 nazidth6
-nazideath7 nazidth7
-nazideath8 nazidth8
-nazideath9 nazidth9
-nazideath10 nazidtha
-nazideath11 nazidthb
-nazipain1 nazipn1
-nazipain2 nazipn2
-nazipain3 nazipn3
-nazipain4 nazipn4
-nazipain5 nazipn5
-nazipain6 nazipn6
-nazipain7 nazipn7
-nazipain8 nazipn8
-$rolloff nazi/sight 200 2500
-$random DSRIFLE { DSRIFL1 DSRIFL2 }
-DSRIFL1 DSRIFL1
-DSRIFL2 DSRIFL2
-AMBRAIN	AMBRAIN
-$limit AMBRAIN 1
-GRNPIN GRNPIN
-GRNBNCE GRNBNCE
-GRNTOSS GRNTOSS
-AMBAIRP AMBAIRP
-$rolloff AMBAIRP 50 80000
-$random EvilmarineSight { EVMRSIT1 EVMRSIT2 EVMRSIT3 EVMRSIT4 EVMRSIT5 EVMRSIT6}
-EVMRSIT1 EVMRSIT1
-EVMRSIT2 EVMRSIT2
-EVMRSIT3 EVMRSIT3
-EVMRSIT4 EVMRSIT4
-EVMRSIT5 EVMRSIT5
-EVMRSIT6 EVMRSIT6
-$random EvilmarineActive { NONE NONE NONE EVMRACT2 EVMRACT3 EVMRACT4}
-EVMRACT1 EVMRACT1
-EVMRACT2 EVMRACT2
-EVMRACT3 EVMRACT3
-EVMRACT4 EVMRACT4
-$random EvilmarinePain { EVMRPN1 EVMRPN2}
-EVMRPN1 EVMRPN1
-EVMRPN2 EVMRPN2
-$random EvilmarineDeath { EVMRDT1 EVMRDT2}
-EVMRDT1 EVMRDT1
-EVMRDT2 EVMRDT2
-EVMRLAUG EVMRLAUG
-RLAUNCH1 RLAUNCH1
-RLLOOP RLLOOP
-RAILF1 RAILF1
-RAILR1 RAILR1
-$rolloff weapons/sg 100 2200
-$rolloff CHGNSHOT 100 2200
-// Gore
-$random misc/xdeath		{ misc/xdeath1a misc/xdeath1b misc/xdeath1c misc/xdeath1d misc/xdeath1e misc/xdeath1f misc/xdeath2a misc/xdeath2b misc/xdeath2c misc/xdeath2d misc/xdeath2e misc/xdeath2f misc/xdeath3a misc/xdeath3b misc/xdeath3c misc/xdeath4a misc/xdeath4b misc/xdeath4c }
-misc/xdeath1a			dsxdth1a
-misc/xdeath1b			dsxdth1b
-misc/xdeath1c			dsxdth1c
-misc/xdeath1d			dsxdth1d
-misc/xdeath1e			dsxdth1e
-misc/xdeath1f			dsxdth1f
-$random misc/xdeath1		{ misc/xdeath1a misc/xdeath1b misc/xdeath1c misc/xdeath1d misc/xdeath1e misc/xdeath1f }
-misc/xdeath2a			dsxdth2a
-misc/xdeath2b			dsxdth2b
-misc/xdeath2c			dsxdth2c
-misc/xdeath2d			dsxdth2d
-misc/xdeath2e			dsxdth2e
-misc/xdeath2f			dsxdth2f
-$random misc/xdeath2		{ misc/xdeath2a misc/xdeath2b misc/xdeath2c misc/xdeath2d misc/xdeath2e misc/xdeath2f }
-misc/xdeath3a			dsxdth3a
-misc/xdeath3b			dsxdth3b
-misc/xdeath3c			dsxdth3c
-$random misc/xdeath3		{ misc/xdeath3a misc/xdeath3b misc/xdeath3c }
-misc/xdeath4a			dsxdth4a
-misc/xdeath4b			dsxdth4b
-misc/xdeath4c			dsxdth4c
-$random misc/xdeath4		{ misc/xdeath4a misc/xdeath4b misc/xdeath4c }
-$random misc/xdeath5		{ misc/xdeath4a misc/xdeath4b misc/xdeath2a misc/xdeath2b misc/xdeath2e}
-$limit misc/xdeath5 2
-$volume misc/xdeath 0.4
-$volume misc/xdeath1 0.4
-$volume misc/xdeath2 0.4
-$volume misc/xdeath3 0.4
-$volume misc/xdeath4 0.4
-BONECR1 BONECR1
-BONECR2 BONECR2
-LQDRIP1 LQDRIP1
-LQDRIP2 LQDRIP2
-LQDRIP3 LQDRIP3
-LQDRIP4 LQDRIP4
-LQDRIP5 LQDRIP5
-LQDRIP6 LQDRIP6
-LQDRIP7 LQDRIP7
-LQDRIP8 LQDRIP8
-LQDRIP9 LQDRIP9
-LQDRIP10 LQDRIP10
-LQDRIP11 LQDRIP11
-LQDRIP12 LQDRIP12
-LQDRIP13 LQDRIP13
-LQDRIP14 LQDRIP14
-$random blooddrop  { LQDRIP1 LQDRIP2 LQDRIP3 } 
-$rolloff blooddrop 200 1000
-$random blooddrop2  { LQDRIP4 LQDRIP5 LQDRIP6 LQDRIP7 }
-$rolloff blooddrop2 200 1000
-$random blooddrop3  { LQDRIP8 LQDRIP9 LQDRIP10 LQDRIP11 LQDRIP12 LQDRIP13 LQDRIP14 LQDRIP14 } 
-$rolloff blooddrop3 200 1000
-$random REVIDLE  { REVIDLE1 REVIDLE2 REVIDLE3 REVIDLE4 REVIDLE5 REVIDLE6 REVIDLE7 } 
-REVIDLE1 REVIDLE1
-REVIDLE2 REVIDLE2
-REVIDLE3 REVIDLE3
-REVIDLE4 REVIDLE4
-REVIDLE5 REVIDLE5
-REVIDLE6 REVIDLE6
-REVIDLE7 REVIDLE7
-$random REVOUCH { REVIDLE1 REVIDLE2 REVIDLE3 REVIDLE4 REVIDLE5 REVIDLE6 REVIDLE7 } 
-REVOUCH1 REVOUCH1
-REVOUCH2 REVOUCH2
-REVOUCH3 REVOUCH3
-$random PINKIDL { PINKIDL1 PINKIDL2 PINKIDL3 PINKIDL4 } 
-PINKIDL1 PINKIDL1
-PINKIDL2 PINKIDL2
-PINKIDL3 PINKIDL3
-PINKIDL4 PINKIDL4
-MINIGN1 MINIGN1
-MINIGEN MINIGEN
-MINIGN3 MINIGN3
-MINIGN4 MINIGN4
-$limit MINIGN4 999
-A12FIR A12FIR
-AACL AACL
-PFIRE PFIRE
-DSPISTOL DSPISTOL
-PREL PREL
-SMGFIRE SMGFIRE
-SMGDRAW SMGDRAW
-SMGMAGIN SMGMAGIN
-SMGMOUT SMGMOUT
-SMGBOLT SMGBOLT
-HMGFIRE HMGFIRE
-$random CSAWFLESH { DSSAW0 DSSAW1 DSSAW2 DSSAW3 DSSAW4 DSSAW5 DSSAW6 DSSAW7 DSSAW8 DSSAW9 }
-DSSAW1 DSSAW1
-DSSAW2 DSSAW2
-DSSAW3 DSSAW3
-DSSAW4 DSSAW4
-DSSAW5 DSSAW5
-DSSAW6 DSSAW6
-DSSAW7 DSSAW7
-DSSAW8 DSSAW8
-DSSAW9 DSSAW9
-DSSAW0 DSSAW0
-//Unmaker
-UNMSTA UNMSTA
-UNMLOP UNMLOP
-UNMSTO UNMSTO
-//Mother Demon
-mother/sight dsmthsit
-mother/pain dsmthpai
-mother/death dsmthdth
-mother/attack dsmthatk
-mother/active dsmthact
-AXECLN AXECLN
-AXEHIT AXEHIT
-AXEDRAW AXEDRAW
-BDALARM BDALARM
-$limit BDALARM 0
-BRKCLANG BRKCLANG
-B2KCLANG B2KCLANG
-$limit BRKCLANG 0
-$limit B2KCLANG 0
-//VOLCABUS
-Volcabus/Sight VOLCST
-Volcabus/Pain VOLCPN
-Volcabus/Death VOLCDTH
-Volcabus/Attack VOLCATK
-$random Volcabus/Cannon { VOLCCF1 VOLCCF2 VOLCCF3 VOLCCF4 }
-VOLCCF1 VOLCCF1
-VOLCCF2 VOLCCF2
-VOLCCF3 VOLCCF3
-VOLCCF4 VOLCCF4
-VOLCBRN VOLCBRN
-//TURNED INTO POOPOO
-MELT MELTIN
-//Arachnotron 2 gun
-PAILGF3 PAILGF3
-PAILGF2 PAILGF2
-PAILGD3 PAILGD3
-//Mummy
-MUMYACT MUMYACT
-MUMYSEE MUMYSEE
-MUMYDIE MUMYDIE
-CBOXPICK CBOXPICK
-BACKPACK BACKPACK
-CLIPICK CLIPICK
-CLIPICK2 CLIPICK2
-GOTKEY GOTKEY
-$random chainrattle {CHNRTL1 CHNRTL2 CHNRTL3}
-CHNRTL1 CHNRTL1
-CHNRTL2 CHNRTL2
-CHNRTL3 CHNRTL3
-$random SlideKickStart { SLIDSTRT1 SLIDSTRT2 SLIDSTRT3 }
-SLIDSTRT1	SLIDSTR1
-SLIDSTRT2	SLIDSTR2
-SLIDSTRT3	SLIDSTR3
-$random SlideKickLoop { SLIDLOP1 SLIDLOP2 SLIDLOP3 SLIDLOP4 }
-SLIDLOP1	SLIDLOP1
-SLIDLOP2	SLIDLOP2
-SLIDLOP3	SLIDLOP3
-SLIDLOP4	SLIDLOP4
-$random SlideKickStop { SLIDEND1 SLIDEND2 }
-SLIDEND1	SLIDEND1
-SLIDEND2	SLIDEND2
-FLEAS FLEAS
-rat/melee			dsratmel
-rat/pain			dsratpai
-rat/death1			dsratdt1
-rat/death2			dsratdt2
-rat/death3			dsratdt3
-$random rat/death		{ rat/death1 rat/death2 rat/death3 }
-$random BodyThud		{ BTHUD1 BTHUD2 BTHUD3 BTHUD4 BTHUD5 BTHUD6 BTHUD7 }
-BTHUD1 BTHUD1
-BTHUD2 BTHUD2
-BTHUD3 BTHUD3
-BTHUD4 BTHUD4
-BTHUD5 BTHUD5
-BTHUD6 BTHUD6
-BTHUD7 BTHUD7
+	//Rebalance
+	ICYWIND	"sounds/rebalance/ICYWIND.mp3" 
+	//MK sounds I edited for Paladin's fists yesterday
+	$RANDOM HVPNHIT {HVPNHIT1 HVPNHIT2 HVPNHIT3 HVPNHIT4}
+	HVPNHIT1 HVPNHIT1 
+	HVPNHIT2 HVPNHIT2
+	HVPNHIT3 HVPNHIT3
+	HVPNHIT4 HVPNHIT4
+	$RANDOM PUNCHHIT {PNCHHIT1 PNCHHIT2 PNCHHIT3 PNCHHIT4 PNCHHIT5 PNCHHIT6 PNCHHIT7}
+	PNCHHIT1 PNCHHIT1 
+	PNCHHIT2 PNCHHIT2
+	PNCHHIT3 PNCHHIT3
+	PNCHHIT4 PNCHHIT4
+	PNCHHIT5 PNCHHIT5
+	PNCHHIT6 PNCHHIT6
+	PNCHHIT7 PNCHHIT7
+	$RANDOM METALHIT {METLHIT1 METLHIT2 METLHIT3}
+	METLHIT1 METLHIT1 
+	METLHIT2 METLHIT2
+	METLHIT3 METLHIT3
+	$RANDOM KICKHIT {KICKHIT1 KICKHIT2 KICKHIT3 KICKHIT4 KICKHIT5}
+	KICKHIT1 KICKHIT1
+	KICKHIT2 KICKHIT2 
+	KICKHIT3 KICKHIT3 
+	KICKHIT4 KICKHIT4 
+	KICKHIT5 KICKHIT5
+	$RANDOM FLESHHIT {FLESHIT1 FLESHIT2 FLESHIT3 FLESHIT4 FLESHIT5}
+	FLESHIT1 FLESHIT1
+	FLESHIT2 FLESHIT2
+	FLESHIT3 FLESHIT3
+	FLESHIT4 FLESHIT4
+	FLESHIT5 FLESHIT5
+	//Paladin's Voice
+	$playeralias	Paladin	male	*death		    Paladin/Death
+	$playeralias	Paladin	male	*xdeath		    Paladin/XDeath
+	$playeralias	Paladin	male	*gibbed		    DSSLOP
+	$playersounddup	Paladin	male	*wimpydeath 	*death
+	$playersounddup	Paladin	male	*crazydeath	    *death
+	$playersounddup	Paladin	male	*burndeath	    *xdeath
+	$playeralias	Paladin	male	*pain100	    Paladin/Pain100
+	$playeralias	Paladin	male	*pain75		    Paladin/Pain75
+	$playeralias	Paladin	male	*pain50 	    Paladin/Pain50
+	$playeralias	Paladin	male	*pain25		    Paladin/Pain25
+	$playeralias	Paladin	male	*grunt		    Paladin/ShortExert
+	$playeralias	Paladin	male	*land		    Paladin/Land
+	$playeralias	Paladin	male	*jump		    Paladin/Jump
+	$playersound	Paladin	male	*fist		    dsnone
+	$playersounddup	Paladin	male	*usefail		*grunt
+	$playeralias	Paladin	male	*weaponlaugh	Paladin/Laugh
+	$playersounddup	Paladin	male	*evillaugh	    *weaponlaugh
+	$random Paladin/Pain100	    { Paladin/Pain100_1 Paladin/Pain100_2 Paladin/Pain100_3 Paladin/Pain100_4 Paladin/Pain100_5 Paladin/Pain100_6 Paladin/Pain100_7 Paladin/Pain100_8 }
+	$random Paladin/Pain75	        { Paladin/Pain75_1 Paladin/Pain75_2 Paladin/Pain75_3 }
+	$random Paladin/Pain50	        { Paladin/Pain50_1 Paladin/Pain50_2 Paladin/Pain50_3 }
+	$random Paladin/Pain25	        { Paladin/Pain25_1 Paladin/Pain25_2 }
+	$random Paladin/Death	        { Paladin/Death1 Paladin/Death2 Paladin/Death3 }
+	$random Paladin/ShortExert	    { Paladin/ShortExert1 Paladin/ShortExert2 Paladin/ShortExert3 }
+	$random Paladin/MediumExert	{ Paladin/MediumExert1 Paladin/MediumExert2 Paladin/MediumExert3 }
+	$random Paladin/LargeExert	    { Paladin/LargeExert1 Paladin/LargeExert2 Paladin/LargeExert3 }
+	$random Paladin/SpellCast	    { Paladin/SpellCast1 Paladin/SpellCast2 }
+	$random Paladin/SpellCastLarge	{ Paladin/SpellCastLarge1 Paladin/SpellCastLarge2 Paladin/SpellCastLarge3 }
+	Paladin/Pain100_1          "Sounds/Paladin/Pain100_1.ogg"
+	Paladin/Pain100_2          "Sounds/Paladin/Pain100_2.ogg"
+	Paladin/Pain100_3          "Sounds/Paladin/Pain100_3.ogg"
+	Paladin/Pain100_4          "Sounds/Paladin/Pain100_4.ogg"
+	Paladin/Pain100_5          "Sounds/Paladin/Pain100_5.ogg"
+	Paladin/Pain100_6          "Sounds/Paladin/Pain100_6.ogg"
+	Paladin/Pain100_7          "Sounds/Paladin/Pain100_7.ogg"
+	Paladin/Pain100_8          "Sounds/Paladin/Pain100_8.ogg"
+	Paladin/Pain75_1           "Sounds/Paladin/Pain75_1.ogg"
+	Paladin/Pain75_2           "Sounds/Paladin/Pain75_2.ogg"
+	Paladin/Pain75_2           "Sounds/Paladin/Pain75_3.ogg"
+	Paladin/Pain50_1           "Sounds/Paladin/Pain50_1.ogg"
+	Paladin/Pain50_2           "Sounds/Paladin/Pain50_2.ogg"
+	Paladin/Pain50_3           "Sounds/Paladin/Pain50_3.ogg"
+	Paladin/Pain25_1           "Sounds/Paladin/Pain25_1.ogg"
+	Paladin/Pain25_2           "Sounds/Paladin/Pain25_2.ogg"
+	Paladin/Death1             "Sounds/Paladin/Death1.ogg"
+	Paladin/Death2             "Sounds/Paladin/Death2.ogg"
+	Paladin/Death3             "Sounds/Paladin/Death3.ogg"
+	Paladin/XDeath             "Sounds/Paladin/XDeath.ogg"
+	Paladin/Jump               "Sounds/Paladin/Jump.ogg"
+	Paladin/Land               "Sounds/Paladin/Land.ogg"
+	Paladin/Laugh              "Sounds/Paladin/Taunts/Laugh.ogg"
+	Paladin/ShortExert1        "Sounds/Paladin/Exerts/Short1.ogg"
+	Paladin/ShortExert2        "Sounds/Paladin/Exerts/Short2.ogg"
+	Paladin/ShortExert3        "Sounds/Paladin/Exerts/Short3.ogg"
+	Paladin/MediumExert1       "Sounds/Paladin/Exerts/Medium1.ogg"
+	Paladin/MediumExert2       "Sounds/Paladin/Exerts/Medium2.ogg"
+	Paladin/MediumExert3       "Sounds/Paladin/Exerts/Medium3.ogg"
+	Paladin/LargeExert1        "Sounds/Paladin/Exerts/Large1.ogg"
+	Paladin/LargeExert2        "Sounds/Paladin/Exerts/Large2.ogg"
+	Paladin/LargeExert3        "Sounds/Paladin/Exerts/Large3.ogg"
+	Paladin/SpellCast1         "Sounds/Paladin/Exerts/SpellCast1.ogg"
+	Paladin/SpellCast2         "Sounds/Paladin/Exerts/SpellCast2.ogg"
+	Paladin/SpellCastLarge1    "Sounds/Paladin/Exerts/SpellCastLarge1.ogg"
+	Paladin/SpellCastLarge2    "Sounds/Paladin/Exerts/SpellCastLarge2.ogg"
+	Paladin/SpellCastLarge3    "Sounds/Paladin/Exerts/SpellCastLarge3.ogg"
+	$random Paladin/Taunt	
+	{ 
+	Paladin/Taunt1      Paladin/Taunt2      Paladin/Taunt3      Paladin/Taunt4      Paladin/Taunt5
+	Paladin/Taunt6      Paladin/Taunt7      Paladin/Taunt8      Paladin/Taunt9      Paladin/Taunt10
+	Paladin/Taunt11     Paladin/Taunt12     Paladin/Taunt13     Paladin/Taunt14     Paladin/Taunt15
+	Paladin/Taunt16     Paladin/Taunt17     Paladin/Taunt18     Paladin/Taunt19     Paladin/Taunt20
+	Paladin/Taunt21     Paladin/Taunt22     Paladin/Taunt23     Paladin/Taunt24     Paladin/Taunt25
+	}
+	Paladin/Taunt1    "Sounds/Paladin/Taunts/Taunt1.ogg"
+	Paladin/Taunt2    "Sounds/Paladin/Taunts/Taunt2.ogg"
+	Paladin/Taunt3    "Sounds/Paladin/Taunts/Taunt3.ogg"
+	Paladin/Taunt4    "Sounds/Paladin/Taunts/Taunt4.ogg"
+	Paladin/Taunt5    "Sounds/Paladin/Taunts/Taunt5.ogg"
+	Paladin/Taunt6    "Sounds/Paladin/Taunts/Taunt6.ogg"
+	Paladin/Taunt7    "Sounds/Paladin/Taunts/Taunt7.ogg"
+	Paladin/Taunt8    "Sounds/Paladin/Taunts/Taunt8.ogg"
+	Paladin/Taunt9    "Sounds/Paladin/Taunts/Taunt9.ogg"
+	Paladin/Taunt10    "Sounds/Paladin/Taunts/Taunt10.ogg"
+	Paladin/Taunt11    "Sounds/Paladin/Taunts/Taunt11.ogg"
+	Paladin/Taunt12    "Sounds/Paladin/Taunts/Taunt12.ogg"
+	Paladin/Taunt13    "Sounds/Paladin/Taunts/Taunt13.ogg"
+	Paladin/Taunt14    "Sounds/Paladin/Taunts/Taunt14.ogg"
+	Paladin/Taunt15    "Sounds/Paladin/Taunts/Taunt15.ogg"
+	Paladin/Taunt16    "Sounds/Paladin/Taunts/Taunt16.ogg"
+	Paladin/Taunt17    "Sounds/Paladin/Taunts/Taunt17.ogg"
+	Paladin/Taunt18    "Sounds/Paladin/Taunts/Taunt18.ogg"
+	Paladin/Taunt19    "Sounds/Paladin/Taunts/Taunt19.ogg"
+	Paladin/Taunt20    "Sounds/Paladin/Taunts/Taunt20.ogg"
+	Paladin/Taunt21    "Sounds/Paladin/Taunts/Taunt21.ogg"
+	Paladin/Taunt22    "Sounds/Paladin/Taunts/Taunt22.ogg"
+	Paladin/Taunt23    "Sounds/Paladin/Taunts/Taunt23.ogg"
+	Paladin/Taunt24    "Sounds/Paladin/Taunts/Taunt24.ogg"
+	Paladin/Taunt25    "Sounds/Paladin/Taunts/Taunt25.ogg"
+	//Sorcerer's Voice
+	$playeralias	Sorcerer	male	*death		    Sorcerer/Death
+	$playeralias	Sorcerer	male	*xdeath		    Sorcerer/XDeath
+	$playeralias	Sorcerer	male	*gibbed		    DSSLOP
+	$playersounddup	Sorcerer	male	*wimpydeath 	*death
+	$playersounddup	Sorcerer	male	*crazydeath	    *death
+	$playersounddup	Sorcerer	male	*burndeath	    *xdeath
+	$playeralias	Sorcerer	male	*pain100	    Sorcerer/Pain100
+	$playeralias	Sorcerer	male	*pain75		    Sorcerer/Pain75
+	$playeralias	Sorcerer	male	*pain50 	    Sorcerer/Pain50
+	$playeralias	Sorcerer	male	*pain25		    Sorcerer/Pain25
+	$playeralias	Sorcerer	male	*grunt		    Sorcerer/ShortExert
+	$playeralias	Sorcerer	male	*land		    Sorcerer/Land
+	$playeralias	Sorcerer	male	*jump		    Sorcerer/Jump
+	$playersound	Sorcerer	male	*fist		    dsnone
+	$playersounddup	Sorcerer	male	*usefail		*grunt
+	$playeralias	Sorcerer	male	*weaponlaugh	Sorcerer/Laugh
+	$playersounddup	Sorcerer	male	*evillaugh	    *weaponlaugh
+	$random Sorcerer/Pain100	    { Sorcerer/Pain100_1 Sorcerer/Pain100_2 Sorcerer/Pain100_3 Sorcerer/Pain100_4 Sorcerer/Pain100_5 Sorcerer/Pain100_6 Sorcerer/Pain100_7 }
+	$random Sorcerer/Pain75	        { Sorcerer/Pain75_1 Sorcerer/Pain75_2 }
+	$random Sorcerer/Pain50	        { Sorcerer/Pain50_1 Sorcerer/Pain50_2 Sorcerer/Pain50_3 }
+	$random Sorcerer/Pain25	        { Sorcerer/Pain25_1 Sorcerer/Pain25_2 Sorcerer/Pain25_3 }
+	$random Sorcerer/Death	        { Sorcerer/Death1 Sorcerer/Death2 Sorcerer/Death3 }
+	$random Sorcerer/Jump	        { Sorcerer/Jump1 Sorcerer/Jump2 }
+	$random Sorcerer/Land	        { Sorcerer/Land1 Sorcerer/Land2 }
+	$random Sorcerer/Pain	        { Sorcerer/Pain1 Sorcerer/Pain2 Sorcerer/Pain3 Sorcerer/Pain4 }
+	$random Sorcerer/ShortExert	    { Sorcerer/ShortExert1 Sorcerer/ShortExert2 Sorcerer/ShortExert3 Sorcerer/ShortExert4 }
+	$random Sorcerer/MediumExert	{ Sorcerer/MediumExert1 Sorcerer/MediumExert2 Sorcerer/MediumExert3 Sorcerer/MediumExert4 }
+	$random Sorcerer/LargeExert	    { Sorcerer/LargeExert1 Sorcerer/LargeExert2 Sorcerer/LargeExert3 Sorcerer/LargeExert4 Sorcerer/LargeExert5 }
+	$random Sorcerer/SpellCast	    { Sorcerer/SpellCast1 Sorcerer/SpellCast2 }
+	$random Sorcerer/SpellCastLarge	{ Sorcerer/SpellCastLarge1 Sorcerer/SpellCastLarge2 Sorcerer/SpellCastLarge3 }
+	Sorcerer/Pain100_1          "Sounds/Sorcerer/Pain100_1.ogg"
+	Sorcerer/Pain100_2          "Sounds/Sorcerer/Pain100_2.ogg"
+	Sorcerer/Pain100_3          "Sounds/Sorcerer/Pain100_3.ogg"
+	Sorcerer/Pain100_4          "Sounds/Sorcerer/Pain100_4.ogg"
+	Sorcerer/Pain100_5          "Sounds/Sorcerer/Pain100_5.ogg"
+	Sorcerer/Pain100_6          "Sounds/Sorcerer/Pain100_6.ogg"
+	Sorcerer/Pain100_7          "Sounds/Sorcerer/Pain100_7.ogg"
+	Sorcerer/Pain75_1           "Sounds/Sorcerer/Pain75_1.ogg"
+	Sorcerer/Pain75_2           "Sounds/Sorcerer/Pain75_2.ogg"
+	Sorcerer/Pain50_1           "Sounds/Sorcerer/Pain50_1.ogg"
+	Sorcerer/Pain50_2           "Sounds/Sorcerer/Pain50_2.ogg"
+	Sorcerer/Pain50_3           "Sounds/Sorcerer/Pain50_3.ogg"
+	Sorcerer/Pain25_1           "Sounds/Sorcerer/Pain25_1.ogg"
+	Sorcerer/Pain25_2           "Sounds/Sorcerer/Pain25_2.ogg"
+	Sorcerer/Pain25_3           "Sounds/Sorcerer/Pain25_3.ogg"
+	Sorcerer/Death1             "Sounds/Sorcerer/Death1.ogg"
+	Sorcerer/Death2             "Sounds/Sorcerer/Death2.ogg"
+	Sorcerer/Death3             "Sounds/Sorcerer/Death3.ogg"
+	Sorcerer/XDeath             "Sounds/Sorcerer/XDeath.ogg"
+	Sorcerer/Jump1              "Sounds/Sorcerer/Jump1.ogg"
+	Sorcerer/Jump2              "Sounds/Sorcerer/Jump2.ogg"
+	Sorcerer/Land1              "Sounds/Sorcerer/Land1.ogg"
+	Sorcerer/Land2              "Sounds/Sorcerer/Land2.ogg"
+	Sorcerer/Laugh1             "Sounds/Sorcerer/Taunts/Laugh1.ogg"
+	Sorcerer/Laugh2             "Sounds/Sorcerer/Taunts/Laugh2.ogg"
+	Sorcerer/Laugh3             "Sounds/Sorcerer/Taunts/Laugh3.ogg"
+	Sorcerer/Laugh4             "Sounds/Sorcerer/Taunts/Laugh4.ogg"
+	Sorcerer/ShortExert1        "Sounds/Sorcerer/Exerts/Short1.ogg"
+	Sorcerer/ShortExert2        "Sounds/Sorcerer/Exerts/Short2.ogg"
+	Sorcerer/ShortExert3        "Sounds/Sorcerer/Exerts/Short3.ogg"
+	Sorcerer/ShortExert4        "Sounds/Sorcerer/Exerts/Short4.ogg"
+	Sorcerer/MediumExert1       "Sounds/Sorcerer/Exerts/Medium1.ogg"
+	Sorcerer/MediumExert2       "Sounds/Sorcerer/Exerts/Medium2.ogg"
+	Sorcerer/MediumExert3       "Sounds/Sorcerer/Exerts/Medium3.ogg"
+	Sorcerer/MediumExert4       "Sounds/Sorcerer/Exerts/Medium4.ogg"
+	Sorcerer/LargeExert1        "Sounds/Sorcerer/Exerts/Large1.ogg"
+	Sorcerer/LargeExert2        "Sounds/Sorcerer/Exerts/Large2.ogg"
+	Sorcerer/LargeExert3        "Sounds/Sorcerer/Exerts/Large3.ogg"
+	Sorcerer/LargeExert4        "Sounds/Sorcerer/Exerts/Large4.ogg"
+	Sorcerer/LargeExert5        "Sounds/Sorcerer/Exerts/Large5.ogg"
+	Sorcerer/SpellCast1         "Sounds/Sorcerer/Exerts/SpellCast1.ogg"
+	Sorcerer/SpellCast2         "Sounds/Sorcerer/Exerts/SpellCast2.ogg"
+	Sorcerer/SpellCastLarge1    "Sounds/Sorcerer/Exerts/SpellCastLarge1.ogg"
+	Sorcerer/SpellCastLarge2    "Sounds/Sorcerer/Exerts/SpellCastLarge2.ogg"
+	Sorcerer/SpellCastLarge3    "Sounds/Sorcerer/Exerts/SpellCastLarge3.ogg"
+	$random Sorcerer/Taunt	
+	{ 
+	Sorcerer/Taunt1      Sorcerer/Taunt2      Sorcerer/Taunt3      Sorcerer/Taunt4      Sorcerer/Taunt5
+	Sorcerer/Taunt6      Sorcerer/Taunt7      Sorcerer/Taunt8      Sorcerer/Taunt9      Sorcerer/Taunt10
+	Sorcerer/Taunt11     Sorcerer/Taunt12     Sorcerer/Taunt13     Sorcerer/Taunt14     Sorcerer/Taunt15
+	Sorcerer/Taunt16     Sorcerer/Taunt17     Sorcerer/Taunt18     Sorcerer/Taunt19     Sorcerer/Taunt20
+	Sorcerer/Taunt21     Sorcerer/Taunt22     Sorcerer/Taunt23     Sorcerer/Taunt24     Sorcerer/Taunt25
+	Sorcerer/Taunt26     Sorcerer/Taunt27
+	}
+	Sorcerer/Taunt1    "Sounds/Sorcerer/Taunts/Taunt1.ogg"
+	Sorcerer/Taunt2    "Sounds/Sorcerer/Taunts/Taunt2.ogg"
+	Sorcerer/Taunt3    "Sounds/Sorcerer/Taunts/Taunt3.ogg"
+	Sorcerer/Taunt4    "Sounds/Sorcerer/Taunts/Taunt4.ogg"
+	Sorcerer/Taunt5    "Sounds/Sorcerer/Taunts/Taunt5.ogg"
+	Sorcerer/Taunt6    "Sounds/Sorcerer/Taunts/Taunt6.ogg"
+	Sorcerer/Taunt7    "Sounds/Sorcerer/Taunts/Taunt7.ogg"
+	Sorcerer/Taunt8    "Sounds/Sorcerer/Taunts/Taunt8.ogg"
+	Sorcerer/Taunt9    "Sounds/Sorcerer/Taunts/Taunt9.ogg"
+	Sorcerer/Taunt10    "Sounds/Sorcerer/Taunts/Taunt10.ogg"
+	Sorcerer/Taunt11    "Sounds/Sorcerer/Taunts/Taunt11.ogg"
+	Sorcerer/Taunt12    "Sounds/Sorcerer/Taunts/Taunt12.ogg"
+	Sorcerer/Taunt13    "Sounds/Sorcerer/Taunts/Taunt13.ogg"
+	Sorcerer/Taunt14    "Sounds/Sorcerer/Taunts/Taunt14.ogg"
+	Sorcerer/Taunt15    "Sounds/Sorcerer/Taunts/Taunt15.ogg"
+	Sorcerer/Taunt16    "Sounds/Sorcerer/Taunts/Taunt16.ogg"
+	Sorcerer/Taunt17    "Sounds/Sorcerer/Taunts/Taunt17.ogg"
+	Sorcerer/Taunt18    "Sounds/Sorcerer/Taunts/Taunt18.ogg"
+	Sorcerer/Taunt19    "Sounds/Sorcerer/Taunts/Taunt19.ogg"
+	Sorcerer/Taunt20    "Sounds/Sorcerer/Taunts/Taunt20.ogg"
+	Sorcerer/Taunt21    "Sounds/Sorcerer/Taunts/Taunt21.ogg"
+	Sorcerer/Taunt22    "Sounds/Sorcerer/Taunts/Taunt22.ogg"
+	Sorcerer/Taunt23    "Sounds/Sorcerer/Taunts/Taunt23.ogg"
+	Sorcerer/Taunt24    "Sounds/Sorcerer/Taunts/Taunt24.ogg"
+	Sorcerer/Taunt25    "Sounds/Sorcerer/Taunts/Taunt25.ogg"
+	Sorcerer/Taunt26    "Sounds/Sorcerer/Taunts/Taunt26.ogg"
+	Sorcerer/Taunt27    "Sounds/Sorcerer/Taunts/Taunt27.ogg"
+	//Pyromancy
+	$random Pyromancy/FireballCast	        { Pyromancy/FireballCast1 Pyromancy/FireballCast2 }
+	$random Pyromancy/FireballHit	        { Pyromancy/FireballHit1 Pyromancy/FireballHit2 }
+	Pyromancy/Draw              "Sounds/Spells/Pyromancy/Draw.ogg"
+	Pyromancy/ChargeStart       "Sounds/Spells/Pyromancy/ChargeStart.ogg"
+	Pyromancy/ChargeEnd         "Sounds/Spells/Pyromancy/ChargeEnd.ogg"
+	Pyromancy/ChargeLoop1       "Sounds/Spells/Pyromancy/ChargeLoop1.ogg"
+	Pyromancy/ChargeLoop2       "Sounds/Spells/Pyromancy/ChargeLoop2.ogg"
+	Pyromancy/FireballCast1     "Sounds/Spells/Pyromancy/FireballCast1.ogg"
+	Pyromancy/FireballCast2     "Sounds/Spells/Pyromancy/FireballCast2.ogg"
+	Pyromancy/FireballHit1      "Sounds/Spells/Pyromancy/FireballHit1.ogg"
+	Pyromancy/FireballHit2      "Sounds/Spells/Pyromancy/FireballHit2.ogg"
+	//Cryomancy
+	$random Cryomancy/IceballCast	        { Cryomancy/IceballCast1 Cryomancy/IceballCast2 Cryomancy/IceballCast3 }
+	$random Cryomancy/IceballHit	        { Cryomancy/IceballHit1 Cryomancy/IceballHit2 }
+	$random Cryomancy/IceBombExplodeAdd     { Cryomancy/IceBombExplodeAdd1 Cryomancy/IceBombExplodeAdd2 }
+	$random Cryomancy/IceWallCast           { Cryomancy/IceWallCast1 Cryomancy/IceWallCast2 }
+	$random Cryomancy/ShardCast	            { Cryomancy/ShardCast1 Cryomancy/ShardCast2 }
+	$random Cryomancy/EnemyUnfreeze	            { Cryomancy/EnemyUnfreeze1 Cryomancy/EnemyUnfreeze2 }
+	$random Cryomancy/EnemyShatter	            { Cryomancy/EnemyShatter1 Cryomancy/EnemyShatter2 }
+	Cryomancy/Draw              "Sounds/Spells/Cryomancy/Draw.ogg"
+	Cryomancy/ChargeStart       "Sounds/Spells/Cryomancy/ChargeStart.ogg"
+	Cryomancy/ChargeEnd         "Sounds/Spells/Cryomancy/ChargeEnd.ogg"
+	Cryomancy/ChargeLoop1       "Sounds/Spells/Cryomancy/ChargeLoop1.ogg"
+	Cryomancy/ChargeLoop2       "Sounds/Spells/Cryomancy/ChargeLoop2.ogg"
+	Cryomancy/IceballCast1     "Sounds/Spells/Cryomancy/IceballCast1.ogg"
+	Cryomancy/IceballCast2     "Sounds/Spells/Cryomancy/IceballCast2.ogg"
+	Cryomancy/IceballCast3     "Sounds/Spells/Cryomancy/IceballCast3.ogg"
+	Cryomancy/IceballHit1      "Sounds/Spells/Cryomancy/IceballHit1.ogg"
+	Cryomancy/IceballHit2      "Sounds/Spells/Cryomancy/IceballHit2.ogg"
+	Cryomancy/IceBombCast     "Sounds/Spells/Cryomancy/IceballCast.ogg"
+	Cryomancy/IceBombExplode      "Sounds/Spells/Cryomancy/IceBombExplode.ogg"
+	Cryomancy/IceBombExplodeAdd1      "Sounds/Spells/Cryomancy/IceBombExplodeAdd1.ogg"
+	Cryomancy/IceBombExplodeAdd2      "Sounds/Spells/Cryomancy/IceBombExplodeAdd2.ogg"
+	Cryomancy/IceWallCast1     "Sounds/Spells/Cryomancy/IceWallCast1.ogg"
+	Cryomancy/IceWallCast2     "Sounds/Spells/Cryomancy/IceWallCast2.ogg"
+	Cryomancy/ShardCast1     "Sounds/Spells/Cryomancy/ShardCast1.ogg"
+	Cryomancy/ShardCast2     "Sounds/Spells/Cryomancy/ShardCast2.ogg"
+	Cryomancy/EnemyFreeze      "Sounds/SpellS/Cryomancy/EnemyFreeze.ogg"
+	Cryomancy/EnemyUnfreeze1      "Sounds/SpellS/Cryomancy/EnemyUnfreeze1.ogg"
+	Cryomancy/EnemyUnfreeze2      "Sounds/SpellS/Cryomancy/EnemyUnfreeze2.ogg"
+	Cryomancy/EnemyShatter1      "Sounds/SpellS/Cryomancy/EnemyShatter1.ogg"
+	Cryomancy/EnemyShatter2      "Sounds/SpellS/Cryomancy/EnemyShatter2.ogg"
+	//Stormcast
+	$random Stormcast/LightningBallCast	        { Stormcast/LightningBallCast1 Stormcast/LightningBallCast2 }
+	$random Stormcast/LightningBallCastAdd      { Stormcast/LightningBallCastAdd1 Stormcast/LightningBallCastAdd2 }
+	$random Stormcast/MultiCast	                { Stormcast/MultiCast1 Stormcast/MultiCast2 Stormcast/MultiCast3 Stormcast/MultiCast4 }
+	Stormcast/Draw              "Sounds/Spells/Stormcast/Draw.ogg"
+	//Stormcast/ChargeStart       "Sounds/Spells/Stormcast/ChargeStart.ogg"
+	Stormcast/ChargeEnd         "Sounds/Spells/Stormcast/ChargeEnd.ogg"
+	Stormcast/ChargeLoop1       "Sounds/Spells/Stormcast/ChargeLoop1.ogg"
+	Stormcast/ChargeLoop2       "Sounds/Spells/Stormcast/ChargeLoop2.ogg"
+	Stormcast/LightningBallCast1     "Sounds/Spells/Stormcast/LightningBallCast1.ogg"
+	Stormcast/LightningBallCast2     "Sounds/Spells/Stormcast/LightningBallCast2.ogg"
+	Stormcast/LightningBallCastAdd1      "Sounds/Spells/Stormcast/LightningBallCastAdd1.ogg"
+	Stormcast/LightningBallCastAdd2      "Sounds/Spells/Stormcast/LightningBallCastAdd2.ogg"
+	Stormcast/MultiCast1     "Sounds/Spells/Stormcast/MultiCast1.ogg"
+	Stormcast/MultiCast2     "Sounds/Spells/Stormcast/MultiCast2.ogg"
+	Stormcast/MultiCast3     "Sounds/Spells/Stormcast/MultiCast3.ogg"
+	Stormcast/MultiCast4     "Sounds/Spells/Stormcast/MultiCast4.ogg"
+	//Runecraft
+	$random Runecraft/ProjectileCast	        { Runecraft/ProjectileCast1 Runecraft/ProjectileCast2 }
+	$random Runecraft/SwordCast	                { Runecraft/SwordCast1 Runecraft/SwordCast2 Runecraft/SwordCast3 }
+	Runecraft/Draw              "Sounds/Spells/Runecraft/Draw.ogg"
+	Runecraft/ChargeStart       "Sounds/Spells/Runecraft/ChargeStart.ogg"
+	Runecraft/ChargeEnd         "Sounds/Spells/Runecraft/ChargeEnd.ogg"
+	Runecraft/ChargeLoop1       "Sounds/Spells/Runecraft/ChargeLoop1.ogg"
+	Runecraft/ChargeLoop2       "Sounds/Spells/Runecraft/ChargeLoop2.ogg"
+	Runecraft/ProjectileCast1     "Sounds/Spells/Runecraft/ProjectileCast1.ogg"
+	Runecraft/ProjectileCast2     "Sounds/Spells/Runecraft/ProjectileCast2.ogg"
+	Runecraft/ProjectileDetonate     "Sounds/Spells/Runecraft/ProjectileDetonate.ogg"
+	Runecraft/SwordCast1     "Sounds/Spells/Runecraft/SwordCast1.ogg"
+	Runecraft/SwordCast2     "Sounds/Spells/Runecraft/SwordCast2.ogg"
+	Runecraft/SwordCast3     "Sounds/Spells/Runecraft/SwordCast3.ogg"
+	Runecraft/ShieldCast     "Sounds/Spells/Runecraft/ShieldCast.ogg"
+	//NEW MONSTERS
+	queen/sight quesit
+	queen/pain quepain
+	queen/death quedie
+	queen/active queact
+	//queen/scream bqegg1a
+	queen/fire qbfgfire
+	electricplasma/shoot		PZAPSEE	
+	electricplasma/hit		PZAPHIT
+	queen/hit		qbfghit
+	queen/melee		quebit
+	//Aracnorb
+	aracnorb/sight		dsaracst
+	aracnorb/death		dsaracdt
+	aracnorb/attack		dsaracfr
+	//Cyber Baron
+	cbaron/sight	cbarnsit
+	cbaron/pain	cbarnpai
+	cbaron/death	cbarndth
+	cbaron/active	cbarnact
+	cbaron/metal	cmetal
+	//Cyber Imp
+	$RANDOM CIMPSIT { CIMPSIT1 CIMPSIT2 }
+	CIMPSIT1	CIMPCIT1
+	CIMPSIT2	CIMPSIT2
+	$RANDOM CIMPDTH { CIMPDTH1 CIMPDTH2 }
+	CIMPDTH1	CIMPDTH1
+	CIMPDTH2	CIMPDTH2
+	CIMPPAIN	CIMPPAIN
+	CIMPACT		CIMPACT
+	//SuperDemon
+	superdemon/death	DSSUPDTH
+	superdemon/snarl	DSSUPSNA
+	superdemon/crash	DSSUPLND
+	//Diabolist
+	monster/diasit dsdiasit
+	monster/diapai dsdiapai
+	monster/diadth dsdiadth
+	monster/diaact dsdiaact
+	weapons/firbfi dsfirbfi
+	weapons/firmfi dsfirmfi
+	weapons/firex4 dsfirex4
+	weapons/diasht dsdiasht
+	weapons/firex3 dsfirex3
+	ClericFlameFire         dshellfi
+	ClericFlameExplode      dshellex
+	ClericFlameCircle       dsfirex5
+	//Avatar
+	monster/avasit dsavasit
+	monster/avapai dsavapai
+	monster/avadth dsavadth
+	monster/avaact dsavaact
+	monster/avaatk dsavaatk
+	MageLightningFire dslight
+	weapons/justfi dsjustfi
+	weapons/gntini dsgntini
+	weapons/devexp dsdevexp
+	weapons/bwoosh dsbwoosh
+	weapons/firex2 dsfirex2
+	weapons/devzap dsdevzap
+	weapons/gnthit dsgnthit
+	monster/hadsit dshadsit
+	monster/bomb FIREBALL
+	monster/explode DSCMTEXP
+	//DarkServant
+	monster/acosit dsacosit
+	monster/acopai dsacopai
+	monster/acodth dsacodth
+	monster/acoact dsacoact
+	monster/blur dsblur
+	monster/acosht dsacosht
+	monster/acohit dsacohit
+	//Afrit
+	Afrit/CometFire FRITCMFR
+	Afrit/CometHit	FRITCMHT
+	Afrit/Hellfire	FRITFIRE
+	//Pinky Steps
+	$random pinky/step		{ PINKSTE1 PINKSTE2 PINKSTE3 PINKSTE4 PINKSTE5 }
+	PINKSTE1	PINST1
+	PINKSTE2 	PINST2
+	PINKSTE3	PINST3
+	PINKSTE4	PINST4
+	PINKSTE5	PINST5
+	$volume pinky/step 0.30
+	$limit pinky/step 12 256
+	//Heavy Machinegun M60 
+	HMGFIRE HMGFIRE
+	DSD3SI1 DSD3SI1
+	MGCLAC MGCLAC
+	CHAIN1 CHAIN1
+	M60REL1 M60REL1
+	M60REL2 M60REL2
+	M60REL3 M60REL3
+	//Freezer
+	FRZIDLE FRZIDLE
+	//Freezenades
+	FRZFIRE2 FRZFIRE2
+	$rolloff FRZFIRE2 1000 7500
+	iceimpa "sounds/rebalance/iceimpact3.wav"
+	coldcst "sounds/rebalance/coldcast.wav"
+	icespik "sounds/rebalance/icespike3.wav"
+	ICESHA ICESHA
+	ICIMPA ICIMPA
+	//Sniper Rifle
+	$random SRFR { SRFR1 SRFR2 SRFR3 }
+	SRFR1 SRFR1
+	SRFR2 SRFR2
+	SRFR3 SRFR3
+	$rolloff SRFR1 100 2200
+	SRBOLT SRBOLT
+	//Heavy Rifle 
+	Rifle/Fire	RIFLFIRE
+	Rifle/Open	RIFLOPEN
+	Rifle/Close	RIFLCLOS
+	//Bolt Action Rifle
+	M40RIF2			M40RIF2
+	M40RIF3			M40RIF3
+	M40RIF4			M40RIF4
+	M40Rifle/Fire 	M40RIF1
+	M40Rifle/Scope 	M40RIF2
+	M40Rifle/Bolt1 	M40RIF3
+	M40Rifle/Bolt2 	M40RIF4
+	$volume 		M40Rifle/Fire 0.6
+	//RotaryCannon
+	AutoFire AutoFire
+	ACNLOOP ACNLOOP
+	CnonStar CnonStar
+	CannonSpinDown CnonStop
+	$Volume CannonSpinDown 0.6
+	$Volume CannonSpinUp 0.6
+	//QUAD SHOTGUN
+	$limit weapons/quadshotgun/fire 0
+	$limit weapons/quadshotgun/single 0
+	$limit weapons/quadshotgun/kapow 0
+	weapons/quadshotgun/fire 	QSGSHOT
+	$volume weapons/quadshotgun/single 0.9
+	$random weapons/quadshotgun/single { SINGLE01 SINGLE02 SINGLE03 }
+	SINGLE01			SINGLE01
+	SINGLE02			SINGLE02
+	SINGLE03			SINGLE03
+	weapons/quadshotgun/kapow 	SSGKAPOW
+	$volume weapons/quadshotgun/kapow 1.0
+	weapons/quadshotgun/open 	QSGOPEN
+	weapons/quadshotgun/load 	QSGLOAD
+	weapons/quadshotgun/close 	QSGCLOSE
+	//PreciseMinigun
+	weapons/minigunfire DSMINIGN
+	$limit weapons/minigunfire 0
+	$limit weapons/chaingun/fire 0
+	chaingun/fire	CHGNSHOT
+	chaingun/spin CHAINSPI
+	//Weapons/Chaingun/Spin 	CHAINSPI
+	chaingun/stop	CHAINSTO
+	chaingun/start	CHAINSTA
+	//SWORD
+	$random SLMETA { SLMETA1 SLMETA2 SLMETA3 }
+	SLMETA1 SLMETA1
+	SLMETA2 SLMETA2
+	SLMETA3 SLMETA3
+	$random SWSWING {SWSWING1 SWSWING2 SWSWING3 SWSWING4 SWSWING5 SWSWING6}
+	SWSWING1 SWSWING1
+	SWSWING2 SWSWING2
+	SWSWING3 SWSWING3
+	SWSWING4 SWSWING4
+	SWSWING5 SWSWING5
+	SWSWING6 SWSWING6
+	$random DGSWING {DGSWING1 DGSWING2 DGSWING3 DGSWING4 DGSWING5 DGSWING6}
+	DGSWING1 DGSWING1
+	DGSWING2 DGSWING2
+	DGSWING3 DGSWING3
+	DGSWING4 DGSWING4
+	DGSWING5 DGSWING5
+	DGSWING6 DGSWING6
+	$random AXSWING {AXSWING1 AXSWING2 AXSWING3 AXSWING4 AXSWING5 AXSWING6 AXSWING7 AXSWING8}
+	AXSWING1 AXSWING1
+	AXSWING2 AXSWING2
+	AXSWING3 AXSWING3
+	AXSWING4 AXSWING4
+	AXSWING5 AXSWING5
+	AXSWING6 AXSWING6
+	AXSWING7 AXSWING7
+	AXSWING8 AXSWING8
+	PYROEXP1 PYROEXP1
+	PYROEXP2 PYROEXP2 
+	PYROEXP3 PYROEXP3  
+	PYROHIT1 PYROHIT1
+	PYROHIT2 PYROHIT2
+	PYROHIT3 PYROHIT3
+	DSFIRSHT DSFIRSHT
+	DSBAREXP DSBAREXP
+	DSBOSPIT DSBOSPIT
+	FLECH4 FLECH4
+	BASH1 BASH1
+	WHOP WHOP
+	PHLMTW PHLMTW
+	$random SLFLESH { SLFLESH1 SLFLESH2 SLFLESH3 }
+	SLFLESH1 SLFLESH1
+	SLFLESH2 SLFLESH2
+	SLFLESH3 SLFLESH3
+	//RUNECAST
+	RUNEXP RUNEXP
+	$rolloff RUNEXP 1400 3200
+	RUNEXP2 RUNEXP2
+	$rolloff RUNEXP2 1400 2400
+	RUNESHLD RUNESHLD 
+	$rolloff RUNESHLD 200 1500
+	RUNECAST RUNECAST
+	$rolloff RUNECAST 200 1000
+	DSFRCLOP DSFRCLOP
+	lockon lockon
+	//CROSSBOW
+	BOLTFLY1 BOLTFLY1
+	BOLTFLY2 BOLTFLY2
+	CROSSRELOAD CROSSRELOAD
+	CROSSRELEASE CROSSRELEASE
+	BOLTHIT BOLTHIT
+	//STORMCAST
+	PZAPSEE PZAPSEE
+	PZAPFIRE PZAPFIRE
+	PZAPLOOP PZAPLOOP
+	PZAPHIT PZAPHIT
+	PZAPCHRG PZAPCHRG
+	PZAPRMBL PZAPRMBL
+	PZAPBOMB PZAPBOMB
+	PZAPBEXP PZAPBEXP
+	PZAPHUM PZAPHUM
+	PZAPSEL PZAPSEL
+	PZAPCHR2 PZAPCHR2
+	//STORMCAST
+	$volume electrogun/bomb 4
+	$rolloff electrogun/explode 1400 3200
+	electrogun/pickup       PZAPPICK
+	electrogun/shoot		PZAPSEE	
+	electrogun/fire 		PZAPFIRE
+	electrogun/loop         PZAPLOOP
+	electrogun/hit			PZAPHIT
+	electrogun/charge		PZAPCHRG	
+	electrogun/cooloff      PZAPRMBL
+	electrogun/charge2		PZAPCHR2
+	electrogun/bomb         PZAPBOMB
+	electrogun/explode      PZAPBEXP
+	electrogun/hum          PZAPHUM
+	electrogun/select       PZAPSEL
+	STATIC1 "sounds/rebalance/static1.wav"
+	STATIC2 "sounds/rebalance/static2.wav"
+	STATIC3 "sounds/rebalance/static3.wav"
+	STATIC4 "sounds/rebalance/static4.wav"
+	$random STATIC {STATIC1 STATIC2 STATIC3 STATIC4}
+	ZAP1 "sounds/rebalance/zap1.wav"
+	ZAP2 "sounds/rebalance/zap2.wav"
+	ZAP3 "sounds/rebalance/zap3.wav"
+	ZAP4 "sounds/rebalance/zap4.wav"
+	$random ZAP {ZAP1 ZAP2 ZAP3 ZAP4}
+	CHRGEBL1 "sounds/rebalance/chargedbolt1.wav"
+	CHRGEBL2 "sounds/rebalance/chargedbolt2.wav"
+	CHRGEBL3 "sounds/rebalance/chargedbolt4.wav"
+	$random CHRGEBL {CHRGEBL1 CHRGEBL2 CHRGEBL3}
+	LIGHTN1 "sounds/rebalance/lightning1.wav"
+	LIGHTN2 "sounds/rebalance/lightning2.wav"
+	LIGHTN3 "sounds/rebalance/lightning3.wav"
+	$random LIGHTN {LIGHTN1 LIGHTN2 LIGHTN3}
+	TESLAH1 TESLAH1 
+	TESLAH2 TESLAH2 
+	TESLAH3 TESLAH3 
+	TESLAH4 TESLAH4 
+	LIGHTNG1 LIGHTNG1
+	LIGHTNG2 LIGHTNG2
+	LIGHTNG3 LIGHTNG3
+	LIGHTNG4 LIGHTNG4
+	$random LIGHTNG {LIGHTNG1 LIGHTNG2 LIGHTNG3} //LIGHTNG4 is special
+	SPARKS1 SPARKS1
+	SPARKS2 SPARKS2
+	SPARKS3 SPARKS3
+	SPARKS4 SPARKS4
+	SPARKS5 SPARKS5
+	SPARKS6 SPARKS6
+	SPARKS7 SPARKS7
+	SPARKS8 SPARKS8
+	$random SPARKS {SPARKS1 SPARKS2 SPARKS3 SPARKS4 SPARKS5 SPARKS6 SPARKS7 SPARKS8}
+	LCAST1 "sounds/rebalance/lightnlaunch1.wav" //ball lightning
+	LCAST2 "sounds/rebalance/eleccast.wav"  // normal cast
+	LCAST3 "sounds/rebalance/thunderbolt.wav" // bolt
+	LCAST4 "sounds/rebalance/thundercast.wav" // ultimate
+	$random SHOCK {LGBOMB TPZap1 LCAST2 LCAST1 LCAST3}
+	STNBOEX STNBOEX
+	STNBOMB STNBOMB
+	LGBOMB LGBOMB
+	$random thunder/hit { thunder/hit1 thunder/hit2 }
+	thunder/hit1 THNDS01
+	thunder/hit2 THNDS02
+	TPortalLoop tp_loop
+	TPZap1	tp_zap1
+	TPZap2	tp_zap2
+	$random TPortalZap {TPZap1 TPZap2}
+	TPortalFade tp_fade
+	TPortalAppear tp_app
+	//MISC MAGIC
+	PARAPSI PARAPSI
+	FLAMECS FLAMECS 
+	FIRECS FIRECS
+	FIREBIG FIREBIG
+	IGNITE IGNITE
+	FIREBOLT FIREBOLT
+	$random COLDHIT {COLDHIT1 COLDHIT2 COLDHIT3}
+	COLDHIT1 COLDHIT1
+	COLDHIT2 COLDHIT2
+	COLDHIT3 COLDHIT3
+	$random COLDEXP {COLDEXP1 COLDEXP2 COLDEXP3 COLDEXP4}
+	COLDEXP1 COLDEXP1
+	COLDEXP2 COLDEXP2
+	COLDEXP3 COLDEXP3
+	COLDEXP4 COLDEXP4
+	SIZZLE1 SIZZLE1
+	SIZZLE2 SIZZLE2
+	SIZZLE3 SIZZLE3
+	SINGE1 SINGE1
+	SINGE2 SINGE2
+	SINGE3 SINGE3
+	PYROEXP1 PYROEXP1
+	PYROEXP2 PYROEXP2
+	PYROEXP3 PYROEXP3
+	PYROHIT1 PYROHIT1
+	PYROHIT2 PYROHIT2
+	PYROHIT3 PYROHIT3
+	//FAMILIARS
+	elect1		invlight
+	elect2		invligh2
+	Invisiblesee		INVSEE
+	Invisiblehit		INVHIT
+	Invisiblepain		INVPAIN
+	Invisibledeath		INVDEATH
+	scimitar/scimisee	SCIMISEE
+	scimitar/scimipai	SCIMIPAI
+	scimitar/scimidth	SCIMIDTH
+	scimitar/scimihit	SCIMIHIT
+	scimitar/scimiatk	SCIMIATK
+	Serp/Death FSDEATH
+	Serp/Pain FSPAIN
+	Serp/Flame FSFLAME
+	Serp/FireSI FISIGHT
+	Serp/FlameSI FLSIGHT
+	Serp/FireID FIIDLE
+	Serp/FlameID FLIDLE
+	//ARTIFACTS
+	misc/bttlup			flech4
+	ScrollOfHellfire/Start	HFSCSTRT
+	pickup/armororb			DSARMORB
+	crucifix/use CRUCIUSE
+	//EXPLOSIVES
+	//Ammo satchels
+	Weapons/SatchelToss	STCHTOSS
+	Weapons/SatchelBounce	STCHBNC
+	Weapons/SatchelPick	STCHPICK
+	//Alt-Fire
+	Weapons/SatchelHit	STCHHIT
+	Weapons/SatchelOof	DSOOF
+	//Pipebomb
+	weapons/pbbounce			dspipbnc
+	weapons/pbthrow		        dspipthr
+	weapons/pbarm		        dspiparm
+	weapons/explode1	        dspipex1
+	weapons/explode2	        dspipex2
+	weapons/explode3	        dspipex3
+	weapons/explode4	        dspipex4
+	$random weapons/explode  { weapons/explode1 weapons/explode2 weapons/explode3 weapons/explode4 }
+	//Doomguy's Sounds
+	$random FUCK { FUCK1 FUCK2 FUCK3 FUCK4 }
+	FUCK1 FUCK1
+	FUCK2 FUCK2
+	FUCK3 FUCK3
+	FUCK4 FUCK4
+	ICOSCRE ICOSCRE
+	ICOBREAT ICOBREAT
+	ICOTHUND ICOTHUND
+	ICOFIRE ICOFIRE
+	ICOLAUG ICOLAUG
+	NUKEEXPL NUKEEXPL
+	$volume ICOLAUG 2.0
+	ACIDMELT ACIDMELT
+	FLASHON FLASHON
+	FLASHOFF FLASHOFF
+	INFRARED INFRARED
+	$rolloff ICOLAUG 4000 6400
+	$rolloff ICOFIRE 4000 6400
+	$rolloff ICOBREAT 4000 6400
+	$rolloff ICOSCRE 4000 6400
+	NUKEEXP NUKEEXP
+	$rolloff NUKEEXP 8000 12000
+	$random HEDBON { HEDBON1 HEDBON2 HEDBON3 }
+	HEDBON1 HEDBON1
+	HEDBON2 HEDBON2
+	HEDBON3 HEDBON3
+	DSASHTBT DSASHTBT
+	DSTELEPT DSTELEPT
+	$random TAUNT0 { TAUNT01 TAUNT02 TAUNT03 TAUNT04 TAUNT05 TAUNT06 TAUNT07 TAUNT08 TAUNT09 TAUNT10 TAUNT11 TAUNT12 TAUNT13 TAUNT14 TAUNT15 TAUNT16 TAUNT17 TAUNT18 }
+	TAUNT01 TAUNT01
+	TAUNT02 TAUNT02
+	TAUNT03 TAUNT03
+	TAUNT04 TAUNT04
+	TAUNT05 TAUNT05
+	TAUNT06 TAUNT06
+	TAUNT07 TAUNT07
+	TAUNT08 TAUNT08
+	TAUNT09 TAUNT09
+	TAUNT10 TAUNT10
+	TAUNT11 TAUNT11
+	TAUNT12 TAUNT12
+	TAUNT13 TAUNT13
+	TAUNT14 TAUNT14
+	TAUNT15 TAUNT15
+	TAUNT16 TAUNT16
+	TAUNT17 TAUNT17
+	TAUNT18 TAUNT18
+	$limit TAUNT0 1
+	$random ONELIN { ONELIN01 ONELIN02 ONELIN03 ONELIN04 ONELIN05 ONELIN06 ONELIN07 ONELIN08 ONELIN09 ONELIN10 ONELIN11 ONELIN12}
+	ONELIN01 ONELIN01
+	ONELIN02 ONELIN02
+	ONELIN03 ONELIN03
+	ONELIN04 ONELIN04
+	ONELIN05 ONELIN05
+	ONELIN06 ONELIN06
+	ONELIN07 ONELIN07
+	ONELIN08 ONELIN08
+	ONELIN09 ONELIN09
+	ONELIN10 ONELIN10
+	ONELIN11 ONELIN11
+	ONELIN12 ONELIN12
+	$limit ONELIN 1
+	$random PIKUPTALK { PIKUPTALK1 PIKUPTALK2 PIKUPTALK3 PIKUPTALK4 }
+	PIKUPTALK1 PIKUPTALK1
+	PIKUPTALK2 PIKUPTALK2
+	PIKUPTALK3 PIKUPTALK3
+	PIKUPTALK4 PIKUPTALK4
+	redburn	redburn
+	world/watersplash		splash1
+	PLSM9 PLSM9
+	PLSTHRW PLSTHRW
+	world/sludgegloop		dsploosh
+	world/lavasizzle		dslvsiz
+	world/drip			dsdrip2
+	world/hotsiz			dshtsiz
+	weapons/rifle			DSRIFLE
+	weapons/sg			sgfire
+	weapons/sgpump STGNPUMP
+	weapons/empty DRYFIRE
+	DRYFIRE DRYFIRE
+	CLIPIN CLIPIN
+	CLIPINSS CLIPINSS
+	MP40 MP40
+	$limit MP40 30
+	$limit weapons/sg 10
+	insertshell        SHELL_IN
+	DSRLAUN DSRLAUN
+	DSF2OOF DSF2OOF
+	//PlayerSounds
+	$playersound	player	male	*death		dspldeth
+	$playersound	player	male	*xdeath		dspdiehi
+	$playersound	player	male	*gibbed		dsslop
+	$playersound	player	male	*grunt		dsoof
+	$playersounddup	player	male	*land		*grunt
+	$playersound	player	male	*jump		dsoof
+	$playersound	player	male	*fist		dspunch
+	$playersound	player	male	*usefail	dsnoway
+	$playeralias	player	male	plpain		Pain1
+	$playersound	player	female	*death		DSFDETH
+	$playersound	player	female	*xdeath		DSFDIEHI
+	$playersound	player	female	*gibbed		dsslop
+	$playeralias	player	female	*grunt		DSFEMUF
+	$playersound	player	female	*land		DSF2OOF
+	$playeralias	player	female	*jump		DSFEMUF
+	$playersound	player	female	*fist		dspunch
+	$playeralias	player	female	*usefail	DSFEMUF
+	$playersound	player	female	*taunt		dsftaunt
+	$playeralias	player	female	plpain		DSFPAIN
+	$random DSFPAIN { DSFPAIN1 DSFPAIN2 DSFPAIN3 DSFPAIN4 DSFPAIN5 DSFPAIN6 DSFPAIN7 }
+	DSFPAIN1 DSFPAIN1
+	DSFPAIN2 DSFPAIN2
+	DSFPAIN3 DSFPAIN3
+	DSFPAIN4 DSFPAIN4
+	DSFPAIN5 DSFPAIN5
+	DSFPAIN6 DSFPAIN6
+	DSFPAIN7 DSFPAIN7
+	$random DSFEMUF { dsfnowa1 dsfnowa2 dsfnowa3 }
+	dsfnowa3 dsfnowa3
+	dsfnowa2 dsfnowa2
+	dsfnowa1 dsfnowa1
+	TIRED TIRED
+	$random MTAUN { MTAUN01 MTAUN02 MTAUN03 MTAUN04 MTAUN05 MTAUN06 }
+	MTAUN01 MTAUN01
+	MTAUN02 MTAUN02
+	MTAUN03 MTAUN03
+	MTAUN04 MTAUN04
+	MTAUN05 MTAUN05
+	MTAUN06 MTAUN06
+	$limit MTAUN 1
+	LANDS1 LANDS1
+	$limit PlayerLandSound 3
+	$random FTAUNT { FTAUNT1 FTAUNT2 FTAUNT3 FTAUNT4}
+	FTAUNT1 FTAUNT1
+	FTAUNT2 FTAUNT2
+	FTAUNT3 FTAUNT3
+	FTAUNT4 FTAUNT4
+	$playersound	player	male	BIGSCRE		bigscrea
+	$playersound	player	female	BIGSCRE		DSFDIEHI
+	$playersound	player	female	*death		DSFDETH
+	DSFDTHE BIGSCRE
+	DSSALUTE DSSALUTE
+	$playersound	player	male	SALUTE		DSSALUTE
+	$playersound	player	female	SALUTE		DSFTAUN2
+	$limit FUCK 1
+	$limit weapons/rifle 0
+	$rolloff weapons/rifle 100 2200
+	$rolloff weapons/pistol 100 2200
+	LAUNCH LAUNCH
+	PLREADY PLREADY
+	BFGREADY BFGREADy
+	RLREADY RLREADY
+	BFGEXPLO BFGEXPLO
+	$rolloff BFGEXPLO 1200 2000
+	BFGEXPL2 BFGEXPL2
+	$rolloff BFGEXPL2 4000 8000
+	BFGCHARGE BFGCHARG
+	BFGFIRE BFGFIRE
+	ARMOR ARMOR
+	GOTHPB GOTHPB
+	GOTHPS GOTHPS
+	10KIDLE 10KIDLE
+	10KSTART 10KSTART
+	10KFIRE 10KFIRE
+	10KSTOP 10KSTOP
+	IBRN1 IBRN1
+	IBRN2 IBRN2
+	IBRN3 IBRN3
+	RELOAD RELOAD
+	weapons/firegrenade			GLAUNCH
+	weapons/reloadgrenade			GRELOAD
+	GRLLO1 GRLLO1
+	GRLLO2 GRLLO2
+	$rolloff weapons/firegrenade 3000 100 
+	$limit world/watersplash 4
+	$limit world/sludgegloop 2
+	$limit world/drip 2
+	$limit world/hotsiz 2
+	$limit world/lavasizzle 2
+	$volume ricochet/hit 0.7 
+	$volume world/watersplash 0.3 
+	$volume weapons/casing2 0.7 
+	$rolloff world/watersplash 300 300 
+	$volume weapons/sshoto	1.5
+	$volume weapons/sshotc	1.5
+	$volume weapons/sshotl  1.5
+	weapons/plasmarifle PLASMA
+	$limit weapons/plasmarifle 0
+	$volume weapons/plasmarifle 0.9 
+	Rocket/Launch DSRLAUN
+	RKTSML RKTSML
+	$rolloff world/RKTSML 1200 2000 
+	SSHFIRE SSHFIRE
+	weapons/ssg/open	SSGOPEN
+	weapons/ssg/close	SSGCLOSE
+	weapons/ssg/in		SSGIN
+	weapons/ssg/fire	SSGFIRE
+	FireSuperShotgun    SSGFIRE1
+	$volume FireSuperShotgun  1.3
+	$random world/ricochet      {  ricochet/hit world/b1lank }
+	$random ricochet/hit        {  world/ricochet1 world/ricochet2 world/ricochet3 world/ricochet4 world/ricochet5 world/ricochet6 world/ricochet7 }
+	world/ricochet1     ricoche1
+	world/ricochet2     ricoche2
+	world/ricochet3     ricoche3
+	world/ricochet4     ricoche4
+	world/ricochet5     ricoche5
+	world/ricochet6     ricoche6
+	world/ricochet7     ricoche7
+	world/blank1        blanksnd
+	world/blank2        blanksnd
+	$random bulletwhistle { WHIST1 WHIST2 WHIST3 WHIST4 WHIST5 WHIST6 WHIST7}
+	WHIST1 WHIST1
+	WHIST2 WHIST2
+	WHIST3 WHIST3
+	WHIST4 WHIST4
+	WHIST5 WHIST5
+	WHIST6 WHIST6
+	WHIST7 WHIST7
+	//$rolloff bulletwhistle 100 200
+	//$volume bulletwhistle  0.7
+	$random BHITDIR {  BHITDIR1 BHITDIR2 BHITDIR3 BHITDIR4 BHITDIR5 world/b1lank}
+	BHITDIR1 BHITDIR1
+	BHITDIR2 BHITDIR2
+	BHITDIR3 BHITDIR3
+	BHITDIR4 BHITDIR4
+	BHITDIR5 BHITDIR5
+	$limit BHITDIR1 6
+	$limit BHITDIR2 6
+	$limit BHITDIR3 6
+	$limit BHITDIR4 6
+	$limit BHITDIR5 6
+	$limit world/ricochet1 1
+	$limit world/ricochet2 1
+	$limit world/ricochet3 1
+	$limit world/ricochet4 1
+	$limit world/ricochet5 1
+	$limit world/ricochet6 1
+	$limit world/blank1 1
+	$limit world/blank2 1
+	$limit ricochet/hit 1
+	$limit world/ricochet 1
+	$rolloff world/ricochet1 200 700  
+	$rolloff world/ricochet2 200 700
+	$rolloff world/ricochet3 200 700 
+	$rolloff world/ricochet4 200 700 
+	$rolloff world/ricochet5 200 700 
+	$rolloff world/ricochet6 200 700 
+	$rolloff world/ricochet7 200 700
+	$rolloff world/ricochet 200 700
+	BIGEXPL2 BIGEXPL2
+	//Brutal Doom's explosions sounds are actually 3 sounds playing at the same time so it can sound more realistic.
+	//First sound. Very sharp, like exploding next to you.
+	$random Explosion {Explode1 Explode2}
+	Explode1 Explode1 
+	Explode2 Explode2 
+	$limit Explosion 4
+	$rolloff  Explosion 900 1400
+	// This is the second sound, it's muffled and can be heard one city block away.
+	$random FAREXPL  {dsbarex1 dsbarex2 dsbarex3 dsbarex4 dsbarex5 dsbarex6 dsbarex7}
+	dsbarex1 dsbarex1
+	dsbarex2 dsbarex2
+	dsbarex3 dsbarex3
+	dsbarex4 dsbarex4
+	dsbarex5 dsbarex5
+	dsbarex6 dsbarex6
+	dsbarex7 dsbarex7
+	$limit FAREXPL 4
+	$rolloff FAREXPL 1000 7500
+	// This is the third sound, it's extremely muffled and can be heard anywhere in the map, sounds like distant thunder.
+	distantexp distantexp
+	$limit distantexp 4
+	$rolloff distantexp 1000 9000
+	//=============================================================================================
+	//=============================================================================================
+	//Distant gun sounds
+	//Assault Rifle
+	FARRIF FARRIF
+	$limit FARRIF 80
+	$rolloff  FARRIF 3000 6000
+	//Heavy Machinegun
+	FARHMG FARHMG
+	$limit FARHMG 80
+	$rolloff  FARHMG 3000 6000
+	//Pistol or Shotgun
+	FARSHT FARSHT
+	$limit FARSHT 80
+	$rolloff  FARSHT 3000 6000
+	//Light Machinegun
+	FARMGN FARMGN
+	$limit FARMGN 20
+	$rolloff  FARMGN 3000 6000
+	//Autocannon
+	FARCAN1 FARCAN1
+	$rolloff  FARCAN1 6000 9000
+	//SuperShotgun or Sniper Rifle
+	FARSSG FARSSG
+	$limit FARSSG 80
+	$rolloff  FARSSG 3000 6000
+	//=============================================================================================
+	//=============================================================================================
+	// Chainsaw Sounds
+	DSSAWFUL DSSAWFUL
+	DSSAWHIT DSSAWHIT
+	DSSAWUP DSSAWUP
+	DSSAWDIE DSSAWDIE
+	weapons/chainsaw/draw	CSAWDRAW
+	weapons/chainsaw/start	CSAWSTRT
+	weapons/chainsaw/loop	CSAWFUL
+	weapons/chainsaw/stop	CSAWSTOP
+	weapons/chainsaw/idle	CSAWREDY
+	CSAWCUT                 CSAWCUT
+	//=============================================================================================
+	weapons/shell1			dsshell1
+	weapons/shell2			dsshell2
+	weapons/shell3			dsshell3
+	$random weapons/shell		{weapons/shell1 weapons/shell2 weapons/shell3}
+	CHAINSPI CHAINSPI
+	$random u45/fire	{ u45/fire1 u45/fire2 u45/fire3 u45/fire4}
+	u45/fire1		uspfire1
+	u45/fire2		uspfire2
+	u45/fire3		uspfire3
+	u45/fire4		uspfire4
+	Ricochet		RIC1
+	RIFLE RIFLE
+	SSHFIRE SSHFIRE
+	PLASMA PLASM
+	PLSCHARG PLSCHARG
+	PLSALTFR PLSALTFR
+	PLSFULL PLSFULL
+	IMPACT IMPACT
+	$random puff/ric 		{ puff/ric1 puff/ric2 puff/ric3 puff/ric4 puff/ric5 puff/ric6 puff/ric7 }
+	puff/ric1 			dsrich1
+	puff/ric2 			dsrich2
+	puff/ric3 			dsrich3
+	puff/ric4 			dsrich4
+	puff/ric5 			dsrich5
+	puff/ric6 			dsrich6
+	puff/ric7 			dsrich7
+	$limit weapons/chaingun/fire 0
+	weapons/chaingun/fire	CHGNSHOT
+	weapons/chaingun/spin	CHGNSPIN
+	weapons/chaingun/stop	CHGNSTOP
+	weapons/chaingun/start	CHGNSTRT
+	weapons/ssg/open	SSGOPEN
+	weapons/ssg/close	SSGCLOSE
+	weapons/ssg/in		SSGIN
+	weapons/ssg/fire	SSGFIRE
+	FireSuperShotgun    SSGFIRE1
+	$rolloff SSGFIRE 100 2200
+	$rolloff SSGFIRE1 100 2200
+	weapons/shotgun2                    STGNSHOT
+	weapons/shotgun/pump	            STGNPUMP
+	weapons/assaultrifle                G2FIRE
+	$rolloff weapons/shotgun2 100 2200
+	REVOFIR REVOFIR
+	REVOHAM REVOHAM
+	RELOAD RELOAD
+	RELO1 RELO1
+	RELO2 RELO2
+	insertshell        SHELL_IN
+	M249        M249
+	M249R1        M249R1
+	M249R2        M249R2
+	M249R3        M249R3
+	M249R4        M249R4
+	GLOCK18       GLOCK18
+	$limit blooddrop 3
+	BDFirePlace dstorch
+	$limit BDfireplace 2
+	$rolloff BDfireplace 100 900
+	BDFirePlace2 dstorch2
+	$limit BDfireplace2 2
+	$rolloff BDfireplace2 100 900
+	CHAINSPI CHAINSPI
+	CHAINSTO CHAINSTO
+	weapons/gswing                  dsswing
+	weapons/gpunch                  dspunch
+	DSSAWZIP DSSAWZIP
+	DSSAWPUL DSSAWPUL
+	$random fstatk { fstatk1 fstatk2 fstatk3 }
+	fstatk1 fstatk1
+	fstatk2 fstatk2
+	fstatk3 fstatk3
+	$random weapons/casing  { weapons/casing2 weapons/casing3 } 
+	$limit weapons/casing  5
+	weapons/casing2	dscasin1
+	weapons/casing2	dscasin2
+	weapons/casing3	dscasin3
+	$random 40mmCasing  { 40CAS1 40CAS2 40CAS3 } 
+	40CAS1 40CAS1
+	40CAS2 40CAS2
+	40CAS3 40CAS3
+	$random SlowBurnDeath  { DSCULTF1 DSCULTF3 }
+	DSCULTF1 DSCULTF1
+	DSCULTF2 DSCULTF2
+	DSCULTF3 DSCULTF3
+	$rolloff  weapons/casing 100 600
+	weapons/chainsaw/hitwall1	DSSAWAL1
+	weapons/chainsaw/hitwall2	DSSAWAL2
+	weapons/chainsaw/hitwall3	DSSAWAL3
+	weapons/chainsaw/hitwall4	DSSAWAL4
+	$random weapons/chainsaw/hitwall { weapons/chainsaw/hitwall1 weapons/chainsaw/hitwall2 weapons/chainsaw/hitwall3 weapons/chainsaw/hitwall4 }
+	$limit weapons/chainsaw/hitwall 1
+	$random BLOOOD  { DSBLUD01 DSBLUD02 DSBLUD03 }
+	DSBLUD01 DSBLUD01
+	DSBLUD02 DSBLUD02
+	DSBLUD03 DSBLUD03
+	PLATA1 PLATA1
+	RLANDRAW RLANDRAW
+	RLANSHOT RLANSHOT
+	ROCKPKUP ROCKPKUP
+	BERSPKUP BERSPKUP
+	CBOXPKUP CBOXPKUP
+	CELLPKUP CELLPKUP
+	CHGNPKUP CHGNPKUP
+	MEGAPKUP MEGAPKUP
+	PLSDRAW PLSDRAW
+	PLSCOOL PLSCOOL
+	SHELPKUP SHELPKUP
+	SHELPK1 SHELPK1
+	SHELPK2 SHELPK2
+	RCKCLIP RCKCLIP
+	RCKCLIP2 RCKCLIP2
+	$rolloff  RLANSHOT 1000 2000
+	$random LSOD {LSOD1 LSOD2 LSOD3 LSOD4}
+	LSOD1 LSOD1
+	LSOD2 LSOD2
+	LSOD3 LSOD3
+	LSOD4 LSOD4
+	DSBGSIT3 DSBGSIT3
+	DSBGSIT4 DSBGSIT4
+	DSGOTKEY DSGOTKEY
+	GOTSKUL GOTSKUL
+	DSPOSIT4 DSPOSIT4
+	DSPOSIT5 DSPOSIT5
+	DSPOSIT6 DSPOSIT6
+	DSBIGDPN DSBIGDPN
+	BEP BEP
+	BEPBEP BEPBEP
+	BEEEP BEEEP
+	DSFDTHG DSFDTHG
+	CHAINSTA CHAINSTA
+	FLAMER FLAMER
+	FLAMSTOP FLAMSTOP
+	BREATHOF BREATHOF
+	CLAP CLAP
+	KNUCKLED KNUCKLED
+	DSSALUTE DSSALUTE
+	$random Sparks/Spawn { Sparks/Sound1  Sparks/Sound2  Sparks/Sound3  Sparks/Sound4 }
+	Sparks/Sound1		SPARKS1
+	Sparks/Sound2		SPARKS2
+	Sparks/Sound3		SPARKS3
+	Sparks/Sound4		SPARKS4
+	DSBOTTLE DSBOTTLE
+	DSPIPBNC DSPIPBNC
+	TAUNT TAUNT
+	Weapons/GrenadeFire	DSGRFIRE
+	Weapons/GrenadeBounce	DSGRBNCE
+	Weapons/GrenadeOpen	DSGROPEN
+	Weapons/GrenadeLoad	DSGRLOAD
+	Weapons/GrenadeClose	DSGRCLOS
+	DSCANFIR DSCANFIR
+	$rolloff DSCANFIR 600 2400
+	//Mags
+	$random weapons/smallmagdrop  { weapons/smallmagdrop1 weapons/smallmagdrop2 weapons/smallmagdrop3 weapons/smallmagdrop4 }
+	weapons/smallmagdrop1		dsbounc1
+	weapons/smallmagdrop2		dsbounc2
+	weapons/smallmagdrop3		dsbounc3
+	weapons/smallmagdrop4		dsbounc4
+	$random weapons/largemagdrop  { weapons/largemagdrop1 weapons/largemagdrop2 weapons/largemagdrop3 weapons/largemagdrop4 }
+	weapons/largemagdrop1		dsaounc1
+	weapons/largemagdrop2		dsaounc2
+	weapons/largemagdrop3		dsaounc3
+	weapons/largemagdrop4		dsaounc4
+	weapons/barrelpain		barrelz
+	$volume weapons/smallmagdrop 0.5
+	$volume weapons/largemagdrop 0.5
+	//Impse
+	$random imp/melee { imp/melee1 imp/melee2 imp/melee3 } 
+	imp/melee1	IMPCLAW1
+	imp/melee2	IMPCLAW2
+	imp/melee3	IMPCLAW3
+	$random player/cyborg/fist { marine/superfist1 marine/superfist2 marine/superfist3 marine/superfist4 marine/superfist5 }
+	marine/superfist1 plspnch1
+	marine/superfist2 plspnch2
+	marine/superfist3 plspnch3
+	marine/superfist4 plspnch4
+	marine/superfist5 plspnch5
+	//Zombies
+	$random grunt/pain { DSPOPAI1 DSPOPAI2 DSPOPAI3 DSPOPAI4}
+	DSPOPAI1 DSPOPAI1
+	DSPOPAI2 DSPOPAI2
+	DSPOPAI3 DSPOPAI3
+	DSPOPAI4 DSPOPAI4
+	$random grunt/sight { ZCSIT1 ZCSIT2 ZCSIT3 ZCSIT4 ZCSIT5}
+	ZCSIT1 ZCSIT1
+	ZCSIT2 ZCSIT2
+	ZCSIT3 ZCSIT3
+	ZCSIT4 ZCSIT4
+	ZCSIT5 ZCSIT5
+	$random BURNZOM {BURNZOM1 BURNZOM2 BURNZOM3}
+	BURNZOM1 BURNZOM1
+	BURNZOM2 BURNZOM2
+	BURNZOM3 BURNZOM3
+	$random zombiemarine/sight { zombiemarine/sight1
+	zombiemarine/sight2
+	zombiemarine/sight3
+	zombiemarine/sight4
+	zombiemarine/sight5
+	zombiemarine/sight6
+	zombiemarine/sight7
+	zombiemarine/sight8
+	zombiemarine/sight9
+	zombiemarine/sight10
+	zombiemarine/sight11 }
+	zombiemarine/sight1	zspsit1
+	zombiemarine/sight2	zspsit2
+	zombiemarine/sight3	zspsit3
+	zombiemarine/sight4	zspsit4
+	zombiemarine/sight5	zspsit5
+	zombiemarine/sight6	zspsit6
+	zombiemarine/sight7	zspsit7
+	zombiemarine/sight8	zspsit8
+	zombiemarine/sight9	zspsit9
+	zombiemarine/sight10	zspsit10
+	zombiemarine/sight11	zspsit11
+	$volume zombiemarine/sight 0.80
+	$random zombiemarine/death
+	{ zombiemarine/death1
+	zombiemarine/death2
+	zombiemarine/death3
+	zombiemarine/death4
+	zombiemarine/death5
+	zombiemarine/death6
+	zombiemarine/death7 }
+	zombiemarine/death1	zspdth1
+	zombiemarine/death2	zspdth2
+	zombiemarine/death3	zspdth3
+	zombiemarine/death4	zspdth4
+	zombiemarine/death5	zspdth5
+	zombiemarine/death6	zspdth6
+	zombiemarine/death7	zspdth7
+	$random zombiemarine/pain 
+	{ zombiemarine/pain1
+	zombiemarine/pain2
+	zombiemarine/pain3
+	zombiemarine/pain4
+	zombiemarine/pain5
+	zombiemarine/pain6
+	zombiemarine/pain7
+	zombiemarine/pain8
+	zombiemarine/pain9
+	zombiemarine/pain10
+	zombiemarine/pain11 }
+	zombiemarine/pain1		zsppn1
+	zombiemarine/pain2		zsppn2
+	zombiemarine/pain3		zsppn3
+	zombiemarine/pain4		zsppn4
+	zombiemarine/pain5		zsppn5
+	zombiemarine/pain6		zsppn6
+	zombiemarine/pain7		zsppn7
+	zombiemarine/pain8		zsppn8
+	zombiemarine/pain9		zsppn9
+	zombiemarine/pain10	zsppn10
+	zombiemarine/pain11	zsppn11
+	$random zombiemarine/active { zombiemarine/active1 zombiemarine/active2 zombiemarine/active3 zombiemarine/active4 zombiemarine/active5 NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING }
+	zombiemarine/active1	zspact1
+	zombiemarine/active2	zspact2
+	zombiemarine/active3	zspact3
+	zombiemarine/active4	zspact4
+	zombiemarine/active5	zspact5
+	$volume zombiemarine/active 0.76
+	IMPCHARG IMPCHARG
+	DSRFIRE DSRFIRE
+	KICK KICK
+	FOOTWALL FOOTWALL
+	PAIN1 PAIN1
+	juggernaut/see BTKUNQV2
+	juggernaut/roam BTKUNQV1
+	juggernaut/engine BTKENGN1
+	juggernaut/death BTKDETH1
+	$random juggernaut/pain { BTKPAIN1 BTKPAIN2 BTKPAIN3 }
+	BTKPAIN1 BTKPAIN1
+	BTKPAIN2 BTKPAIN2
+	BTKPAIN3 BTKPAIN3
+	$rolloff  juggernaut/see 900 1100
+	$rolloff  juggernaut/engine 900 1100
+	$rolloff  juggernaut/death 900 2800
+	$rolloff  juggernaut/pain 900 1100
+	$rolloff  juggernaut/roam 900 1100
+	$random DSMADTH { DSMADTH1 DSMADTH2 DSMADTH3 DSMADTH4 DSMADTH5 DSMADTH6 DSMADTH7 DSMADTH8 }
+	DSMADTH1 DSMADTH1
+	DSMADTH2 DSMADTH2
+	DSMADTH3 DSMADTH3
+	DSMADTH4 DSMADTH4
+	DSMADTH5 DSMADTH5
+	DSMADTH6 DSMADTH6
+	DSMADTH7 DSMADTH7
+	DSMADTH8 DSMADTH8
+	SPIPAIN1 SPIPAIN1
+	SPIPAIN2 SPIPAIN2
+	CYBPAIN CYBPAIN
+	PSXDPN PSXDPN
+	CYBTAT CYBTAT
+	$rolloff CYBTAT 50 8000
+	//Marine Voices
+	$random MRNAT { MRNAT1 MRNAT2 MRNAT3 MRNAT4 MRNAT5 MRNAT6 NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING 
+	NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING
+	NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING }
+	MRNAT1 MRNAT1
+	MRNAT2 MRNAT2
+	MRNAT3 MRNAT3
+	MRNAT4 MRNAT4
+	MRNAT5 MRNAT5
+	MRNAT6 MRNAT6
+	LETSROCK LETSROCK
+	$random MRNWC { MRNWT { MRNWT1 MRNWT2 MRNWT3 MRNWT4 MRNWT5 NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING
+	NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING
+	NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING
+	NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING
+	NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING
+	NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING
+	NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING}
+	MRNWT1 MRNWT1
+	MRNWT2 MRNWT2
+	MRNWT3 MRNWT3
+	MRNWT4 MRNWT4
+	MRNWT5 MRNWT5
+	$random MRNWC { MRNWC1 MRNWC2 MRNWC3 MRNWC4 MRNWC5 MRNWC6 NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING
+	NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING
+	NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING
+	NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING
+	NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING
+	NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING
+	NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING}
+	MRNWC1 MRNWC1
+	MRNWC2 MRNWC2
+	MRNWC3 MRNWC3
+	MRNWC4 MRNWC4
+	MRNWC5 MRNWC5
+	MRNWC6 MRNWC6
+	MRNGI1 MRNGI1
+	MRNGI2 MRNGI2
+	$random MRNAG { MRNAG1 MRNAG2 }
+	MRNAG1 MRNAG1
+	MRNAG2 MRNAG2
+	$random MarineGuard { MRNWT2 MRNWT1 MRNWT5 }
+	$random MarineFollow { MRNWT4 }
+	NOTHING NOTHING
+	$rolloff  MRNAT 50 1000
+	$rolloff  MRNWT 50 1000
+	$rolloff  MRNWC 50 1000
+	$rolloff  MRNGI1 50 1000
+	$rolloff  MRNGI2 50 1000
+	$rolloff  MRNAG 50 1000
+	//From PTSD Simulator 2011 AKA Red Orchestra
+	$random TorturedMarineBD { CPTRT01 CPTRT02 CPTRT03 CPTRT04 CPTRT05 CPTRT06 CPTRT07 CPTRT08 CPTRT09 CPTRT10 }
+	CPTRT01 CPTRT01
+	CPTRT02 CPTRT02
+	CPTRT03 CPTRT04
+	CPTRT05 CPTRT05
+	CPTRT06 CPTRT06
+	CPTRT07 CPTRT07
+	CPTRT08 CPTRT08
+	CPTRT09 CPTRT09
+	CPTRT10 CPTRT10
+	$rolloff  TorturedMarineBD 200 500
+	$random TorturedMarineDieBD { CPTRT11 CPTRT12 CPTRT13 CPTRT14 }
+	CPTRT11 CPTRT11
+	CPTRT12 CPTRT12
+	CPTRT13 CPTRT13
+	CPTRT14 CPTRT14
+	$random TorturedMarinePain { CPTRP1 CPTRP2 CPTRP3 }
+	CPTRP1 CPTRP1
+	CPTRP2 CPTRP2
+	CPTRP3 CPTRP3
+	ICEBRK1 ICEBRK1
+	ICEBRK2 ICEBRK2
+	CHGNSHOT CHGNSHOT
+	$limit CHGNSHOT 0
+	bigspl1 bigspl1
+	$random nazi/sight { nazisight1 nazisight2 nazisight3 nazisight4 nazisight5 nazisight6 nazisight7 nazisight8 }
+	$random nazi/death { nazideath1 nazideath2 nazideath3 nazideath4 nazideath5 nazideath6 nazideath7 nazideath8 nazideath9 nazideath10 nazideath11 }
+	$random nazi/pain { nazipain1 nazipain2 nazipain3 nazipain4 nazipain5 nazipain6 nazipain7 nazipain8 }
+	nazisight1 nazisit1
+	nazisight2 nazisit1
+	nazisight3 nazisit2
+	nazisight4 nazisit3
+	nazisight5 nazisit4
+	nazisight5 nazisit5
+	nazisight6 nazisit6
+	nazisight7 nazisit7
+	nazisight8 nazisit8
+	nazideath1 nazidth1
+	nazideath2 nazidth2
+	nazideath3 nazidth3
+	nazideath4 nazidth4
+	nazideath5 nazidth5
+	nazideath6 nazidth6
+	nazideath7 nazidth7
+	nazideath8 nazidth8
+	nazideath9 nazidth9
+	nazideath10 nazidtha
+	nazideath11 nazidthb
+	nazipain1 nazipn1
+	nazipain2 nazipn2
+	nazipain3 nazipn3
+	nazipain4 nazipn4
+	nazipain5 nazipn5
+	nazipain6 nazipn6
+	nazipain7 nazipn7
+	nazipain8 nazipn8
+	$rolloff nazi/sight 200 2500
+	$random DSRIFLE { DSRIFL1 DSRIFL2 }
+	DSRIFL1 DSRIFL1
+	DSRIFL2 DSRIFL2
+	AMBRAIN	AMBRAIN
+	$limit AMBRAIN 1
+	GRNPIN GRNPIN
+	GRNBNCE GRNBNCE
+	GRNTOSS GRNTOSS
+	AMBAIRP AMBAIRP
+	$rolloff AMBAIRP 50 80000
+	$random EvilmarineSight { EVMRSIT1 EVMRSIT2 EVMRSIT3 EVMRSIT4 EVMRSIT5 EVMRSIT6}
+	EVMRSIT1 EVMRSIT1
+	EVMRSIT2 EVMRSIT2
+	EVMRSIT3 EVMRSIT3
+	EVMRSIT4 EVMRSIT4
+	EVMRSIT5 EVMRSIT5
+	EVMRSIT6 EVMRSIT6
+	$random EvilmarineActive { NONE NONE NONE EVMRACT2 EVMRACT3 EVMRACT4}
+	EVMRACT1 EVMRACT1
+	EVMRACT2 EVMRACT2
+	EVMRACT3 EVMRACT3
+	EVMRACT4 EVMRACT4
+	$random EvilmarinePain { EVMRPN1 EVMRPN2}
+	EVMRPN1 EVMRPN1
+	EVMRPN2 EVMRPN2
+	$random EvilmarineDeath { EVMRDT1 EVMRDT2}
+	EVMRDT1 EVMRDT1
+	EVMRDT2 EVMRDT2
+	EVMRLAUG EVMRLAUG
+	RLAUNCH1 RLAUNCH1
+	RLLOOP RLLOOP
+	RAILF1 RAILF1
+	RAILR1 RAILR1
+	$rolloff weapons/sg 100 2200
+	$rolloff CHGNSHOT 100 2200
+	// Gore
+	$random misc/xdeath		{ misc/xdeath1a misc/xdeath1b misc/xdeath1c misc/xdeath1d misc/xdeath1e misc/xdeath1f misc/xdeath2a misc/xdeath2b misc/xdeath2c misc/xdeath2d misc/xdeath2e misc/xdeath2f misc/xdeath3a misc/xdeath3b misc/xdeath3c misc/xdeath4a misc/xdeath4b misc/xdeath4c }
+	misc/xdeath1a			dsxdth1a
+	misc/xdeath1b			dsxdth1b
+	misc/xdeath1c			dsxdth1c
+	misc/xdeath1d			dsxdth1d
+	misc/xdeath1e			dsxdth1e
+	misc/xdeath1f			dsxdth1f
+	$random misc/xdeath1		{ misc/xdeath1a misc/xdeath1b misc/xdeath1c misc/xdeath1d misc/xdeath1e misc/xdeath1f }
+	misc/xdeath2a			dsxdth2a
+	misc/xdeath2b			dsxdth2b
+	misc/xdeath2c			dsxdth2c
+	misc/xdeath2d			dsxdth2d
+	misc/xdeath2e			dsxdth2e
+	misc/xdeath2f			dsxdth2f
+	$random misc/xdeath2		{ misc/xdeath2a misc/xdeath2b misc/xdeath2c misc/xdeath2d misc/xdeath2e misc/xdeath2f }
+	misc/xdeath3a			dsxdth3a
+	misc/xdeath3b			dsxdth3b
+	misc/xdeath3c			dsxdth3c
+	$random misc/xdeath3		{ misc/xdeath3a misc/xdeath3b misc/xdeath3c }
+	misc/xdeath4a			dsxdth4a
+	misc/xdeath4b			dsxdth4b
+	misc/xdeath4c			dsxdth4c
+	$random misc/xdeath4		{ misc/xdeath4a misc/xdeath4b misc/xdeath4c }
+	$random misc/xdeath5		{ misc/xdeath4a misc/xdeath4b misc/xdeath2a misc/xdeath2b misc/xdeath2e}
+	$limit misc/xdeath5 2
+	$volume misc/xdeath 0.4
+	$volume misc/xdeath1 0.4
+	$volume misc/xdeath2 0.4
+	$volume misc/xdeath3 0.4
+	$volume misc/xdeath4 0.4
+	BONECR1 BONECR1
+	BONECR2 BONECR2
+	LQDRIP1 LQDRIP1
+	LQDRIP2 LQDRIP2
+	LQDRIP3 LQDRIP3
+	LQDRIP4 LQDRIP4
+	LQDRIP5 LQDRIP5
+	LQDRIP6 LQDRIP6
+	LQDRIP7 LQDRIP7
+	LQDRIP8 LQDRIP8
+	LQDRIP9 LQDRIP9
+	LQDRIP10 LQDRIP10
+	LQDRIP11 LQDRIP11
+	LQDRIP12 LQDRIP12
+	LQDRIP13 LQDRIP13
+	LQDRIP14 LQDRIP14
+	$random blooddrop  { LQDRIP1 LQDRIP2 LQDRIP3 } 
+	$rolloff blooddrop 200 1000
+	$random blooddrop2  { LQDRIP4 LQDRIP5 LQDRIP6 LQDRIP7 }
+	$rolloff blooddrop2 200 1000
+	$random blooddrop3  { LQDRIP8 LQDRIP9 LQDRIP10 LQDRIP11 LQDRIP12 LQDRIP13 LQDRIP14 LQDRIP14 } 
+	$rolloff blooddrop3 200 1000
+	$random REVIDLE  { REVIDLE1 REVIDLE2 REVIDLE3 REVIDLE4 REVIDLE5 REVIDLE6 REVIDLE7 } 
+	REVIDLE1 REVIDLE1
+	REVIDLE2 REVIDLE2
+	REVIDLE3 REVIDLE3
+	REVIDLE4 REVIDLE4
+	REVIDLE5 REVIDLE5
+	REVIDLE6 REVIDLE6
+	REVIDLE7 REVIDLE7
+	$random REVOUCH { REVIDLE1 REVIDLE2 REVIDLE3 REVIDLE4 REVIDLE5 REVIDLE6 REVIDLE7 } 
+	REVOUCH1 REVOUCH1
+	REVOUCH2 REVOUCH2
+	REVOUCH3 REVOUCH3
+	$random PINKIDL { PINKIDL1 PINKIDL2 PINKIDL3 PINKIDL4 } 
+	PINKIDL1 PINKIDL1
+	PINKIDL2 PINKIDL2
+	PINKIDL3 PINKIDL3
+	PINKIDL4 PINKIDL4
+	MINIGN1 MINIGN1
+	MINIGEN MINIGEN
+	MINIGN3 MINIGN3
+	MINIGN4 MINIGN4
+	$limit MINIGN4 999
+	A12FIR A12FIR
+	AACL AACL
+	PFIRE PFIRE
+	DSPISTOL DSPISTOL
+	PREL PREL
+	SMGFIRE SMGFIRE
+	SMGDRAW SMGDRAW
+	SMGMAGIN SMGMAGIN
+	SMGMOUT SMGMOUT
+	SMGBOLT SMGBOLT
+	HMGFIRE HMGFIRE
+	$random CSAWFLESH { DSSAW0 DSSAW1 DSSAW2 DSSAW3 DSSAW4 DSSAW5 DSSAW6 DSSAW7 DSSAW8 DSSAW9 }
+	DSSAW1 DSSAW1
+	DSSAW2 DSSAW2
+	DSSAW3 DSSAW3
+	DSSAW4 DSSAW4
+	DSSAW5 DSSAW5
+	DSSAW6 DSSAW6
+	DSSAW7 DSSAW7
+	DSSAW8 DSSAW8
+	DSSAW9 DSSAW9
+	DSSAW0 DSSAW0
+	//Unmaker
+	UNMSTA UNMSTA
+	UNMLOP UNMLOP
+	UNMSTO UNMSTO
+	//Mother Demon
+	mother/sight dsmthsit
+	mother/pain dsmthpai
+	mother/death dsmthdth
+	mother/attack dsmthatk
+	mother/active dsmthact
+	AXECLN AXECLN
+	AXEHIT AXEHIT
+	AXEDRAW AXEDRAW
+	BDALARM BDALARM
+	$limit BDALARM 0
+	BRKCLANG BRKCLANG
+	B2KCLANG B2KCLANG
+	$limit BRKCLANG 0
+	$limit B2KCLANG 0
+	//VOLCABUS
+	Volcabus/Sight VOLCST
+	Volcabus/Pain VOLCPN
+	Volcabus/Death VOLCDTH
+	Volcabus/Attack VOLCATK
+	$random Volcabus/Cannon { VOLCCF1 VOLCCF2 VOLCCF3 VOLCCF4 }
+	VOLCCF1 VOLCCF1
+	VOLCCF2 VOLCCF2
+	VOLCCF3 VOLCCF3
+	VOLCCF4 VOLCCF4
+	VOLCBRN VOLCBRN
+	//TURNED INTO POOPOO
+	MELT MELTIN
+	//Arachnotron 2 gun
+	PAILGF3 PAILGF3
+	PAILGF2 PAILGF2
+	PAILGD3 PAILGD3
+	//Mummy
+	MUMYACT MUMYACT
+	MUMYSEE MUMYSEE
+	MUMYDIE MUMYDIE
+	CBOXPICK CBOXPICK
+	BACKPACK BACKPACK
+	CLIPICK CLIPICK
+	CLIPICK2 CLIPICK2
+	GOTKEY GOTKEY
+	$random chainrattle {CHNRTL1 CHNRTL2 CHNRTL3}
+	CHNRTL1 CHNRTL1
+	CHNRTL2 CHNRTL2
+	CHNRTL3 CHNRTL3
+	$random SlideKickStart { SLIDSTRT1 SLIDSTRT2 SLIDSTRT3 }
+	SLIDSTRT1	SLIDSTR1
+	SLIDSTRT2	SLIDSTR2
+	SLIDSTRT3	SLIDSTR3
+	$random SlideKickLoop { SLIDLOP1 SLIDLOP2 SLIDLOP3 SLIDLOP4 }
+	SLIDLOP1	SLIDLOP1
+	SLIDLOP2	SLIDLOP2
+	SLIDLOP3	SLIDLOP3
+	SLIDLOP4	SLIDLOP4
+	$random SlideKickStop { SLIDEND1 SLIDEND2 }
+	SLIDEND1	SLIDEND1
+	SLIDEND2	SLIDEND2
+	FLEAS FLEAS
+	rat/melee			dsratmel
+	rat/pain			dsratpai
+	rat/death1			dsratdt1
+	rat/death2			dsratdt2
+	rat/death3			dsratdt3
+	$random rat/death		{ rat/death1 rat/death2 rat/death3 }
+	$random BodyThud		{ BTHUD1 BTHUD2 BTHUD3 BTHUD4 BTHUD5 BTHUD6 BTHUD7 }
+	BTHUD1 BTHUD1
+	BTHUD2 BTHUD2
+	BTHUD3 BTHUD3
+	BTHUD4 BTHUD4
+	BTHUD5 BTHUD5
+	BTHUD6 BTHUD6
+	BTHUD7 BTHUD7

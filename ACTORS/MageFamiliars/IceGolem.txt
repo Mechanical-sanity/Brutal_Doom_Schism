@@ -85,9 +85,15 @@ ACTOR WendigoCompanion: SwitchableDecoration
 		//TNT1 A 0 A_ChangeFlag("NOBLOCKMAP", 1)
 		TNT1 A 0 A_PlaySound("MINACT2", 2)
 		//TNT1 A 0 A_CustomMissile ("OrderTitle2", 50, 0, 0, 2, 90)
+<<<<<<< Updated upstream
 		wens EEEEE 2 //A_SpawnItemEx ("BlueSparkle", random(-10,10), random(-10,10), random(0,2*10), 0, 0,random(2,5))
 		wens EEEEEEE 2 //A_SpawnItemEx ("BlueSparkle", random(-10,10), random(-10,10), random(0,2*10), 0, 0,random(2,5))
 		wens EEEEEEE 2 //A_SpawnItemEx ("BlueSparkle", random(-10,10), random(-10,10), random(0,2*10), 0, 0,random(2,5))
+=======
+		wens EEEEE 2 A_SpawnItemEx ("BlueSparkle", random(-10,10), random(-10,10), random(0,2*10), 0, 0,random(2,5))
+		wens EEEEEEE 2 A_SpawnItemEx ("BlueSparkle", random(-10,10), random(-10,10), random(0,2*10), 0, 0,random(2,5))
+		wens EEEEEEE 2 A_SpawnItemEx ("BlueSparkle", random(-10,10), random(-10,10), random(0,2*10), 0, 0,random(2,5))
+>>>>>>> Stashed changes
 		TNT1 A 0 A_ChangeFlag("NOBLOCKMAP", 1)
 		Stop
 		
@@ -358,6 +364,7 @@ ACTOR WendigoCompanion: SwitchableDecoration
 	Melee:
 			TNT1 A 0 A_JumpIfInTargetInventory("TargetIsAMarine", 1, "FollowPLayer")//
 			TNT1 A 0 A_JumpIfInTargetInventory("IsPlayer", 1, "CheckRangeToWait")
+<<<<<<< Updated upstream
 			TNT1 A 0 //A_giveinventory("canStun")
 			tnt1 a 0 A_jump(128, "meleeM")
 			ICEY i 2 A_FaceTarget 
@@ -366,6 +373,16 @@ ACTOR WendigoCompanion: SwitchableDecoration
 			ICEY j 3
 			ICEY i 3
 			TNT1 A 0 //A_takeinventory("canStun")
+=======
+			TNT1 A 0 A_giveinventory("canStun")
+			tnt1 a 0 A_jump(128, "meleeM")
+			ICEY i 2 A_FaceTarget 
+			ICEY j 2 A_JumpIfInTargetInventory("TargetIsAMarine", 1, "FollowPLayer")//
+			ICEY k 4 A_CustomBulletAttack(0,0,1,random(4,8) ,"wendigoPuff",115)
+			ICEY j 3
+			ICEY i 3
+			TNT1 A 0 A_takeinventory("canStun")
+>>>>>>> Stashed changes
 			goto see
 	MeleeM:	
 			TNT1 A 0 A_JumpIfInTargetInventory("TargetIsAMarine", 1, "FollowPLayer")//
@@ -373,18 +390,30 @@ ACTOR WendigoCompanion: SwitchableDecoration
 			tnt1 a 0 A_jump(128, "meleeM")
 			ICEY l 2 A_FaceTarget 
 			ICEY m 2 A_JumpIfInTargetInventory("TargetIsAMarine", 1, "FollowPLayer")//
+<<<<<<< Updated upstream
 			ICEY n 4 A_CustomBulletAttack(0,0,1,random(4,8) ,"None",115)
 			ICEY m 3
 			ICEY l 3
 			TNT1 A 0 //A_takeinventory("canStun")
+=======
+			ICEY n 4 A_CustomBulletAttack(0,0,1,random(4,8) ,"wendigoPuff",115)
+			ICEY m 3
+			ICEY l 3
+			TNT1 A 0 A_takeinventory("canStun")
+>>>>>>> Stashed changes
 			goto see
 			
 		 FrostStorm:
 		 	TNT1 A 0 A_JumpIfInTargetInventory("TargetIsAMarine", 1, "FollowPLayer")//
 			wens EF 2 A_FaceTarget
 			ICEY Pg 3	Bright
+<<<<<<< Updated upstream
 			ICEY GGGGGGGGGGGGG 1 Bright A_CustomMissile("FreezeCloud4",64,0,0,CMF_OFFSETPITCH,10) 
 			ICEY GGGGGGGGGGGGG 1 Bright A_CustomMissile("FreezeCloud4",64,0,0,CMF_OFFSETPITCH,10) 
+=======
+			ICEY GGGGGGGGGGGGG 1 Bright A_CustomMissile("FreezeCloud5",64,0,0,CMF_OFFSETPITCH,10) 
+			ICEY GGGGGGGGGGGGG 1 Bright A_CustomMissile("FreezeCloud5",64,0,0,CMF_OFFSETPITCH,10) 
+>>>>>>> Stashed changes
 			ICEY o 4 
 			ICEY F 4 A_FaceTarget
 			ICEY e 4
@@ -405,6 +434,7 @@ ACTOR WendigoCompanion: SwitchableDecoration
 	TNT1 a 0 a_JUMP(256,"death1","death2","death3","death4")
 	
 Death1:
+<<<<<<< Updated upstream
 	TNT1 A 0 //A_SpawnItemEx("wendigoTop",	0,8,55,		1,0,random(2,3))
 	TNT1 A 0 //A_SpawnItemEx("wendigoBottom",	0,0,25,		-1,-1,random(2,3))
 	goto footCorpse
@@ -412,10 +442,20 @@ Death1:
 Death2:
 	TNT1 A 0 //A_SpawnItemEx("wendigoTopM",	0,-8,55,	1,0,random(2,3))
 	TNT1 A 0 //A_SpawnItemEx("wendigoBottomM",0,0,25,		-1,1,random(2,3))
+=======
+	TNT1 A 0 A_SpawnItemEx("wendigoTop",	0,8,55,		1,0,random(2,3))
+	TNT1 A 0 A_SpawnItemEx("wendigoBottom",	0,0,25,		-1,-1,random(2,3))
+	goto footCorpse
+
+Death2:
+	TNT1 A 0 A_SpawnItemEx("wendigoTopM",	0,-8,55,	1,0,random(2,3))
+	TNT1 A 0 A_SpawnItemEx("wendigoBottomM",0,0,25,		-1,1,random(2,3))
+>>>>>>> Stashed changes
 	goto footCorpse
 
 	
 Death3:
+<<<<<<< Updated upstream
 	TNT1 A 0 //A_SpawnItemEx("wendigoTop2",	0,8,55,		1,0,random(2,3))
 	TNT1 A 0 //A_SpawnItemEx("wendigoBottom2",	0,0,25,		-1,-1,random(2,3))
 	goto footCorpse
@@ -423,12 +463,26 @@ Death3:
 Death4:
 	TNT1 A 0 //A_SpawnItemEx("wendigoTop2M",	0,-8,55,		1,0,random(2,3))
 	TNT1 A 0 //A_SpawnItemEx("wendigoBottom2M",0,0,25,		-1,1,random(2,3))
+=======
+	TNT1 A 0 A_SpawnItemEx("wendigoTop2",	0,8,55,		1,0,random(2,3))
+	TNT1 A 0 A_SpawnItemEx("wendigoBottom2",	0,0,25,		-1,-1,random(2,3))
+	goto footCorpse
+	
+Death4:
+	TNT1 A 0 A_SpawnItemEx("wendigoTop2M",	0,-8,55,		1,0,random(2,3))
+	TNT1 A 0 A_SpawnItemEx("wendigoBottom2M",0,0,25,		-1,1,random(2,3))
+>>>>>>> Stashed changes
 	goto footCorpse
 	
 	
 FootCorpse:	
+<<<<<<< Updated upstream
 	TNT1 A 0 //A_SpawnItemEx("wendigoArmR",	0,0,45,		0,random(2,3),random(3,4))
 	TNT1 A 0 //A_SpawnItemEx("wendigoArmL",	0,0,45,		0,random(-2,-3),random(3,4))
+=======
+	TNT1 A 0 A_SpawnItemEx("wendigoArmR",	0,0,45,		0,random(2,3),random(3,4))
+	TNT1 A 0 A_SpawnItemEx("wendigoArmL",	0,0,45,		0,random(-2,-3),random(3,4))
+>>>>>>> Stashed changes
 	IceD A 31 
 	IceD A 1 A_NoBlocking
     IceD A -1

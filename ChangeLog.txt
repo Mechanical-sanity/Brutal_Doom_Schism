@@ -1,51 +1,51 @@
-//	BD21 Rebalance
-//
-//	Authors: BLOODWOLF, SchrödingCat
-//
-//	--------Version 4.6 - 08/12/2019----------
-//
-//	Sprites/Weapons/Machinegun:	Created a MGN1Z0.png sprite for the M60 pickup
-//	-_Player.txt:				Deleted ~BW
-//	PlayerClasses.txt:			Updated every class to BD21.0.3Patch and removed non-existant weapons/ammo ~BW
-//	FootSteps.txt:				Removed all redundant player classes ~BW
-//	MAGE_FREEZECAST.txt:		Added Paladin to Inventory.ForbiddenTo ~BW
-//	MAGE_STORMCAST.txt:			Added Inventory.ForbiddenTo BDoomer, Paladin, TacticalDoomer to StormCast actor ~BW
-//	WeaponSpawners.txt:			Updated to BD21.0.3Patch ~BW
-//								Removed BDDisableNewGuns and Vanilla spawn states from spawners ~BW
-//								Removed the VisibleToPlayerClass lines and fake sprites now that Purist has been removed ~BW
-//								Added Stay: states to any spawners that were missing them ~BW
-//								Added "(Slot2)" onto the end of the SMGSpawner Inventory.PickupMessage ~BW
-//								Added in all new weapons to the spawners and Paladin/Sorcerer specific states ~BW
-//	All weapons:				Denoted what slot each weapon corresponds with ~BW
-//	Freezer.txt:				Added Inventory.ForbiddenTo Paladin, Sorcerer to CatsFreezer actor ~BW
-//	_DEFAULTWEAPON.txt:			Deleted ~BW
-//	Pistol.txt:					Removed Doomer2 from Inventory.ForbiddenTo ~BW
-//	Shotgun.txt_:				Deleted ~BW
-//	_Machinegun.txt:			Deleted ~BW
-//	KEYCONF:					Removed duplicate Machinegun entry and non-existant HandRockets, SatchelCharges,
-//								PaladinShotgun, and PaladinMiniGun from weapon order ~BW
-//	language.enu:				Denoted what slot each weapon corresponds with ~BW
-//
-//  --------Version 4.7 - 08/20/2019----------
-//
-//  Sprites :					Added sorcerer kick sprites ~SC
-//								Added minigun-classes sprites ~SC
-//								Added pistol-sorcerer sprites ~SC
-//								Updated shotgun sprites (New tactical sg)~SC
-//  DEFAULTWEAPON.txt			Added sorcerer kick animation ~SC
-//								Added Quickspell state ~SC
-//								Added A_TakeInventory("Quickspell", 1) in the select/ready state ~SC
-//								Added A_JumpIfInventory("Quickspell",1,"Quickspell") in the weapon special action state ~SC
-//  COMMANDS.txt(ACS)			Added "Quickspell" script ~SC
-//	KEYCONF.txt					Added "Quickspell" key ~SC
-// 	Tokens.txt					Added "Quickspell" token ~SC
-//								Added "IsSlowed" token ~SC
-//  Shotgun.txt					Updated code (DinosaurNerd's code) ~SC
-//  Pistol.txt
-//  Minigun.txt
-//  IceParticles.txt			Created a file with all frost projectiles and particles (With 4 new ones "Iceshard" "IceSpike" "IceOrb" and "IceBucksot")
-//	IceShards.txt				Created a demonstration weapon for new frost spells "IceShards", "IceBuckshot" and "IceOrb"
-// 	CatsFrozen Addon			Updated to version 1.3
-//								Added FrozenCyberDemon / FrozenMastermind / Frozenbarrel/ FrozenSMGguy
-//								Added SlowingFreeze.o ACS script
-//								Added a Pain.Freeze state to every FrozenXXXXX.txt
+	//	BD21 Rebalance
+	//
+	//	Authors: BLOODWOLF, SchrödingCat
+	//
+	//	--------Version 4.6 - 08/12/2019----------
+	//
+	//	Sprites/Weapons/Machinegun:	Created a MGN1Z0.png sprite for the M60 pickup
+	//	-_Player.txt:				Deleted ~BW
+	//	PlayerClasses.txt:			Updated every class to BD21.0.3Patch and removed non-existant weapons/ammo ~BW
+	//	FootSteps.txt:				Removed all redundant player classes ~BW
+	//	MAGE_FREEZECAST.txt:		Added Paladin to Inventory.ForbiddenTo ~BW
+	//	MAGE_STORMCAST.txt:			Added Inventory.ForbiddenTo BDoomer, Paladin, TacticalDoomer to StormCast actor ~BW
+	//	WeaponSpawners.txt:			Updated to BD21.0.3Patch ~BW
+	//								Removed BDDisableNewGuns and Vanilla spawn states from spawners ~BW
+	//								Removed the VisibleToPlayerClass lines and fake sprites now that Purist has been removed ~BW
+	//								Added Stay: states to any spawners that were missing them ~BW
+	//								Added "(Slot2)" onto the end of the SMGSpawner Inventory.PickupMessage ~BW
+	//								Added in all new weapons to the spawners and Paladin/Sorcerer specific states ~BW
+	//	All weapons:				Denoted what slot each weapon corresponds with ~BW
+	//	Freezer.txt:				Added Inventory.ForbiddenTo Paladin, Sorcerer to CatsFreezer actor ~BW
+	//	_DEFAULTWEAPON.txt:			Deleted ~BW
+	//	Pistol.txt:					Removed Doomer2 from Inventory.ForbiddenTo ~BW
+	//	Shotgun.txt_:				Deleted ~BW
+	//	_Machinegun.txt:			Deleted ~BW
+	//	KEYCONF:					Removed duplicate Machinegun entry and non-existant HandRockets, SatchelCharges,
+	//								PaladinShotgun, and PaladinMiniGun from weapon order ~BW
+	//	language.enu:				Denoted what slot each weapon corresponds with ~BW
+	//
+	//  --------Version 4.7 - 08/20/2019----------
+	//
+	//  Sprites :					Added sorcerer kick sprites ~SC
+	//								Added minigun-classes sprites ~SC
+	//								Added pistol-sorcerer sprites ~SC
+	//								Updated shotgun sprites (New tactical sg)~SC
+	//  DEFAULTWEAPON.txt			Added sorcerer kick animation ~SC
+	//								Added Quickspell state ~SC
+	//								Added A_TakeInventory("Quickspell", 1) in the select/ready state ~SC
+	//								Added A_JumpIfInventory("Quickspell",1,"Quickspell") in the weapon special action state ~SC
+	//  COMMANDS.txt(ACS)			Added "Quickspell" script ~SC
+	//	KEYCONF.txt					Added "Quickspell" key ~SC
+	// 	Tokens.txt					Added "Quickspell" token ~SC
+	//								Added "IsSlowed" token ~SC
+	//  Shotgun.txt					Updated code (DinosaurNerd's code) ~SC
+	//  Pistol.txt
+	//  Minigun.txt
+	//  IceParticles.txt			Created a file with all frost projectiles and particles (With 4 new ones "Iceshard" "IceSpike" "IceOrb" and "IceBucksot")
+	//	IceShards.txt				Created a demonstration weapon for new frost spells "IceShards", "IceBuckshot" and "IceOrb"
+	// 	CatsFrozen Addon			Updated to version 1.3
+	//								Added FrozenCyberDemon / FrozenMastermind / Frozenbarrel/ FrozenSMGguy
+	//								Added SlowingFreeze.o ACS script
+	//								Added a Pain.Freeze state to every FrozenXXXXX.txt

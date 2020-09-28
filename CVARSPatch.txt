@@ -1,16 +1,16 @@
-#library "CVARSPatch"
-#include "zcommon.acs"
-Script "Check_DisabledReloading" Enter
-{
-	if(GetCvar("bd_disablereloading") == 1 && checkinventory("istacticalclass") == 0)
+	#library "CVARSPatch"
+	#include "zcommon.acs"
+	Script "Check_DisabledReloading" Enter
 	{
-		GiveInventory("turboreload",1);
+		if(GetCvar("bd_disablereloading") == 1 && checkinventory("istacticalclass") == 0)
+		{
+			GiveInventory("turboreload",1);
+		}
 	}
-}
-Script "Check_DisabledAutoReloading" Enter
-{
-	if (GetCvar("bd_disableautoreload") == 1)
+	Script "Check_DisabledAutoReloading" Enter
 	{
-		GiveInventory("NoAutoReload", 1);
+		if (GetCvar("bd_disableautoreload") == 1)
+		{
+			GiveInventory("NoAutoReload", 1);
+		}
 	}
-}

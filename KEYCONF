@@ -1,76 +1,76 @@
-clearplayerclasses
-addplayerclass BDoomer
-addplayerclass Paladin
-addplayerclass Sorcerer
-weaponsection "Brutal_Doom"
-setslot 1 DSweap BrutalAxe Chain_Saw Melee_Attacks Berserker_Melee_Attacks MageDagger TheQuietus 
-setslot 2 BrutalPistol BrutalSMG Revolver Revolver2 ShieldRifle BattleAxe Piromancy
-setslot 3 AssaultShotgun Shot_Gun SSG QuadShotgun Stormcast
-setslot 4 Rifle MiniGun Machinegun HeavyRifle Frostmancy
-setslot 5 GrenadeLauncher AdvancedMissileLauncher Rocket_Launcher DV_Crossbow Runecraft 
-setslot 6 RailGun Plasma_Gun Tesla CatsFreezer 
-setslot 7 BFG10k Unmaker BIG_FUCKING_GUN VanillaBFG9000 
-setslot 8 FlameCannon HellishMissileLauncher Flamethrower2 BoltRifle SniperRifle
-setslot 9 HandGrenades HandFreezebot Freezenades
-setslot 0 NukeLauncher HitlersBuzzsaw //AmmoDroper
-   addkeysection "BrutalDoom - Advanced Actions" BrutalDoomActions    
-      addmenukey "Kick" kickem
-   alias kickem "puke 301"
-   defaultbind Q kickem
-    addmenukey "Flashlight" flashlightswitch
-   alias flashlightswitch "puke 313"
-   defaultbind F flashlightswitch
-   //QuickSpell key
-  addmenukey "[Mage] Quick Spell Cast" quickspell
-  alias quickspell "pukename Quickspell"
-  //
-	addmenukey "Toss Grenade / Magic Wall" grenadetoss
-   alias grenadetoss "puke 315"
-   defaultbind G grenadetoss
-   addmenukey "Reload / Stance / Mana Recharge" reload
-   alias reload "puke 303"
-   defaultbind R reload
-      addmenukey "Unload Gun" unreloader
-   alias unreloader "puke 363"
-    addmenukey "Quick Pull Pistol" quickpistol
-   alias quickpistol "puke 310"
-   addkeysection "Schism - Class specific actions" BrutalDoomInteractions  
-   addmenukey "Offend / Telekinesis / Blink" brutaltaunt
-   alias brutaltaunt "puke 302"
-   defaultbind E brutaltaunt
-      addmenukey "Battlecry / Bracers Protection" wave1
-   alias wave1 "puke 431"
-   defaultbind V wave1
-   addmenukey "Wave(2)" wave2
-   alias wave2 "puke 432"
-   defaultbind N wave2
-      addmenukey "Advanced Taunt" advtaunt
-   alias advtaunt "puke 304"
-   defaultbind J advtaunt
-      addmenukey "One-Liners" oneliner
-   alias oneliner "puke 305"
-   defaultbind K oneliner
-      addmenukey "Dual Wield / Weapon Special Action" dual
-   alias dual "puke 308"
-   defaultbind X dual
-      addmenukey "Select Ammo Drop" selectammodrop
-   alias selectammodrop "puke 309"
-   defaultbind O selectammodrop
-      addkeysection "Brutal Doom - Advanced Moves" BrutalDoomAdvMoves              // here too
-   addmenukey "Roll Left" roleft
-   alias roleft "puke 306"
-   defaultbind Z roleft
-      addmenukey "Roll Right" roright
-   alias roright "puke 307"
-   defaultbind C roright
-      addkeysection "Schism - Quick Ready Weapons or Spells" BrutalDoomQuickReadyWeapons
-      addmenukey "Quick Ready Pistol / Frostmancy" quickpistol
-   alias quickpistol "puke 310"
-      addmenukey "Quick Ready Fists / Piromancy" quickfists
-   alias quickfists "puke 311"
-      addmenukey "Quick Ready Assault Rifle / Stormcast" quickarifle
-   alias quickarifle "puke 314"
-      alias disablereloading "bd_disablereloading 1; give turboreload"
-   alias enablereloading "bd_disablereloading 0; take turboreload"
-   alias disableautoreload "bd_disableautoreload 1; give noautoreload"
-   alias enableautoreload "bd_disableautoreload 0; take noautoreload"
+	clearplayerclasses
+	addplayerclass BDoomer
+	addplayerclass Paladin
+	addplayerclass Sorcerer
+	weaponsection "Brutal_Doom"
+	setslot 1 DSweap BrutalAxe Chain_Saw Melee_Attacks Berserker_Melee_Attacks MageDagger TheQuietus 
+	setslot 2 BrutalPistol BrutalSMG Revolver Revolver2 ShieldRifle BattleAxe Piromancy
+	setslot 3 AssaultShotgun Shot_Gun SSG QuadShotgun Stormcast
+	setslot 4 Rifle MiniGun Machinegun HeavyRifle Frostmancy
+	setslot 5 GrenadeLauncher AdvancedMissileLauncher Rocket_Launcher DV_Crossbow Runecraft 
+	setslot 6 RailGun Plasma_Gun Tesla CatsFreezer 
+	setslot 7 BFG10k Unmaker BIG_FUCKING_GUN VanillaBFG9000 
+	setslot 8 FlameCannon HellishMissileLauncher Flamethrower2 BoltRifle SniperRifle
+	setslot 9 HandGrenades HandFreezebot Freezenades
+	setslot 0 NukeLauncher HitlersBuzzsaw //AmmoDroper
+	   addkeysection "BrutalDoom - Advanced Actions" BrutalDoomActions    
+		  addmenukey "Kick" kickem
+	   alias kickem "puke 301"
+	   defaultbind Q kickem
+		addmenukey "Flashlight" flashlightswitch
+	   alias flashlightswitch "puke 313"
+	   defaultbind F flashlightswitch
+	   //QuickSpell key
+	  addmenukey "[Mage] Quick Spell Cast" quickspell
+	  alias quickspell "pukename Quickspell"
+	  //
+		addmenukey "Toss Grenade / Magic Wall" grenadetoss
+	   alias grenadetoss "puke 315"
+	   defaultbind G grenadetoss
+	   addmenukey "Reload / Stance / Mana Recharge" reload
+	   alias reload "puke 303"
+	   defaultbind R reload
+		  addmenukey "Unload Gun" unreloader
+	   alias unreloader "puke 363"
+		addmenukey "Quick Pull Pistol" quickpistol
+	   alias quickpistol "puke 310"
+	   addkeysection "Schism - Class specific actions" BrutalDoomInteractions  
+	   addmenukey "Offend / Telekinesis / Blink" brutaltaunt
+	   alias brutaltaunt "puke 302"
+	   defaultbind E brutaltaunt
+		  addmenukey "Battlecry / Bracers Protection" wave1
+	   alias wave1 "puke 431"
+	   defaultbind V wave1
+	   addmenukey "Wave(2)" wave2
+	   alias wave2 "puke 432"
+	   defaultbind N wave2
+		  addmenukey "Advanced Taunt" advtaunt
+	   alias advtaunt "puke 304"
+	   defaultbind J advtaunt
+		  addmenukey "One-Liners" oneliner
+	   alias oneliner "puke 305"
+	   defaultbind K oneliner
+		  addmenukey "Dual Wield / Weapon Special Action" dual
+	   alias dual "puke 308"
+	   defaultbind X dual
+		  addmenukey "Select Ammo Drop" selectammodrop
+	   alias selectammodrop "puke 309"
+	   defaultbind O selectammodrop
+		  addkeysection "Brutal Doom - Advanced Moves" BrutalDoomAdvMoves              // here too
+	   addmenukey "Roll Left" roleft
+	   alias roleft "puke 306"
+	   defaultbind Z roleft
+		  addmenukey "Roll Right" roright
+	   alias roright "puke 307"
+	   defaultbind C roright
+		  addkeysection "Schism - Quick Ready Weapons or Spells" BrutalDoomQuickReadyWeapons
+		  addmenukey "Quick Ready Pistol / Frostmancy" quickpistol
+	   alias quickpistol "puke 310"
+		  addmenukey "Quick Ready Fists / Piromancy" quickfists
+	   alias quickfists "puke 311"
+		  addmenukey "Quick Ready Assault Rifle / Stormcast" quickarifle
+	   alias quickarifle "puke 314"
+		  alias disablereloading "bd_disablereloading 1; give turboreload"
+	   alias enablereloading "bd_disablereloading 0; take turboreload"
+	   alias disableautoreload "bd_disableautoreload 1; give noautoreload"
+	   alias enableautoreload "bd_disableautoreload 0; take noautoreload"
