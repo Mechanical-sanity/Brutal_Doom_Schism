@@ -12,7 +12,7 @@
 	setslot 7 BFG10k Unmaker BIG_FUCKING_GUN VanillaBFG9000 
 	setslot 8 FlameCannon HellishMissileLauncher Flamethrower2 BoltRifle SniperRifle
 	setslot 9 HandGrenades HandFreezebot Freezenades
-	setslot 0 NukeLauncher HitlersBuzzsaw Arrancadora//AmmoDroper
+	setslot 0 NukeLauncher HitlersBuzzsaw Arrancadora //AmmoDroper
 	   addkeysection "BrutalDoom - Advanced Actions" BrutalDoomActions    
 		  addmenukey "Kick" kickem
 	   alias kickem "puke 301"
