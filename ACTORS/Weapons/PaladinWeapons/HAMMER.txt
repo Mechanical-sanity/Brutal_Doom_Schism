@@ -22,7 +22,7 @@ ACTOR Arrancadora: BrutalWeapon
 	+WEAPON.NOAUTOFIRE
 	Weapon.SlotNumber 1
     Weapon.SlotPriority 1
-	Inventory.ForbiddenTo BDoomer, Sorcerer, TacticalDoomer
+	Inventory.ForbiddenTo BDoomer, Sorcerer
 	Scale 1.25
 	States
 	{

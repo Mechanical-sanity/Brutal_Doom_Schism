@@ -63,7 +63,7 @@ ACTOR TheQuietus : BrutalWeapon Replaces FWeapQuietus
 	Weapon.AmmoType1 "Zeal"
 	Weapon.AmmoType2 "Rage"
 	Inventory.PickupMessage "Picked up the Quietus! (Slot 1)"
-	Inventory.ForbiddenTo BDoomer, Sorcerer, TacticalDoomer
+	Inventory.ForbiddenTo BDoomer, Sorcerer
 	Inventory.PickupSound "WeaponBuild"
 	Tag "$TAG_FWEAPQUIETUS"
 

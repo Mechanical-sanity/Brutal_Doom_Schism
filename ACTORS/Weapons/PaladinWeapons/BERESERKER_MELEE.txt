@@ -34,7 +34,7 @@
 		+INVENTORY.UNDROPPABLE
 		+WEAPON.NOAUTOFIRE
 		Tag "Fists"
-			Inventory.ForbiddenTo BDoomer, Sorcerer, TacticalDoomer
+			Inventory.ForbiddenTo BDoomer, Sorcerer
 		States
 		{
 		Select:

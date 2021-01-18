@@ -40,7 +40,7 @@
 		Inventory.PickupMessage "You got the very lucky Crossbow! (Slot 5)"
 		//Obituary "%o got penetrated by %k's long hard shaft."		// LELELELELELLELELELELLEL
 		Obituary "%o caught %k's bolt with his face."
-		Inventory.ForbiddenTo BDoomer, Sorcerer, TacticalDoomer
+		Inventory.ForbiddenTo BDoomer, Sorcerer
 		States
 		{
 		Spawn:
