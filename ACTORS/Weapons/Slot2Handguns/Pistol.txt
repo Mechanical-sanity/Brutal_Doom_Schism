@@ -25,7 +25,7 @@
 		+FORCEXYBILLBOARD
 		Scale 0.9
 		Tag "Pistol"
-		Inventory.ForbiddenTo Paladin, TacticalDoomer
+		Inventory.ForbiddenTo Paladin
 		States
 		{
 		Spawn:

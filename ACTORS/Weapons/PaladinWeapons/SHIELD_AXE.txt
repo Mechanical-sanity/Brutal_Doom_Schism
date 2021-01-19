@@ -24,7 +24,7 @@ ACTOR BattleAxe : BrutalWeapon
 	//Weapon.KickBack 150
 	Weapon.AmmoType1 "Zeal"
 	Weapon.AmmoType2 "Rage"
-	Inventory.ForbiddenTo BDoomer, Sorcerer, TacticalDoomer
+	Inventory.ForbiddenTo BDoomer, Sorcerer
 
 	
 	Obituary "$OB_MPFWEAPFIST"

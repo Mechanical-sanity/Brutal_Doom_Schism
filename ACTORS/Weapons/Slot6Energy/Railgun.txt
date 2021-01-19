@@ -14,7 +14,7 @@
 		+WEAPON.NOALERT
 		damagetype "Railgun"
 		Weapon.SelectionOrder 2500
-		Inventory.ForbiddenTo Sorcerer, Paladin, TacticalDoomer
+		Inventory.ForbiddenTo Sorcerer, Paladin
 		States
 		{
 				Ready:	

@@ -13,7 +13,7 @@
 		+WEAPON.NOAUTOFIRE
 		Tag "BFG 9000"
 		Inventory.PickupMessage "You got the BFG-9000! FUCK YEAH! (Slot 7)"
-		Inventory.ForbiddenTo Sorcerer, Paladin, TacticalDoomer
+		Inventory.ForbiddenTo Sorcerer, Paladin
 		States
 		{
 			Ready3:

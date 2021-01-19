@@ -22,7 +22,7 @@
 		+WEAPON.AXEBLOOD
 		+WEAPON.NO_AUTO_SWITCH
 		Inventory.PickupMessage "You got the Advanced Grenade Launcher (Slot 5)!"
-		Inventory.ForbiddenTo Sorcerer, TacticalDoomer
+		Inventory.ForbiddenTo Sorcerer
 		States
 			{
 			/*PickUp:

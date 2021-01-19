@@ -20,7 +20,7 @@
 		+WEAPON.NOALERT
 		Inventory.PickupMessage "$GOTLAUNCHER"
 		Tag "Rocket Launcher"
-		Inventory.ForbiddenTo Sorcerer, TacticalDoomer
+		Inventory.ForbiddenTo Sorcerer
 		States
 		{
 			Ready3:

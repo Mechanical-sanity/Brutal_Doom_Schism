@@ -20,7 +20,7 @@
 		AttackSound "None" //You better leave this clear
 		//+WEAPON.NOAUTOFIRE
 		Inventory.PickupMessage "$GOTRIFLE"
-		Inventory.ForbiddenTo BDoomer, Sorcerer, TacticalDoomer
+		Inventory.ForbiddenTo BDoomer, Sorcerer
 		States
 		{
 		Select:

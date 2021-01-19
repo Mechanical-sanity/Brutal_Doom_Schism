@@ -10,7 +10,7 @@
 	  Inventory.Pickupmessage "You got the BFG10000!  HELL YES! (Slot 7)"
 	  Obituary "%o was blasted by %k's BFG10K"
 	  Decal BFGLightning
-	  Inventory.ForbiddenTo Sorcerer, Paladin, TacticalDoomer
+	  Inventory.ForbiddenTo Sorcerer, Paladin
 	  //+WEAPON.CHEATNOTWEAPON
 	  States
 	  {

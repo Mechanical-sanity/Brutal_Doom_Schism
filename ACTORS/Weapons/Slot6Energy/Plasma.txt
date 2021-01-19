@@ -12,7 +12,7 @@
 		+FORCEXYBILLBOARD
 		Tag "Plasma Rifle"
 		Inventory.PickupMessage "$GOTPLASMA"
-			Inventory.ForbiddenTo Sorcerer, Paladin, TacticalDoomer
+			Inventory.ForbiddenTo Sorcerer, Paladin
 		States
 		{
 	Steady:

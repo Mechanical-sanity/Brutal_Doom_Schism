@@ -9,7 +9,7 @@
 		Weapon.SelectionOrder 8500
 		Inventory.PickupMessage "$GOTLAUNCHER"
 		//+WEAPON.CHEATNOTWEAPON
-		Inventory.ForbiddenTo Sorcerer, Paladin, TacticalDoomer
+		Inventory.ForbiddenTo Sorcerer, Paladin
 		States
 		{
 			Ready:

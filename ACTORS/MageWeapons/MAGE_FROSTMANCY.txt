@@ -32,7 +32,7 @@ ACTOR Frostmancy : BrutalWeapon
 	 +WEAPON.CHEATNOTWEAPON
 	Inventory.PickupMessage "Feel the biting frost! (Slot 7)"
 
-	Inventory.ForbiddenTo BDoomer, Paladin, TacticalDoomer
+	Inventory.ForbiddenTo BDoomer, Paladin
 
 	States
 	{

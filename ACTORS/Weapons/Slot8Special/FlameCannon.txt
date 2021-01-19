@@ -8,7 +8,7 @@
 		Inventory.PickupSound "BFGREADY"
 		 +WEAPON.NOAUTOAIM
 		Inventory.PickupMessage "You got the Mancubus Flame Cannon (Slot 8)"
-		Inventory.ForbiddenTo Sorcerer, Paladin, TacticalDoomer	
+		Inventory.ForbiddenTo Sorcerer, Paladin
 		States
 		{
 			Steady:

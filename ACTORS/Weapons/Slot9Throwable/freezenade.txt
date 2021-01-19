@@ -25,7 +25,7 @@
 		AttackSound "None"
 		Inventory.PickupSound "AmmoAPIN"
 		Inventory.Pickupmessage "You got a Freezenade!  (Slot 9)"
-			Inventory.ForbiddenTo Sorcerer, Paladin, TacticalDoomer
+			Inventory.ForbiddenTo Sorcerer, Paladin
 		+WEAPON.NOAUTOAIM
 		+WEAPON.NOALERT
 		+WEAPON.NOAUTOFIRE

@@ -23,7 +23,7 @@
 		Obituary "%o was mowed down by %k's Machine Gun."
 		AttackSound "none"
 		Scale 0.7
-			Inventory.ForbiddenTo Sorcerer, TacticalDoomer
+			Inventory.ForbiddenTo Sorcerer
 		States
 		{
 		Spawn:

@@ -19,7 +19,7 @@
 	  Obituary "%o was frozen by %k's Freezer"
 	  Tag "Freezer"
 	  DamageType "Freeze"
-		Inventory.ForbiddenTo Sorcerer, Paladin, TacticalDoomer
+		Inventory.ForbiddenTo Sorcerer, Paladin
 	  States
 	  {
 		  Spawn:

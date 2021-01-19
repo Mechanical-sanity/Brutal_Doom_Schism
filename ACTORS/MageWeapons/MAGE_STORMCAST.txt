@@ -23,7 +23,7 @@ scale 0.5
      +WEAPON.NOAUTOAIM
 	 +WEAPON.CHEATNOTWEAPON
 	 //+WEAPON.NOALERT
-	Inventory.ForbiddenTo BDoomer, Paladin, TacticalDoomer
+	Inventory.ForbiddenTo BDoomer, Paladin
 	Inventory.PickupMessage "You got the Arcane Power of Stormcasting! (Slot 6)"
 	States
 	{

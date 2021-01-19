@@ -8,7 +8,7 @@
 		+FORCEXYBILLBOARD
 		Weapon.KickBack 0
 		Tag "Chainsaw"
-		Inventory.ForbiddenTo Sorcerer, Paladin, TacticalDoomer
+		Inventory.ForbiddenTo Sorcerer, Paladin
 	states
 		{
 			Spawn:

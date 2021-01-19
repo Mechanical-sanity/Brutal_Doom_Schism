@@ -23,7 +23,7 @@
 		+WEAPON.NoAutoAim
 		Tag "Quad Shotgun"
 		Scale 0.9
-		Inventory.ForbiddenTo Sorcerer, TacticalDoomer
+		Inventory.ForbiddenTo Sorcerer
 			States
 		{
 			Spawn:

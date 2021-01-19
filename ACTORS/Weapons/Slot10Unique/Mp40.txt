@@ -16,7 +16,7 @@
 		+WEAPON.CHEATNOTWEAPON
 		Weapon.SelectionOrder 500
 		Scale 1.0
-		Inventory.ForbiddenTo BDoomer, Sorcerer, Paladin, TacticalDoomer
+		Inventory.ForbiddenTo Sorcerer, Paladin
 		States
 		{
 			NoAmmo:

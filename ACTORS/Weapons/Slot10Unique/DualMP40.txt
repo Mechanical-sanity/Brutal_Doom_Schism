@@ -10,7 +10,7 @@
 		AttackSound "None"
 		+QUIET
 		Inventory.PickupMessage "Fuck this piece of Nazi shit!"
-		Inventory.ForbiddenTo BDoomer, Sorcerer, Paladin, TacticalDoomer
+		Inventory.ForbiddenTo Sorcerer, Paladin
 		+WEAPON.NOAUTOAIM
 		//+WEAPON.NOAUTOFIRE
 		+FORCEXYBILLBOARD

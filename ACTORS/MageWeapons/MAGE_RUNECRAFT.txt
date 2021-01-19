@@ -54,7 +54,7 @@ ACTOR Runecraft : BrutalWeapon
 	 +WEAPON.CHEATNOTWEAPON
 	 +WEAPON.NOALERT
 	Inventory.PickupMessage "You become the Custodian of the legendary Tome of Power!"
-	Inventory.ForbiddenTo BDoomer, Paladin, TacticalDoomer
+	Inventory.ForbiddenTo BDoomer, Paladin
 	
 	States
 	{
